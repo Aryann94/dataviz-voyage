@@ -1,0 +1,11 @@
+# Fichiers generes automatiquement par Python
+__pycache__/
+*.pyc
+
+# Fichiers systeme
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers temporaires d'Excel
+~$*
