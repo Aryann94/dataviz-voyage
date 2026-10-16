@@ -139,4 +139,14 @@ Quatre méthodes de collecte différentes (5 sources) : téléchargement, API RE
 4. Une visualisation à la fois, testée avant de passer à la suivante.
 5. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
 
+**Décision du 16/10/2026 : on fige les 6 critères.** Langue et climat ont été étudiés puis écartés :
+- **langue** : avec les langues officielles, l'Inde (anglais officiel, alphabet latin pour l'anglais) obtient le même dépaysement que les États-Unis, ce qui est absurde ; le Maroc, où le français est très parlé sans être officiel, serait compté comme très dépaysant ;
+- **climat par mois** : une seule ville par pays ment pour les grands pays (Canberra en juillet est froide, le nord de l'Australie est chaud), et choisir plusieurs villes à la main serait subjectif ;
+- **cuisine, culture pop** : aucune donnée objective et réutilisable.
+Un critère approximatif qui produit des résultats absurdes coûte plus de crédibilité qu'il n'apporte de réalisme.
+
+**Le Japon trop souvent gagnant (19,9 %) se corrige dans les questions, pas dans les données** : les réponses actuelles disent surtout ce qu'on veut, rarement ce qu'on ne veut pas, donc un pays fort partout gagne. Les nouvelles questions devront contenir des choix qui coûtent (« animé ou calme », « cher mais confortable ou simple et bon marché »). **Objectif à vérifier par la simulation : aucun pays ne gagne plus de 12 % des parties**, et au moins 38 pays sur 41 peuvent apparaître dans un top 3.
+
+Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (mode rapide environ 8 questions, mode précis environ 15), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
+
 Questions ouvertes : Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
