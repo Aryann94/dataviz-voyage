@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Prototype de test de la logique du quiz (pas le design final). Données embarquées : scores du 16/10/2026. -->
+<title>Quel pays pour moi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Mise en page : une carte-question au centre, une question à la fois ; le résultat prend la forme d'une carte d'embarquement */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --fg:#16202c; --muted:#5a6676; --line:#d9dfe7;
+  --moi:#2c56c9; --moi-fond:rgba(44,86,201,.16); --pays:#c76a1a; --pays-fond:rgba(199,106,26,.18);
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10161e; --surface:#18212c; --fg:#e7ecf2; --muted:#9aa6b5; --line:#2b3644;
+  --moi:#7b9cf0; --moi-fond:rgba(123,156,240,.20); --pays:#f0a35c; --pays-fond:rgba(240,163,92,.20); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10161e; --surface:#18212c; --fg:#e7ecf2; --muted:#9aa6b5; --line:#2b3644;
+  --moi:#7b9cf0; --moi-fond:rgba(123,156,240,.20); --pays:#f0a35c; --pays-fond:rgba(240,163,92,.20); color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.5}
+.page{max-width:760px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.etiquette{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.progression{display:flex;gap:4px}
+.progression i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+.progression i.fait{background:var(--moi)}
+.question h2{font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.25;margin:4px 0 16px;text-wrap:balance}
+.cartes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.cartes{grid-template-columns:1fr}}
+.carte{font:inherit;color:var(--fg);text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;cursor:pointer;display:grid;gap:6px;min-height:104px;align-content:start}
+.carte:hover{border-color:var(--moi);box-shadow:0 0 0 3px var(--moi-fond)}
+.carte:focus-visible,.bouton:focus-visible,.lien:focus-visible{outline:2px solid var(--moi);outline-offset:2px}
+.carte .lettre{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.carte strong{font-size:1.02rem;line-height:1.3}
+.carte span.detail{font-size:.85rem;color:var(--muted)}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.lien{font:inherit;background:none;border:0;color:var(--muted);cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+.bouton{font:inherit;font-weight:600;background:var(--moi);color:#fff;border:0;border-radius:8px;padding:10px 18px;cursor:pointer}
+.billet{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.billet-tete{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 20px;border-bottom:1px dashed var(--line);flex-wrap:wrap}
+.code{font-family:var(--mono);font-size:2.4rem;font-weight:600;letter-spacing:.04em;line-height:1}
+.nom{font-size:1.3rem;font-weight:700}
+.pourcent{font-family:var(--mono);font-size:1.9rem;font-weight:600;color:var(--pays);line-height:1;text-align:right}
+.billet-corps{padding:16px 20px 20px;display:grid;gap:16px}
+.billet-corps p{margin:0;max-width:62ch}
+.deux{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center}
+@media (max-width:600px){.deux{grid-template-columns:1fr}}
+svg{display:block;width:100%;max-width:340px;margin:0 auto;height:auto}
+.legende{display:flex;gap:16px;justify-content:center;font-size:.82rem;color:var(--muted);flex-wrap:wrap}
+.legende span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+th{font-weight:500;color:var(--muted)}
+td.n{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.autres{display:grid;gap:8px}
+.autres button{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;gap:12px}
+.autres button:hover{border-color:var(--pays)}
+.autres .p{font-family:var(--mono);color:var(--pays)}
+.note{font-size:.8rem;color:var(--muted);margin:0}
+@media (prefers-reduced-motion:no-preference){.question,.billet{animation:entree .25s ease both}@keyframes entree{from{transform:translateY(6px);opacity:.4}to{transform:none;opacity:1}}}
+</style>
+
+<div class="page">
+  <header style="display:grid;gap:6px">
+    <div class="etiquette">Prototype de test · 8 questions · 41 pays</div>
+    <h1>Quel pays pour moi ?</h1>
+  </header>
+  <main id="ecran" aria-live="polite"></main>
+</div>
+
+<script>
+const PAYS = [{"c":"FRA","n":"France","r":"Europe","km":0,"d":"Des châteaux de la Loire aux calanques de Marseille, la France concentre une grande variété de paysages sur un territoire compact. Pays le plus visité au monde, elle doit sa réputation autant à son patrimoine qu'à sa cuisine, dont le repas gastronomique est inscrit au patrimoine immatériel de l'UNESCO.","b":"324.0","s":[96,48,35,21,0]},{"c":"ESP","n":"Espagne","r":"Europe","km":1053,"d":"Entre l'architecture mauresque de l'Andalousie, les œuvres de Gaudí à Barcelone et les îles Baléares et Canaries, l'Espagne mêle des héritages chrétien, juif et musulman. Son rythme de vie, avec ses repas tardifs et ses tapas, fait partie de l'expérience.","b":"220.0","s":[94,47,39,30,6]},{"c":"ITA","n":"Italie","r":"Europe","km":1105,"d":"L'Italie est le pays qui compte le plus de sites inscrits au patrimoine mondial. De la Rome antique aux canaux de Venise, des collines de Toscane aux côtes de Sicile, l'art et l'histoire y sont présents à chaque étape.","b":"247.0","s":[100,30,30,26,6]},{"c":"PRT","n":"Portugal","r":"Europe","km":1454,"d":"Tourné vers l'Atlantique, le Portugal garde la trace de son passé de grande puissance maritime, des azulejos de Lisbonne aux caves de Porto. Les plages de l'Algarve et les paysages volcaniques des Açores offrent deux visages très différents du pays.","b":"201.0","s":[64,24,62,33,8]},{"c":"GRC","n":"Grèce","r":"Europe","km":2096,"d":"Berceau de la démocratie et du théâtre, la Grèce associe des sites antiques comme l'Acropole ou Delphes à des milliers d'îles et d'îlots. Les Cyclades, avec leurs maisons blanches, en sont l'image la plus connue.","b":"266.0","s":[72,49,46,34,11]},{"c":"GBR","n":"Royaume-Uni","r":"Europe","km":344,"d":"Le Royaume-Uni réunit quatre nations aux paysages et traditions distincts : l'Angleterre, l'Écosse, le pays de Galles et l'Irlande du Nord. Londres et ses grands musées souvent gratuits, ou les Highlands écossais, en sont les visages les plus connus.","b":"259.0","s":[82,31,42,14,2]},{"c":"ISL","n":"Islande","r":"Europe","km":2233,"d":"Île volcanique posée sur la dorsale médio-atlantique, l'Islande offre geysers, glaciers, cascades et champs de lave dans un pays de moins de 400 000 habitants. L'été apporte le soleil de minuit, l'hiver les aurores boréales.","b":"257.0","s":[0,77,0,0,12]},{"c":"HRV","n":"Croatie","r":"Europe","km":1079,"d":"La Croatie déroule plus d'un millier d'îles le long de l'Adriatique, entre les remparts de Dubrovnik et le palais de Dioclétien à Split. À l'intérieur des terres, les lacs de Plitvice forment une succession de cascades turquoise.","b":"178.0","s":[45,51,0,39,6]},{"c":"CHE","n":"Suisse","r":"Europe","km":435,"d":"Entre les Alpes, les lacs et des villes au bord de l'eau comme Genève, Lucerne ou Zurich, la Suisse est réputée pour ses trains panoramiques et sa nature préservée. C'est aussi l'une des destinations les plus chères au monde.","b":"402.0","s":[48,15,24,3,2]},{"c":"HUN","n":"Hongrie","r":"Europe","km":1244,"d":"Coupée en deux par le Danube, Budapest est célèbre pour ses bains thermaux et son architecture Art nouveau. Au-delà de la capitale, le lac Balaton et la grande plaine de la Puszta dessinent une autre Hongrie.","b":"119.0","s":[41,25,29,40,7]},{"c":"JPN","n":"Japon","r":"Asie","km":9712,"d":"Le Japon fait cohabiter les temples millénaires de Kyoto, la mégapole de Tokyo et des paysages de montagne dominés par le mont Fuji. Son réseau de trains à grande vitesse permet de traverser l'archipel en quelques heures.","b":"140.0","s":[73,28,100,29,51]},{"c":"KOR","n":"Corée du Sud","r":"Asie","km":8967,"d":"La Corée du Sud allie les palais royaux de Séoul, des temples bouddhistes de montagne et une culture populaire (musique, cinéma, séries) devenue mondiale. Sa cuisine, du kimchi au barbecue coréen, est l'un des grands attraits du voyage.","b":"140.0","s":[62,2,78,35,47]},{"c":"CHN","n":"Chine","r":"Asie","km":8217,"d":"De la Grande Muraille à l'armée de terre cuite de Xi'an, des pitons karstiques de Guilin aux gratte-ciel de Shanghai, la Chine offre une diversité à l'échelle d'un continent. Elle fait partie des pays qui comptent le plus de sites du patrimoine mondial.","b":"111.0","s":[94,41,50,45,43]},{"c":"THA","n":"Thaïlande","r":"Asie","km":9445,"d":"Temples dorés de Bangkok, anciennes capitales comme Ayutthaya, plages et îles du sud : la Thaïlande est l'une des destinations les plus populaires d'Asie du Sud-Est. Sa cuisine de rue est réputée dans le monde entier.","b":"99.0","s":[37,25,33,66,50]},{"c":"VNM","n":"Vietnam","r":"Asie","km":9197,"d":"Étiré sur plus de 1 600 km du nord au sud, le Vietnam passe des rizières en terrasses des montagnes du nord à la baie d'Ha Long et au delta du Mékong. La vieille ville de Hội An et sa cuisine de rue en font une étape très appréciée.","b":"71.0","s":[41,3,30,69,48]},{"c":"IDN","n":"Indonésie","r":"Asie","km":11581,"d":"Plus grand archipel du monde avec plus de 17 000 îles, l'Indonésie va des temples de Borobudur et Prambanan, à Java, aux rizières de Bali et aux dragons du parc national de Komodo.","b":"68.59","s":[37,21,22,69,61]},{"c":"IND","n":"Inde","r":"Asie","km":6587,"d":"De l'Himalaya aux backwaters du Kerala, des palais du Rajasthan au Taj Mahal, l'Inde offre une diversité de paysages, de langues et de cuisines rarement égalée. C'est aussi l'une des destinations les moins chères du monde pour le voyageur.","b":"44.68","s":[89,7,26,80,35]},{"c":"NPL","n":"Népal","r":"Asie","km":7236,"d":"Le Népal abrite huit des dix plus hauts sommets du monde, dont l'Everest, ce qui en fait une destination majeure du trekking. La vallée de Katmandou concentre temples hindous et stupas bouddhistes.","b":"42.01","s":[12,21,9,77,38]},{"c":"LKA","n":"Sri Lanka","r":"Asie","km":8515,"d":"Sur une île de taille modeste, le Sri Lanka rassemble des cités anciennes comme Sigiriya et Anuradhapura, les plantations de thé des hauts plateaux et des parcs où vivent éléphants et léopards.","b":"58.22","s":[37,20,0,68,45]},{"c":"LAO","n":"Laos","r":"Asie","km":9236,"d":"Seul pays d'Asie du Sud-Est sans accès à la mer, le Laos est traversé par le Mékong. Luang Prabang, ancienne capitale royale aux nombreux monastères, en est la ville la plus visitée.","b":"23.6","s":[21,38,0,82,49]},{"c":"TUR","n":"Turquie","r":"Moyen-Orient","km":2595,"d":"À cheval entre l'Europe et l'Asie, la Turquie relie Istanbul, l'ancienne Constantinople, aux paysages de Cappadoce et aux côtes méditerranéennes. Ses sites antiques, d'Éphèse à Troie, témoignent de millénaires de civilisations.","b":"150.0","s":[73,14,60,52,14]},{"c":"ARE","n":"Émirats arabes unis","r":"Moyen-Orient","km":5243,"d":"Fédération de sept émirats, les Émirats arabes unis sont connus pour les tours de Dubaï et la grande mosquée d'Abou Dabi. Le désert, à quelques kilomètres des villes, offre un tout autre décor.","b":"289.0","s":[12,16,88,30,28]},{"c":"JOR","n":"Jordanie","r":"Moyen-Orient","km":3368,"d":"La Jordanie abrite Pétra, cité nabatéenne taillée dans la roche, le désert du Wadi Rum et la mer Morte, point le plus bas des terres émergées. Le pays se visite facilement en une ou deux semaines.","b":"183.0","s":[41,10,30,50,18]},{"c":"MAR","n":"Maroc","r":"Afrique","km":1816,"d":"Des médinas de Fès et de Marrakech aux montagnes de l'Atlas et aux dunes du Sahara, le Maroc offre une grande variété de paysages à quelques heures de vol de la France.","b":"90.0","s":[48,0,35,51,10]},{"c":"EGY","n":"Égypte","r":"Afrique","km":3210,"d":"L'Égypte concentre certains des monuments les plus célèbres de l'humanité, des pyramides de Gizeh aux temples de Louxor et d'Abou Simbel, le long du Nil. La mer Rouge est également réputée pour la plongée.","b":"72.46","s":[37,14,37,100,17]},{"c":"ZAF","n":"Afrique du Sud","r":"Afrique","km":8684,"d":"L'Afrique du Sud associe la ville du Cap et sa montagne de la Table, les vignobles de la région du Cap et de grands parcs animaliers comme le Kruger. Le pays compte trois capitales : Pretoria, Le Cap et Bloemfontein.","b":"127.0","s":[45,36,55,51,46]},{"c":"KEN","n":"Kenya","r":"Afrique","km":6483,"d":"Le Kenya est une destination de safari de premier plan, notamment dans la réserve du Masai Mara, connue pour la grande migration des gnous. Sa côte, de Mombasa à Lamu, porte l'héritage de la culture swahilie.","b":"150.0","s":[33,26,19,62,34]},{"c":"TZA","n":"Tanzanie","r":"Afrique","km":6926,"d":"La Tanzanie réunit le Kilimandjaro, plus haut sommet d'Afrique, le parc du Serengeti et l'archipel de Zanzibar, dont la vieille ville de pierre est inscrite au patrimoine mondial.","b":"143.0","s":[27,57,22,69,36]},{"c":"SEN","n":"Sénégal","r":"Afrique","km":4208,"d":"Porte de l'Afrique de l'Ouest, le Sénégal est connu pour l'île de Gorée, lieu de mémoire de la traite négrière, la ville de Saint-Louis et le delta du Saloum. La teranga, l'hospitalité sénégalaise, y est une valeur centrale.","b":"80.39","s":[33,36,29,59,22]},{"c":"GHA","n":"Ghana","r":"Afrique","km":4821,"d":"Indépendant depuis 1957, le Ghana garde le long de sa côte des forts et châteaux liés à l'histoire de la traite, comme ceux de Cape Coast et d'Elmina. Accra, sa capitale, est l'une des villes les plus dynamiques d'Afrique de l'Ouest.","b":"37.23","s":[12,4,30,56,25]},{"c":"USA","n":"États-Unis","r":"Amériques","km":6166,"d":"Les États-Unis vont de grandes villes comme New York, Chicago ou San Francisco aux parcs nationaux de l'Ouest, comme Yellowstone, le Grand Canyon ou Yosemite. Le pays est immense : le traverser d'une côte à l'autre prend environ cinq à six heures d'avion.","b":"329.0","s":[62,55,72,8,32]},{"c":"CAN","n":"Canada","r":"Amériques","km":5648,"d":"Deuxième plus grand pays du monde par la superficie, le Canada est connu pour ses espaces naturels, des Rocheuses aux grands lacs, et pour des villes comme Montréal, Québec ou Vancouver. Le français y est langue officielle aux côtés de l'anglais.","b":"196.0","s":[53,84,67,17,30]},{"c":"MEX","n":"Mexique","r":"Amériques","km":9203,"d":"Le Mexique offre les pyramides de Teotihuacan et de Chichén Itzá, des villes coloniales colorées et les plages de la péninsule du Yucatán. Sa cuisine traditionnelle est inscrite au patrimoine culturel immatériel de l'UNESCO.","b":"136.0","s":[82,43,65,39,48]},{"c":"CRI","n":"Costa Rica","r":"Amériques","km":8918,"d":"Petit pays d'Amérique centrale, le Costa Rica protège une part importante de son territoire et concentre une biodiversité exceptionnelle, entre volcans, forêts de nuages et deux façades maritimes, sur le Pacifique et sur la mer des Caraïbes.","b":"178.0","s":[0,38,45,34,47]},{"c":"COL","n":"Colombie","r":"Amériques","km":8631,"d":"La Colombie mêle la ville coloniale de Carthagène, les paysages du café, une partie de l'Amazonie et deux façades maritimes. Longtemps évitée par les voyageurs, elle est devenue l'une des destinations montantes d'Amérique du Sud.","b":"66.26","s":[41,40,68,56,45]},{"c":"PER","n":"Pérou","r":"Amériques","km":10255,"d":"Le Pérou est la porte d'entrée vers le Machu Picchu et Cuzco, ancienne capitale de l'Empire inca, mais aussi vers le lac Titicaca et une partie de l'Amazonie. Lima est réputée pour sa scène gastronomique.","b":"90.04","s":[53,56,51,41,54]},{"c":"BRA","n":"Brésil","r":"Amériques","km":8725,"d":"Plus grand pays d'Amérique du Sud, le Brésil va de l'Amazonie aux chutes d'Iguaçu, en passant par Rio de Janeiro et les villes coloniales du Minas Gerais. Sa capitale, Brasília, est une ville moderniste inaugurée en 1960.","b":"100.0","s":[66,74,68,47,46]},{"c":"ARG","n":"Argentine","r":"Amériques","km":11050,"d":"L'Argentine s'étire des chutes d'Iguazú, au nord, jusqu'à la Patagonie et la Terre de Feu, au sud. Buenos Aires, ville du tango, et les vignobles de Mendoza en sont d'autres facettes.","b":"","s":[41,52,67,47,58]},{"c":"CHL","n":"Chili","r":"Amériques","km":11647,"d":"Long de plus de 4 000 km pour moins de 200 km de large en moyenne, le Chili va du désert d'Atacama, l'un des plus arides du monde, aux glaciers de Patagonie. Il comprend aussi l'île de Pâques et ses moaïs.","b":"133.0","s":[41,36,54,45,61]},{"c":"AUS","n":"Australie","r":"Océanie","km":16920,"d":"Pays-continent, l'Australie associe la Grande Barrière de corail, le rocher d'Uluru au cœur du désert et des villes comme Sydney ou Melbourne. Sa faune, kangourous et koalas en tête, est unique au monde.","b":"201.0","s":[48,100,93,13,89]},{"c":"NZL","n":"Nouvelle-Zélande","r":"Océanie","km":18986,"d":"La Nouvelle-Zélande se compose principalement de deux grandes îles aux paysages très variés : volcans et sources chaudes au nord, Alpes du Sud et fjords comme Milford Sound au sud. La culture maorie y occupe une place importante.","b":"172.0","s":[0,68,49,16,100]}];
+const AXES = ["Culture","Nature","Villes","Prix","Distance"];
+// Chaque réponse pousse un ou plusieurs critères vers une valeur souhaitée (0-100), avec un poids.
+// [critère, valeur souhaitée, poids]  critères : 0 culture, 1 nature, 2 villes, 3 prix bas, 4 distance
+const QUESTIONS = [
+  {q:"Ton réveil idéal en vacances ?", r:[
+    {t:"Vue sur les gratte-ciel", d:"Le café en terrasse au 30e étage", e:[[2,100,1]]},
+    {t:"Au bord d'un lac, loin de tout", d:"Personne à l'horizon", e:[[1,100,1],[2,0,.5]]},
+    {t:"Dans une vieille ville chargée d'histoire", d:"Ruelles, églises, remparts", e:[[0,100,1],[2,40,.3]]},
+    {t:"Face à une plage tranquille", d:"Rien à faire, et c'est très bien", e:[[1,60,.5],[2,10,.5],[0,20,.3]]}]},
+  {q:"Ton budget pour deux semaines ?", r:[
+    {t:"Serré", d:"Chaque euro compte", e:[[3,100,1]]},
+    {t:"Raisonnable", d:"Ni radin, ni folie", e:[[3,60,.6]]},
+    {t:"Je me fais plaisir", d:"C'est les vacances", e:[[3,20,.4]]},
+    {t:"Le budget n'est pas un sujet", d:"", e:[]}]},
+  {q:"Combien d'heures de vol es-tu prêt à faire ?", r:[
+    {t:"Moins de 3 heures", d:"Je veux profiter dès le premier jour", e:[[4,5,1]]},
+    {t:"Entre 3 et 8 heures", d:"Un vol, un film, on est arrivés", e:[[4,35,.8]]},
+    {t:"Le bout du monde", d:"Plus c'est loin, mieux c'est", e:[[4,100,1]]},
+    {t:"Peu importe", d:"", e:[]}]},
+  {q:"Ta journée parfaite ?", r:[
+    {t:"Musées et monuments", d:"Je lis tous les panneaux", e:[[0,100,1]]},
+    {t:"Une longue randonnée", d:"Sac à dos et chaussures de marche", e:[[1,100,1]]},
+    {t:"Quartiers animés et sorties", d:"Boutiques, bars, vie nocturne", e:[[2,100,1]]},
+    {t:"Un peu de tout", d:"Je n'aime pas choisir", e:[[0,60,.3],[1,50,.3],[2,50,.3]]}]},
+  {q:"La foule et le bruit ?", r:[
+    {t:"J'adore l'énergie des grandes villes", d:"", e:[[2,100,.8]]},
+    {t:"Ça me fatigue vite", d:"", e:[[2,10,.8],[1,70,.4]]},
+    {t:"Ça m'est égal", d:"", e:[]}]},
+  {q:"Ce que tu ramènes en photo ?", r:[
+    {t:"Des monuments célèbres", d:"", e:[[0,90,.7]]},
+    {t:"Des paysages sauvages", d:"", e:[[1,90,.7]]},
+    {t:"Des néons et des skylines", d:"", e:[[2,90,.7]]},
+    {t:"Des marchés et des plats", d:"", e:[[0,60,.3],[3,60,.3]]}]},
+  {q:"Le dépaysement, pour toi ?", r:[
+    {t:"Être complètement déboussolé", d:"Autre langue, autre écriture, autre monde", e:[[4,90,.6]]},
+    {t:"Un peu, mais pas trop", d:"", e:[[4,40,.5]]},
+    {t:"Rester en terrain connu", d:"", e:[[4,10,.6]]}]},
+  {q:"Où dors-tu ?", r:[
+    {t:"Auberge ou chambre chez l'habitant", d:"", e:[[3,90,.6]]},
+    {t:"Un hôtel confortable", d:"", e:[[3,50,.3]]},
+    {t:"Un hôtel de luxe", d:"", e:[[3,10,.5]]}]},
+];
+
+let reponses = [];
+
+function profil(){
+  // Valeur souhaitée = moyenne pondérée des réponses.
+  // Importance = poids cumulé (plafonné à 1) × force de la préférence : une envie tiède (proche de 50)
+  // compte peu, une envie marquée (proche de 0 ou de 100) compte beaucoup.
+  const somme = AXES.map(() => ({v:0, w:0}));
+  reponses.forEach((ri, qi) => QUESTIONS[qi].r[ri].e.forEach(([a, v, w]) => { somme[a].v += v * w; somme[a].w += w; }));
+  return somme.map(s => { const v = s.w ? s.v / s.w : 50; return {v, w: Math.min(1, s.w / 1.5) * Math.abs(v - 50) / 50}; });
+}
+function compat(p, s){
+  let e = 0, m = 0;
+  p.forEach((x, i) => { e += x.w * (x.v - s[i]) ** 2; m += x.w * 1e4; });
+  return m ? 100 * (1 - Math.sqrt(e / m)) : 0;
+}
+
+const ecran = document.getElementById("ecran");
+
+function afficherQuestion(){
+  const qi = reponses.length, Q = QUESTIONS[qi];
+  ecran.innerHTML = `
+    <div class="question" style="display:grid;gap:14px">
+      <div class="progression" aria-hidden="true">${QUESTIONS.map((_, i) => `<i class="${i < qi ? "fait" : ""}"></i>`).join("")}</div>
+      <div><div class="etiquette">Question ${qi + 1} sur ${QUESTIONS.length}</div><h2>${Q.q}</h2>
+        <div class="cartes">${Q.r.map((r, i) => `
+          <button type="button" class="carte" data-i="${i}">
+            <span class="lettre">${"ABCD"[i]}</span><strong>${r.t}</strong>${r.d ? `<span class="detail">${r.d}</span>` : ""}
+          </button>`).join("")}</div>
+      </div>
+      <div class="actions">${qi ? `<button type="button" class="lien" id="retour">← Question précédente</button>` : "<span></span>"}</div>
+    </div>`;
+  ecran.querySelectorAll(".carte").forEach(b => b.addEventListener("click", () => {
+    reponses.push(+b.dataset.i);
+    reponses.length === QUESTIONS.length ? afficherResultat() : afficherQuestion();
+  }));
+  const r = document.getElementById("retour");
+  if (r) r.addEventListener("click", () => { reponses.pop(); afficherQuestion(); });
+  ecran.querySelector(".carte").focus({preventScroll: true});
+}
+
+function radar(moi, pays, ignores){
+  const cx = 170, cy = 160, R = 112, n = AXES.length;
+  const pt = (i, v) => { const a = -Math.PI / 2 + i * 2 * Math.PI / n, r = R * v / 100; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+  const poly = vals => vals.map((v, i) => pt(i, v).map(x => x.toFixed(1)).join(",")).join(" ");
+  let g = "";
+  [25, 50, 75, 100].forEach(l => g += `<polygon points="${poly(Array(n).fill(l))}" fill="none" stroke="var(--line)"/>`);
+  AXES.forEach((a, i) => {
+    const [x, y] = pt(i, 100), [lx, ly] = pt(i, 120);
+    g += `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line)"/>`;
+    const anc = Math.abs(lx - cx) < 8 ? "middle" : (lx > cx ? "start" : "end");
+    g += `<text x="${lx.toFixed(1)}" y="${(ly + 4).toFixed(1)}" text-anchor="${anc}" font-size="12" fill="var(--muted)" font-family="var(--sans)">${a}${ignores[i] ? " (ignoré)" : ""}</text>`;
+  });
+  g += `<polygon points="${poly(moi)}" fill="var(--moi-fond)" stroke="var(--moi)" stroke-width="2"/>`;
+  g += `<polygon points="${poly(pays)}" fill="var(--pays-fond)" stroke="var(--pays)" stroke-width="2"/>`;
+  return `<svg viewBox="0 0 340 310" role="img" aria-label="Comparaison de ton profil et du pays">${g}</svg>`;
+}
+
+function afficherResultat(code){
+  const p = profil();
+  if (p.every(x => x.w < 0.05)) {
+    ecran.innerHTML = `<div class="billet"><div class="billet-corps"><p>Tes réponses ne marquent aucune préférence nette : tous les pays se valent pour toi. Essaie avec des réponses plus tranchées.</p><div class="actions"><span></span><button type="button" class="bouton" id="refaire">Recommencer</button></div></div></div>`;
+    document.getElementById("refaire").addEventListener("click", () => { reponses = []; afficherQuestion(); });
+    return;
+  }
+  const classes = PAYS.map(x => ({...x, pc: compat(p, x.s)})).sort((a, b) => b.pc - a.pc);
+  const actif = classes.find(x => x.c === code) || classes[0];
+  const rang = classes.indexOf(actif) + 1;
+  const lignes = AXES.map((a, i) => p[i].w < 0.05
+    ? `<tr><td>${a}</td><td class="n">—</td><td class="n">${actif.s[i]}</td><td>ne compte pas</td></tr>`
+    : `<tr><td>${a}</td><td class="n">${Math.round(p[i].v)}</td><td class="n">${actif.s[i]}</td><td>${Math.abs(p[i].v - actif.s[i]) <= 15 ? "très proche" : Math.abs(p[i].v - actif.s[i]) <= 35 ? "assez proche" : "éloigné"}</td></tr>`).join("");
+  ecran.innerHTML = `
+    <div style="display:grid;gap:18px">
+      <div class="etiquette">${rang === 1 ? "Ta destination" : `Ta destination n° ${rang}`}</div>
+      <div class="billet">
+        <div class="billet-tete">
+          <div><div class="code">${actif.c}</div><div class="nom">${actif.n}</div>
+            <div class="etiquette">${actif.r} · ${actif.km.toLocaleString("fr-FR")} km de Paris${actif.b ? ` · environ ${Math.round(actif.b)} $ par jour` : ""}</div></div>
+          <div><div class="pourcent">${Math.round(actif.pc)} %</div><div class="etiquette" style="text-align:right">ressemblance</div></div>
+        </div>
+        <div class="billet-corps">
+          <p>${actif.d}</p>
+          <div class="deux">
+            <div>${radar(p.map(x => x.v), actif.s, p.map(x => x.w < 0.05))}
+              <div class="legende"><span style="--c:var(--moi)">Toi</span><span style="--c:var(--pays)">${actif.n}</span></div></div>
+            <table><thead><tr><th>Critère</th><th style="text-align:right">Toi</th><th style="text-align:right">Pays</th><th></th></tr></thead><tbody>${lignes}</tbody></table>
+          </div>
+        </div>
+      </div>
+      <div><div class="etiquette" style="margin-bottom:8px">Ils te correspondent aussi</div>
+        <div class="autres">${classes.filter(x => x.c !== actif.c).slice(0, 4).map(x => `<button type="button" data-c="${x.c}"><span>${x.n}</span><span class="p">${Math.round(x.pc)} %</span></button>`).join("")}</div></div>
+      <div class="actions"><button type="button" class="lien" id="retour">← Modifier ma dernière réponse</button><button type="button" class="bouton" id="refaire">Recommencer</button></div>
+      <p class="note">Prototype de test. Les notes vont de 0 à 100 et sont relatives aux 41 pays : 100 = le plus fort de la liste. « Prix » : 100 = le moins cher. Le pourcentage mesure la ressemblance entre ton profil et le pays.</p>
+    </div>`;
+  ecran.querySelectorAll(".autres button").forEach(b => b.addEventListener("click", () => afficherResultat(b.dataset.c)));
+  document.getElementById("refaire").addEventListener("click", () => { reponses = []; afficherQuestion(); });
+  document.getElementById("retour").addEventListener("click", () => { reponses.pop(); afficherQuestion(); });
+  window.scrollTo({top: 0, behavior: "instant" in window ? "instant" : "auto"});
+}
+
+afficherQuestion();
+</script>
+
+</html>
