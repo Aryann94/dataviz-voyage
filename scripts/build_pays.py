@@ -5,6 +5,7 @@ Assemble data/pays.csv (le fichier final, publié sur le site) à partir de :
     data/pays_liste.csv                          liste des pays (saisie à la main)
     data/intermediaire/pays_wikidata.csv         capitale, GPS, image, drapeau, UNESCO
     data/intermediaire/pays_banquemondiale.csv   indicateurs Banque mondiale
+    data/intermediaire/pays_cotes.csv            côtes, surface, latitude (CIA Factbook)
     data/descriptions_pays.csv                   textes de présentation (rédigés à la main)
 
 Au premier lancement, data/descriptions_pays.csv est créé avec des descriptions vides,
@@ -25,6 +26,7 @@ DATA = RACINE / "data"
 FICHIER_LISTE = DATA / "pays_liste.csv"
 FICHIER_WIKIDATA = DATA / "intermediaire" / "pays_wikidata.csv"
 FICHIER_BM = DATA / "intermediaire" / "pays_banquemondiale.csv"
+FICHIER_COTES = DATA / "intermediaire" / "pays_cotes.csv"
 FICHIER_DESCRIPTIONS = DATA / "descriptions_pays.csv"
 FICHIER_SORTIE = DATA / "pays.csv"
 
@@ -39,6 +41,9 @@ COLONNES = [
     ("unesco_total", "calcul"),
     ("zones_protegees_pct", "bm"), ("annee_zones_protegees", "bm"),
     ("densite_hab_km2", "bm"), ("annee_densite", "bm"),
+    ("foret_pct", "bm"), ("annee_foret", "bm"),
+    ("cotes_km", "cotes"), ("sans_littoral", "cotes"),
+    ("superficie_terres_km2", "cotes"), ("lat_centre", "cotes"),
     ("pop_urbaine_pct", "bm"), ("annee_pop_urbaine", "bm"),
     ("pop_villes_1m_pct", "bm"), ("annee_pop_villes_1m", "bm"),
     ("rnb_hab_usd", "bm"), ("annee_rnb", "bm"),
@@ -54,9 +59,11 @@ COLONNES = [
 OBLIGATOIRES_QUIZ = [
     "lat", "lon", "image_url", "unesco_total", "zones_protegees_pct",
     "densite_hab_km2", "pop_villes_1m_pct", "rnb_hab_usd", "niveau_prix",
+    "foret_pct", "cotes_km", "superficie_terres_km2", "lat_centre",
 ]
 NUMERIQUES = [c for c, s in COLONNES if s == "bm" and not c.startswith("annee_")] + [
-    "lat", "lon", "unesco_culturel", "unesco_naturel", "unesco_mixte"]
+    "lat", "lon", "unesco_culturel", "unesco_naturel", "unesco_mixte",
+    "cotes_km", "superficie_terres_km2", "lat_centre"]
 FICHIER_BUDGET = DATA / "budget.csv"
 
 
@@ -116,7 +123,8 @@ def creer_modele_descriptions(liste):
 def main():
     print("1. Lecture des fichiers")
     liste = lire(FICHIER_LISTE)
-    sources = {"wikidata": lire(FICHIER_WIKIDATA), "bm": lire(FICHIER_BM)}
+    sources = {"wikidata": lire(FICHIER_WIKIDATA), "bm": lire(FICHIER_BM),
+               "cotes": lire(FICHIER_COTES)}
     descriptions = lire(FICHIER_DESCRIPTIONS, obligatoire=False)
     if descriptions is None:
         creer_modele_descriptions(liste)
@@ -125,7 +133,8 @@ def main():
     sources["liste"] = liste
 
     print("2. Contrôle de cohérence entre fichiers")
-    scripts = {"wikidata": "build_pays_wikidata.py", "bm": "build_pays_banquemondiale.py"}
+    scripts = {"wikidata": "build_pays_wikidata.py", "bm": "build_pays_banquemondiale.py",
+               "cotes": "build_pays_cotes.py"}
     for nom, script in scripts.items():
         manquants = set(liste) - set(sources[nom])
         en_trop = set(sources[nom]) - set(liste)
@@ -152,6 +161,9 @@ def main():
                                  if all(u != "" for u in unesco[:3]) else "")
         ligne["date_assemblage"] = aujourd_hui
         bm = sources["bm"].get(iso3, {})
+        if bm and "foret_pct" not in bm:
+            problemes.append("pays_banquemondiale.csv n'a pas la colonne foret_pct : "
+                             "relance build_pays_banquemondiale.py (nouvelle version)")
         if bm and "ppa_mn_par_dollar_int" not in bm:
             problemes.append("pays_banquemondiale.csv n'a pas les colonnes de prix : "
                              "relance build_pays_banquemondiale.py (nouvelle version)")

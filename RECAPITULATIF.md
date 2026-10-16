@@ -18,8 +18,8 @@
 ```
 dataviz-voyage/
 ├── data/
-│   ├── pays.csv                 FINAL - 1 ligne par pays (41), 33 colonnes : faits bruts
-│   ├── scores.csv               FINAL - notes du quiz 0-100 (5 axes) + distance depuis Paris
+│   ├── pays.csv                 FINAL - 1 ligne par pays (41), 39 colonnes : faits bruts
+│   ├── scores.csv               FINAL - notes du quiz 0-100 (6 axes) + distance depuis Paris
 │   ├── visas.csv                FINAL - 39 402 paires passeport -> destination
 │   ├── budget.csv               FINAL - format long : pays x niveau x catégorie (40 pays)
 │   ├── pays_liste.csv           saisie manuelle : les 41 pays, nom, région, choix de capitale/photo
@@ -27,7 +27,7 @@ dataviz-voyage/
 │   ├── saisie_budget.csv        relevé Budget Your Trip (format large)
 │   ├── corrections_visas.csv    41 vérifications manuelles avec source et date
 │   ├── corrections_unesco.csv   5 corrections justifiées du comptage UNESCO
-│   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, ILOSTAT)
+│   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, CIA Factbook, ILOSTAT)
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
 └── scripts/                     Python, bibliothèque standard (+ certifi)
 ```
@@ -35,11 +35,12 @@ dataviz-voyage/
 **Ordre d'exécution** (depuis la racine, `py` sous Windows) :
 1. `build_visas.py` : télécharge Passport Index, convertit et applique `corrections_visas.csv` → `visas.csv`
 2. `build_pays_wikidata.py` : SPARQL Wikidata (capitales, GPS, images, drapeaux, UNESCO) et API Commons (crédits photos)
-3. `build_pays_banquemondiale.py` : API Banque mondiale, 7 indicateurs
+3. `build_pays_banquemondiale.py` : API Banque mondiale, 8 indicateurs (dont la forêt)
+3 bis. `build_pays_cotes.py` : CIA World Factbook (archive JSON sur GitHub) : côtes, surface des terres, latitude du centre
 4. `build_pays_ilostat.py` : salaires ILOSTAT. **Testé puis écarté**, gardé comme preuve.
 5. `import_budget_collage.py` puis `build_budget.py` : budget Budget Your Trip → `budget.csv`
 6. `build_pays.py` : assemble `pays.csv`, avec des contrôles bloquants
-7. `build_scores.py` : calcule `scores.csv` et teste 5 profils de voyageurs
+7. `build_scores.py` : calcule `scores.csv` (6 axes) et teste 8 profils de voyageurs
 
 Le site charge directement les CSV de `data/` (par exemple avec `d3.csv()`). Les fichiers téléchargeables sont donc exactement ceux qui font tourner la page.
 
@@ -61,7 +62,7 @@ Types de données présents :
 - **booléen** : `dans_quiz`, `budget_dispo`.
 
 ### `pays.csv` : colonnes principales
-`iso3, iso2, nom_fr, region, capitale, lat, lon, description, image_url, image_auteur, image_licence, drapeau_url, unesco_culturel, unesco_naturel, unesco_mixte, unesco_total, zones_protegees_pct, densite_hab_km2, pop_urbaine_pct, pop_villes_1m_pct, rnb_hab_usd, niveau_prix, budget_dispo, budget_moyen_usd_jour, wikidata_qid, dans_quiz` (+ une colonne `annee_…` par indicateur).
+`iso3, iso2, nom_fr, region, capitale, lat, lon, description, image_url, image_auteur, image_licence, drapeau_url, unesco_culturel, unesco_naturel, unesco_mixte, unesco_total, zones_protegees_pct, densite_hab_km2, foret_pct, cotes_km, sans_littoral, superficie_terres_km2, lat_centre, pop_urbaine_pct, pop_villes_1m_pct, rnb_hab_usd, niveau_prix, budget_dispo, budget_moyen_usd_jour, wikidata_qid, dans_quiz` (+ une colonne `annee_…` par indicateur).
 
 ### `visas.csv`
 `passeport_iso3, destination_iso3, statut, jours, date_verification`. Valeurs de `statut` : `sans_visa`, `visa_arrivee`, `eta`, `e_visa`, `visa_requis`, `interdit`.
@@ -70,7 +71,7 @@ Types de données présents :
 `iso3, niveau (petit|moyen|confort), categorie (hebergement|transport|repas|activites), montant_usd_jour, total_site_usd, source_url, date_releve, date_maj_site`.
 
 ### `scores.csv`
-`iso3, score_culture, score_nature, score_villes, score_prix, score_distance, distance_paris_km`.
+`iso3, score_culture, score_nature, score_villes, score_prix, score_distance, score_mer, distance_paris_km, date_calcul`.
 
 ## 4. Sources et méthodes de collecte
 
@@ -79,11 +80,12 @@ Types de données présents :
 | Visas | Passport Index (dépôt GitHub imorte/passport-index-data, données du 18/02/2026) | téléchargement CSV + nettoyage | MIT |
 | Vérification des visas | France Diplomatie, fiches « Entrée / séjour » (sept.-oct. 2026), europa.eu pour l'UE | vérification manuelle des 40 destinations du passeport français | 38/40 concordantes, 2 corrigées (Thaïlande 30 j, Sri Lanka ETA) |
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
-| Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
+| Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
+| Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
 | Salaires (écartés) | ILOSTAT `EAR_EHRA_SEX_CUR_NB_A` | téléchargement bulk | voir les décisions |
 
-Quatre méthodes de collecte différentes : téléchargement, API REST, SPARQL, relevé manuel.
+Quatre méthodes de collecte différentes (5 sources) : téléchargement, API REST, SPARQL, relevé manuel.
 
 ## 5. Décisions et justifications (à reprendre dans la section technique)
 
@@ -98,15 +100,16 @@ Quatre méthodes de collecte différentes : téléchargement, API REST, SPARQL, 
 
 ## 6. Formule du quiz
 
-**5 axes, chacun ramené de 0 à 100 par rapport aux 41 pays** (le plus fort = 100) :
+**6 axes, chacun ramené de 0 à 100 par rapport aux 41 pays** (le plus fort = 100) :
 
 | Axe | Calcul |
 |---|---|
 | Culture | log(1 + sites UNESCO culturels + mixtes) |
-| Nature | ½ faible densité (log) + ¼ UNESCO naturels et mixtes (log) + ¼ zones protégées, puis ramené à 0-100 |
+| Nature | ½ « espaces naturels » + ¼ UNESCO naturels et mixtes (log) + ¼ zones protégées. « Espaces naturels » = le meilleur des deux entre faible densité (log) et forêt (% des terres) : grands espaces vides (Islande) **ou** pays peuplé mais très vert (Japon) |
 | Villes | % de la population dans les villes de plus d'un million d'habitants |
 | Prix | −log(niveau des prix) : 100 = le moins cher |
 | Distance | distance à vol d'oiseau Paris → capitale (haversine) |
+| Mer | chaleur × (½ log longueur des côtes + ½ log côtes par km² de terres). Chaleur : 1 jusqu'à 30° de latitude, 0 à partir de 60°, proportionnel entre les deux. Sans accès à la mer → 0 |
 
 **Comparaison joueur / pays (« le pays qui te ressemble »)** :
 - chaque réponse du quiz pousse un ou plusieurs axes vers une valeur souhaitée, avec un poids ;
@@ -114,15 +117,16 @@ Quatre méthodes de collecte différentes : téléchargement, API REST, SPARQL, 
 - ressemblance (%) = 100 × (1 − √(Σ importance × écart² / Σ importance × 100²)).
 
 **Tests effectués** :
-- 5 profils types donnent 5 pays différents, tous logiques (villes et culture, loin → Japon ; nature → Islande ; petit budget → Indonésie ; culture, pas loin → Italie ; prix seul → Égypte) ;
+- 8 profils types donnent 6 pays différents, tous logiques (villes et culture, loin → Japon ; nature sauvage → Islande ; petit budget → Indonésie ; culture, pas loin → Italie ; prix seul → Égypte ; plage et petit budget → Indonésie, Sri Lanka, Vietnam ; plage pas loin → Grèce ; villes et campagne verte → Japon) ;
 - simulation des 27 648 combinaisons du prototype : le Brésil, « bon partout », gagnait 32 % des parties avec la formule de base. Avec le correctif, il en gagne 23 %, et 40 pays sur 41 peuvent apparaître dans le top 3 ;
-- **prototype** : https://claude.ai/artifact/U5FEve1vN8HjjCZf1zpjH1 (8 questions en cartes, résultat avec radar). Le fichier est aussi dans `prototype/quiz-prototype.html` : il sert de référence pour la logique, pas pour le design.
+- **avec 6 axes et 9 questions** (110 592 combinaisons, 16/10/2026) : le Japon gagne 19,9 % des parties, le Brésil 12,4 %, l'Indonésie et la Grèce 7,5 % ; 35 pays peuvent gagner, 37/41 apparaissent dans un top 3 (jamais : Suisse, Jordanie, Kenya, Ghana). Le Japon gagne surtout quand on combine les grandes villes avec autre chose (gratte-ciel + musées : 44 %), rarement en nature pure (lac + randonnée : 7,5 %). **À surveiller** : c'est le nouveau pays « bon partout » (villes 100, nature 95, mer 88). Variantes testées et rejetées : densité + forêt en moyenne (l'Islande tombe à 53 en nature), longueur des côtes seule (la Grèce passe derrière le Maroc et l'Égypte) ;
+- **prototype** : https://claude.ai/artifact/U5FEve1vN8HjjCZf1zpjH1 (9 questions en cartes, dont une sur la mer, résultat avec radar à 6 axes). Le fichier est aussi dans `prototype/quiz-prototype.html` : il sert de référence pour la logique, pas pour le design.
 
 ## 7. Limites connues (à écrire sur la page)
 
 - **La culture se limite aux monuments** : la cuisine, la culture populaire et les fêtes ne sont pas mesurées. C'est pour ça que le Japon (« grandes villes + monuments » pour nos chiffres) ne sort pas forcément pour quelqu'un qui l'aime pour d'autres raisons.
-- **Pas de donnée sur la mer et les plages** : une réponse « plage » oriente vers des pays calmes et naturels. Piste : la longueur des côtes.
-- **La nature est vue à travers la densité** : la Suisse, la Corée et le Japon, très peuplés, ont des notes de nature faibles malgré leurs montagnes.
+- **La mer mesure un potentiel, pas des plages** : beaucoup de côtes et une latitude chaude. Pas de différence entre sable et falaises, pas de réputation : le Japon (88) et le Chili (74, courant froid) sont surévalués, la latitude du centre du pays ignore la Floride ou le Queensland.
+- **La nature** compte autant les grands espaces vides que les forêts. Les déserts peuplés sont pénalisés (Maroc 0, Égypte 14), la montagne n'est pas mesurée (la Suisse reste à 37). La forêt de la FAO inclut les savanes boisées (Sénégal 45 %).
 - **Les zones protégées** sont gonflées en Europe par Natura 2000. **Les villes** : le Sri Lanka est à 0 à cause de sa définition statistique très étroite de Colombo.
 - **Les visas** datent de février 2026, sauf pour le passeport français, vérifié en octobre 2026. Afficher la date sur la carte.
 - **Les notes sont relatives** à la sélection de 41 pays.
@@ -135,4 +139,4 @@ Quatre méthodes de collecte différentes : téléchargement, API REST, SPARQL, 
 4. Une visualisation à la fois, testée avant de passer à la suivante.
 5. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
 
-Questions ouvertes : ajouter la mer et les plages ? Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
+Questions ouvertes : Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?

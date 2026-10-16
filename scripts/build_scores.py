@@ -1,19 +1,29 @@
 """
 build_scores.py
 ---------------
-Calcule les 5 scores du quiz (0 à 100) pour chaque pays, à partir de data/pays.csv,
+Calcule les 6 scores du quiz (0 à 100) pour chaque pays, à partir de data/pays.csv,
 et écrit data/scores.csv. Les scores sont des données DÉRIVÉES : pays.csv garde
 les faits bruts, scores.csv nos choix de calcul (documentés ci-dessous).
 
-Les 5 axes :
+Les 6 axes :
   culture      sites UNESCO culturels + mixtes (logarithme : passer de 2 à 10 sites
                compte plus que de 50 à 58, l'Italie n'écrase pas tout)
-  nature       ½ faible densité de population + ¼ sites UNESCO naturels et mixtes
-               + ¼ zones terrestres protégées (la densité pèse le plus : les zones
-               protégées « sur le papier » avantagent l'Europe)
+  nature       ½ « espaces naturels » + ¼ sites UNESCO naturels et mixtes
+               + ¼ zones terrestres protégées.
+               « Espaces naturels » = le MEILLEUR des deux : faible densité de population
+               (grands espaces vides : Islande, Australie) OU forte couverture de forêt
+               (pays peuplés mais très verts : Japon, Corée, Costa Rica). Avec la densité
+               seule, un pays peuplé ne pouvait pas être « nature », même couvert de forêts.
   villes       part de la population dans des villes de plus d'un million d'habitants
   prix         niveau des prix inversé (100 = le moins cher), en logarithme
   distance     distance à vol d'oiseau entre Paris et la capitale (100 = le plus loin)
+  mer          chaleur × côtes. Côtes = ½ longueur des côtes + ½ côtes par km² de terres
+               (un archipel comme la Grèce compte autant qu'un très grand pays côtier).
+               Chaleur = d'après la latitude du centre du pays : 1 jusqu'à 30°, 0 à partir
+               de 60°, entre les deux proportionnellement (le Canada a les plus longues
+               côtes du monde, mais on ne s'y baigne pas). Sans accès à la mer -> 0.
+               Limite : mesure le POTENTIEL (beaucoup de côtes, latitude chaude), pas les
+               plages de sable ni la réputation ; les courants froids (Chili) sont ignorés.
 
 Chaque axe est ramené de 0 à 100 PAR RAPPORT AUX PAYS DE LA LISTE :
 le plus fort obtient 100, le plus faible 0. Un score est donc relatif à la sélection.
@@ -37,8 +47,9 @@ FICHIER_PAYS = RACINE / "data" / "pays.csv"
 FICHIER_SORTIE = RACINE / "data" / "scores.csv"
 
 PARIS = (48.8567, 2.3522)
-POIDS_NATURE = {"densite": 0.50, "unesco": 0.25, "protegees": 0.25}
-AXES = ["culture", "nature", "villes", "prix", "distance"]
+POIDS_NATURE = {"espaces": 0.50, "unesco": 0.25, "protegees": 0.25}
+LATITUDE_CHAUDE, LATITUDE_FROIDE = 30, 60
+AXES = ["culture", "nature", "villes", "prix", "distance", "mer"]
 
 
 # --- Outils ------------------------------------------------------------------------
@@ -47,6 +58,12 @@ def ramener_0_100(valeurs):
     """Le plus petit devient 0, le plus grand 100, le reste proportionnellement."""
     bas, haut = min(valeurs.values()), max(valeurs.values())
     return {k: 100 * (v - bas) / (haut - bas) for k, v in valeurs.items()}
+
+
+def chaleur(latitude):
+    """1 près de l'équateur (jusqu'à 30°), 0 au-delà de 60°, proportionnel entre les deux."""
+    lat = abs(latitude)
+    return min(1, max(0, (LATITUDE_FROIDE - lat) / (LATITUDE_FROIDE - LATITUDE_CHAUDE)))
 
 
 def distance_km(lat1, lon1, lat2, lon2):
@@ -63,21 +80,29 @@ def calculer(pays):
     culture = ramener_0_100({l["iso3"]: math.log1p(v(l, "unesco_culturel") + v(l, "unesco_mixte"))
                              for l in pays})
     densite = ramener_0_100({l["iso3"]: -math.log(v(l, "densite_hab_km2")) for l in pays})
+    foret = ramener_0_100({l["iso3"]: v(l, "foret_pct") for l in pays})
+    espaces = {k: max(densite[k], foret[k]) for k in densite}
     unesco_nat = ramener_0_100({l["iso3"]: math.log1p(v(l, "unesco_naturel") + v(l, "unesco_mixte"))
                                 for l in pays})
     protegees = ramener_0_100({l["iso3"]: v(l, "zones_protegees_pct") for l in pays})
-    nature = ramener_0_100({k: POIDS_NATURE["densite"] * densite[k]
+    nature = ramener_0_100({k: POIDS_NATURE["espaces"] * espaces[k]
                                + POIDS_NATURE["unesco"] * unesco_nat[k]
                                + POIDS_NATURE["protegees"] * protegees[k] for k in densite})
     villes = ramener_0_100({l["iso3"]: v(l, "pop_villes_1m_pct") for l in pays})
     prix = ramener_0_100({l["iso3"]: -math.log(v(l, "niveau_prix")) for l in pays})
     km = {l["iso3"]: distance_km(*PARIS, v(l, "lat"), v(l, "lon")) for l in pays}
     distance = ramener_0_100(km)
+    cotes = ramener_0_100({l["iso3"]: math.log1p(v(l, "cotes_km")) for l in pays})
+    cotes_par_surface = ramener_0_100({
+        l["iso3"]: math.log1p(1000 * v(l, "cotes_km") / v(l, "superficie_terres_km2")) for l in pays})
+    mer = ramener_0_100({l["iso3"]: chaleur(v(l, "lat_centre")) * (cotes[l["iso3"]]
+                                    + cotes_par_surface[l["iso3"]]) / 2 for l in pays})
     return {
         l["iso3"]: {
             "culture": culture[l["iso3"]], "nature": nature[l["iso3"]],
             "villes": villes[l["iso3"]], "prix": prix[l["iso3"]],
-            "distance": distance[l["iso3"]], "distance_paris_km": km[l["iso3"]],
+            "distance": distance[l["iso3"]], "mer": mer[l["iso3"]],
+            "distance_paris_km": km[l["iso3"]],
         } for l in pays
     }
 
@@ -96,6 +121,7 @@ def poids_effectif(souhait, importance):
 def compatibilite(profil, scores):
     """
     profil : {axe: (valeur souhaitée 0-100, importance 0-1)} ; importance 0 = « peu m'importe ».
+    Les axes absents du profil ne comptent pas.
     Renvoie un pourcentage : 100 % = le pays a exactement le profil souhaité.
     Même formule que sur le site (fonction compat du prototype).
     """
@@ -106,24 +132,32 @@ def compatibilite(profil, scores):
 
 
 PROFILS_TEST = {
+    # importance 0 = « peu m'importe » ; les axes absents ne comptent pas
     "Grandes villes et culture, loin":   {"culture": (80, 1), "nature": (30, .5), "villes": (100, 1),
                                           "prix": (40, .5), "distance": (90, .5)},
-    "Nature sauvage, budget peu importe": {"culture": (20, .5), "nature": (100, 1), "villes": (0, 1),
-                                          "prix": (0, 0), "distance": (50, 0)},
+    "Nature sauvage, budget peu importe": {"culture": (20, .5), "nature": (100, 1), "villes": (0, 1)},
     "Petit budget, dépaysement":         {"culture": (60, .5), "nature": (50, .5), "villes": (30, .5),
                                           "prix": (100, 1), "distance": (90, 1)},
     "Culture, pas trop loin":            {"culture": (100, 1), "nature": (40, .5), "villes": (40, .5),
                                           "prix": (50, .5), "distance": (10, 1)},
-    "Indifférent à tout sauf le prix":   {"culture": (50, 0), "nature": (50, 0), "villes": (50, 0),
-                                          "prix": (100, 1), "distance": (50, 0)},
+    "Indifférent à tout sauf le prix":   {"prix": (100, 1)},
+    "Plage et petit budget":             {"mer": (100, 1), "prix": (90, 1), "villes": (20, .5)},
+    "Plage, pas trop loin":              {"mer": (100, 1), "distance": (10, 1)},
+    "Grandes villes et campagne verte":  {"villes": (100, 1), "nature": (90, 1), "culture": (70, .5)},
 }
-
 
 # --- Programme principal -------------------------------------------------------------
 
 def main():
     if not FICHIER_PAYS.exists():
         sys.exit("data/pays.csv manquant : lance d'abord build_pays.py")
+    with FICHIER_PAYS.open(encoding="utf-8", newline="") as f:
+        colonnes = csv.DictReader(f).fieldnames
+    manque = [c for c in ["foret_pct", "cotes_km", "superficie_terres_km2", "lat_centre"]
+              if c not in colonnes]
+    if manque:
+        sys.exit(f"pays.csv n'a pas les colonnes {manque} : lance build_pays_banquemondiale.py, "
+                 "build_pays_cotes.py puis build_pays.py")
     with FICHIER_PAYS.open(encoding="utf-8", newline="") as f:
         pays = [l for l in csv.DictReader(f) if l["dans_quiz"] == "true"]
     noms = {l["iso3"]: l["nom_fr"] for l in pays}
@@ -146,8 +180,8 @@ def main():
         bas = ", ".join(f"{noms[k]} {scores[k][axe]:.0f}" for k in classes[-2:])
         print(f"{axe:9} : {haut}   …   {bas}")
 
-    print("\n=== Quelques pays (culture / nature / villes / prix / distance) ===")
-    for iso3 in ["JPN", "FRA", "ISL", "IND", "THA", "MAR", "USA", "NZL"]:
+    print("\n=== Quelques pays (" + " / ".join(AXES) + ") ===")
+    for iso3 in ["JPN", "FRA", "ISL", "IND", "THA", "GRC", "MAR", "USA", "NZL", "CHE"]:
         if iso3 in scores:
             print(f"  {noms[iso3]:14} " + " / ".join(f"{scores[iso3][a]:3.0f}" for a in AXES))
 
@@ -155,7 +189,7 @@ def main():
     for nom, profil in PROFILS_TEST.items():
         classement = sorted(scores, key=lambda k: -compatibilite(profil, scores[k]))
         top = ", ".join(f"{noms[k]} ({compatibilite(profil, scores[k]):.0f} %)" for k in classement[:3])
-        print(f"  {nom:36} -> {top}")
+        print(f"  {nom:35} -> {top}")
 
     gagnants = {}
     for profil in PROFILS_TEST.values():

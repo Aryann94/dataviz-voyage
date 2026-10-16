@@ -7,6 +7,7 @@ de data/pays_liste.csv et écrit data/intermediaire/pays_banquemondiale.csv.
 Indicateurs retenus (dernière valeur disponible, année conservée) :
     ER.LND.PTLD.ZS    zones terrestres protégées (% du territoire)        -> axe « nature »
     EN.POP.DNST       densité de population (hab./km²)                   -> axe « nature »
+    AG.LND.FRST.ZS    surface forestière (% des terres)                  -> axe « nature »
     SP.URB.TOTL.IN.ZS population urbaine (% de la population)            -> axe « villes »
     EN.URB.MCTY.TL.ZS population des agglomérations > 1 million (%)      -> axe « villes »
     NY.GNP.PCAP.CD    revenu national brut par habitant ($ US, Atlas)    -> visu 3 (effort)
@@ -48,6 +49,9 @@ INDICATEURS = {
     "EN.URB.MCTY.TL.ZS": ("pop_villes_1m_pct", "annee_pop_villes_1m", 1),
     # habitants par km² (faible = grands espaces : Islande, Canada, Australie...)
     "EN.POP.DNST": ("densite_hab_km2", "annee_densite", 1),
+    # % des terres couvertes de forêt (FAO) : un pays peuplé peut rester très vert
+    # (Japon, Corée), ce que la densité seule ne voit pas
+    "AG.LND.FRST.ZS": ("foret_pct", "annee_foret", 1),
     # revenu national brut par habitant, méthode Atlas, dollars US courants
     # -> mesure de l'« effort » d'un voyage (choisi à la place des salaires ILOSTAT,
     #    incomplets et non comparables entre pays : voir la section technique)
