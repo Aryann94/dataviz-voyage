@@ -1,0 +1,627 @@
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 1000,
+  "total": 41,
+  "sourceid": null,
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "AE",
+    "value": "United Arab Emirates"
+   },
+   "countryiso3code": "ARE",
+   "date": "2025",
+   "value": 85.9617641324017,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "AR",
+    "value": "Argentina"
+   },
+   "countryiso3code": "ARG",
+   "date": "2025",
+   "value": 92.3519221615173,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "AU",
+    "value": "Australia"
+   },
+   "countryiso3code": "AUS",
+   "date": "2025",
+   "value": 87.7192672666333,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "BR",
+    "value": "Brazil"
+   },
+   "countryiso3code": "BRA",
+   "date": "2025",
+   "value": 88.1772996487898,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CA",
+    "value": "Canada"
+   },
+   "countryiso3code": "CAN",
+   "date": "2025",
+   "value": 82.8757020253886,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CH",
+    "value": "Switzerland"
+   },
+   "countryiso3code": "CHE",
+   "date": "2025",
+   "value": 85.7272157802756,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CL",
+    "value": "Chile"
+   },
+   "countryiso3code": "CHL",
+   "date": "2025",
+   "value": 89.1772830019223,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CN",
+    "value": "China"
+   },
+   "countryiso3code": "CHN",
+   "date": "2025",
+   "value": 66.3429910348272,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CO",
+    "value": "Colombia"
+   },
+   "countryiso3code": "COL",
+   "date": "2025",
+   "value": 78.7827914751151,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "CR",
+    "value": "Costa Rica"
+   },
+   "countryiso3code": "CRI",
+   "date": "2025",
+   "value": 79.7268137993004,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "EG",
+    "value": "Egypt, Arab Rep."
+   },
+   "countryiso3code": "EGY",
+   "date": "2025",
+   "value": 42.9043204925248,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "ES",
+    "value": "Spain"
+   },
+   "countryiso3code": "ESP",
+   "date": "2025",
+   "value": 80.5149251039138,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": 78.8449650563584,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "GB",
+    "value": "United Kingdom"
+   },
+   "countryiso3code": "GBR",
+   "date": "2025",
+   "value": 83.323608078271,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "GH",
+    "value": "Ghana"
+   },
+   "countryiso3code": "GHA",
+   "date": "2025",
+   "value": 58.9246861473125,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "GR",
+    "value": "Greece"
+   },
+   "countryiso3code": "GRC",
+   "date": "2025",
+   "value": 79.2246082848537,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "HR",
+    "value": "Croatia"
+   },
+   "countryiso3code": "HRV",
+   "date": "2025",
+   "value": 57.8144543604143,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "HU",
+    "value": "Hungary"
+   },
+   "countryiso3code": "HUN",
+   "date": "2025",
+   "value": 70.6936831786278,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "ID",
+    "value": "Indonesia"
+   },
+   "countryiso3code": "IDN",
+   "date": "2025",
+   "value": 59.3929063969984,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "IN",
+    "value": "India"
+   },
+   "countryiso3code": "IND",
+   "date": "2025",
+   "value": 35.689155772396,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "IS",
+    "value": "Iceland"
+   },
+   "countryiso3code": "ISL",
+   "date": "2025",
+   "value": 94.2179320191117,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "IT",
+    "value": "Italy"
+   },
+   "countryiso3code": "ITA",
+   "date": "2025",
+   "value": 69.680861801678,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "JO",
+    "value": "Jordan"
+   },
+   "countryiso3code": "JOR",
+   "date": "2025",
+   "value": 93.2085150119551,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "JP",
+    "value": "Japan"
+   },
+   "countryiso3code": "JPN",
+   "date": "2025",
+   "value": 92.3001449420786,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "KE",
+    "value": "Kenya"
+   },
+   "countryiso3code": "KEN",
+   "date": "2025",
+   "value": 32.2121192871745,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "KR",
+    "value": "Korea, Rep."
+   },
+   "countryiso3code": "KOR",
+   "date": "2025",
+   "value": 81.1740263306674,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "LA",
+    "value": "Lao PDR"
+   },
+   "countryiso3code": "LAO",
+   "date": "2025",
+   "value": 40.3129835040701,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "LK",
+    "value": "Sri Lanka"
+   },
+   "countryiso3code": "LKA",
+   "date": "2025",
+   "value": 20.4501355167937,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "MA",
+    "value": "Morocco"
+   },
+   "countryiso3code": "MAR",
+   "date": "2025",
+   "value": 63.1278612260269,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "MX",
+    "value": "Mexico"
+   },
+   "countryiso3code": "MEX",
+   "date": "2025",
+   "value": 80.0408930629723,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "NP",
+    "value": "Nepal"
+   },
+   "countryiso3code": "NPL",
+   "date": "2025",
+   "value": 66.999424884859,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "NZ",
+    "value": "New Zealand"
+   },
+   "countryiso3code": "NZL",
+   "date": "2025",
+   "value": 83.9978515774731,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2025",
+   "value": 85.5963484845463,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "PT",
+    "value": "Portugal"
+   },
+   "countryiso3code": "PRT",
+   "date": "2025",
+   "value": 61.4953199318985,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "SN",
+    "value": "Senegal"
+   },
+   "countryiso3code": "SEN",
+   "date": "2025",
+   "value": 55.7672494455246,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "TH",
+    "value": "Thailand"
+   },
+   "countryiso3code": "THA",
+   "date": "2025",
+   "value": 62.7993377136296,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "TR",
+    "value": "Turkiye"
+   },
+   "countryiso3code": "TUR",
+   "date": "2025",
+   "value": 89.494060002186,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "TZ",
+    "value": "Tanzania"
+   },
+   "countryiso3code": "TZA",
+   "date": "2025",
+   "value": 36.8833115936643,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "US",
+    "value": "United States"
+   },
+   "countryiso3code": "USA",
+   "date": "2025",
+   "value": 80.1921733027869,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "VN",
+    "value": "Viet Nam"
+   },
+   "countryiso3code": "VNM",
+   "date": "2025",
+   "value": 38.8299160351294,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "SP.URB.TOTL.IN.ZS",
+    "value": "Urban population (% of total population)"
+   },
+   "country": {
+    "id": "ZA",
+    "value": "South Africa"
+   },
+   "countryiso3code": "ZAF",
+   "date": "2025",
+   "value": 63.8154011002522,
+   "obs_status": "",
+   "decimal": 0
+  }
+ ]
+]

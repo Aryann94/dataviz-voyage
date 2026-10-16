@@ -1,0 +1,1859 @@
+{
+ "head": {
+  "vars": [
+   "iso3",
+   "pays",
+   "iso2",
+   "cap",
+   "capLabel",
+   "rang",
+   "coord",
+   "capImage",
+   "drapeau"
+  ]
+ },
+ "results": {
+  "bindings": [
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q61"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Washington"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q30"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-77.036666666 38.895)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20view%20of%20White%20House%20and%20downtown%2C%20Washington%2C%20D.C%20LCCN2010630891.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "USA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "US"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20States%20%28DDD-F-416E%20specifications%29.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q70"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Berne"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q39"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(7.44743 46.94798)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Bern%20luftaufnahme.png"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "CHE"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CH"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Switzerland.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q84"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Londres"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q145"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-0.1275 51.507222222)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/London%20Skyline%20%28125508655%29.jpeg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "GBR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "GB"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Kingdom%20%283-5%29.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q90"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Paris"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q142"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(2.352222222 48.856666666)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Tour%20Eiffel%20vue%20de%20la%20Tour%20Saint-Jacques%2C%20Paris%20ao%C3%BBt%202014%20%282%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "FRA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "FR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20France.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q85"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Le Caire"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q79"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(31.235833333 30.044444444)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cairo%20Skyline%20%282020%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "EGY"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "EG"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Egypt.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q220"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Rome"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q38"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(12.482777777 41.893055555)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Rome%20Skyline%20%288012016319%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ITA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "IT"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Italy.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q597"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Lisbonne"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q45"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-9.139016 38.708042)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Lisboa837.png"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "PRT"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "PT"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Portugal%20%28official%29.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q987"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "New Delhi"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q668"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(77.208888888 28.613888888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/India%20Gate%20Legendary%20Saga%20Of%20Supreme%20Sacrifice.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "IND"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "IN"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20India.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1489"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Mexico"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q96"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-99.13589 19.353773)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Sobrevuelos%20CDMX%20HJ2A5091%20%2840386338731%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "MEX"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "MX"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mexico.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1486"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Buenos Aires"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q414"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-58.381944444 -34.599722222)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Vista%20a%C3%A9rea%20de%20la%20Plaza%20del%20Congreso%2010.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ARG"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "AR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Argentina.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q956"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Pékin"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q148"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(116.407526 39.90403)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Skyline%20of%20Beijing%20CBD%20with%20B-5906%20approaching%20%2820211016171955%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "CHN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CN"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20People%27s%20Republic%20of%20China.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1524"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Athènes"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q41"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(23.728055555 37.984166666)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Akropolis%202015.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "GRC"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "GR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1524"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Athènes"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q41"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(23.728055555 37.984166666)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Akropolis%202015.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "GRC"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "GR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1435"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Zagreb"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q224"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(15.977222222 45.813055555)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Zagreb%20%2829255640143%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "HRV"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "HR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Croatia.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1490"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Tokyo"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q17"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(139.691666666 35.689444444)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Skyscrapers%20of%20Shinjuku%202009%20January%20%28revised%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "JPN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "JP"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1764"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Reykjavik"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q189"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-21.935 64.1475)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Reykjav%C3%ADk%205545%20%28cropped%29.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ISL"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "IS"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iceland.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1781"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Budapest"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q28"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(19.040833333 47.498333333)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Budapest%2C%20Hungary%20%28explored%29%20%2814995308504%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "HUN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "HU"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Hungary.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q2841"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Bogota"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q739"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-74.08175 4.60971)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Centro%20internacional.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "COL"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CO"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1861"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Bangkok"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q869"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(100.516666666 13.75)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20the%20Emerald%20of%20buddha%20or%20Wat%20Phra%20Kaew%20%28cropped%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "THA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "TH"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Thailand.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q2844"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Brasilia"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q155"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-47.882777777 -15.793888888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Planalto%20Central%20%28cropped%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "BRA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "BR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brazil.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1519"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Abou Dabi"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q878"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(54.396944444 24.451111111)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8%20%28Abu%20Dhabi%29%20-%20panoramio%20%281%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ARE"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "AE"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Arab%20Emirates.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1858"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Hanoï"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q881"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(105.84117 21.0245)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A1p%20R%C3%B9a%20-%20NKS.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "VNM"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "VN"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vietnam.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q2868"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Lima"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q419"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-77.0375 -12.06)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Plaza%20Mayor%20de%20Lima-1.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "PER"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "PE"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Peru.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1930"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Ottawa"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q16"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-75.695 45.424722222)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Ottawa%20Montage%202020.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "CAN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Canada%20%28Pantone%29.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3551"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Rabat"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1028"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-6.841388888 34.021111111)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Kasbah%20des%20Oudaias%20P1060356.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "MAR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "MA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Morocco.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3640"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Ankara"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q43"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(32.83869 39.93576)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Ankara%20%2816290014657%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "TUR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "TR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkey.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3761"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Accra"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q117"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-0.1969 5.55602)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Accra%20town.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "GHA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "GH"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ghana.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q2887"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Santiago"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q298"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-70.65 -33.4375)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Santiago%20de%20Chile%2C%20Desde%20Cerro%20San%20Crist%C3%B3bal%20%28cropped%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "CHL"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CL"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Chile.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3630"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Jakarta"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q252"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(106.826944444 -6.175277777)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Jakarta.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "IDN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "ID"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Indonesia.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3805"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Amman"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q810"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(35.933333333 31.95)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Amman.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "JOR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "JO"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jordan.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3805"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Amman"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q810"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(35.926084 31.930983)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Amman.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "JOR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "JO"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jordan.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q2807"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Madrid"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q29"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-3.703333333 40.416944444)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Madrid%20%2838624991251%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ESP"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "ES"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Spain.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3718"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Dakar"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q1041"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-17.432 14.672555555)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Pointe%20des%20Almadies%20-%20Senegal.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "SEN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "SN"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Senegal.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q8684"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Séoul"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q884"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(126.99 37.56)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98%20%EA%B0%80%EC%9D%84.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "KOR"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "KR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Korea.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3037"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Katmandou"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q837"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(85.32 27.71)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Kathmandu%20Avion%2001.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "NPL"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "NP"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q9326"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Vientiane"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q819"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(102.63 17.98)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/20171118%20Vientiane%203220%20DxO.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "LAO"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "LA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Laos.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q37701"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Bloemfontein"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q258"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(26.216666666 -29.1)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Bloemfontein%2C%20Free%20State%2C%20South%20Africa%20%2820351086709%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ZAF"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "ZA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3866"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Dodoma"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q924"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(35.746 -6.1835)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Scene%20at%20Nyerere%20Square%2C%20Dodoma%20City.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "TZA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "TZ"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tanzania.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3070"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "San José"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q800"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(-84.079613888 9.932738888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Cityscape%20of%20San%20Jos%C3%A9%2C%20Costa%20Rica%20%28253552473%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "CRI"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "CR"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Costa%20Rica.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3870"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Nairobi"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q114"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(36.817222222 -1.286388888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Nairobi%2C%20view%20from%20KICC.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "KEN"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "KE"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q23661"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Wellington"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q664"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(174.777222222 -41.288888888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/WellingtonPanorama.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "NZL"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "NZ"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20New%20Zealand.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3114"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Canberra"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q408"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#PreferredRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(149.126944444 -35.293055555)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Canberra%20from%20Mt%20Ainslie%20%285642431515%29.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "AUS"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "AU"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Australia%20%28converted%29.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q3926"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Pretoria"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q258"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(28.188055555 -25.746388888)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Pretoria%20CBD1.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ZAF"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "ZA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q41963"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Sri Jayawardenapura"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q854"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(79.916388888 6.9)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Fountain%20at%20Diyatha%20Uyana.JPG"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "LKA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "LK"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q5465"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Le Cap"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q258"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(18.423888888 -33.925277777)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Ciudad%20del%20Cabo%20desde%20Cabeza%20de%20Le%C3%B3n%2C%20Sud%C3%A1frica%2C%202018-07-22%2C%20DD%2034.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "ZAF"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "ZA"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg"
+    }
+   },
+   {
+    "cap": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q35381"
+    },
+    "capLabel": {
+     "xml:lang": "fr",
+     "type": "literal",
+     "value": "Colombo"
+    },
+    "pays": {
+     "type": "uri",
+     "value": "http://www.wikidata.org/entity/Q854"
+    },
+    "rang": {
+     "type": "uri",
+     "value": "http://wikiba.se/ontology#NormalRank"
+    },
+    "coord": {
+     "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+     "type": "literal",
+     "value": "Point(79.860555555 6.926666666)"
+    },
+    "capImage": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Colombo%20skyline%202024.jpg"
+    },
+    "iso3": {
+     "type": "literal",
+     "value": "LKA"
+    },
+    "iso2": {
+     "type": "literal",
+     "value": "LK"
+    },
+    "drapeau": {
+     "type": "uri",
+     "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg"
+    }
+   }
+  ]
+ }
+}

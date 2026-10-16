@@ -1,0 +1,520 @@
+=== france ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$55
+(€49)	$173
+(€152)	$625
+(€549)
+Local Transportation1	$14
+(€12)	$34
+(€30)	$84
+(€74)
+Food2	$33
+(€29)	$81
+(€71)	$196
+(€172)
+Entertainment1	$13
+(€12)	$36
+(€31)	$101
+(€89)
+Alcohol2	$4-13
+(€4-11)	$11-32
+(€10-29)	$29-86
+(€25-75)
+
+Travel Costs Last Updated: Jul 19, 2026
+
+=== italy ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$40
+(€35)	$99
+(€87)	$245
+(€215)
+Local Transportation1	$12
+(€11)	$31
+(€27)	$82
+(€72)
+Food2	$35
+(€31)	$87
+(€76)	$210
+(€184)
+Entertainment1	$12
+(€10)	$30
+(€27)	$82
+(€72)
+Alcohol2	$4-12
+(€4-11)	$10-30
+(€9-27)	$25-75
+(€22-66)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== portugal ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$29
+(€26)	$70
+(€62)	$157
+(€138)
+Local Transportation1	$12
+(€10)	$30
+(€27)	$78
+(€69)
+Food2	$31
+(€28)	$76
+(€67)	$170
+(€150)
+Entertainment1	$9.80
+(€8.61)	$25
+(€22)	$63
+(€55)
+Alcohol2	$4-11
+(€3-10)	$9-28
+(€8-25)	$21-64
+(€19-57)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== greece ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$38
+(€34)	$98
+(€86)	$255
+(€224)
+Local Transportation1	$17
+(€15)	$42
+(€37)	$103
+(€91)
+Food2	$38
+(€33)	$92
+(€81)	$217
+(€191)
+Entertainment1	$14
+(€12)	$34
+(€29)	$80
+(€70)
+Alcohol2	$5-15
+(€4-13)	$12-36
+(€11-32)	$28-85
+(€25-75)
+
+Travel Costs Last Updated: Jul 10, 2026
+
+=== switzerland ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$75
+(Sfr62)	$184
+(Sfr153)	$440
+(Sfr364)
+Local Transportation1	$17
+(Sfr14)	$42
+(Sfr35)	$101
+(Sfr84)
+Food2	$47
+(Sfr39)	$114
+(Sfr94)	$258
+(Sfr214)
+Entertainment1	$25
+(Sfr20)	$62
+(Sfr51)	$154
+(Sfr128)
+Alcohol2	$6-18
+(Sfr5-15)	$14-43
+(Sfr12-36)	$31-92
+(Sfr25-76)
+
+Travel Costs Last Updated: Aug 26, 2026
+
+=== hungary ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$19
+(Ft6,149)	$48
+(Ft15,806)	$126
+(Ft41,370)
+Local Transportation1	$5.29
+(Ft1,733)	$13
+(Ft4,289)	$31
+(Ft10,286)
+Food2	$16
+(Ft5,286)	$41
+(Ft13,345)	$102
+(Ft33,545)
+Entertainment1	$6.68
+(Ft2,188)	$17
+(Ft5,639)	$45
+(Ft14,844)
+Alcohol2	$2-7
+(Ft790-2,371)	$6-19
+(Ft2,105-6,314)	$18-54
+(Ft5,920-17,760)
+
+Travel Costs Last Updated: Aug 27, 2026
+
+=== thailand ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$14
+(฿463)	$37
+(฿1,244)	$106
+(฿3,560)
+Local Transportation1	$4.53
+(฿152)	$13
+(฿438)	$42
+(฿1,415)
+Food2	$12
+(฿386)	$29
+(฿985)	$75
+(฿2,529)
+Entertainment1	$7.38
+(฿247)	$20
+(฿671)	$58
+(฿1,956)
+Alcohol2	$2-5
+(฿59-176)	$4-13
+(฿150-450)	$12-35
+(฿387-1,160)
+
+Travel Costs Last Updated: Jul 15, 2026
+
+=== vietnam ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$9.50
+(d246,813)	$26
+(d679,806)	$78
+(d2,036,256)
+Local Transportation1	$4.16
+(d107,993)	$11
+(d290,088)	$32
+(d829,976)
+Food2	$8.58
+(d222,868)	$21
+(d556,072)	$52
+(d1,359,952)
+Entertainment1	$4.99
+(d129,663)	$13
+(d339,734)	$36
+(d925,572)
+Alcohol2	$2-5
+(d41,850-125,550)	$4-12
+(d103,318-309,953)	$9-28
+(d246,244-738,733)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== indonesia ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$10
+(Rp181,061)	$29
+(Rp523,833)	$95
+(Rp1,702,014)
+Local Transportation1	$2.56
+(Rp45,891)	$7.94
+(Rp142,109)	$28
+(Rp508,775)
+Food2	$9.00
+(Rp160,981)	$23
+(Rp417,499)	$62
+(Rp1,113,560)
+Entertainment1	$3.18
+(Rp56,919)	$8.65
+(Rp154,739)	$25
+(Rp452,736)
+Alcohol2	$1-3
+(Rp16,006-48,018)	$2-7
+(Rp38,888-116,665)	$5-15
+(Rp88,986-266,957)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== nepal ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$4.80
+(NP₨743)	$14
+(NP₨2,232)	$50
+(NP₨7,665)
+Local Transportation1	$3.27
+(NP₨506)	$8.88
+(NP₨1,374)	$26
+(NP₨4,018)
+Food2	$5.17
+(NP₨799)	$12
+(NP₨1,899)	$26
+(NP₨4,090)
+Entertainment1	$2.72
+(NP₨421)	$7.13
+(NP₨1,102)	$19
+(NP₨2,995)
+Alcohol2	$1-3
+(NP₨164-493)	$3-8
+(NP₨398-1,195)	$6-18
+(NP₨909-2,728)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== united-arab-emirates ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$61
+(AED224)	$159
+(AED585)	$432
+(AED1,587)
+Local Transportation1	$5.91
+(AED22)	$16
+(AED60)	$49
+(AED180)
+Food2	$34
+(AED125)	$85
+(AED313)	$210
+(AED771)
+Entertainment1	$11
+(AED39)	$29
+(AED107)	$87
+(AED318)
+Alcohol2	$4-12
+(AED15-45)	$10-29
+(AED36-107)	$21-62
+(AED75-226)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== jordan ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$23
+(JOD17)	$55
+(JOD39)	$115
+(JOD82)
+Local Transportation1	$10
+(JOD7.10)	$23
+(JOD16)	$47
+(JOD33)
+Food2	$25
+(JOD18)	$60
+(JOD43)	$137
+(JOD97)
+Entertainment1	$19
+(JOD14)	$45
+(JOD32)	$93
+(JOD66)
+Alcohol2	$3-9
+(JOD2-6)	$7-20
+(JOD5-14)	$14-41
+(JOD10-29)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== morocco ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$14
+(MAD143)	$39
+(MAD390)	$116
+(MAD1,151)
+Local Transportation1	$3.72
+(MAD37)	$10.00
+(MAD99)	$29
+(MAD284)
+Food2	$12
+(MAD124)	$30
+(MAD301)	$70
+(MAD690)
+Entertainment1	$4.12
+(MAD41)	$11
+(MAD105)	$28
+(MAD276)
+Alcohol2	$2-6
+(MAD21-64)	$5-15
+(MAD50-151)	$11-33
+(MAD108-324)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== tanzania ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$18
+(TZS46,131)	$48
+(TZS125,857)	$141
+(TZS370,616)
+Local Transportation1	$5.78
+(TZS15,184)	$15
+(TZS38,333)	$37
+(TZS96,363)
+Food2	$15
+(TZS39,986)	$39
+(TZS101,439)	$98
+(TZS257,851)
+Entertainment1	$16
+(TZS41,020)	$41
+(TZS107,530)	$112
+(TZS293,240)
+Alcohol2	$2-6
+(TZS4,914-14,742)	$5-14
+(TZS12,408-37,223)	$12-36
+(TZS31,199-93,598)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== ghana ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$4.22
+(GH¢49)	$12
+(GH¢135)	$34
+(GH¢402)
+Local Transportation1	$4.17
+(GH¢49)	$10
+(GH¢118)	$22
+(GH¢263)
+Food2	$4.52
+(GH¢53)	$12
+(GH¢143)	$35
+(GH¢410)
+Entertainment1	$1.37
+(GH¢16)	$3.23
+(GH¢38)	$6.77
+(GH¢79)
+Alcohol2	$1-2
+(GH¢8-23)	$2-5
+(GH¢21-62)	$5-15
+(GH¢58-173)
+
+Travel Costs Last Updated: Aug 27, 2026
+
+=== canada ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$32
+(CA$45)	$90
+(CA$128)	$281
+(CA$401)
+Local Transportation1	$8.09
+(CA$12)	$22
+(CA$31)	$62
+(CA$88)
+Food2	$23
+(CA$33)	$61
+(CA$88)	$176
+(CA$250)
+Entertainment1	$9.02
+(CA$13)	$23
+(CA$33)	$62
+(CA$88)
+Alcohol2	$3-9
+(CA$4-13)	$8-24
+(CA$12-35)	$22-66
+(CA$31-94)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== costa-rica ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$26
+(₡11,935)	$67
+(₡30,380)	$171
+(₡77,814)
+Local Transportation1	$11
+(₡4,849)	$29
+(₡13,102)	$83
+(₡37,895)
+Food2	$19
+(₡8,761)	$47
+(₡21,151)	$105
+(₡47,594)
+Entertainment1	$14
+(₡6,394)	$35
+(₡15,998)	$87
+(₡39,375)
+Alcohol2	$3-9
+(₡1,348-4,044)	$7-21
+(₡3,250-9,750)	$16-48
+(₡7,286-21,857)
+
+Travel Costs Last Updated: Oct 14, 2026
+
+=== colombia ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$6.17
+(CO$20,403)	$17
+(CO$57,142)	$53
+(CO$176,163)
+Local Transportation1	$3.28
+(CO$10,861)	$9.26
+(CO$30,653)	$29
+(CO$95,720)
+Food2	$8.81
+(CO$29,152)	$23
+(CO$76,089)	$62
+(CO$205,674)
+Entertainment1	$6.51
+(CO$21,542)	$17
+(CO$55,826)	$45
+(CO$148,661)
+Alcohol2	$2-6
+(CO$6,764-20,291)	$5-16
+(CO$17,843-53,528)	$15-45
+(CO$49,279-147,838)
+
+Travel Costs Last Updated: Aug 26, 2026
+
+=== peru ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$9.41
+(S/.33)	$27
+(S/.94)	$88
+(S/.305)
+Local Transportation1	$3.02
+(S/.10)	$9.04
+(S/.31)	$31
+(S/.107)
+Food2	$11
+(S/.39)	$29
+(S/.99)	$75
+(S/.261)
+Entertainment1	$9.11
+(S/.31)	$25
+(S/.86)	$73
+(S/.253)
+Alcohol2	$2-6
+(S/.7-20)	$5-15
+(S/.17-52)	$14-41
+(S/.48-143)
+
+Travel Costs Last Updated: Aug 28, 2026
+
+=== argentina ===
+Category	Budget	Mid-Range	Luxury
+Accommodation1
+For 1 person in double occupancy	$18
+(AR$27,887)	$42
+(AR$64,377)	$83
+(AR$127,060)
+Local Transportation1	$1.24
+(AR$1,892)	$2.86
+(AR$4,362)	$5.62
+(AR$8,576)
+Food2	$2.42
+(AR$3,687)	$5.71
+(AR$8,705)	$12
+(AR$18,401)
+Entertainment1	$11
+(AR$16,724)	$26
+(AR$38,979)	$52
+(AR$79,276)
+Alcohol2	$1-4
+(AR$2,200-6,600)	$4-11
+(AR$5,578-16,735)	$9-28
+(AR$14,164-42,492)
+
+Travel Costs Last Updated: Aug 26, 2026
+

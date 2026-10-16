@@ -1,0 +1,124 @@
+iso3,nom_fr,nom_en,niveau,hebergement,transport,repas,activites,total_site,url,date_releve,date_maj_site
+FRA,France,France,petit,55.0,14.0,33.0,13.0,,https://www.budgetyourtrip.com/france,2026-10-16,2026-07-19
+FRA,France,France,moyen,173.0,34.0,81.0,36.0,,https://www.budgetyourtrip.com/france,2026-10-16,2026-07-19
+FRA,France,France,confort,625.0,84.0,196.0,101.0,,https://www.budgetyourtrip.com/france,2026-10-16,2026-07-19
+ESP,Espagne,Spain,petit,32,13,31,12,83,https://www.budgetyourtrip.com/spain,2026-10-16,2026-08-26
+ESP,Espagne,Spain,moyen,78,33,79,30,211,https://www.budgetyourtrip.com/spain,2026-10-16,2026-08-26
+ESP,Espagne,Spain,confort,190,81,194,70,535,https://www.budgetyourtrip.com/spain,2026-10-16,2026-08-26
+ITA,Italie,Italy,petit,40.0,12.0,35.0,12.0,,https://www.budgetyourtrip.com/italy,2026-10-16,2026-08-28
+ITA,Italie,Italy,moyen,99.0,31.0,87.0,30.0,,https://www.budgetyourtrip.com/italy,2026-10-16,2026-08-28
+ITA,Italie,Italy,confort,245.0,82.0,210.0,82.0,,https://www.budgetyourtrip.com/italy,2026-10-16,2026-08-28
+PRT,Portugal,Portugal,petit,29.0,12.0,31.0,9.8,,https://www.budgetyourtrip.com/portugal,2026-10-16,2026-08-28
+PRT,Portugal,Portugal,moyen,70.0,30.0,76.0,25.0,,https://www.budgetyourtrip.com/portugal,2026-10-16,2026-08-28
+PRT,Portugal,Portugal,confort,157.0,78.0,170.0,63.0,,https://www.budgetyourtrip.com/portugal,2026-10-16,2026-08-28
+GRC,Grèce,Greece,petit,38.0,17.0,38.0,14.0,,https://www.budgetyourtrip.com/greece,2026-10-16,2026-07-10
+GRC,Grèce,Greece,moyen,98.0,42.0,92.0,34.0,,https://www.budgetyourtrip.com/greece,2026-10-16,2026-07-10
+GRC,Grèce,Greece,confort,255.0,103.0,217.0,80.0,,https://www.budgetyourtrip.com/greece,2026-10-16,2026-07-10
+GBR,Royaume-Uni,United Kingdom,petit,40,15,33,14,93,https://www.budgetyourtrip.com/united-kingdom,2026-10-16,2026-08-26
+GBR,Royaume-Uni,United Kingdom,moyen,102,39,82,36,237,https://www.budgetyourtrip.com/united-kingdom,2026-10-16,2026-08-26
+GBR,Royaume-Uni,United Kingdom,confort,259,103,203,96,610,https://www.budgetyourtrip.com/united-kingdom,2026-10-16,2026-08-26
+ISL,Islande,Iceland,petit,44,14,27,18,114,https://www.budgetyourtrip.com/iceland,2026-10-16,2026-08-27
+ISL,Islande,Iceland,moyen,108,35,66,48,265,https://www.budgetyourtrip.com/iceland,2026-10-16,2026-08-27
+ISL,Islande,Iceland,confort,253,81,152,140,615,https://www.budgetyourtrip.com/iceland,2026-10-16,2026-08-27
+HRV,Croatie,Croatia,petit,29,7.06,29,6.09,67,https://www.budgetyourtrip.com/croatia,2026-10-16,2026-08-24
+HRV,Croatie,Croatia,moyen,72,18,72,16,169,https://www.budgetyourtrip.com/croatia,2026-10-16,2026-08-24
+HRV,Croatie,Croatia,confort,180,49,185,40,426,https://www.budgetyourtrip.com/croatia,2026-10-16,2026-08-24
+CHE,Suisse,Switzerland,petit,75.0,17.0,47.0,25.0,,https://www.budgetyourtrip.com/switzerland,2026-10-16,2026-08-26
+CHE,Suisse,Switzerland,moyen,184.0,42.0,114.0,62.0,,https://www.budgetyourtrip.com/switzerland,2026-10-16,2026-08-26
+CHE,Suisse,Switzerland,confort,440.0,101.0,258.0,154.0,,https://www.budgetyourtrip.com/switzerland,2026-10-16,2026-08-26
+HUN,Hongrie,Hungary,petit,19.0,5.29,16.0,6.68,,https://www.budgetyourtrip.com/hungary,2026-10-16,2026-08-27
+HUN,Hongrie,Hungary,moyen,48.0,13.0,41.0,17.0,,https://www.budgetyourtrip.com/hungary,2026-10-16,2026-08-27
+HUN,Hongrie,Hungary,confort,126.0,31.0,102.0,45.0,,https://www.budgetyourtrip.com/hungary,2026-10-16,2026-08-27
+JPN,Japon,Japan,petit,23,6.52,19,6.5,56,https://www.budgetyourtrip.com/japan,2026-10-16,2026-08-28
+JPN,Japon,Japan,moyen,57,17,48,18,142,https://www.budgetyourtrip.com/japan,2026-10-16,2026-08-28
+JPN,Japon,Japan,confort,138,48,116,58,358,https://www.budgetyourtrip.com/japan,2026-10-16,2026-08-28
+KOR,Corée du Sud,South Korea,petit,20,5.74,18,9.63,51,https://www.budgetyourtrip.com/south-korea,2026-10-16,2026-08-28
+KOR,Corée du Sud,South Korea,moyen,50,16,47,27,129,https://www.budgetyourtrip.com/south-korea,2026-10-16,2026-08-28
+KOR,Corée du Sud,South Korea,confort,114,49,123,79,328,https://www.budgetyourtrip.com/south-korea,2026-10-16,2026-08-28
+CHN,Chine,China,petit,15,6.06,16,7.36,40,https://www.budgetyourtrip.com/china,2026-10-16,2026-08-26
+CHN,Chine,China,moyen,37,16,40,18,101,https://www.budgetyourtrip.com/china,2026-10-16,2026-08-26
+CHN,Chine,China,confort,92,44,95,44,250,https://www.budgetyourtrip.com/china,2026-10-16,2026-08-26
+THA,Thaïlande,Thailand,petit,14.0,4.53,12.0,7.38,,https://www.budgetyourtrip.com/thailand,2026-10-16,2026-07-15
+THA,Thaïlande,Thailand,moyen,37.0,13.0,29.0,20.0,,https://www.budgetyourtrip.com/thailand,2026-10-16,2026-07-15
+THA,Thaïlande,Thailand,confort,106.0,42.0,75.0,58.0,,https://www.budgetyourtrip.com/thailand,2026-10-16,2026-07-15
+VNM,Vietnam,Vietnam,petit,9.5,4.16,8.58,4.99,,https://www.budgetyourtrip.com/vietnam,2026-10-16,2026-08-28
+VNM,Vietnam,Vietnam,moyen,26.0,11.0,21.0,13.0,,https://www.budgetyourtrip.com/vietnam,2026-10-16,2026-08-28
+VNM,Vietnam,Vietnam,confort,78.0,32.0,52.0,36.0,,https://www.budgetyourtrip.com/vietnam,2026-10-16,2026-08-28
+IDN,Indonésie,Indonesia,petit,10.0,2.56,9.0,3.18,,https://www.budgetyourtrip.com/indonesia,2026-10-16,2026-08-28
+IDN,Indonésie,Indonesia,moyen,29.0,7.94,23.0,8.65,,https://www.budgetyourtrip.com/indonesia,2026-10-16,2026-08-28
+IDN,Indonésie,Indonesia,confort,95.0,28.0,62.0,25.0,,https://www.budgetyourtrip.com/indonesia,2026-10-16,2026-08-28
+IND,Inde,India,petit,5.85,2.04,5.82,3.36,15,https://www.budgetyourtrip.com/india,2026-10-16,2026-07-03
+IND,Inde,India,moyen,15,5.63,15,9.05,40,https://www.budgetyourtrip.com/india,2026-10-16,2026-07-03
+IND,Inde,India,confort,39,17,39,26,110,https://www.budgetyourtrip.com/india,2026-10-16,2026-07-03
+NPL,Népal,Nepal,petit,4.8,3.27,5.17,2.72,,https://www.budgetyourtrip.com/nepal,2026-10-16,2026-08-28
+NPL,Népal,Nepal,moyen,14.0,8.88,12.0,7.13,,https://www.budgetyourtrip.com/nepal,2026-10-16,2026-08-28
+NPL,Népal,Nepal,confort,50.0,26.0,26.0,19.0,,https://www.budgetyourtrip.com/nepal,2026-10-16,2026-08-28
+LKA,Sri Lanka,Sri Lanka,petit,7.82,1.65,9.25,2.78,20,https://www.budgetyourtrip.com/sri-lanka,2026-10-16,2026-08-26
+LKA,Sri Lanka,Sri Lanka,moyen,22,4.59,24,7.63,56,https://www.budgetyourtrip.com/sri-lanka,2026-10-16,2026-08-26
+LKA,Sri Lanka,Sri Lanka,confort,72,14,67,23,167,https://www.budgetyourtrip.com/sri-lanka,2026-10-16,2026-08-26
+LAO,Laos,Laos,petit,3.11,0.76,4.54,1.04,9,https://www.budgetyourtrip.com/laos,2026-10-16,2026-08-27
+LAO,Laos,Laos,moyen,7.71,1.91,11,2.98,22,https://www.budgetyourtrip.com/laos,2026-10-16,2026-08-27
+LAO,Laos,Laos,confort,19,4.78,25,9.59,53,https://www.budgetyourtrip.com/laos,2026-10-16,2026-08-27
+TUR,Turquie,Turkey,petit,18,12,17,12,47,https://www.budgetyourtrip.com/turkey,2026-10-16,2026-08-24
+TUR,Turquie,Turkey,moyen,44,31,44,31,116,https://www.budgetyourtrip.com/turkey,2026-10-16,2026-08-24
+TUR,Turquie,Turkey,confort,93,82,110,84,279,https://www.budgetyourtrip.com/turkey,2026-10-16,2026-08-24
+ARE,Émirats arabes unis,United Arab Emirates,petit,61.0,5.91,34.0,11.0,,https://www.budgetyourtrip.com/united-arab-emirates,2026-10-16,2026-08-28
+ARE,Émirats arabes unis,United Arab Emirates,moyen,159.0,16.0,85.0,29.0,,https://www.budgetyourtrip.com/united-arab-emirates,2026-10-16,2026-08-28
+ARE,Émirats arabes unis,United Arab Emirates,confort,432.0,49.0,210.0,87.0,,https://www.budgetyourtrip.com/united-arab-emirates,2026-10-16,2026-08-28
+JOR,Jordanie,Jordan,petit,23.0,10.0,25.0,19.0,,https://www.budgetyourtrip.com/jordan,2026-10-16,2026-08-28
+JOR,Jordanie,Jordan,moyen,55.0,23.0,60.0,45.0,,https://www.budgetyourtrip.com/jordan,2026-10-16,2026-08-28
+JOR,Jordanie,Jordan,confort,115.0,47.0,137.0,93.0,,https://www.budgetyourtrip.com/jordan,2026-10-16,2026-08-28
+MAR,Maroc,Morocco,petit,14.0,3.72,12.0,4.12,,https://www.budgetyourtrip.com/morocco,2026-10-16,2026-08-28
+MAR,Maroc,Morocco,moyen,39.0,10.0,30.0,11.0,,https://www.budgetyourtrip.com/morocco,2026-10-16,2026-08-28
+MAR,Maroc,Morocco,confort,116.0,29.0,70.0,28.0,,https://www.budgetyourtrip.com/morocco,2026-10-16,2026-08-28
+EGY,Égypte,Egypt,petit,10,3.52,8.89,4.43,24,https://www.budgetyourtrip.com/egypt,2026-10-16,2026-10-12
+EGY,Égypte,Egypt,moyen,30,9.46,22,11,64,https://www.budgetyourtrip.com/egypt,2026-10-16,2026-10-12
+EGY,Égypte,Egypt,confort,97,27,55,25,187,https://www.budgetyourtrip.com/egypt,2026-10-16,2026-10-12
+ZAF,Afrique du Sud,South Africa,petit,19,7.11,16,7.21,45,https://www.budgetyourtrip.com/south-africa,2026-10-16,2026-08-27
+ZAF,Afrique du Sud,South Africa,moyen,53,17,38,19,114,https://www.budgetyourtrip.com/south-africa,2026-10-16,2026-08-27
+ZAF,Afrique du Sud,South Africa,confort,155,39,85,52,297,https://www.budgetyourtrip.com/south-africa,2026-10-16,2026-08-27
+KEN,Kenya,Kenya,petit,14,14,18,16,59,https://www.budgetyourtrip.com/kenya,2026-10-16,2026-08-28
+KEN,Kenya,Kenya,moyen,33,33,45,39,139,https://www.budgetyourtrip.com/kenya,2026-10-16,2026-08-28
+KEN,Kenya,Kenya,confort,68,77,109,96,299,https://www.budgetyourtrip.com/kenya,2026-10-16,2026-08-28
+TZA,Tanzanie,Tanzania,petit,18.0,5.78,15.0,16.0,,https://www.budgetyourtrip.com/tanzania,2026-10-16,2026-08-28
+TZA,Tanzanie,Tanzania,moyen,48.0,15.0,39.0,41.0,,https://www.budgetyourtrip.com/tanzania,2026-10-16,2026-08-28
+TZA,Tanzanie,Tanzania,confort,141.0,37.0,98.0,112.0,,https://www.budgetyourtrip.com/tanzania,2026-10-16,2026-08-28
+SEN,Sénégal,Senegal,petit,13,1.95,13,5.66,73,https://www.budgetyourtrip.com/senegal,2026-10-16,2026-08-22
+SEN,Sénégal,Senegal,moyen,30,5.39,32,13,179,https://www.budgetyourtrip.com/senegal,2026-10-16,2026-08-22
+SEN,Sénégal,Senegal,confort,61,16,84,28,426,https://www.budgetyourtrip.com/senegal,2026-10-16,2026-08-22
+GHA,Ghana,Ghana,petit,4.22,4.17,4.52,1.37,,https://www.budgetyourtrip.com/ghana,2026-10-16,2026-08-27
+GHA,Ghana,Ghana,moyen,12.0,10.0,12.0,3.23,,https://www.budgetyourtrip.com/ghana,2026-10-16,2026-08-27
+GHA,Ghana,Ghana,confort,34.0,22.0,35.0,6.77,,https://www.budgetyourtrip.com/ghana,2026-10-16,2026-08-27
+USA,États-Unis,United States,petit,50,18,37,18,121,https://www.budgetyourtrip.com/united-states-of-america,2026-10-16,2026-10-03
+USA,États-Unis,United States,moyen,131,46,96,56,324,https://www.budgetyourtrip.com/united-states-of-america,2026-10-16,2026-10-03
+USA,États-Unis,United States,confort,359,121,252,194,924,https://www.budgetyourtrip.com/united-states-of-america,2026-10-16,2026-10-03
+CAN,Canada,Canada,petit,32.0,8.09,23.0,9.02,,https://www.budgetyourtrip.com/canada,2026-10-16,2026-08-28
+CAN,Canada,Canada,moyen,90.0,22.0,61.0,23.0,,https://www.budgetyourtrip.com/canada,2026-10-16,2026-08-28
+CAN,Canada,Canada,confort,281.0,62.0,176.0,62.0,,https://www.budgetyourtrip.com/canada,2026-10-16,2026-08-28
+MEX,Mexique,Mexico,petit,17,6.88,17,8.27,49,https://www.budgetyourtrip.com/mexico,2026-10-16,2026-08-26
+MEX,Mexique,Mexico,moyen,47,19,46,24,138,https://www.budgetyourtrip.com/mexico,2026-10-16,2026-08-26
+MEX,Mexique,Mexico,confort,138,57,129,76,425,https://www.budgetyourtrip.com/mexico,2026-10-16,2026-08-26
+CRI,Costa Rica,Costa Rica,petit,26.0,11.0,19.0,14.0,,https://www.budgetyourtrip.com/costa-rica,2026-10-16,2026-10-14
+CRI,Costa Rica,Costa Rica,moyen,67.0,29.0,47.0,35.0,,https://www.budgetyourtrip.com/costa-rica,2026-10-16,2026-10-14
+CRI,Costa Rica,Costa Rica,confort,171.0,83.0,105.0,87.0,,https://www.budgetyourtrip.com/costa-rica,2026-10-16,2026-10-14
+COL,Colombie,Colombia,petit,6.17,3.28,8.81,6.51,,https://www.budgetyourtrip.com/colombia,2026-10-16,2026-08-26
+COL,Colombie,Colombia,moyen,17.0,9.26,23.0,17.0,,https://www.budgetyourtrip.com/colombia,2026-10-16,2026-08-26
+COL,Colombie,Colombia,confort,53.0,29.0,62.0,45.0,,https://www.budgetyourtrip.com/colombia,2026-10-16,2026-08-26
+PER,Pérou,Peru,petit,9.41,3.02,11.0,9.11,,https://www.budgetyourtrip.com/peru,2026-10-16,2026-08-28
+PER,Pérou,Peru,moyen,27.0,9.04,29.0,25.0,,https://www.budgetyourtrip.com/peru,2026-10-16,2026-08-28
+PER,Pérou,Peru,confort,88.0,31.0,75.0,73.0,,https://www.budgetyourtrip.com/peru,2026-10-16,2026-08-28
+BRA,Brésil,Brazil,petit,15,4.62,12,5.57,37,https://www.budgetyourtrip.com/brazil,2026-10-16,2026-08-26
+BRA,Brésil,Brazil,moyen,41,12,32,15,97,https://www.budgetyourtrip.com/brazil,2026-10-16,2026-08-26
+BRA,Brésil,Brazil,confort,118,33,82,40,272,https://www.budgetyourtrip.com/brazil,2026-10-16,2026-08-26
+ARG,Argentine,Argentina,petit,18.0,1.24,2.42,11.0,,https://www.budgetyourtrip.com/argentina,2026-10-16,2026-08-26
+ARG,Argentine,Argentina,moyen,42.0,2.86,5.71,26.0,,https://www.budgetyourtrip.com/argentina,2026-10-16,2026-08-26
+ARG,Argentine,Argentina,confort,83.0,5.62,12.0,52.0,,https://www.budgetyourtrip.com/argentina,2026-10-16,2026-08-26
+CHL,Chili,Chile,petit,21,5.4,14,10,46,https://www.budgetyourtrip.com/chile,2026-10-16,2026-08-25
+CHL,Chili,Chile,moyen,57,14,37,25,124,https://www.budgetyourtrip.com/chile,2026-10-16,2026-08-25
+CHL,Chili,Chile,confort,172,38,98,63,350,https://www.budgetyourtrip.com/chile,2026-10-16,2026-08-25
+AUS,Australie,Australia,petit,29,12,24,13,73,https://www.budgetyourtrip.com/australia,2026-10-16,2026-08-26
+AUS,Australie,Australia,moyen,75,32,61,33,188,https://www.budgetyourtrip.com/australia,2026-10-16,2026-08-26
+AUS,Australie,Australia,confort,204,99,148,89,496,https://www.budgetyourtrip.com/australia,2026-10-16,2026-08-26
+NZL,Nouvelle-Zélande,New Zealand,petit,24,8.49,19,12,60,https://www.budgetyourtrip.com/new-zealand,2026-10-16,2026-08-24
+NZL,Nouvelle-Zélande,New Zealand,moyen,68,22,48,34,161,https://www.budgetyourtrip.com/new-zealand,2026-10-16,2026-08-24
+NZL,Nouvelle-Zélande,New Zealand,confort,211,56,122,104,464,https://www.budgetyourtrip.com/new-zealand,2026-10-16,2026-08-24

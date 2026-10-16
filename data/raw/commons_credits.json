@@ -1,0 +1,3738 @@
+[
+ {
+  "batchcomplete": "",
+  "query": {
+   "pages": {
+    "74439187": {
+     "pageid": 74439187,
+     "ns": 6,
+     "title": "File:20171118 Vientiane 3220 DxO.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-11-16 20:46:27",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "20171118 Vientiane 3220 DxO",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Views from the Patuxai|Don Chan Palace|Self-published work|November 2017 Laos photographs|2017 in Vientiane|NoFoP-Laos",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "quality",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Vientiane, viewed from Patuxai Gate",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2017-11-18 14:52:09",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jakubhal\" title=\"User:Jakubhal\">Jakub Hałun</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<big><b>Copyright warning: A subject in this image is protected by copyright.</b></big>\n<p>This image features an architectural or artistic work, photographed from a public space in Laos. There is no <a href=\"//commons.wikimedia.org/wiki/Commons:FOP\" class=\"mw-redirect\" title=\"Commons:FOP\">freedom of panorama</a> exception in Laos, and photographic or cinematographic reproductions of works of fine art, photographs, and other artistic works, and works of applied art are only allowed if such works <b>are incidental</b> to the photographic or cinematographic work and is <i>not</i> the object of the photographic or cinematographic work. This means the architectural or artistic work featured in this image should not be the main or intended subject of this image. See also <a href=\"//commons.wikimedia.org/wiki/Commons:CRT/Laos#Freedom_of_panorama\" class=\"mw-redirect\" title=\"Commons:CRT/Laos\">Commons:CRT/Laos#Freedom of panorama</a> for more information.<br> \n</p><p>If a copyrighted architectural or artistic work is contained in this image and it is a substantial reproduction, this photo cannot be licensed under a free license, and <b>will be deleted</b>. Framing this image to focus on the copyrighted work is also a copyright violation.\n</p>\n<b>Before reusing this content, ensure that you have the right to do so. You are solely responsible for ensuring that you do not infringe someone else's copyrights. See our <a href=\"//commons.wikimedia.org/wiki/Commons:General_disclaimer\" title=\"Commons:General disclaimer\">general disclaimer</a> for more information.</b>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "149189880": {
+     "pageid": 149189880,
+     "ns": 6,
+     "title": "File:Accra town.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2024-06-08 21:29:00",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Accra town",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Central Accra|Self-published work|Uploaded via Campaign:wle-gh|Files with coordinates missing SDC location of creation|Images from Wiki Loves Earth 2024|Images from Wiki Loves Earth 2024 in Ghana|Images from Wiki Loves Earth missing SDC location of creation",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "5.547526",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-0.210339",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "accra town",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2023-06-15 12:37:13",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Goldenwabbit\" title=\"User:Goldenwabbit\">Goldenwabbit</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "151167097": {
+     "pageid": 151167097,
+     "ns": 6,
+     "title": "File:Aerial view of White House and downtown, Washington, D.C LCCN2010630891.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2024-08-04 19:32:40",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Aerial view of White House and downtown, Washington, D.C LCCN2010630891",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Canon EOS-1Ds Mark II|Images from the Library of Congress|PD-Highsmith|Downtown Washington, D.C.|Photographs by Carol M. Highsmith|Library of Congress-no known copyright restrictions|United States photographs taken on 2007-04-30|White House in April 2007|Aerial photographs of the White House",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "<i>Title:</i> Aerial view of White House and downtown, Washington, D.C\n<p><i>Physical description:</i> 1 photograph : digital, TIFF file, color.\n</p>\n<i>Notes:</i> Gift and purchase; Carol M. Highsmith; 2009; (DLC/PP-2010:031).; The White House is the official residence and principal workplace of the President of the United States. Located at 1600 Pennsylvania Avenue NW in Washington, D.C., it was built between 1792 and 1800 of white-painted Aquia sandstone in the late Georgian style and has been the residence of every U.S. President since John Adams.; Credit line: Carol M. Highsmith's America, Library of Congress, Prints and Photographs Division.; Forms part of: Carol M. Highsmith's America Project in the Carol M. Highsmith Archive.; Title, date, and subjects provided by the photographer.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "Taken on 30 April 2007, 14:19 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<p>Library of Congress\n</p>\n<ul><li><i>Catalog:</i> <a rel=\"nofollow\" class=\"external free\" href=\"http://lccn.loc.gov/2010630891\">http://lccn.loc.gov/2010630891</a></li>\n<li><i>Image download:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://cdn.loc.gov/master/pnp/highsm/04900/04911a.tif\">https://cdn.loc.gov/master/pnp/highsm/04900/04911a.tif</a></li>\n<li><i>Original url:</i> <a rel=\"nofollow\" class=\"external free\" href=\"http://hdl.loc.gov/loc.pnp/highsm.04911\">http://hdl.loc.gov/loc.pnp/highsm.04911</a></li></ul>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Carol_M._Highsmith\" class=\"extiw\" title=\"w:en:Carol M. Highsmith\"><span title=\"American photographer (born 1946)\">Carol M. Highsmith</span></a></bdi>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/highsm.04911\">highsm.04911</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "Public domain",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Public domain",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Copyrighted": {
+         "value": "False",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "pd",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "45692823": {
+     "pageid": 45692823,
+     "ns": 6,
+     "title": "File:Akropolis 2015.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2015-12-17 21:59:12",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Akropolis 2015",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Canon EOS 5D Mark II|Self-published work|Pictures by Der Wolf im Wald|2015 in Athens|Files with coordinates missing SDC location of creation|Views of the Acropolis from Philopappos Hill|High-Resolution Images by Der Wolf im Wald|Pictures of Athens by Der Wolf im Wald",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "quality",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "37.967561",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "23.722111",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "<a href=\"https://en.wikipedia.org/wiki/Acropolis_of_Athens\" class=\"extiw\" title=\"en:Acropolis of Athens\">Acropolis</a> in <a href=\"https://en.wikipedia.org/wiki/Athens\" class=\"extiw\" title=\"en:Athens\">Athens</a>, <a href=\"https://en.wikipedia.org/wiki/Greece\" class=\"extiw\" title=\"en:Greece\">Greece</a>",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2015-06-02",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<b><a href=\"//commons.wikimedia.org/wiki/User:Der_Wolf_im_Wald\" title=\"User:Der Wolf im Wald\">Thomas Wolf</a></b>, <small><a rel=\"nofollow\" class=\"external text\" href=\"http://www.foto-tw.de\">www.foto-tw.de</a></small>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<div style=\"clear:both; border: 2px solid #bababa; margin: 0.2em -0.2em 0.2em 0.2em; padding: 0.2em 0.9em 0.2em 1em; background-color: #fefefe;\">\n<table cellspacing=\"0\" cellpadding=\"0\" style=\"background:transparent;\">\n<tbody><tr>\n<td valign=\"top\" width=\"90%\">\n<p><span style=\"font-size:95%\">Dieses Foto wurde von Thomas Wolf angefertigt und hier unter der <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/3.0/de/\">Creative-Commons-Lizenz „Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland“ <small>(CC BY-SA 3.0 DE)</small></a> bereitgestellt. Es kann gemäß der Lizenz weiterverwendet werden, solange der Urheber in folgender Form kenntlich gemacht wird. Dabei ist auch die Lizenz (mit Link auf die <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/3.0/de/deed.de\">Zusammenfassung</a> oder den <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/3.0/de/legalcode\">Volltext</a>) zu benennen:</span>\n</p><p><span style=\"font-size:105%\"> <b>© Thomas Wolf, <span class=\"plainlinks noprint\"><a rel=\"nofollow\" class=\"external text\" href=\"http://www.foto-tw.de\">www.foto-tw.de</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/3.0/de/deed.de\">CC BY-SA 3.0 DE</a>)</span></b></span>\n</p><p><span style=\"font-size:95%\">Diese Angaben können z.B. direkt am Bild oder in einem gesonderten Bildquellenverzeichnis gemacht werden, müssen in jedem Fall aber eindeutig zuordbar und leicht aufzufinden sein. Angaben als Mouseover reichen nicht aus. Pauschale Bildquellenangaben wie „Wikipedia“ werden der Lizenz ebenfalls nicht gerecht. Das Bild genießt urheberrechtlichen Schutz und ist nicht gemeinfrei! Jegliche Verwendungen des Bildes ohne den geforderten Urheber- bzw. Lizenzvermerk sind unzulässig und verletzen damit das Urheberrecht! Das gilt natürlich nicht, falls der Urheber auf anderem Wege ein Nutzungsrecht erteilt hat, wie er es z.B. über seine Fotoagentur kostenpflichtig anbietet (Lizenzen ohne Pflicht der Namensnennung). Sollte dieses Werk im Printbereich genutzt werden, freut sich der Urheber über die Zusendung eines Belegexemplars.</span><br>\n</p><p><span style=\"font-size:95%\"><b>Lizenzierungsanfragen &amp; Kontakt: <a href=\"//commons.wikimedia.org/wiki/Special:EmailUser/Der_Wolf_im_Wald\" title=\"Special:EmailUser/Der Wolf im Wald\">E-Mail an den Fotografen</a> oder <a rel=\"nofollow\" class=\"external text\" href=\"http://www.foto-tw.de/kontakt.html\">Kontakt über seine Website</a></b></span>\n</p>\n</td>\n<td valign=\"center\" width=\"8%\">\n<div class=\"center\">\n<figure class=\"noresize\" typeof=\"mw:File\"><a href=\"http://commons.wikimedia.org/wiki/User:Der_Wolf_im_Wald\" class=\"plainlinks\" title=\"http://commons.wikimedia.org/wiki/User:Der_Wolf_im_Wald\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/120px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"75\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/250px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"156\" data-file-height=\"156\"></a><figcaption></figcaption></figure>\n</div>\n</td></tr></tbody></table>\n</div>\n<div style=\"margin:.5em auto 1em;text-align:center;\" class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://lizenzhinweisgenerator.de/?url=https://commons.wikimedia.org/wiki/File:Akropolis_2015.jpg\"><span class=\"mw-ui-button mw-ui-progressive\">Urhebervermerk &amp; Lizenzhinweis erzeugen lassen »</span></a></div>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0 de",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0 de",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Attribution": {
+         "value": "Thomas Wolf, <a rel=\"nofollow\" class=\"external text\" href=\"http://www.foto-tw.de\">www.foto-tw.de</a>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0-de",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "595878": {
+     "pageid": 595878,
+     "ns": 6,
+     "title": "File:Amman.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2006-02-24 09:55:43",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Amman",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "GFDL|Taken with Canon EOS 350D|CC-BY-SA-2.5,2.0,1.0|Views of Amman|License migration redundant|Raghadan flagpole, Amman|Self-published work|2005 in Amman|Al Urdon Street, Amman",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Vista sobre Ammán",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2005-12-27 11:05",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Cybjorg&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Cybjorg (page does not exist)\">David Bjorgen</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "Copyleft. Multi-license with GFDL and Creative Commons CC-BY-SA 2.5",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "45317915": {
+     "pageid": 45317915,
+     "ns": 6,
+     "title": "File:Ankara (16290014657).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2015-11-29 13:30:06",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Ankara (16290014657)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Images with extracted images|Flickr images reviewed by FlickreviewR|Buildings during blue hour in Turkey|Night in Ankara|Panoramics in Ankara|Files with coordinates missing SDC location of creation|Photographs of Ankara by Jorge Franganillo",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "39.939076",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "32.865546",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Ankara (Turkey)",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2013-08-17 19:01",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/franganillo/16290014657/\">Ankara</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/46191841@N00\">Jorge Franganillo</a> from Barcelona, Spain",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "3427151": {
+     "pageid": 3427151,
+     "ns": 6,
+     "title": "File:Bern luftaufnahme.png",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2013-03-30 09:45:35",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Bern luftaufnahme",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "PD-user|Old City of Bern|Aerial photographs of Bern|Cultural properties of national significance in Switzerland with known IDs|Cultural properties of national significance in Switzerland missing SDC location of creation",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Aerial photo of <a href=\"https://en.wikipedia.org/wiki/Bern\" class=\"extiw\" title=\"en:Bern\">Bern</a>",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2005-06",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"https://de.wikipedia.org/wiki/Benutzer:Reaast\" class=\"extiw\" title=\"de:Benutzer:Reaast\">de:Benutzer:Reaast</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "Public domain",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Public domain",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Copyrighted": {
+         "value": "False",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "pd",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "73917136": {
+     "pageid": 73917136,
+     "ns": 6,
+     "title": "File:Budapest, Hungary (explored) (14995308504).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-10-27 21:36:48",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Budapest, Hungary (explored) (14995308504)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Chain Bridge, Budapest|Photographs by Thomas Depenbusch|Files with coordinates missing SDC location of creation|Hungary photographs taken on 2014-10-19|Flickr images reviewed by FlickreviewR 2|Saint Stephen's Basilica (Budapest) from across the Danube",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "47.497472",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "19.038802",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Budapest, Hungary",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "Taken on 19 October 2014, 13:09",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/depenbusch/14995308504/\">Budapest, Hungary  (explored)</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8324633@N03\">Thomas Depenbusch (Depi)</a> from Cologne, Germany",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "180761260": {
+     "pageid": 180761260,
+     "ns": 6,
+     "title": "File:Cairo Skyline (2020).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2025-12-27 12:28:12",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Cairo Skyline (2020)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Views from Cairo Tower|Self-published work|Nile in Cairo|Extracted images|Works by Faris El-Gwely|Taken with Oppo Reno 2F",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Skyline of the city of Cairo (2020)",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2025-12-27 14:19:00",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q117800644\" class=\"extiw\" title=\"d:Q117800644\"><span title=\"Egyptian geographer, teacher and Wikipedian\">Faris El-Gwely</span></a></bdi>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "104895155": {
+     "pageid": 104895155,
+     "ns": 6,
+     "title": "File:Canberra from Mt Ainslie (5642431515).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-05-04 07:29:13",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Canberra from Mt Ainslie (5642431515)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Land axis from Mount Ainslie|January 2011 in Canberra|Flickr images reviewed by FlickreviewR 2|Files with coordinates missing SDC location of creation (36° S, 149° E)",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "-35.269930",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "149.158544",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "EOS 6728",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2011-01-22 08:52",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/suburbanbloke/5642431515/\">Canberra from Mt Ainslie</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/49333819@N00\">Tim J Keegan</a> from Lake Macquarie, Australia",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "9790755": {
+     "pageid": 9790755,
+     "ns": 6,
+     "title": "File:Centro internacional.JPG",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2010-03-21 01:40:25",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Centro internacional",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "GFDL|Torre Colpatria|Centro Internacional de Bogotá|License migration redundant|Self-published work|Cityscapes of Bogotá|2010 in Bogotá|Cerro El Cable",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Una hermosa vista de Bogotá en la noche",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2008-01-01",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pedro_Felipe\" title=\"User:Pedro Felipe\">Felipe Restrepo Acosta</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "71318895": {
+     "pageid": 71318895,
+     "ns": 6,
+     "title": "File:Cityscape of San José, Costa Rica (253552473).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-08-03 20:39:26",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "<div class=\"fn\">\nCityscape of San José, Costa Rica</div>",
+         "source": "commons-desc-page"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Clouds in Costa Rica|Files with coordinates missing SDC location of creation|Photos imported with import-500px|2018 in San José, Costa Rica|Views of San José, Costa Rica",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "9.935622",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-84.075374",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Artist": {
+         "value": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/xlionheartx\">Xlionheartx</a></div>",
+         "source": "commons-desc-page"
+        },
+        "ImageDescription": {
+         "value": "<div class=\"description\">\n500px provided description: H O M E [#Cityscape ,#Home]</div>",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "20 January 2018, 17:54:10 (UTC)",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "Imported from <a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/photo/253552473/h-o-m-e-by-xlionheartx\">500px</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/201807id_/https://drscdn.500px.org/photo/253552473/m%3D2048/v2?webp=true&amp;sig=34a1fd0bed28a3b75a4ccf027b6c9c5ad3a74b534c799292715a91ec882bb0c5\">archived version</a>) by <a rel=\"nofollow\" class=\"external text\" href=\"https://www.archiveteam.org/index.php?title=500px\">the Archive Team</a>. (<a href=\"https://iw.toolforge.org/import-500px/photo/253552473\" class=\"extiw\" title=\"toolforge:import-500px/photo/253552473\">detail page</a>)",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 Unported</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "163625720": {
+     "pageid": 163625720,
+     "ns": 6,
+     "title": "File:Colombo skyline 2024.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2025-04-16 08:48:57",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Colombo skyline 2024",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "CC-Zero|Cityscapes in Sri Lanka|Deletion requests March 2026",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Colombo city skyline",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2025-04-16",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "Photo by T Chamika",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "T Chamika",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Zero, Public Domain Dedication",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "81981998": {
+     "pageid": 81981998,
+     "ns": 6,
+     "title": "File:India Gate Legendary Saga Of Supreme Sacrifice.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2019-09-08 18:32:30",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "India Gate Legendary Saga Of Supreme Sacrifice",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Images from Wiki Loves Monuments 2019|Self-published work|Uploaded via Campaign:wlm-in|Images from Wiki Loves Monuments 2019 in India|India photographs taken on 2019-08-26|Images from Wiki Loves Monuments missing SDC location of creation|Files from competitions organized by West Bengal Wikimedians User Group|West side of the India Gate|Images from WLM 2019 India under review by Montage tool",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "The India Gate (originally the All India War Memorial) is a war memorial located astride the Rajpath, on the eastern edge of the \"ceremonial axis\" of New Delhi formerly called Kingsway. It stands as a memorial to 70,000 soldiers of the British Indian Army who died in between 1914–1921 in the First World War, in France, Flanders, Mesopotamia, Persia, East Africa, Gallipoli and elsewhere in the Near and the Far East, and the Second Anglo-Afghan War. 13,300 servicemen's names, including some soldiers and officers from the United Kingdom, are inscribed on the gate.Designed by Sir Edwin Lutyens, the gate evokes the architectural style of the triumphal arch such as the Arch of Constantine, in Rome, and is often compared to the Arc de Triomphe in Paris, and the Gateway of India in Mumbai.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2019-08-26 14:43:02",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Navonildutta4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Navonildutta4 (page does not exist)\">Navonildutta4</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "1586437": {
+     "pageid": 1586437,
+     "ns": 6,
+     "title": "File:Jakarta.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2007-01-21 14:56:08",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Jakarta",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Copyrighted free use|Files with no machine-readable author|Files with no machine-readable source|Media missing infobox template|NoFoP-Indonesia|Skylines in Jakarta|Files in need of review (sources)",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "Copyrighted free use",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Copyrighted free use",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "8453060": {
+     "pageid": 8453060,
+     "ns": 6,
+     "title": "File:Kasbah des Oudaias P1060356.JPG",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2009-11-14 22:33:47",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Kasbah des Oudaias P1060356",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "GFDL|Taken with Panasonic Lumix DMC-TZ3|Kasbah of the Udayas|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Self-published work|River Bou Regreg|Files by User:Pline",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "L'oued Bouregreg avec, au premier plan, les quais de Rabat (capitale du Maroc) alors en cours de rénovation, qui font partie de l'ensemble portuaire de Rabat-Salé et sont dédiés à l'accueil des plus grands bateaux, et en arrière plan, la kasbah des Oudayas, également située sur la rive de Rabat.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2009-11",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pline\" title=\"User:Pline\">Pline</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "19789973": {
+     "pageid": 19789973,
+     "ns": 6,
+     "title": "File:Kathmandu Avion 01.JPG",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2012-06-06 16:54:49",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Kathmandu Avion 01",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Nikon Coolpix P7000|CC-Zero|2012 photographs of Nepal|Self-published work|Aerial photographs of Kathmandu",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Kathmandu, vue aérienne au décollage",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2012-05-24",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Royonx\" title=\"User:Royonx\">Royonx</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Zero, Public Domain Dedication",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "34933538": {
+     "pageid": 34933538,
+     "ns": 6,
+     "title": "File:La Tour Eiffel vue de la Tour Saint-Jacques, Paris août 2014 (2).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2014-08-25 04:54:38",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "La Tour Eiffel vue de la Tour Saint-Jacques, Paris août 2014 (2)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Pont du Carrousel|Taken with Panasonic Lumix DMC-GX7|Palais de Chaillot|Views of the Seine in Paris|Exterior of Basilique Sainte-Clotilde de Paris|Images with annotations|Remote views of the Eiffel Tower|Remote views of the Musée d'Orsay|Images with extracted images|Flickr images reviewed by FlickreviewR|August 2014 in Paris|Pont des Arts from the east|F-number f/4.2|France photographs taken on 2014-08-23|Files with coordinates missing SDC location of creation (48° N, 2° E)|Photographs by Yann Caradec|Lens focal length 67 mm|Eiffel Tower from Tour Saint-Jacques|Flickr images missing SDC published in",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "48.857988",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "2.348952",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "La Tour Eiffel vue de la Tour Saint-Jacques, Paris.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2014-08-23 14:49",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/la_bretagne_a_paris/15014879305/\">La Tour Eiffel vue de la Tour Saint-Jacques</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10288162@N07\">Yann Caradec</a> from Paris, France",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "44980193": {
+     "pageid": 44980193,
+     "ns": 6,
+     "title": "File:Lisboa837.png",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2015-11-13 12:29:58",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Lisboa837",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Views of Lisbon|Self-published work|Images with extracted images",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Image of Lisbon",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2015-11-12",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Lacobrigo\" title=\"User:Lacobrigo\">Lacobrigo</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "74181523": {
+     "pageid": 74181523,
+     "ns": 6,
+     "title": "File:London Skyline (125508655).jpeg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-11-06 12:09:08",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "<div class=\"fn\">\nLondon Skyline</div>",
+         "source": "commons-desc-page"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Images with annotations|Tower Bridge at night|Photos imported with import-500px|Files with coordinates missing SDC location of creation (51° N, 1° W)|Aerial photographs of Tower Bridge",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "51.507995",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-0.087719",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Artist": {
+         "value": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/igrigorik\">Ilya Grigorik</a></div>",
+         "source": "commons-desc-page"
+        },
+        "ImageDescription": {
+         "value": "<div class=\"description\">\n500px provided description: London Skyline [#sunset ,#architecture ,#cityscape ,#london ,#uk ,#skyline ,#financial district ,#thames ,#london bridge ,#london shard]</div>",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "24 June 2015, 01:57:31 (UTC)",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "Imported from <a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/photo/125508655/london-skyline-by-ilya-grigorik\">500px</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/201807id_/https://drscdn.500px.org/photo/125508655/m%3D2048/v2?webp=true&amp;sig=b6a10ce4cdbca71333bcb0c830a9c90abbeee5fb96afe15b7befb28e2f0fe62a\">archived version</a>) by <a rel=\"nofollow\" class=\"external text\" href=\"https://www.archiveteam.org/index.php?title=500px\">the Archive Team</a>. (<a href=\"https://iw.toolforge.org/import-500px/photo/125508655\" class=\"extiw\" title=\"toolforge:import-500px/photo/125508655\">detail page</a>)",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"share alike\"><img alt=\"share alike\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by-sa/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/3.0/deed.en\">Attribution-Share Alike 3.0 Unported</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>\n<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href=\"https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses\" class=\"extiw\" title=\"ccorg:share-your-work/licensing-considerations/compatible-licenses\">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by-sa/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY-SA 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution-Share Alike 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "68164840": {
+     "pageid": 68164840,
+     "ns": 6,
+     "title": "File:Madrid (38624991251).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-04-09 01:51:09",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Madrid (38624991251)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Exterior of the Palacio de los Consejos, Madrid|Exterior of the Iglesia Arzobispal Castrense|Palacio neighborhood, Madrid|Views of Centro District, Madrid|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Photographs by Dmitry Dzhus|Roofscapes in Madrid|Views from the Dome of the Cathedral of Our Lady of La Almudena",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "40.415486",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-3.714395",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "A nice view of numerous fine buildings with exterior balconies in <a href=\"//commons.wikimedia.org/wiki/Madrid\" title=\"Madrid\">Madrid</a>, <a href=\"//commons.wikimedia.org/wiki/Spain\" class=\"mw-redirect\" title=\"Spain\">Spain</a>.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2017-10-04 13:21",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/nothingpersonal/38624991251/\">Madrid</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/46721940@N00\">Dmitry Dzhus</a> from London",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "10519611": {
+     "pageid": 10519611,
+     "ns": 6,
+     "title": "File:Nairobi, view from KICC.JPG",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2010-06-01 20:53:45",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Nairobi, view from KICC",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "GFDL|Taken with Canon PowerShot SX200 IS|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Buildings in Nairobi|2010 photographs of Kenya|Skyscrapers in Nairobi|Self-published work|FoP-Kenya|Files with coordinates missing SDC location of creation|Clouds and blue sky in Kenya|Skylines of Nairobi|Photographs taken on 2025-03-25",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "-1.288700",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "36.823000",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "<a href=\"https://en.wikipedia.org/wiki/Nairobi\" class=\"extiw\" title=\"en:Nairobi\">Nairobi</a>, view from the top of Kenyatta International Conference Center, Kenya",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2010-03-25",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Daryona&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Daryona (page does not exist)\">Daryona</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "90584597": {
+     "pageid": 90584597,
+     "ns": 6,
+     "title": "File:Ottawa Montage 2020.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-04-17 18:44:27",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Ottawa Montage 2020",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Montages of Ottawa",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "This is a montage of Ottawa for 2020",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2020-05-24 00:21",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:Parliament-Ottawa.jpg\" title=\"File:Parliament-Ottawa.jpg\">File:Parliament-Ottawa.jpg</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Ottawa_-_Rideau_Hall.JPG\" title=\"File:Ottawa - Rideau Hall.JPG\">File:Ottawa - Rideau Hall.JPG</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:10_Rideau_Hall_P1350151.jpg\" title=\"File:10 Rideau Hall P1350151.jpg\">File:10 Rideau Hall P1350151.jpg</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:View_of_west_elevation_of_Ch%C3%A2teau_Laurier_Hotel,_Ottawa;.jpg\" title=\"File:View of west elevation of Château Laurier Hotel, Ottawa;.jpg\">File:View of west elevation of Château Laurier Hotel, Ottawa;.jpg</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Major%27s_Hill_Park(3).jpg\" title=\"File:Major's Hill Park(3).jpg\">File:Major's Hill Park(3).jpg</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Rideau_Canal_at_downtown_Ottawa.JPG\" title=\"File:Rideau Canal at downtown Ottawa.JPG\">File:Rideau Canal at downtown Ottawa.JPG</a></li></ul>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Allice_Hunter\" title=\"User:Allice Hunter\"><span style=\"font-family:Candara; color:blue;\"> <i><b>Allice Hunter</b></i></span></a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "115793275": {
+     "pageid": 115793275,
+     "ns": 6,
+     "title": "File:Planalto Central (cropped).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2022-03-05 01:31:47",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Planalto Central (cropped)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Plano Piloto (administrative region)|Self-published work|Images from Wiki Loves Monuments 2015|Images from Wiki Loves Monuments 2015 in Brazil|Uploaded via Campaign:wlm-br|Brazil photographs taken on 2015-03-29|Clouds and blue sky in Brazil|Images from Wiki Loves Monuments 2015 in Brazil - Distrito Federal|Views of Eixo Monumental from Torre de TV de Brasília southeastward",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "This is a photo of a monument in Brazil identified by the ID",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2015-03-29 11:30:21",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Arturdiasr&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Arturdiasr (page does not exist)\">Arturdiasr</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "111486774": {
+     "pageid": 111486774,
+     "ns": 6,
+     "title": "File:Plaza Mayor de Lima-1.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-10-22 14:37:44",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Plaza Mayor de Lima-1",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Plaza Perú (Lima)|Fountain at Plaza Mayor (Lima)|Lima City Hall|Pasaje Santa Rosa, Lima|Self-published work|2011 in Lima|Cultural heritage monuments in Peru with known IDs|Uploaded via Campaign:wlm-pe|Images from Wiki Loves Monuments missing SDC location of creation|Images from Wiki Loves Monuments 2021|Images from Wiki Loves Monuments 2021 in Peru|Edificio Pizarro|Edificio Palacio (Lima)|Hotel Savoy (Lima)|Edificio Calvo|Plaza Mayor, Lima in the 21st century|Views from the Cathedral of Lima|Exterior of Santo Domingo (Lima)|Palacio de la Unión|Jirón de la Unión 400, Lima",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "This is a photo of a monument in Peru, identified by ID",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2011-07-18 12:03:09",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:JulioKuLu&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:JulioKuLu (page does not exist)\">JulioKuLu</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "18675877": {
+     "pageid": 18675877,
+     "ns": 6,
+     "title": "File:Pointe des Almadies - Senegal.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2012-03-12 14:57:45",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Pointe des Almadies - Senegal",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Pointe des Almadies|Images with annotations|Flickr images reviewed by FlickreviewR|Flickr images missing SDC source of file|July 2011 in Senegal|Files with coordinates missing SDC location of creation|Clouds and blue sky in Senegal|Hotel des Almadies|Aerial photographs of Dakar|Photographs by Jeff Attaway|Flickr images missing SDC Flickr photo ID|Flickr images missing SDC published in",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "valued",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "14.744833",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-17.528167",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Pointe des Almadies, the westernmost point of the African continent (mainland), located in the area of Dakar, Senegal. The point is within the vacation resort Club Med.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2011-07-20",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<p><a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/photos/attawayjl/5964560289/in/photostream/\" class=\"external free\">https://www.flickr.com/photos/attawayjl/5964560289/in/photostream/</a></p>\n<ul><li>Uploaded by <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:MrPanyGoff\" title=\"User:MrPanyGoff\">MrPanyGoff</a></li></ul>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "Jeff Attaway",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "5551856": {
+     "pageid": 5551856,
+     "ns": 6,
+     "title": "File:Pretoria CBD1.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2008-12-22 20:44:09",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Pretoria CBD1",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Canon PowerShot A530|PD-user|Pretoria CBD",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Pretoria CBD as seen from Muckleneuk Hill (Lukasrand) on 15 April 2006",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2006-04-15",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a></span> to Commons.</bdi>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "Petrus Potgieter, <a href=\"https://en.wikipedia.org/wiki/User:Petrus\" class=\"extiw\" title=\"en:User:Petrus\">Petrus</a> at <a class=\"external text\" data-mw-original-href=\"http://en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "Released into the public domain (by the author)",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "Public domain",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Public domain",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Copyrighted": {
+         "value": "False",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "pd",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "98867397": {
+     "pageid": 98867397,
+     "ns": 6,
+     "title": "File:Reykjavík 5545 (cropped).JPG",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-01-14 21:34:31",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Reykjavík 5545 (cropped)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Akrafjall|Landspítali|Self-published work|Extracted images|2010 in Reykjavík|Road crossings in Iceland|Bústaðavegur|Views of Hallgrímskirkja from Perlan|Remote views of Akranes",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Reykjavík",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2010-06-18",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hedwig_Storch\" title=\"User:Hedwig Storch\">Hedwig Storch</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "24299913": {
+     "pageid": 24299913,
+     "ns": 6,
+     "title": "File:Rome Skyline (8012016319).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2013-08-19 19:17:29",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Rome Skyline (8012016319)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Sony SLT-A77|Views of Rome from Castel Sant'Angelo|Flickr images reviewed by File Upload Bot (Magnus Manske)|Files with coordinates missing SDC location of creation|Views of Vittoriano from Castel Sant'Angelo (Rome)|Photographs by Bert Kaufmann",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "41.902797",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "12.466369",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "<b>Roma / Rome - Lazio - Italia / Italy</b>",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2012-09-15 10:12",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/22746515@N02/8012016319/\">Rome Skyline</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/22746515@N02\">Bert Kaufmann</a> from Roermond, Netherlands",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "102474102": {
+     "pageid": 102474102,
+     "ns": 6,
+     "title": "File:Santiago de Chile, Desde Cerro San Cristóbal (cropped).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-03-28 06:43:36",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Santiago de Chile, Desde Cerro San Cristóbal (cropped)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Sanhattan|Self-published work|Skylines of Santiago de Chile|Panoramics in Santiago",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Santiago de Chile, Desde el Cerro San Cristóbal",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2014-02-01 20:17:35",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<b><a href=\"//commons.wikimedia.org/wiki/User:Omnespsx\" class=\"mw-redirect\" title=\"User:Omnespsx\">Omnespsx</a></b> <sub>(<a href=\"//commons.wikimedia.org/wiki/User_talk:Omnespsx\" class=\"mw-redirect\" title=\"User talk:Omnespsx\">D</a>•<a href=\"https://en.wikipedia.org/wiki/es:User:Omnespsx\" class=\"extiw\" title=\"w:es:User:Omnespsx\">ES</a>)</sub>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "134007596": {
+     "pageid": 134007596,
+     "ns": 6,
+     "title": "File:Scene at Nyerere Square, Dodoma City.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2023-07-06 07:20:49",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Scene at Nyerere Square, Dodoma City",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Dodoma|Dodoma Region|Self-published work|Files with coordinates missing SDC location of creation",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "-6.178744",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "35.747292",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Dodoma City Council, Dodoma Region, Tanzania",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2022-07-12 17:27:31",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mangapwani\" class=\"mw-redirect\" title=\"User:Mangapwani\">Mangapwani</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "111077321": {
+     "pageid": 111077321,
+     "ns": 6,
+     "title": "File:Skyline of Beijing CBD with B-5906 approaching (20211016171955).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2021-10-16 16:10:29",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Skyline of Beijing CBD with B-5906 approaching (20211016171955)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Nikon D810|Views from the CCTV Tower|Images with annotations|Taken with AF VR Zoom-Nikkor 80-400mm f/4.5-5.6D ED|China Zun|Self-published work|FoP-China|Beijing photographs taken on 2021-10-16|Files with coordinates missing SDC location of creation|October 2021 in Beijing|Skylines of Beijing|Buildings in the Beijing Central Business District",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "39.918128",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "116.300392",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "B-5906 was flying CA112 (from Hong Kong) at that time.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2021-10-16 17:19:55",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:N509FZ\" title=\"User:N509FZ\">N509FZ</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "16835714": {
+     "pageid": 16835714,
+     "ns": 6,
+     "title": "File:Skyscrapers of Shinjuku 2009 January (revised).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2011-10-02 07:04:31",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Skyscrapers of Shinjuku 2009 January (revised)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Taken with Canon EOS 40D|Self-published work|FoP-Japan|January 2009 in Tokyo|Files with coordinates missing SDC location of creation|Japan photographs taken on 2009-01-25|Mount Fuji in 2009|Photos taken by Morio/Cityscapes/Tokyo/Shinjuku|Views of skyscrapers in Nishi-Shinjuku and Mount Fuji from Bunkyo Civic Center",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "35.707900",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "139.752177",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "View of Shinjuku skyscrapers and Mount Fuji as seen from the Bunkyo Civic Center, Bunkyo Ward, Tokyo",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "Taken on 25 January 2009",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Morio\" title=\"User:Morio\">Morio</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "75238414": {
+     "pageid": 75238414,
+     "ns": 6,
+     "title": "File:Sobrevuelos CDMX HJ2A5091 (40386338731).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-12-21 18:34:58",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Sobrevuelos CDMX HJ2A5091 (40386338731)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "CC-Zero|Flickr images reviewed by FlickreviewR 2|Sobrevuelos CDMX",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Fotografías de la Ciudad de México desde el aire.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2018-02-04 11:33",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/140660272@N07/40386338731/\">HJ2A5091</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/140660272@N07\">Gobierno CDMX</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Zero, Public Domain Dedication",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "89944588": {
+     "pageid": 89944588,
+     "ns": 6,
+     "title": "File:Temple of the Emerald of buddha or Wat Phra Kaew (cropped).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2020-05-06 19:35:52",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Temple of the Emerald of buddha or Wat Phra Kaew (cropped)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Bangkok City Pillar Shrine|Self-published work|Extracted images|Images from Wiki Loves Monuments 2016|Cultural heritage monuments in Thailand with known IDs|Uploaded via Campaign:wlm-th|Images from Wiki Loves Monuments 2016 in Thailand|Outer Views of Wat Phra Kaew|Row of Eight Prangs in Wat Phra Kaew|Outer views of Grand Palace, Bangkok",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "This is a photo of a monument in Thailand identified by the ID",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2015-08-30 18:17:34",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:Preecha.MJ\" title=\"User:Preecha.MJ\">Preecha.MJ</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "123867697": {
+     "pageid": 123867697,
+     "ns": 6,
+     "title": "File:Tháp Rùa - NKS.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2022-10-07 05:11:53",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Tháp Rùa - NKS",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Turtle Tower|Self-published work",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Tháp Rùa ngày nắng",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2022-10-07",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:NKSTTSSHNVN\" title=\"User:NKSTTSSHNVN\">NKSTTSSHNVN</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "177162372": {
+     "pageid": 177162372,
+     "ns": 6,
+     "title": "File:Vista aérea de la Plaza del Congreso 10.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2025-10-21 18:06:18",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Vista aérea de la Plaza del Congreso 10",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Plaza del Congreso|Self-published work|Files with coordinates missing SDC location of creation|Photos taken with WMMX drone|Taken with DJI FC8482|Photos and videos from unmanned aerial vehicles of Argentina|Images of Argentina by User:ProtoplasmaKid|2025 photographs by User:ProtoplasmaKid|Photos taken with WMMX drone in Argentina|Buenos Aires photographs taken on 2025-10-02|Aerial drone photos by User:ProtoplasmaKid",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "-34.610337",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "-58.392706",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Drone aerial view of Congress Square and its surroundings, Buenos Aires, Argentina.",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2025-10-02 15:39:50",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/wiki/User:ProtoplasmaKid\" title=\"User:ProtoplasmaKid\">ProtoplasmaKid</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<table style=\"background-color:#e0e0e0; border:dotted 1px #dfded3; padding:1px; font-size:14px; color:#000000;\" cellspacing=\"10\">\n\n\n<tbody><tr>\n<td align=\"left\">\n</td>\n<td>\n<p><br>\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:WP20Symbols_Coatlicue.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/WP20Symbols_Coatlicue.svg/250px-WP20Symbols_Coatlicue.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"150\" height=\"117\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/WP20Symbols_Coatlicue.svg/330px-WP20Symbols_Coatlicue.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"401\"></a><figcaption></figcaption></figure>\n<p><a href=\"https://upload.wikimedia.org/wikipedia/commons/b/b7/Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original\" class=\"internal\" title=\"Vista aérea de la Plaza del Congreso 10.jpg\"><b>This creative work</b></a> was created by <a href=\"//commons.wikimedia.org/wiki/User:ProtoplasmaKid\" title=\"User:ProtoplasmaKid\">ProtoplasmaKid</a> It is licensed under a Creative Commons License. You are free to use and distribute it as you wish.\n</p>\n<div class=\"center\">\n<dl><dd><b>On the condition that you always place my attribution next to the material or in the credits of your derivative work in a visible, prominently, and intentional manner, as follows:</b></dd>\n<dd><big><b>ProtoplasmaKid / Wikimedia Commons / CC-BY-SA 4.0</b></big></dd></dl>\n</div>\n<p>Although this work, or modified versions of it, may appear on many websites, this is the original material, and using it for free ONLY requires adhering to the license.<br><small>Also, it would be greatly appreciated if you notify me of the use of my photo, or if you want a different shot or version or a license for full commercial use, contact me by email or on my <a href=\"//commons.wikimedia.org/wiki/User_talk:ProtoplasmaKid\" title=\"User talk:ProtoplasmaKid\">discussion page</a>.</small>\n</p>\n</td></tr></tbody></table>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 4.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 4.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/4.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-4.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "303811": {
+     "pageid": 303811,
+     "ns": 6,
+     "title": "File:WellingtonPanorama.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2005-09-01 16:39:09",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "WellingtonPanorama",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Copyrighted free use|Wellington Cable Car",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "ケーブルカーとウェリントンのパノラマ",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "en:wikipedia",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"https://en.wikipedia.org/wiki/User:Dhum_Dhum\" class=\"extiw\" title=\"en:User:Dhum Dhum\">en:User:Dhum Dhum</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<table class=\"layouttemplate licensetpl\" lang=\"en\" dir=\"ltr\" cellpadding=\"0\" style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-success-subtle, #dff2eb); color: var(--color-base, #202122); border-width: var(--border-width-thick, 2px); border-style: solid; border-color: var(--border-color-success, #099979); border-spacing: 8px; box-sizing: border-box;\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/120px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/250px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"197\" data-file-height=\"197\"></span></span>\n</td>\n<td><i>The <a href=\"https://en.wikipedia.org/wiki/Copyright\" class=\"extiw\" title=\"en:Copyright\">copyright holder</a> of this work allows anyone to use it <b>for any purpose</b> including unrestricted redistribution, commercial use, and modification.</i>\n<div style=\"font-size:smaller;\">\n<p><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/40px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"22\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/60px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"48\" data-file-height=\"48\"></span></span> Please check the source to verify that this is correct. In particular, note that publication on the Internet, like publication by any other means, does not in itself imply permission to redistribute. Files without valid permission should be tagged with <kbd>{{subst:<a href=\"//commons.wikimedia.org/wiki/Template:Npd\" title=\"Template:Npd\">npd</a>}}</kbd>.\n</p><p>Usage notes:\n</p>\n<ul><li>If the work requires attribution, use <a href=\"//commons.wikimedia.org/wiki/Template:Attribution\" class=\"mw-redirect\" title=\"Template:Attribution\"><span style=\"font-family:monospace,monospace;\">{{Attribution}}</span></a> instead.</li>\n<li>If this is your own work, please use <a href=\"//commons.wikimedia.org/wiki/Template:Cc-zero\" title=\"Template:Cc-zero\"><span style=\"font-family:monospace,monospace;\">{{Cc-zero}}</span></a> instead.</li></ul>\n</div><span class=\"licensetpl_short\" style=\"display: none\">Copyrighted free use</span><span class=\"licensetpl_long\" style=\"display: none\">Copyrighted free use</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span>\n</td></tr></tbody></table>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "Copyrighted free use",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Copyrighted free use",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "false",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "66690098": {
+     "pageid": 66690098,
+     "ns": 6,
+     "title": "File:Zagreb (29255640143).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-02-22 00:03:42",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Zagreb (29255640143)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Views of Zagreb|Jelačić Square (Zagreb)|2016 in Zagreb|Files with coordinates missing SDC location of creation|Files uploaded by Artix Kreiger|Croatia photographs taken on 2016-09-20|Flickr images reviewed by FlickreviewR 2|Images by Nick Savchenko|Flickr images missing SDC published in",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "45.812886",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "15.976083",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "كاتدرائية زغرب وساحة بان جيلاتشيتش",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2016-09-20 14:10",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/nsavch/29255640143/\">Zagreb</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/61000128@N06\">Nick Savchenko</a> from Kiev, Ukraine",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 2.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 2.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/2.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-2.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "56110146": {
+     "pageid": 56110146,
+     "ns": 6,
+     "title": "File:Абу-Даби (Abu Dhabi) - panoramio (1).jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2017-02-10 00:02:32",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "Абу-Даби (Abu Dhabi) - panoramio (1)",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Etihad Towers|ADNOC Headquarters|Emirates Palace|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Photographs of Abu Dhabi|Photos from Panoramio ID 2333416|Night in Abu Dhabi|Photographs by Valery Ded",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "GPSLatitude": {
+         "value": "24.464446",
+         "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+         "value": "54.311997",
+         "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+         "value": "WGS-84",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "Абу-Даби (Abu Dhabi)",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "25 February 2013 (original upload date)",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://web.archive.org/web/20161025061618/http://www.panoramio.com/photo/86584404\">https://web.archive.org/web/20161025061618/http://www.panoramio.com/photo/86584404</a>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161025061622/http://www.panoramio.com/user/2333416?with_photo_id=86584404\">Валерий Дед</a>",
+         "source": "commons-desc-page"
+        },
+        "Permission": {
+         "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 Unported</a> license.</div><div class=\"rlicense-attr\" style=\"font-weight: bold;\">Attribution: <div style=\"display:inline;font-size:larger;\" class=\"licensetpl_attr\">Валерий Дед</div></div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>\n<style data-mw-deduplicate=\"TemplateStyles:r901585720\">.mw-parser-output .panoramioreview{width:100%;margin:0.5em 0;background-color:var(--background-color-warning-subtle,#fffff0);padding:5px;border:1px solid var(--border-color-warning,#aa8);color:inherit}.mw-parser-output .panoramioreview-failed{background-color:var(--background-color-error-subtle,#fcc);color:inherit}.mw-parser-output .panoramioreview-passed{background-color:var(--background-color-success-subtle,#efe);color:inherit}</style>\n<table class=\"panoramioreview panoramioreview-passed\" lang=\"en\" dir=\"ltr\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Panoramio\" class=\"extiw\" title=\"en:Panoramio\">Panoramio</a></span></b>, was automatically reviewed on 10 February 2017 by <b><a href=\"//commons.wikimedia.org/wiki/User:Panoramio_upload_bot\" title=\"User:Panoramio upload bot\">Panoramio upload bot</a></b>, who confirmed that it was available on Panoramio under the above license on that date.\n</td>\n<td><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Star_and_ring.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/60px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/120px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"75\" data-file-height=\"75\"></a></span>\n</td></tr></tbody></table>",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseShortName": {
+         "value": "CC BY 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Attribution": {
+         "value": "Валерий Дед",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    },
+    "69591502": {
+     "pageid": 69591502,
+     "ns": 6,
+     "title": "File:덕수궁의 가을.jpg",
+     "imagerepository": "local",
+     "imageinfo": [
+      {
+       "extmetadata": {
+        "DateTime": {
+         "value": "2018-05-31 13:07:42",
+         "source": "mediawiki-metadata",
+         "hidden": ""
+        },
+        "ObjectName": {
+         "value": "덕수궁의 가을",
+         "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+         "value": 1.2,
+         "source": "extension",
+         "hidden": ""
+        },
+        "Categories": {
+         "value": "Deoksugung|Buildings in Jung-gu, Seoul|Self-published work|Images from Wiki Loves Earth 2018|South Korea photographs taken on 2017-11-04|Images from Wiki Loves Earth 2018 in South Korea|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation|Uploaded via Campaign:wle-kr|Remote views of Deoksugung",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "Assessments": {
+         "value": "",
+         "source": "commons-categories",
+         "hidden": ""
+        },
+        "ImageDescription": {
+         "value": "덕수둥의 가을 풍경",
+         "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+         "value": "2017-11-04 17:15:18",
+         "source": "commons-desc-page"
+        },
+        "Credit": {
+         "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+         "source": "commons-desc-page"
+        },
+        "Artist": {
+         "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%EB%9D%BC%EC%84%B1%EB%AF%BC&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:라성민 (page does not exist)\">라성민</a>",
+         "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+         "value": "CC BY-SA 3.0",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "UsageTerms": {
+         "value": "Creative Commons Attribution-Share Alike 3.0",
+         "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+         "value": "true",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "LicenseUrl": {
+         "value": "https://creativecommons.org/licenses/by-sa/3.0",
+         "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+         "value": "True",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "Restrictions": {
+         "value": "",
+         "source": "commons-desc-page",
+         "hidden": ""
+        },
+        "License": {
+         "value": "cc-by-sa-3.0",
+         "source": "commons-templates",
+         "hidden": ""
+        }
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+]

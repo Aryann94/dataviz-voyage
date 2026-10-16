@@ -1,0 +1,627 @@
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 1000,
+  "total": 41,
+  "sourceid": null,
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "AE",
+    "value": "United Arab Emirates"
+   },
+   "countryiso3code": "ARE",
+   "date": "2024",
+   "value": 51550,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "AR",
+    "value": "Argentina"
+   },
+   "countryiso3code": "ARG",
+   "date": "2025",
+   "value": 14650,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "AU",
+    "value": "Australia"
+   },
+   "countryiso3code": "AUS",
+   "date": "2025",
+   "value": 64120,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "BR",
+    "value": "Brazil"
+   },
+   "countryiso3code": "BRA",
+   "date": "2025",
+   "value": 10550,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CA",
+    "value": "Canada"
+   },
+   "countryiso3code": "CAN",
+   "date": "2025",
+   "value": 56420,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CH",
+    "value": "Switzerland"
+   },
+   "countryiso3code": "CHE",
+   "date": "2025",
+   "value": 110330,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CL",
+    "value": "Chile"
+   },
+   "countryiso3code": "CHL",
+   "date": "2025",
+   "value": 16960,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CN",
+    "value": "China"
+   },
+   "countryiso3code": "CHN",
+   "date": "2025",
+   "value": 14230,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CO",
+    "value": "Colombia"
+   },
+   "countryiso3code": "COL",
+   "date": "2025",
+   "value": 7900,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "CR",
+    "value": "Costa Rica"
+   },
+   "countryiso3code": "CRI",
+   "date": "2025",
+   "value": 17930,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "EG",
+    "value": "Egypt, Arab Rep."
+   },
+   "countryiso3code": "EGY",
+   "date": "2025",
+   "value": 3260,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "ES",
+    "value": "Spain"
+   },
+   "countryiso3code": "ESP",
+   "date": "2025",
+   "value": 37120,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": 48630,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "GB",
+    "value": "United Kingdom"
+   },
+   "countryiso3code": "GBR",
+   "date": "2025",
+   "value": 54550,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "GH",
+    "value": "Ghana"
+   },
+   "countryiso3code": "GHA",
+   "date": "2025",
+   "value": 2630,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "GR",
+    "value": "Greece"
+   },
+   "countryiso3code": "GRC",
+   "date": "2025",
+   "value": 25360,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "HR",
+    "value": "Croatia"
+   },
+   "countryiso3code": "HRV",
+   "date": "2025",
+   "value": 25360,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "HU",
+    "value": "Hungary"
+   },
+   "countryiso3code": "HUN",
+   "date": "2025",
+   "value": 23850,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "ID",
+    "value": "Indonesia"
+   },
+   "countryiso3code": "IDN",
+   "date": "2025",
+   "value": 5120,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "IN",
+    "value": "India"
+   },
+   "countryiso3code": "IND",
+   "date": "2025",
+   "value": 2760,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "IS",
+    "value": "Iceland"
+   },
+   "countryiso3code": "ISL",
+   "date": "2025",
+   "value": 89220,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "IT",
+    "value": "Italy"
+   },
+   "countryiso3code": "ITA",
+   "date": "2025",
+   "value": 42080,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "JO",
+    "value": "Jordan"
+   },
+   "countryiso3code": "JOR",
+   "date": "2025",
+   "value": 5260,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "JP",
+    "value": "Japan"
+   },
+   "countryiso3code": "JPN",
+   "date": "2025",
+   "value": 38340,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "KE",
+    "value": "Kenya"
+   },
+   "countryiso3code": "KEN",
+   "date": "2025",
+   "value": 2200,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "KR",
+    "value": "Korea, Rep."
+   },
+   "countryiso3code": "KOR",
+   "date": "2025",
+   "value": 37880,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "LA",
+    "value": "Lao PDR"
+   },
+   "countryiso3code": "LAO",
+   "date": "2025",
+   "value": 2150,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "LK",
+    "value": "Sri Lanka"
+   },
+   "countryiso3code": "LKA",
+   "date": "2025",
+   "value": 4670,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "MA",
+    "value": "Morocco"
+   },
+   "countryiso3code": "MAR",
+   "date": "2025",
+   "value": 4360,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "MX",
+    "value": "Mexico"
+   },
+   "countryiso3code": "MEX",
+   "date": "2025",
+   "value": 13730,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "NP",
+    "value": "Nepal"
+   },
+   "countryiso3code": "NPL",
+   "date": "2025",
+   "value": 1570,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "NZ",
+    "value": "New Zealand"
+   },
+   "countryiso3code": "NZL",
+   "date": "2025",
+   "value": 46630,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2025",
+   "value": 8430,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "PT",
+    "value": "Portugal"
+   },
+   "countryiso3code": "PRT",
+   "date": "2025",
+   "value": 29930,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "SN",
+    "value": "Senegal"
+   },
+   "countryiso3code": "SEN",
+   "date": "2025",
+   "value": 1780,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "TH",
+    "value": "Thailand"
+   },
+   "countryiso3code": "THA",
+   "date": "2025",
+   "value": 7690,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "TR",
+    "value": "Turkiye"
+   },
+   "countryiso3code": "TUR",
+   "date": "2025",
+   "value": 16300,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "TZ",
+    "value": "Tanzania"
+   },
+   "countryiso3code": "TZA",
+   "date": "2025",
+   "value": 1270,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "US",
+    "value": "United States"
+   },
+   "countryiso3code": "USA",
+   "date": "2025",
+   "value": 88810,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "VN",
+    "value": "Viet Nam"
+   },
+   "countryiso3code": "VNM",
+   "date": "2025",
+   "value": 4970,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.GNP.PCAP.CD",
+    "value": "GNI per capita, Atlas method (current US$)"
+   },
+   "country": {
+    "id": "ZA",
+    "value": "South Africa"
+   },
+   "countryiso3code": "ZAF",
+   "date": "2025",
+   "value": 6270,
+   "obs_status": "",
+   "decimal": 0
+  }
+ ]
+]

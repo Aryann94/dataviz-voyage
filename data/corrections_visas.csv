@@ -1,0 +1,42 @@
+passeport_iso3,destination_iso3,statut,jours,source_url,date_verification,note
+FRA,THA,sans_visa,30,https://www.diplomatie.gouv.fr/fr/information-par-pays/thailande/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa jusqu'à 30 j (réduit de 60 à 30 j en sept. 2026) (fiche France Diplomatie du 2026-10-07)
+CAN,SEN,visa_requis,,https://www.passportindex.org/,2026-10-15,Site : visa required. Réciprocité annoncée en août 2025 (VisasNews)
+FRA,ESP,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,ITA,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,PRT,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,GRC,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,GBR,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/royaume-uni/conseils-aux-voyageurs-entree-sejour,2026-10-16,ETA obligatoire (fiche France Diplomatie du 2026-10-05)
+FRA,ISL,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,HRV,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,CHE,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,HUN,sans_visa,,https://europa.eu/youreurope/citizens/travel/entry-exit/eu-citizen/index_fr.htm,2026-10-16,Libre circulation UE/EEE/Suisse : carte d'identité ou passeport suffit
+FRA,JPN,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/japon/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa jusqu'à 90 j (fiche France Diplomatie du 2026-09-24)
+FRA,KOR,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/coree-du-sud/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense de visa < 90 j (fiche France Diplomatie du 2026-09-15)
+FRA,CHN,sans_visa,30,https://www.diplomatie.gouv.fr/fr/information-par-pays/chine/conseils-aux-voyageurs-entree-sejour,2026-10-16,Exemption jusqu'à 30 j (fiche France Diplomatie du 2026-09-15)
+FRA,VNM,sans_visa,45,https://www.diplomatie.gouv.fr/fr/information-par-pays/vietnam/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense de visa ≤ 45 j (fiche France Diplomatie du 2026-09-15)
+FRA,IDN,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/indonesie/conseils-aux-voyageurs-entree-sejour,2026-10-16,Visa à l'arrivée (VOA) 30 j (fiche France Diplomatie du 2026-09-15)
+FRA,IND,e_visa,,https://www.diplomatie.gouv.fr/fr/information-par-pays/inde/conseils-aux-voyageurs-entree-sejour,2026-10-16,"Visa obligatoire, e-visa possible (fiche France Diplomatie du 2026-10-05)"
+FRA,NPL,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/nepal/conseils-aux-voyageurs-entree-sejour,2026-10-16,Visa à l'arrivée (fiche France Diplomatie du 2026-09-15)
+FRA,LKA,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/sri-lanka/conseils-aux-voyageurs-entree-sejour,2026-10-16,ETA obligatoire avant l'arrivée (dataset : visa à l'arrivée) (fiche France Diplomatie du 2026-09-27)
+FRA,LAO,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/laos/conseils-aux-voyageurs-entree-sejour,2026-10-16,"Visa obligatoire, obtenable à l'arrivée ou en ligne (fiche France Diplomatie du 2026-09-15)"
+FRA,TUR,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/turquie/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense de visa ≤ 90 j / 180 j (fiche France Diplomatie du 2026-09-15)
+FRA,ARE,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/emirats-arabes-unis/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense de visa (fiche France Diplomatie du 2026-09-15)
+FRA,JOR,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/jordanie/conseils-aux-voyageurs-entree-sejour,2026-10-16,Visa à l'arrivée (40 JOD) ou en ligne ; gratuit avec le Jordan Pass (fiche France Diplomatie du 2026-09-15)
+FRA,MAR,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/maroc/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa jusqu'à 90 j (fiche France Diplomatie du 2026-09-15)
+FRA,EGY,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/egypte/conseils-aux-voyageurs-entree-sejour,2026-10-16,"Visa obligatoire, possible à l'arrivée (fiche France Diplomatie du 2026-09-21)"
+FRA,ZAF,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/afrique-du-sud/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense de visa préalable (fiche France Diplomatie du 2026-09-29)
+FRA,KEN,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/kenya/conseils-aux-voyageurs-entree-sejour,2026-10-16,eTA obligatoire (fiche France Diplomatie du 2026-09-25)
+FRA,TZA,visa_arrivee,,https://www.diplomatie.gouv.fr/fr/information-par-pays/tanzanie/conseils-aux-voyageurs-entree-sejour,2026-10-16,"Visa obligatoire, possible à l'arrivée dans les aéroports (fiche France Diplomatie du 2026-09-24)"
+FRA,SEN,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/senegal/conseils-aux-voyageurs-entree-sejour,2026-10-16,Exempté < 3 mois ; réciprocité annoncée non appliquée (fiche France Diplomatie du 2026-09-29)
+FRA,GHA,visa_requis,,https://www.diplomatie.gouv.fr/fr/information-par-pays/ghana/conseils-aux-voyageurs-entree-sejour,2026-10-16,Visa à obtenir avant l'arrivée (fiche France Diplomatie du 2026-09-15)
+FRA,USA,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/etats-unis/conseils-aux-voyageurs-entree-sejour,2026-10-16,ESTA obligatoire (fiche France Diplomatie du 2026-10-02)
+FRA,CAN,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/canada/conseils-aux-voyageurs-entree-sejour,2026-10-16,AVE obligatoire (fiche France Diplomatie du 2026-09-15)
+FRA,MEX,sans_visa,180,https://www.diplomatie.gouv.fr/fr/information-par-pays/mexique/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa ≤ 180 j (fiche France Diplomatie du 2026-09-15)
+FRA,CRI,sans_visa,180,https://www.diplomatie.gouv.fr/fr/information-par-pays/costa-rica/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa ≤ 180 j (fiche France Diplomatie du 2026-09-15)
+FRA,COL,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/colombie/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa ≤ 90 j (fiche France Diplomatie du 2026-09-21)
+FRA,PER,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/perou/conseils-aux-voyageurs-entree-sejour,2026-10-16,Sans visa < 3 mois (fiche France Diplomatie du 2026-09-21)
+FRA,BRA,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/bresil/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense < 90 j / 180 j (fiche France Diplomatie du 2026-09-15)
+FRA,ARG,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/argentine/conseils-aux-voyageurs-entree-sejour,2026-10-16,Dispense < 3 mois (fiche France Diplomatie du 2026-09-15)
+FRA,CHL,sans_visa,90,https://www.diplomatie.gouv.fr/fr/information-par-pays/chili/conseils-aux-voyageurs-entree-sejour,2026-10-16,Pas de visa < 3 mois (fiche France Diplomatie du 2026-09-15)
+FRA,AUS,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/australie/conseils-aux-voyageurs-entree-sejour,2026-10-16,eVisitor obligatoire (fiche France Diplomatie du 2026-09-15)
+FRA,NZL,eta,,https://www.diplomatie.gouv.fr/fr/information-par-pays/nouvelle-zelande/conseils-aux-voyageurs-entree-sejour,2026-10-16,NZeTA obligatoire (fiche France Diplomatie du 2026-09-15)

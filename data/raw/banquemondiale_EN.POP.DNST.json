@@ -1,0 +1,627 @@
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 1000,
+  "total": 41,
+  "sourceid": null,
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "AE",
+    "value": "United Arab Emirates"
+   },
+   "countryiso3code": "ARE",
+   "date": "2024",
+   "value": 154.694452266967,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "AR",
+    "value": "Argentina"
+   },
+   "countryiso3code": "ARG",
+   "date": "2024",
+   "value": 16.6976014820824,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "AU",
+    "value": "Australia"
+   },
+   "countryiso3code": "AUS",
+   "date": "2024",
+   "value": 3.53710598992988,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "BR",
+    "value": "Brazil"
+   },
+   "countryiso3code": "BRA",
+   "date": "2024",
+   "value": 25.3643242396035,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CA",
+    "value": "Canada"
+   },
+   "countryiso3code": "CAN",
+   "date": "2024",
+   "value": 4.69492973932436,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CH",
+    "value": "Switzerland"
+   },
+   "countryiso3code": "CHE",
+   "date": "2024",
+   "value": 227.933848026418,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CL",
+    "value": "Chile"
+   },
+   "countryiso3code": "CHL",
+   "date": "2024",
+   "value": 26.6360096771031,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CN",
+    "value": "China"
+   },
+   "countryiso3code": "CHN",
+   "date": "2024",
+   "value": 150.079195075526,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CO",
+    "value": "Colombia"
+   },
+   "countryiso3code": "COL",
+   "date": "2024",
+   "value": 47.6668436232537,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "CR",
+    "value": "Costa Rica"
+   },
+   "countryiso3code": "CRI",
+   "date": "2024",
+   "value": 101.461827531646,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "EG",
+    "value": "Egypt, Arab Rep."
+   },
+   "countryiso3code": "EGY",
+   "date": "2024",
+   "value": 117.070930734844,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "ES",
+    "value": "Spain"
+   },
+   "countryiso3code": "ESP",
+   "date": "2024",
+   "value": 97.7591687574834,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": 127.194828833844,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "GB",
+    "value": "United Kingdom"
+   },
+   "countryiso3code": "GBR",
+   "date": "2024",
+   "value": 286.367957673707,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "GH",
+    "value": "Ghana"
+   },
+   "countryiso3code": "GHA",
+   "date": "2024",
+   "value": 151.30734442916,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "GR",
+    "value": "Greece"
+   },
+   "countryiso3code": "GRC",
+   "date": "2024",
+   "value": 80.7225290923196,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "HR",
+    "value": "Croatia"
+   },
+   "countryiso3code": "HRV",
+   "date": "2024",
+   "value": 69.0886347390994,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "HU",
+    "value": "Hungary"
+   },
+   "countryiso3code": "HUN",
+   "date": "2024",
+   "value": 104.778270874425,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "ID",
+    "value": "Indonesia"
+   },
+   "countryiso3code": "IDN",
+   "date": "2024",
+   "value": 149.802588244483,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "IN",
+    "value": "India"
+   },
+   "countryiso3code": "IND",
+   "date": "2024",
+   "value": 488.006414322664,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "IS",
+    "value": "Iceland"
+   },
+   "countryiso3code": "ISL",
+   "date": "2024",
+   "value": 3.83324407418427,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "IT",
+    "value": "Italy"
+   },
+   "countryiso3code": "ITA",
+   "date": "2024",
+   "value": 199.353117814149,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "JO",
+    "value": "Jordan"
+   },
+   "countryiso3code": "JOR",
+   "date": "2024",
+   "value": 130.108746086447,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "JP",
+    "value": "Japan"
+   },
+   "countryiso3code": "JPN",
+   "date": "2024",
+   "value": 340.124474622771,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "KE",
+    "value": "Kenya"
+   },
+   "countryiso3code": "KEN",
+   "date": "2024",
+   "value": 97.1507781297342,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "KR",
+    "value": "Korea, Rep."
+   },
+   "countryiso3code": "KOR",
+   "date": "2024",
+   "value": 530.236321721311,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "LA",
+    "value": "Lao PDR"
+   },
+   "countryiso3code": "LAO",
+   "date": "2024",
+   "value": 33.6647270363951,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "LK",
+    "value": "Sri Lanka"
+   },
+   "countryiso3code": "LKA",
+   "date": "2024",
+   "value": 354.283866795991,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "MA",
+    "value": "Morocco"
+   },
+   "countryiso3code": "MAR",
+   "date": "2024",
+   "value": 85.3264015236388,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "MX",
+    "value": "Mexico"
+   },
+   "countryiso3code": "MEX",
+   "date": "2024",
+   "value": 67.3170642249029,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "NP",
+    "value": "Nepal"
+   },
+   "countryiso3code": "NPL",
+   "date": "2024",
+   "value": 206.843767003837,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "NZ",
+    "value": "New Zealand"
+   },
+   "countryiso3code": "NZL",
+   "date": "2024",
+   "value": 20.0903877558771,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2024",
+   "value": 26.73269375,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "PT",
+    "value": "Portugal"
+   },
+   "countryiso3code": "PRT",
+   "date": "2024",
+   "value": 116.747022016121,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "SN",
+    "value": "Senegal"
+   },
+   "countryiso3code": "SEN",
+   "date": "2024",
+   "value": 96.0992260946346,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "TH",
+    "value": "Thailand"
+   },
+   "countryiso3code": "THA",
+   "date": "2024",
+   "value": 140.280708175928,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "TR",
+    "value": "Turkiye"
+   },
+   "countryiso3code": "TUR",
+   "date": "2024",
+   "value": 111.116589789899,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "TZ",
+    "value": "Tanzania"
+   },
+   "countryiso3code": "TZA",
+   "date": "2024",
+   "value": 77.5567386877828,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "US",
+    "value": "United States"
+   },
+   "countryiso3code": "USA",
+   "date": "2024",
+   "value": 37.1693654604249,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "VN",
+    "value": "Viet Nam"
+   },
+   "countryiso3code": "VNM",
+   "date": "2024",
+   "value": 322.202750862237,
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "EN.POP.DNST",
+    "value": "Population density (people per sq. km of land area)"
+   },
+   "country": {
+    "id": "ZA",
+    "value": "South Africa"
+   },
+   "countryiso3code": "ZAF",
+   "date": "2024",
+   "value": 52.7637578415451,
+   "obs_status": "",
+   "decimal": 0
+  }
+ ]
+]
