@@ -1,0 +1,108 @@
+/* ===== Polices ===== */
+@font-face { font-family: 'Evori'; src: url('fonts/Evori.ttf'); font-display: swap; }
+/* Bricolage Grotesque : chargée depuis Google Fonts dans index.html */
+
+/* ===== Couleurs ===== */
+:root {
+  --ink:        #0D0D33;   /* encre : contours, textes */
+  --cream:      #FFF7E6;   /* remplissage clair */
+  --sky-top:    #FFF2D9;
+  --sky-mid:    #FFF6E3;
+  --sky-bottom: #FFF9E5;
+}
+
+/* ===== Page ===== */
+html, body { margin: 0; min-height: 100%; }
+html { overflow-y: scroll; }                            /* barre toujours présente : rien ne bouge quand le site s'ouvre */
+body { font-family: 'Bricolage Grotesque', system-ui, sans-serif; color: var(--ink); }
+body::before {                                          /* ciel fixe : marche aussi sur iPhone */
+  content: ''; position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 55%, var(--sky-bottom) 100%);
+}
+.is-loading body { overflow: hidden; height: 100vh; }   /* pas de défilement pendant le chargement */
+
+/* ===== Le site ===== */
+.site { transition: opacity .7s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
+.is-loading .site { opacity: 0; transform: translateY(24px); }
+
+/* ===== Hero ===== */
+.hero { position: relative; height: 100vh; overflow: hidden; }
+.hero-title {                                           /* dessiné par le canvas : ici invisible, lisible par les lecteurs d'écran */
+  position: absolute; width: 1px; height: 1px; margin: 0;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.hero-tag {
+  position: absolute; top: 4.5vh; margin: 0; z-index: 3;   /* devant le canvas */
+  font: 600 clamp(.9rem, 1.1vw, 1.15rem) 'Bricolage Grotesque', system-ui, sans-serif;
+  color: var(--ink);
+}
+.hero-tag--left  { left: 3vw; }
+.hero-tag--right { right: 3vw; }
+
+/* ===== Scène 3D : en haut de la page, elle défile avec le hero ===== */
+#scene {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100vh;
+  z-index: 2;
+  pointer-events: none;                                 /* les clics traversent */
+}
+
+/* ===== Loader ===== */
+.pl {
+  position: fixed; inset: 0; z-index: 1000; overflow: hidden;
+  --u: max(100vw / 1600, 100vh / 900);                  /* valeur de secours : clouds.js la recalcule */
+}
+@media (orientation: portrait) { .pl { --u: max(100vw / 900, 100vh / 1600); } }
+
+/* Nuages : .cloud = position, dispersion, brume  |  .drift = dérive lente */
+.cloud {
+  position: absolute;
+  --x: var(--lx); --y: var(--ly); --w: var(--lw);
+  left: calc(50% + var(--x) * var(--u));
+  top:  calc(50% + var(--y) * var(--u));
+  width: calc(var(--w) * var(--u));
+  translate: -50% -50%;
+  opacity: var(--o);
+  will-change: transform, opacity;
+}
+@media (orientation: portrait) { .cloud { --x: var(--px); --y: var(--py); --w: var(--pw); } }
+
+.drift { animation: drift 12s ease-in-out infinite alternate; will-change: transform; }
+.drift img {
+  display: block; width: 100%; height: auto;
+  user-select: none; -webkit-user-drag: none;
+  filter: sepia(.4) saturate(.55) brightness(.97) drop-shadow(0 calc(5 * var(--u)) 0 var(--ink));   /* toon : crème, bord d'encre */
+}
+@keyframes drift {
+  from { transform: translateX(calc(var(--a) * -1 * var(--u))); }
+  to   { transform: translateX(calc(var(--a) * var(--u))); }
+}
+@media (prefers-reduced-motion: reduce) { .drift { animation: none; } }
+
+/* Compteur : même style que le titre */
+.pl-counter {
+  position: absolute; left: 50%; top: calc(50% - 40 * var(--u));
+  translate: -50% -50%; z-index: 2;
+  display: flex; flex-direction: column; align-items: center;
+  font-family: 'Evori', system-ui, sans-serif;
+}
+@media (orientation: portrait) { .pl-counter { top: calc(50% - 250 * var(--u)); } }
+.pl-num {
+  font-size: calc(200 * var(--u)); font-weight: 400; line-height: 1;
+  letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+  /* remplissage : dégradé et bandes d'ombre, découpés à la forme des chiffres */
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDF1D7 70%, #CFC6B5 70% 80%, #A39A8C 80%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .05em var(--ink);                         /* contour */
+  filter: drop-shadow(-.012em .025em 0 var(--ink))               /* relief : trois ombres nettes empilées */
+          drop-shadow(-.012em .025em 0 var(--ink))
+          drop-shadow(-.012em .025em 0 var(--ink));
+}
+@media (orientation: portrait) { .pl-num { font-size: calc(300 * var(--u)); } }
+.pl-pct { font-size: .3em; vertical-align: .9em; margin-left: .1em; }
+
+.pl-num { font-size: calc(200 * var(--u)); line-height: 1; }   /* sert d'unité : le canvas fait 1em de haut de chiffre */
+.pl-canvas { display: block; width: auto; }
+
+.line-mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }   /* marge : les jambages ne sont pas coupés */
+.line { display: inline-block; will-change: transform; }

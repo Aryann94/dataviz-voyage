@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preloader</title>
+<!-- Cache le site pendant le chargement (si JS est coupé, le site reste visible) -->
+<script>document.documentElement.classList.add('is-loading');</script>
+<link rel="stylesheet" href="style.css">
+<link href="https://api.fontshare.com/v2/css?f[]=poppins@900&f[]=clash-display@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader" class="pl" role="progressbar" aria-label="Chargement du site"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <!-- les nuages sont insérés ici par clouds.js -->
+    <div class="pl-counter" aria-hidden="true">
+      <span class="pl-num"><span id="pl-value">0</span><span class="pl-pct">%</span></span>
+    </div>
+  </div>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <main class="site">
+  <section class="hero">
+    <h1 class="hero-title">Voyage</h1>
+    <p class="hero-tag hero-tag--left">Travel</p>
+    <p class="hero-tag hero-tag--right">Scrollez en bas</p>
+  </section>
+</main>
+  <script src="clouds.js"></script>
+  <script src="disperse.js"></script>
+  <script src="counter.js"></script>
+  <script src="progress.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="hero.js"></script>
+  <script src="main.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/"
+  }
+}
+</script>
+</body>
+</html>
