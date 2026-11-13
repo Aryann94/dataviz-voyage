@@ -1,0 +1,55 @@
+# Publie le site statique sur GitHub Pages à chaque push sur main.
+# Le site n'a pas d'étape de build : on copie seulement les fichiers utiles
+# (page, scripts, styles, images, modèle 3D, polices, données finales).
+name: Déploiement GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Préparer le dossier du site
+        run: |
+          mkdir -p _site/data
+          cp index.html style.css *.js _site/
+          cp -r img models fonts prototype _site/
+          # Données finales seulement (pas data/raw ni data/intermediaire)
+          cp data/*.csv _site/data/
+          # Pas de traitement Jekyll : les fichiers sont servis tels quels
+          touch _site/.nojekyll
+          find _site -type f | sort
+
+      - name: Configurer Pages
+        uses: actions/configure-pages@v5
+
+      - name: Envoyer le site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
