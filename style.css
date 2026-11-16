@@ -33,6 +33,8 @@ body::before {                                          /* ciel fixe : marche au
   height: calc(100vh + var(--zoom-scroll));
   height: calc(100lvh + var(--zoom-scroll));            /* lvh : ne bouge pas avec la barre d'adresse mobile */
 }
+@media (pointer: coarse) { .hero-track { --zoom-scroll: 80lvh; } }   /* téléphone : plongée plus courte (120lvh sur ordinateur) */
+
 .hero { position: sticky; top: 0; height: 100vh; height: 100lvh; overflow: hidden; }
 #scene {
   position: absolute; inset: 0; width: 100%; height: 100%;
@@ -176,6 +178,7 @@ body::before {                                          /* ciel fixe : marche au
   user-select: none; -webkit-user-drag: none;
   filter: sepia(.4) saturate(.55) brightness(.97) drop-shadow(0 calc(5 * var(--u)) 0 var(--ink));   /* toon : crème, bord d'encre */
 }
+@media (pointer: coarse) { .drift img { filter: none; } }   /* téléphone : pas de filtre, trop coûteux pendant la dispersion */
 @keyframes drift {
   from { transform: translateX(calc(var(--a) * -1 * var(--u))); }
   to   { transform: translateX(calc(var(--a) * var(--u))); }

@@ -125,7 +125,7 @@ const REVEAL_EDGE   = [0.18, 0.5];
 
 // ===== Réglages : la plongée au défilement (fractions de la course, de 0 à 1) =====
 const ZOOM = {
-  ease:  8,              // lissage : plus grand = suit le défilement de plus près
+  ease:  matchMedia('(pointer: coarse)').matches ? 14 : 8,   // réactivité : plus grand sur téléphone (le doigt pilote directement)
   calm:  [0.00, 0.40],   // ses gestes et son balancement s'éteignent
   face:  [0.00, 0.55],   // il se redresse et nous regarde
   dolly: [0.10, 0.90],   // la caméra plonge vers le casque
