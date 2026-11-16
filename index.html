@@ -3,23 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Preloader</title>
+<meta name="description" content="Voyage : une expérience de voyage interactive.">
+<link rel="icon" href="img/favicon-32.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<title>Periple - Dataviz</title>
 <!-- Cache le site pendant le chargement (si JS est coupé, le site reste visible) -->
 <script>document.documentElement.classList.add('is-loading');</script>
-<!-- Import map déclarée avant tout script pour être prise en compte par tous les navigateurs -->
 <script type="importmap">
 {
   "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+    "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.min.js",
     "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/"
   }
 }
 </script>
 <link rel="stylesheet" href="style.css">
-<link href="https://api.fontshare.com/v2/css?f[]=poppins@900&f[]=clash-display@600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.css">
 </head>
 <body>
+  <!-- Préchargeur : nuages et compteur -->
   <div id="preloader" class="pl" role="progressbar" aria-label="Chargement du site"
        aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <!-- les nuages sont insérés ici par clouds.js -->
@@ -28,19 +33,47 @@
     </div>
   </div>
 
-  <canvas id="scene" aria-hidden="true"></canvas>
+  <!-- Entrée : avec ou sans le son (apparaît à 100 %, hors de la barre de progression) -->
+  <div class="pl-gate" role="group" aria-label="Choisir l'entrée" hidden>
+    <button class="btn btn--primary" type="button" data-sound="on" data-magnetic>Entrer avec le son</button>
+    <button class="btn btn--secondary" type="button" data-sound="off" data-magnetic>Entrer sans le son</button>
+  </div>
+
+  <!-- Hero : la piste de défilement, et la scène collée à l'écran pendant la plongée -->
+  <div class="hero-track">
+    <section class="hero">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <h1 class="hero-title">Voyage</h1>
+      <p class="hero-tag hero-tag--left"><img class="brand-logo" src="img/logo.svg" alt="" width="24" height="24">Periple</p>
+      <button class="hero-tag hero-tag--right scroll-cta" type="button" data-roll data-magnetic="0.3">Scroll pour explorer</button>
+      <div class="visor-content">
+        <h2 class="visor-line visor-title">Prêt pour le départ ?</h2>
+        <p class="visor-line visor-text">Texte provisoire : une phrase qui donne envie d'embarquer.</p>
+        <div class="visor-line visor-cta"><a class="visor-btn btn btn--primary" href="destinations.html" data-magnetic="0.15">Embarquer</a></div>
+      </div>
+    </section>
+  </div>
+
   <main class="site">
-  <section class="hero">
-    <h1 class="hero-title">Voyage</h1>
-    <p class="hero-tag hero-tag--left">Travel</p>
-    <p class="hero-tag hero-tag--right">Scrollez en bas</p>
-  </section>
-</main>
+    <!-- la suite du site -->
+  </main>
+
+    <!-- Bouton son : en bas à droite, caché pendant le chargement (le nom « Son » est lu par les lecteurs d'écran) -->
+  <button class="sound-toggle btn btn--icon" type="button" aria-pressed="false" aria-label="Son" data-magnetic>
+    <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+
   <script src="clouds.js"></script>
   <script src="disperse.js"></script>
   <script src="counter.js"></script>
   <script src="progress.js"></script>
+  <script src="sound.js"></script>
+  <script src="gate.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="buttons.js"></script>
+  <script src="scroll.js"></script>
   <script src="hero.js"></script>
   <script src="main.js"></script>
 </body>

@@ -1,6 +1,7 @@
 # Dataviz voyage : récapitulatif du projet (phase données terminée)
 
-*Mis à jour le 16 octobre 2026. Document de passation pour les conversations suivantes et base de la section technique.*
+*Mis à jour le 15 octobre 2026. Document de passation pour les conversations suivantes et base de la section technique.*
+> **Page d'accueil terminée** (loader avec compteur, choix avec ou sans le son, chute de l'astronaute en 3D, plongée dans le casque au défilement, musique et sons, boutons magnétiques, navigation au clavier, logo et nom du site : Periple).
 
 ## 1. Le projet en bref
 
@@ -122,6 +123,19 @@ Quatre méthodes de collecte différentes (5 sources) : téléchargement, API RE
 - **avec 6 axes et 9 questions** (110 592 combinaisons, 16/10/2026) : le Japon gagne 19,9 % des parties, le Brésil 12,4 %, l'Indonésie et la Grèce 7,5 % ; 35 pays peuvent gagner, 37/41 apparaissent dans un top 3 (jamais : Suisse, Jordanie, Kenya, Ghana). Le Japon gagne surtout quand on combine les grandes villes avec autre chose (gratte-ciel + musées : 44 %), rarement en nature pure (lac + randonnée : 7,5 %). **À surveiller** : c'est le nouveau pays « bon partout » (villes 100, nature 95, mer 88). Variantes testées et rejetées : densité + forêt en moyenne (l'Islande tombe à 53 en nature), longueur des côtes seule (la Grèce passe derrière le Maroc et l'Égypte) ;
 - **prototype** : https://claude.ai/artifact/U5FEve1vN8HjjCZf1zpjH1 (9 questions en cartes, dont une sur la mer, résultat avec radar à 6 axes). Le fichier est aussi dans `prototype/quiz-prototype.html` : il sert de référence pour la logique, pas pour le design.
 
+## 6 bis. Projets similaires (vérifiés le 22/10/2026, à citer dans la présentation)
+
+| Site | Fonctionnement | Différence avec notre quiz |
+|---|---|---|
+| [Voyasee](https://voyasee.com/destination-quiz/) | 12 questions fixes (6 en mode rapide), 600 destinations (villes, îles, régions), climat par mois via NASA POWER, formule affichée, radar et comparaison du top 3 | Le plus proche du nôtre. Questions non adaptatives, données de destination « curated » sans source publique, pas de téléchargement |
+| [LOCALS Insider – Country Matcher](https://localsinsider.com/travel-tools/country-matcher/) | 6 questions fixes, 50 ou 53 pays (la page se contredit), le climat pèse le plus | Sources non citées, pas d'explication du calcul |
+| [Odisé](https://www.odise.io/ou-partir-test) | 12 questions de personnalité, plus de 60 destinations, archétype + 3 destinations avec un texte explicatif | Profils sans source, test de personnalité |
+| [Atlas Guide](https://www.atlas-guide.com/find-your-destination/) | 9 questions fixes, plus de 190 pays, explication écrite par une IA | Sources non nommées |
+
+**Ce qui nous différencie vraiment** : questions adaptatives (aucun des 4 ne l'est), sources publiques citées et données téléchargeables en CSV, et le quiz relié à deux autres visualisations (visas, budget). Ne pas dire « personne ne l'a fait » : Voyasee fait déjà un quiz transparent avec radar.
+
+Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 critères, collecte des réponses des utilisateurs, modèle statistique) : **non retenu** pour ce projet. Trop grand pour un projet seul d'ici janvier, critères subjectifs (anime, ambiance), besoin d'un serveur et du consentement RGPD pour stocker des réponses, sources inadaptées (JNTO = Japon seulement ; arrivées touristiques déjà écartées). Idées gardées : expliquer chaque résultat, séparer faits et choix de calcul, questions adaptatives (déjà prévues).
+
 ## 7. Limites connues (à écrire sur la page)
 
 - **La culture se limite aux monuments** : la cuisine, la culture populaire et les fêtes ne sont pas mesurées. C'est pour ça que le Japon (« grandes villes + monuments » pour nos chiffres) ne sort pas forcément pour quelqu'un qui l'aime pour d'autres raisons.
@@ -131,13 +145,48 @@ Quatre méthodes de collecte différentes (5 sources) : téléchargement, API RE
 - **Les visas** datent de février 2026, sauf pour le passeport français, vérifié en octobre 2026. Afficher la date sur la carte.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
+## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 15/11/2026)
+
+**Fil conducteur : « Où partir, et à quel prix selon d'où tu viens ».** Le passeport choisi par le visiteur change la carte des visas et le budget (en jours de revenu). Les visualisations sont reliées : un pays sélectionné quelque part est mis en avant partout, et le résultat du quiz renvoie vers « voir les visas » et « voir le budget ».
+
+**Nom du site : à choisir.** Piste préférée : « Point de départ » (voir la conversation du 15/11 pour le logo).
+
+**Types de visualisation (5)** : radar, classement en barres, globe 3D, courbe dans le temps, grille de carrés + barres empilées.
+
+### 1. Quiz → radar + classement
+- Radar à 6 pointes (hexagone, un par critère) : profil du joueur contre profil du pays.
+- Révélation animée à la fin : le globe tourne vers le pays trouvé, puis le classement des 41 pays apparaît. Pas de classement en direct pendant le quiz (ça gâcherait le suspense).
+- Clic sur un pays du classement = radar mis à jour. **Classement triable par critère** après le résultat, pour que le quiz soit aussi une visualisation qu'on explore.
+
+### 2. Visas → globe 3D en WebGL (Three.js écrit à la main)
+- **Three.js codé soi-même, pas globe.gl** : le but est d'apprendre (sélection des pays au clic par raycasting, couleurs par statut, transitions animées). Feu vert du prof pour les bibliothèques.
+- **Accessibilité et performances obligatoires** : si WebGL n'est pas disponible, carte à plat en D3 à la place ; tout doit marcher au clavier avec une recherche de pays ; `prefers-reduced-motion` respecté (pas de rotation automatique).
+- On fait tourner le globe à la souris ; un clic sur un pays prend son passeport (on voit que les règles ne sont pas réciproques) ; au survol, statut et jours autorisés ; compteur « X pays sans visa ». Bouton « carte à plat ».
+- **Fiche pays au clic** :
+  - règles dans les deux sens (« toi chez eux », « eux chez toi ») ;
+  - pour le passeport français, la note vérifiée sur France Diplomatie avec le lien et la date (`corrections_visas.csv`) ;
+  - photo et description (41 pays) ;
+  - courbe du nombre de pays sans visa pour ce passeport de 2019 à 2026.
+- **Historique des visas 2019-2026** : le dépôt archivé ilyankou/passport-index-dataset garde **56 versions** de `passport-index-tidy-iso3.csv` dans son historique Git (17/04/2019 au 12/01/2025), plus la version imorte du 18/02/2026. Vérifié le 03/11 : passeport français sans visa 98 pays en août 2021 (Covid : 9 812 cases « covid ban »), 122 en avril 2023, 127 en janvier 2025. **Le format change** : les versions de 2019 ont une colonne `Value` (codes numériques) au lieu de `Requirement`, à décoder dans le nouveau script. Usage : curseur d'années sous le globe (la Terre change de couleur année par année) et courbe. Corrige aussi le point faible « dates » du jeu de données.
+- **Tampon de passeport stylisé** à la place d'une image de visa : dessiné en SVG à partir des données (pays, statut, durée), visiblement illustratif. Chaque pays cliqué ajoute un tampon au passeport virtuel du visiteur. Pas d'images de vrais visas : introuvables pour 199 pays, droits d'auteur, et imiter un document officiel ne se fait pas.
+
+### 3. Budget → « combien de jours de revenu pour ce voyage »
+- Grille de carrés : **un carré = un jour de revenu moyen** (RNB par habitant / 365) du pays de départ. Les carrés se remplissent quand on change les réglages.
+- Réglages : pays de départ, destination, nombre de jours (curseur), niveau (petit, moyen, confort), nombre de voyageurs. Deux voyageurs côte à côte pour le même voyage.
+- Détail au survol et en barres empilées (logement, transport, repas, activités), triables.
+- Phrase calculée automatiquement, par exemple « Pour toi, ce voyage = 11 jours. Pour un habitant du Népal = presque un an. »
+- Exemple vérifié sur nos données : 10 jours au Japon en budget moyen = 1 400 $ (140 $ par jour). France (RNB 48 630 $, 2025) : environ 11 jours ; Inde (2 760 $) : environ 185 jours ; Népal (1 570 $) : environ 326 jours.
+- Limites à écrire sur la page : **billet d'avion non compté** (dépenses sur place seulement) ; **revenu moyen par habitant**, pas un salaire réel.
+- À faire : récupérer le RNB des 199 pays (script Banque mondiale, environ 10 min), sinon limiter le pays de départ à nos 41 pays.
+
 ## 8. Prochaines étapes (nouvelle conversation : le site)
 
-1. Structure de la page : accueil et intro, quiz, carte des passeports, budget, section technique, téléchargement des données (ZIP : 4 CSV + dictionnaire des données).
-2. Choix des bibliothèques : D3 pour le radar et la carte, Leaflet ou D3-geo pour la carte, Chart.js possible pour le budget. Fond de carte Natural Earth : faire la jointure sur `ADM0_A3`, car France et Norvège ont `ISO_A3 = -99`.
-3. Réécrire les questions du quiz pour qu'elles soient plus amusantes (duels, situations, images), 10 à 12 questions, avec la même logique de calcul.
-4. Une visualisation à la fois, testée avant de passer à la suivante.
-5. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
+1. Structure de la page : accueil et intro, quiz, globe des passeports, budget, section technique, téléchargement des données (ZIP : les CSV + dictionnaire des données).
+2. Nouveaux scripts de données : `build_visas_historique.py` (56 versions Git + 2026, décodage de l'ancien format) et RNB des 199 pays.
+3. Bibliothèques : Three.js pour le globe, D3 pour le radar, le classement, la courbe, la grille de carrés et la carte de secours. Fond de carte Natural Earth : faire la jointure sur `ADM0_A3`, car France et Norvège ont `ISO_A3 = -99`.
+4. Réécrire les questions du quiz pour qu'elles soient plus amusantes (duels, situations, images), 10 à 12 questions, avec la même logique de calcul.
+5. Une visualisation à la fois, testée avant de passer à la suivante.
+6. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
 
 **Décision du 16/10/2026 : on fige les 6 critères.** Langue et climat ont été étudiés puis écartés :
 - **langue** : avec les langues officielles, l'Inde (anglais officiel, alphabet latin pour l'anglais) obtient le même dépaysement que les États-Unis, ce qui est absurde ; le Maroc, où le français est très parlé sans être officiel, serait compté comme très dépaysant ;
@@ -149,4 +198,4 @@ Un critère approximatif qui produit des résultats absurdes coûte plus de cré
 
 Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (mode rapide environ 8 questions, mode précis environ 15), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
 
-Questions ouvertes : Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
+Questions ouvertes : Nom du site et logo ? Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?

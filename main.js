@@ -1,14 +1,15 @@
-// ===== Enchaînement : chargement → 100 → dispersion → chute → titre =====
-const REVEAL_AT = 0.4;    // le site (encore vide) devient visible à 40 % de la dispersion
+// ===== Enchaînement : chargement → 100 → dispersion → chute → titre → défilement =====
+const REVEAL_AT = 0.4;    // le site devient visible à 40 % de la dispersion
 const FALL_AT   = 0.55;   // l'astronaute entre à 55 % de la dispersion
 
 (async () => {
   const root = document.documentElement;
-  let scene = null, failed = false, fallAt = 0;              // fallAt : instant prévu de son entrée
+  let scene = null, failed = false, fallAt = 0;
+  const arrived = () => { Hero.reveal(); window.Scroll?.unlock(); };   // il freine : textes et défilement
   const startScene = () => {
     if (!fallAt) return;
-    if (scene) scene.fall({ delay: fallAt - performance.now(), onArrive: Hero.reveal });
-    else if (failed) Hero.reveal();                           // pas d'astronaute : le titre arrive seul
+    if (scene) scene.fall({ delay: fallAt - performance.now(), onArrive: arrived });
+    else if (failed) arrived();                                         // pas d'astronaute : on débloque quand même
   };
 
   try {
@@ -17,7 +18,7 @@ const FALL_AT   = 0.55;   // l'astronaute entre à 55 % de la dispersion
 
     const assets = [
       ...Clouds.imgs.map(url => ({ type: 'image', url, weight: 1 })),
-      { type: 'task', weight: 30, run: async set => {        // three.js + modèle + shaders
+      { type: 'task', weight: 30, run: async set => {                  // three.js + modèle + shaders
           try {
             const { init } = await import('./scene.js');
             set(0.3);
@@ -26,21 +27,22 @@ const FALL_AT   = 0.55;   // l'astronaute entre à 55 % de la dispersion
             failed = true;
             throw e;
           } finally {
-            startScene();                                     // cas rare : la scène arrive (ou échoue) après le loader
+            startScene();
           }
       } },
     ];
 
     await Progress.run(assets, { sim });
-    await new Promise(r => setTimeout(r, 150));               // un court instant sur « 100 »
+    await new Promise(r => setTimeout(r, 150));                         // un court instant sur « 100 »
+    await window.Gate?.ask();                                            // à 100 % : « avec ou sans le son », puis on entre
 
     const leaving = Clouds.disperse();
     fallAt = performance.now() + Clouds.leaveMs * FALL_AT;
-    startScene();                                             // les traits accélèrent avec les nuages
+    startScene();
     setTimeout(() => root.classList.remove('is-loading'), Clouds.leaveMs * REVEAL_AT);
     await leaving;
   } finally {
-    root.classList.remove('is-loading');                      // sécurité : le site s'affiche quoi qu'il arrive
+    root.classList.remove('is-loading');                                // sécurité : le site s'affiche quoi qu'il arrive
     document.getElementById('preloader')?.remove();
     document.dispatchEvent(new Event('preloader:done'));
     if (!fallAt) fallAt = performance.now();

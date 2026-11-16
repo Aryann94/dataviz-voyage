@@ -12,6 +12,7 @@
 }
 
 /* ===== Page ===== */
+::selection { background: #E8D9B5; color: var(--ink); }   /* sable et encre : contraste élevé */
 html, body { margin: 0; min-height: 100%; }
 html { overflow-y: scroll; }                            /* barre toujours présente : rien ne bouge quand le site s'ouvre */
 body { font-family: 'Bricolage Grotesque', system-ui, sans-serif; color: var(--ink); }
@@ -21,30 +22,133 @@ body::before {                                          /* ciel fixe : marche au
 }
 .is-loading body { overflow: hidden; height: 100vh; }   /* pas de défilement pendant le chargement */
 
-/* ===== Le site ===== */
+/* ===== Le site (sous le hero) ===== */
 .site { transition: opacity .7s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
 .is-loading .site { opacity: 0; transform: translateY(24px); }
 
-/* ===== Hero ===== */
-.hero { position: relative; height: 100vh; overflow: hidden; }
-.hero-title {                                           /* dessiné par le canvas : ici invisible, lisible par les lecteurs d'écran */
-  position: absolute; width: 1px; height: 1px; margin: 0;
-  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+/* ===== Hero : la piste de défilement, et la scène collée à l'écran ===== */
+.hero-track {
+  --zoom-scroll: 120lvh;                                /* longueur de la plongée : plus petit = plus court */
+  position: relative;
+  height: calc(100vh + var(--zoom-scroll));
+  height: calc(100lvh + var(--zoom-scroll));            /* lvh : ne bouge pas avec la barre d'adresse mobile */
 }
+.hero { position: sticky; top: 0; height: 100vh; height: 100lvh; overflow: hidden; }
+#scene {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 2; pointer-events: none;                     /* les clics traversent */
+}
+.hero-title {                       /* calque transparent posé sur le titre dessiné : sélectionnable, lu par les lecteurs d'écran */
+  position: absolute; left: 50%; top: var(--t-y, 50%); translate: -50% -50%; z-index: 3; margin: 0;
+  font: 400 var(--t-size, 10vw)/1 'Evori', system-ui, sans-serif;
+  text-transform: uppercase; white-space: nowrap;
+  color: transparent;
+  pointer-events: none; user-select: none;            /* actif seulement quand le titre est à l'écran */
+}
+.hero-title.is-shown { pointer-events: auto; user-select: text; cursor: text; }
+.hero-title::selection { background: rgba(232, 217, 181, .6); color: transparent; }
 .hero-tag {
   position: absolute; top: 4.5vh; margin: 0; z-index: 3;   /* devant le canvas */
   font: 600 clamp(.9rem, 1.1vw, 1.15rem) 'Bricolage Grotesque', system-ui, sans-serif;
   color: var(--ink);
 }
 .hero-tag--left  { left: 3vw; }
+.hero-tag--left .line { display: inline-flex; align-items: center; gap: .2em; }   /* logo et texte sur une même ligne, centrés */
+.brand-logo { height: 1.3em; width: auto; translate: 0 var(--logo-nudge, 0); }      /* --logo-nudge : réglage fin de la hauteur */
 .hero-tag--right { right: 3vw; }
-
-/* ===== Scène 3D : en haut de la page, elle défile avec le hero ===== */
-#scene {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100vh;
-  z-index: 2;
-  pointer-events: none;                                 /* les clics traversent */
+/* « Scroll pour explorer » : un bouton qui a l'air d'un texte souligné */
+.scroll-cta { padding: 0; border: 0; background: none; cursor: pointer; }
+.scroll-cta .roll {                                     /* soulignement dans le masque : il apparaît avec le texte */
+  padding-bottom: 2px;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1.5px no-repeat;
 }
+.scroll-cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 6px; border-radius: 4px; }
+
+/* ===== Visière : texte et bouton (apparaissent en fin de plongée) ===== */
+.visor-content {
+  position: absolute; inset: 0; z-index: 3;
+  display: grid; place-content: center; justify-items: center; gap: 2.4vh;
+  padding: 0 8vw; text-align: center; color: var(--cream);
+  visibility: hidden;                                   /* GSAP l'affiche au bon moment */
+}
+.visor-title { margin: 0; font: 400 clamp(2.6rem, 7vw, 6.5rem)/.9 'Evori', system-ui, sans-serif; text-transform: uppercase; }
+.visor-text  { margin: 0; max-width: 34ch; font: 500 clamp(1rem, 1.4vw, 1.3rem)/1.45 'Bricolage Grotesque', system-ui, sans-serif; opacity: .85; }
+@media (prefers-reduced-motion: reduce) { .visor-content { background: var(--ink); } }   /* sans plongée : fond encre */
+
+/* ===== Révélation ligne par ligne, sous masque (hero.js) ===== */
+.line-mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }   /* marge : les jambages ne sont pas coupés */
+.line { display: inline-block; will-change: transform; }
+.visor-cta .line-mask { padding: .6em 1.5em .5em; margin: -.6em -1.5em -.5em; }   /* de la place pour l'aimant, sans dévoiler le bouton avant son apparition */
+
+/* ===== Boutons ===== */
+.btn {
+  --shade: #807A6F;                       /* bande claire de l'ombre (8 px) */
+  --edge:  #201F1C;                       /* liseré foncé (4 px), contour et texte */
+  --inner: inset 0 -4px 0 var(--edge), inset 0 -8px 0 var(--shade);   /* le relief intérieur */
+  --outer: 0 0 0 0 transparent;           /* halo et anneau clavier (vides par défaut) */
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 18px 18px;                /* plus de place en bas : les ombres y prennent 8 px */
+  font: 700 1rem/1 'Bricolage Grotesque', system-ui, sans-serif;
+  color: var(--edge); background: #FFF3DD;
+  border: 1px solid var(--edge); border-radius: 8px;
+  box-shadow: var(--inner), var(--outer);
+  text-decoration: none; cursor: pointer;
+  transition: box-shadow 0.12s ease, padding 0.12s ease;
+}
+.btn:active {                             /* il s'enfonce : ombres réduites, texte 2 px plus bas */
+  --inner: inset 0 -2px 0 var(--edge), inset 0 -4px 0 var(--shade);
+  padding: 14px 18px 16px;
+}
+.btn--secondary { --shade: #808080; --edge: #202020; background: #FFFFFF; }
+
+/* Contour clavier : anneau crème puis anneau encre, lisible sur fond clair comme foncé */
+.btn:focus-visible { outline: 2px solid var(--cream); outline-offset: 2px; --outer: 0 0 0 6px var(--ink); }
+
+/* Bouton carré à icône (le bouton son) */
+.btn--icon { width: 48px; height: 48px; padding: 0 0 6px; }
+.btn--icon:active { padding: 2px 0 4px; }
+
+/* ----- Bouton son : en bas à droite, caché pendant le chargement ----- */
+.sound-toggle {
+  position: fixed; right: 24px; bottom: max(24px, env(safe-area-inset-bottom)); z-index: 1000;
+  border-width: 2px;
+  transition: opacity 0.4s, visibility 0.4s, box-shadow 0.12s ease, padding 0.12s ease;
+}
+.is-loading .sound-toggle { opacity: 0; visibility: hidden; }
+.sound-bars { display: flex; align-items: flex-end; gap: 3px; height: 16px; }
+.sound-bars i {
+  width: 3px; height: 100%; border-radius: 1.5px; background: currentColor;
+  transform-origin: bottom; transform: scaleY(0.25); transition: transform 0.3s;
+}
+.sound-toggle[aria-pressed="true"] .sound-bars i { animation: sound-bar 0.9s ease-in-out infinite alternate; }
+.sound-toggle[aria-pressed="true"] .sound-bars i:nth-child(2) { animation-delay: -0.3s; }
+.sound-toggle[aria-pressed="true"] .sound-bars i:nth-child(3) { animation-delay: -0.6s; }
+.sound-toggle[aria-pressed="true"] .sound-bars i:nth-child(4) { animation-delay: -0.15s; }
+@keyframes sound-bar { from { transform: scaleY(0.25); } to { transform: scaleY(1); } }
+
+/* ----- Entrée : avec ou sans le son ----- */
+.pl-gate {
+  position: fixed; left: 50%; top: calc(50% + 10vh); z-index: 1001;
+  translate: -50% 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+  width: max-content; max-width: calc(100vw - 32px);
+  opacity: 0; transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.pl-gate[hidden] { display: none; }
+.pl-gate.is-open { opacity: 1; transform: none; }
+@media (max-width: 600px) { .pl-gate { top: calc(50% + 9vh); } }
+
+/* ----- Texte qui roule (prêt pour « Scroll pour explorer ») ----- */
+.roll { display: inline-flex; }
+.roll-ch { display: inline-block; height: 1.15em; line-height: 1.15; overflow: hidden; }
+.roll-ch > span {
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  transition-delay: calc(var(--i) * 18ms);   /* les lettres partent l'une après l'autre */
+}
+[data-roll]:hover .roll-ch > span,
+[data-roll]:focus-visible .roll-ch > span { transform: translateY(-100%); }
 
 /* ===== Loader ===== */
 .pl {
@@ -76,33 +180,21 @@ body::before {                                          /* ciel fixe : marche au
   from { transform: translateX(calc(var(--a) * -1 * var(--u))); }
   to   { transform: translateX(calc(var(--a) * var(--u))); }
 }
-@media (prefers-reduced-motion: reduce) { .drift { animation: none; } }
 
-/* Compteur : même style que le titre */
+/* Compteur : dessiné dans un canvas par counter.js, au même style que le titre */
 .pl-counter {
   position: absolute; left: 50%; top: calc(50% - 40 * var(--u));
   translate: -50% -50%; z-index: 2;
   display: flex; flex-direction: column; align-items: center;
-  font-family: 'Evori', system-ui, sans-serif;
 }
-@media (orientation: portrait) { .pl-counter { top: calc(50% - 250 * var(--u)); } }
-.pl-num {
-  font-size: calc(200 * var(--u)); font-weight: 400; line-height: 1;
-  letter-spacing: -.02em; font-variant-numeric: tabular-nums;
-  /* remplissage : dégradé et bandes d'ombre, découpés à la forme des chiffres */
-  background: linear-gradient(180deg, #FFFFFF 0%, #FDF1D7 70%, #CFC6B5 70% 80%, #A39A8C 80%);
-  -webkit-background-clip: text; background-clip: text;
-  color: transparent; -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .05em var(--ink);                         /* contour */
-  filter: drop-shadow(-.012em .025em 0 var(--ink))               /* relief : trois ombres nettes empilées */
-          drop-shadow(-.012em .025em 0 var(--ink))
-          drop-shadow(-.012em .025em 0 var(--ink));
-}
-@media (orientation: portrait) { .pl-num { font-size: calc(300 * var(--u)); } }
-.pl-pct { font-size: .3em; vertical-align: .9em; margin-left: .1em; }
-
+@media (orientation: portrait) { .pl-counter { top: 50%; } }
 .pl-num { font-size: calc(200 * var(--u)); line-height: 1; }   /* sert d'unité : le canvas fait 1em de haut de chiffre */
+@media (orientation: portrait) { .pl-num { font-size: calc(300 * var(--u)); } }
 .pl-canvas { display: block; width: auto; }
 
-.line-mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }   /* marge : les jambages ne sont pas coupés */
-.line { display: inline-block; will-change: transform; }
+/* ===== Moins d'animations, si l'utilisateur l'a demandé ===== */
+@media (prefers-reduced-motion: reduce) {
+  .drift { animation: none; }
+  .sound-toggle[aria-pressed="true"] .sound-bars i { animation: none; transform: scaleY(0.8); }
+  .roll-ch > span { transition: none; }
+}

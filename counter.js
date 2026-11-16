@@ -4,7 +4,7 @@ const Counter = (() => {
   const S = {
     font: '"Evori"', weight: 400,
     fill: ['#FFFFFF', '#FDF1D7'],
-    bands: [[0.06, '#A39A8C'], [0.10, '#CFC6B5']],
+    bands: [[0.03, '#A39A8C'], [0.06, '#CFC6B5']],
     bandZone: 0.3,
     rim: ['#FFF9E5', 0],
     ink: '#0D0D33',
@@ -35,7 +35,8 @@ const Counter = (() => {
     UNIT = asc / capRatio;
     pad = Math.ceil(UNIT * (S.stroke + S.rim[1] + Math.max(Math.abs(S.depth[0]), Math.abs(S.depth[1])) + 0.02));
     g.font = font(PX * S.pct);
-    W = Math.ceil(m.width + PX * S.gap + g.measureText('%').width + pad * 2);
+    const side = PX * S.gap + g.measureText('%').width;           // place du % (espace compris)
+    W = Math.ceil(m.width + side * 2 + pad * 2);                  // la même place des deux côtés : le nombre reste au centre
     H = Math.ceil(asc + pad * 2);
     cv.width = off.width = W;
     cv.height = off.height = H;
@@ -83,7 +84,7 @@ const Counter = (() => {
     g.clearRect(0, 0, W, H);
     g.font = font(PX);  const nw = g.measureText(str).width;
     g.font = font(ps);  const pm = g.measureText('%');
-    const x = (W - (nw + PX * S.gap + pm.width)) / 2, y = pad + asc;  // le tout centré
+    const x = (W - nw) / 2, y = pad + asc;                        // le nombre au centre, le % accroché à droite
     drawText(str, PX, x, y, UNIT);
     drawText('%', ps, x + nw + PX * S.gap, y - asc + pm.actualBoundingBoxAscent, UNIT * S.pct);   // % aligné en haut des chiffres
   }
@@ -104,3 +105,4 @@ const Counter = (() => {
 
   return { set };
 })();
+window.Counter = Counter;
