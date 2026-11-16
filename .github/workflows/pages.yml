@@ -26,12 +26,10 @@ jobs:
 
       - name: Préparer le dossier du site
         run: |
-          mkdir -p _site/data
-          cp index.html style.css *.js _site/
-          cp -r img models fonts sounds prototype _site/
-          # Données finales seulement (pas data/raw ni data/intermediaire)
-          cp data/*.csv _site/data/
-          # Pas de traitement Jekyll : les fichiers sont servis tels quels
+          mkdir _site
+          git archive HEAD | tar -x -C _site
+          rm -rf _site/.github _site/scripts _site/data/raw _site/data/intermediaire
+          rm -f  _site/*.md _site/.gitignore
           touch _site/.nojekyll
           find _site -type f | sort
 
