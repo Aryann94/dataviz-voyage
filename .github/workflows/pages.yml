@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html style.css *.js _site/
-          cp -r img models fonts prototype _site/
+          cp -r img models fonts sounds prototype _site/
           # Données finales seulement (pas data/raw ni data/intermediaire)
           cp data/*.csv _site/data/
           # Pas de traitement Jekyll : les fichiers sont servis tels quels
