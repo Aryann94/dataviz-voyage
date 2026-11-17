@@ -70,14 +70,18 @@ CLASSE_HISTORIQUE = {
     "sans_visa": "sans_visa",
     "visa_arrivee": "visa_arrivee",
     "eta": "demarche", "e_visa": "demarche", "visa_requis": "demarche",
-    "covid_ban": "ferme", "interdit": "ferme",
+    "covid_ban": "entree_interdite", "interdit": "entree_interdite",
 }
 LIBELLES_CLASSES = {
     "sans_visa": "sans visa",
     "visa_arrivee": "visa à l'arrivée",
     "demarche": "démarche avant le départ (eTA, e-visa ou visa)",
-    "ferme": "entrée fermée (interdiction, Covid)",
+    "entree_interdite": "entrée interdite",
 }
+# Raison affichée dans l'infobulle pour la classe « entrée interdite » : en 2026, les 48 cas
+# ne sont pas le Covid (conflits, bans réciproques...). Sur le globe, cette classe a une
+# couleur bien distincte du gris des territoires non couverts (« interdit » ≠ « pas de données »).
+RAISONS = {"covid_ban": "restrictions Covid", "interdit": "entrée interdite par le pays"}
 
 # --- Décodage des quatre formats ------------------------------------------------------
 
@@ -321,7 +325,7 @@ def main():
                 **{s: c[s] for s in STATUTS},
                 "sans_demarche": sans_demarche(c),
                 "demarche": c["eta"] + c["e_visa"] + c["visa_requis"],
-                "ferme": c["covid_ban"] + c["interdit"],
+                "entree_interdite": c["covid_ban"] + c["interdit"],
                 "total": sum(c.values()),
                 "ecart_jours": ecart, "trou_avant": "true" if trou else "false",
             })
@@ -351,7 +355,8 @@ def main():
                        "une photo par année. matrice[i * n + j] = passeport codes[i] vers "
                        "destination codes[j] ; « - » = même pays.",
         "codes": codes,
-        "statuts": {l: {"statut": s, "classe_historique": CLASSE_HISTORIQUE[s]}
+        "statuts": {l: {"statut": s, "classe_historique": CLASSE_HISTORIQUE[s],
+                        **({"raison": RAISONS[s]} if s in RAISONS else {})}
                     for s, l in LETTRES.items()},
         "classes_historiques": LIBELLES_CLASSES,
         "sans_demarche": ["sans_visa", "visa_arrivee"],

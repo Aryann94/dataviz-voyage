@@ -1,4 +1,4 @@
-passeport_iso3,date,source,format,sans_visa,visa_arrivee,eta,e_visa,visa_requis,covid_ban,interdit,sans_demarche,demarche,ferme,total,ecart_jours,trou_avant
+passeport_iso3,date,source,format,sans_visa,visa_arrivee,eta,e_visa,visa_requis,covid_ban,interdit,sans_demarche,demarche,entree_interdite,total,ecart_jours,trou_avant
 AFG,2019-04-17,ilyankou,value_2019,4,25,1,0,168,0,0,29,169,0,198,,false
 AGO,2019-04-17,ilyankou,value_2019,21,32,3,0,142,0,0,53,145,0,198,,false
 ALB,2019-04-17,ilyankou,value_2019,67,41,3,0,87,0,0,108,90,0,198,,false

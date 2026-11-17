@@ -102,10 +102,10 @@ Types de données présents :
 `passeport_iso3, destination_iso3, statut, jours, date_verification`. Valeurs de `statut` : `sans_visa`, `visa_arrivee`, `eta`, `e_visa`, `visa_requis`, `interdit`.
 
 ### Historique des visas
-- `visas_historique_comptes.csv` : `passeport_iso3, date, source, format, sans_visa, visa_arrivee, eta, e_visa, visa_requis, covid_ban, interdit, sans_demarche, demarche, ferme, total, ecart_jours, trou_avant`.
+- `visas_historique_comptes.csv` : `passeport_iso3, date, source, format, sans_visa, visa_arrivee, eta, e_visa, visa_requis, covid_ban, interdit, sans_demarche, demarche, entree_interdite, total, ecart_jours, trou_avant`.
   - `sans_demarche` = `sans_visa` + `visa_arrivee`.
   - `demarche` = eTA + e-visa + visa requis.
-  - `ferme` = Covid + interdit.
+  - `entree_interdite` = Covid + interdit.
   - `trou_avant = true` : plus de 100 jours depuis la version précédente, donc la courbe ne relie pas les deux points (pointillés).
 - `visas_historique.json` : `codes` (199, ordre des lignes et des colonnes), `statuts` (lettre → statut et classe historique), `classes_historiques`, `photos` (`annee, date, source, commit, format, detail_fiable, matrice`). `matrice[i × 199 + j]` = passeport `codes[i]` vers `codes[j]`. Les lettres : S sans visa, A visa à l'arrivée, T eTA, E e-visa, R visa requis, C Covid, I interdit, - même pays.
 - `visas_historique_annuel.csv` : `passeport_iso3, destination_iso3, annee, statut, jours`.
@@ -195,7 +195,9 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
   - sans visa ;
   - visa à l'arrivée ;
   - démarche avant le départ (eTA, e-visa et visa requis regroupés) ;
-  - **plus une classe « entrée fermée »** (interdiction Covid, « no admission »). Elle ne pouvait entrer dans aucune des trois : jusqu'à 12 362 paires en janvier 2021.
+  - **plus une classe « entrée interdite »** (interdiction Covid, « no admission »). Elle ne pouvait entrer dans aucune des trois : jusqu'à 12 362 paires en janvier 2021.
+    - La **raison** est dans l'infobulle : « restrictions Covid » ou « entrée interdite par le pays » (champ `raison` du JSON). En 2026, les 48 cas ne sont pas le Covid.
+    - Sur le globe, elle aura **une couleur bien distincte du gris des territoires non couverts**, pour ne pas confondre « interdit » et « pas de données ».
 
   Le détail en 5 classes (sans visa, visa à l'arrivée, eTA, e-visa, visa requis) ne s'affiche que pour 2026 : champ `detail_fiable` du JSON.
 - **Une photo par année pour le curseur du globe** : la première version de chaque année (17/04/2019, 13/01/2020, 25/01/2021, 05/01/2022, 11/01/2023, 05/01/2024, 02/01/2025, 18/02/2026). La courbe, elle, utilise les 57 versions.
@@ -291,7 +293,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
   - pour le passeport français, la note vérifiée sur France Diplomatie avec le lien et la date (`corrections_visas.csv`) ;
   - photo et description (41 pays) ;
   - courbe du nombre de pays sans visa pour ce passeport de 2019 à 2026.
-- **Historique des visas 2019-2026** (fait le 17/11, `build_visas_historique.py`) : 56 versions de l'historique Git d'ilyankou (17/04/2019 → 12/01/2025) + la version 2026 du projet, soit 57 dates. **Passeport français, pays sans démarche avant le départ (dont sans visa)** : 159 (120) en avril 2019 ; 163 (120) en janvier 2020 ; 123 (95) en novembre 2020, avec 37 destinations fermées par le Covid ; 123 (98) en août 2021 ; 153 (122) en avril 2023 ; 157 (127) en janvier 2025 ; 148 (123) en février 2026. Usage : un curseur d'années sous le globe (8 photos, en classes comparables) et une courbe par passeport (57 points, en pointillés sur les trous). Ça corrige aussi le point faible « dates » du jeu de données.
+- **Historique des visas 2019-2026** (fait le 17/11, `build_visas_historique.py`) : 56 versions de l'historique Git d'ilyankou (17/04/2019 → 12/01/2025) + la version 2026 du projet, soit 57 dates. **Passeport français, pays sans démarche avant le départ (dont sans visa)** : 159 (120) en avril 2019 ; 163 (120) en janvier 2020 ; 123 (95) en novembre 2020, avec 37 destinations interdites par le Covid ; 123 (98) en août 2021 ; 153 (122) en avril 2023 ; 157 (127) en janvier 2025 ; 148 (123) en février 2026. Usage : un curseur d'années sous le globe (8 photos, en classes comparables) et une courbe par passeport (57 points, en pointillés sur les trous). Ça corrige aussi le point faible « dates » du jeu de données.
 - **Tampon de passeport stylisé** à la place d'une image de visa : dessiné en SVG à partir des données (pays, statut, durée), visiblement illustratif. Chaque pays cliqué ajoute un tampon au passeport virtuel du visiteur. Pas d'images de vrais visas : introuvables pour 199 pays, droits d'auteur, et imiter un document officiel ne se fait pas.
 
 ### 3. Budget → « combien de jours de revenu pour ce voyage »
@@ -369,7 +371,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 **2. Historique des visas 2019-2026** (fait le 17/11)
 - [x] `build_visas_historique.py` : 56 versions d'ilyankou (le commit du 28/10/2019, qui supprime le fichier, est ignoré) + 2026. Quatre formats décodés, et les deux inversions de codes corrigées. **Six tests de bon sens et le contrôle des 39 402 paires passent sur les 57 versions.**
 - [x] Définition unique : « pays sans démarche avant le départ » = sans visa + visa à l'arrivée (section 5).
-- [x] Classes du globe en mode historique (sans visa, visa à l'arrivée, démarche, entrée fermée), et le détail en 5 classes seulement pour 2026 (`detail_fiable`).
+- [x] Classes du globe en mode historique (sans visa, visa à l'arrivée, démarche, entrée interdite), et le détail en 5 classes seulement pour 2026 (`detail_fiable`).
 - [x] Les trous sont repérés (`trou_avant`, au-delà de 100 jours) : 19/11/2020, 15/08/2023, 18/02/2026.
 - [x] Rupture de source 2025 → 2026 mesurée (section 7).
 - [x] Fichiers : `visas_historique_comptes.csv` (859 Ko), `visas_historique.json` (312 Ko), `visas_historique_annuel.csv` (8 Mo, pour le ZIP), `visas_historique_sources.csv`.
