@@ -15,3 +15,6 @@ data/raw/natural_earth/
 
 # Clone du dépôt ilyankou (historique Git des visas) : retrouvable par le commit figé de build_visas_historique.py
 data/raw/passport_index_historique/
+
+# Cache des fiches whc.unesco.org (titres officiels non republiés : clé de comparaison seulement)
+data/raw/unesco_fiches/

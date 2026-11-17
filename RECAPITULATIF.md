@@ -37,6 +37,7 @@ dataviz-voyage/
 │   ├── corrections_visas.csv    41 vérifications manuelles avec source et date (40 pour le passeport français + Canada → Sénégal)
 │   ├── corrections_unesco.csv   5 corrections justifiées du comptage UNESCO
 │   ├── unesco_sites.csv         FINAL - 735 sites des 41 pays : nom (Wikidata), catégorie, année d'inscription. Chargé par le site, PAS dans le ZIP
+│   ├── corrections_unesco_noms.csv 54 corrections : nom = titre exact de la fiche française whc.unesco.org, année, élément imposé (lien en source)
 │   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, CIA Factbook, ILOSTAT)
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
 ├── scripts/                     Python, bibliothèque standard (+ certifi)
@@ -114,7 +115,7 @@ Types de données présents :
 - `visas_historique_annuel.csv` : `passeport_iso3, destination_iso3, annee, statut, jours`.
 
 ### `unesco_sites.csv`
-`iso3, id_unesco, categorie (culturel | naturel | mixte), nom_fr, langue_nom (fr | mul | wikifr | en | manuel), wikidata_qid, regle_choix (exact | revision | extension | global_… | manuel), annee_inscription, transfrontalier, lien_unesco`. Une ligne par pays et par site : un site transfrontalier apparaît une fois par pays concerné (56 lignes).
+`iso3, id_unesco, categorie (culturel | naturel | mixte), nom_fr, langue_nom (fr | mul | wikifr | en | unesco_fr), wikidata_qid, regle_choix (exact | revision | extension | global_… | manuel), departage (aucun | partie_de | titre_unesco | douteux | correction), annee_inscription, transfrontalier, lien_unesco`. Une ligne par pays et par site : un site transfrontalier apparaît une fois par pays concerné (56 lignes).
 
 ### `budget.csv`
 `iso3, niveau (petit|moyen|confort), categorie (hebergement|transport|repas|activites), montant_usd_jour, total_site_usd, source_url, date_releve, date_maj_site`.
@@ -132,7 +133,8 @@ Types de données présents :
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
 | Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026. Drapeaux : règle ONU (section 5) |
-| Noms et années des sites UNESCO | Wikidata : libellés (fr, puis multilingue, puis titre Wikipédia en français, puis en) et désignation « patrimoine mondial » (P1435 = Q9259, date de début P580) | SPARQL sur les éléments déjà relevés le 16/10 | CC0 ; années contrôlées sur un échantillon de whc.unesco.org (10/10 identiques le 17/11) |
+| Noms et années des sites UNESCO | Wikidata : libellés (fr, puis multilingue, puis titre Wikipédia en français, puis en) et désignation « patrimoine mondial » (P1435 = Q9259, date de début P580) | SPARQL sur les éléments déjà relevés le 16/10 | CC0 ; années contrôlées sur deux échantillons de whc.unesco.org (2 × 10/10 identiques le 17/11) |
+| Corrections des sites UNESCO | Fiches officielles whc.unesco.org/fr/list/<n°> | lecture des fiches (curl), relue par Aryann | 39 noms = titre exact de la fiche française et 15 années, chacun avec son lien. Ailleurs, le titre officiel ne sert que de clé de comparaison et n'est jamais publié (cache non commité) |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
 | Fond de carte | Natural Earth v5.1.2, `ne_10m_admin_0_countries_fra` (point de vue de la France), dépôt nvkelso/natural-earth-vector | téléchargement (URL figée + SHA-256) + jointure + mapshaper | domaine public ; préparé le 17/11/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
@@ -262,7 +264,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
   - en 13,2 mois, 2 761 paires changent de statut, soit 209 par mois, **moins** que le rythme habituel entre deux versions d'ilyankou en 2023-2024 (284 par mois). Rien n'indique donc une rupture de méthode ;
   - pour la France, on passe de 157 à 148 pays sans démarche. −8 viennent du temps et de la source : ce sont des changements réels et vérifiables, comme l'ETA britannique (avril 2025), l'ETA israélienne, l'e-visa en Mauritanie ou en Somalie, et le visa à l'arrivée en Namibie. −1 vient des corrections France Diplomatie (Sri Lanka : ETA).
   - Ce qu'on ne peut pas séparer : les deux sources n'ont aucune date en commun, donc un petit effet de méthode reste possible.
-- **Les noms des sites UNESCO** sont les libellés de Wikidata, souvent le titre de l'article Wikipédia (« Mont-Saint-Michel »), pas toujours le nom officiel de l'UNESCO. 34 sites n'ont pas de libellé français : 2 viennent du libellé multilingue (Las Médulas, Caral), et 32 sont en anglais pour l'instant. **Les années d'inscription** : 15 sites n'en ont pas dans Wikidata, et on n'en invente pas. Une date antérieure à 1978 (la première liste) est écartée comme erreur : le Serengeti « 1960 » (en réalité inscrit en 1981).
+- **Les noms des sites UNESCO** sont les libellés de Wikidata, souvent le titre de l'article Wikipédia (« Mont-Saint-Michel »), pas toujours le nom officiel de l'UNESCO. Quand Wikidata n'a pas de nom français utilisable (34 noms en anglais, Kew, et 3 départages douteux, dont Bali), on prend **le titre exact de la fiche française de l'UNESCO**, avec son lien, et aucune traduction libre. 2 noms viennent du libellé multilingue (Las Médulas, Caral). **Les années d'inscription** : 15 manquaient dans Wikidata. Elles ont été reprises des fiches UNESCO, avec le lien. Une date antérieure à 1978 (la première liste) est écartée comme erreur : le Serengeti « 1960 » est en réalité inscrit en 1981. L'année est celle de **la première inscription du site**, pas celle de l'extension à un pays. Par exemple, Hin Nam No (Laos) a rejoint en 2025 le site vietnamien de Phong Nha-Ke Bang inscrit en 2003.
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
@@ -389,9 +391,15 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] `build_unesco_noms.py` → `unesco_sites.csv` : 735 sites nommés, des comptes identiques à `pays.csv` (contrôle bloquant).
   - Choix de l'élément : 680 avec l'identifiant exact, 46 avec une révision (`228rev`), 9 avec une extension (`311bis`). Aucun n'a eu besoin de la recherche dans tout Wikidata.
 - [x] Années d'inscription : la plus ancienne date de « patrimoine mondial » parmi les éléments du site. Elles vont de 1978 à 2026. **10/10 identiques** à whc.unesco.org sur un échantillon tiré au hasard. 15 sites sans année.
-- [ ] **À trancher : la règle de départage des 49 sites qui ont plusieurs éléments avec l'identifiant exact.** « Le plus d'articles Wikipédia » choisit souvent le monument célèbre plutôt que l'ensemble inscrit : château de Versailles au lieu de « palais et parc de Versailles », Parthénon au lieu de l'Acropole, Sainte-Sophie au lieu des « zones historiques d'Istanbul », ruines de Saint-Paul au lieu du « centre historique de Macao ».
-- [ ] 32 noms en anglais à traduire, dans `corrections_unesco_noms.csv`, avec leur source.
-- [ ] Les noms ne vont pas dans le ZIP. La page dira que les noms viennent de Wikidata.
+- [x] **Départage des 49 sites qui ont plusieurs éléments avec l'identifiant exact**, en trois étapes. On avait relevé 28 vraies erreurs (le monument célèbre choisi au lieu de l'ensemble inscrit) :
+  1. **Règle Wikidata « fait partie de » (P361) / « contient » (P527)** : on écarte le candidat qui fait partie d'un autre. Elle corrige **13 erreurs** (Versailles, Acropole, Stonehenge-Avebury, Venise et sa lagune, Zones historiques d'Istanbul…, plus l'atoll das Rocas, qui n'était pas repéré). Mais elle **se trompe de sens dans 2 cas** : Lamu et l'ESMA, où Wikidata range le site inscrit comme une partie du lieu célèbre.
+  2. **Ressemblance avec le titre de la fiche UNESCO** (anglais et français, seuil 0,6) pour les sites où il reste plusieurs candidats. Elle corrige **12 erreurs** de plus (Vézelay, Carnac, Macao, Mompox, Cilento…). Le titre n'est jamais publié.
+  3. **`corrections_unesco_noms.csv`** pour la fin : Lamu et l'ESMA (élément imposé), Bali (aucun élément ne représente le site), et les 2 départages douteux (Bath, Budj Bim).
+
+  Les 28 erreurs sont donc corrigées. Vérone et Brasilia, que j'avais prises pour des erreurs, sont justes : les titres officiels sont « City of Verona » et « Brasilia ».
+- [x] **54 corrections** dans `corrections_unesco_noms.csv` : 39 noms (titre exact de la fiche française), 15 années, 3 éléments imposés ou retirés, chacun avec le lien de sa fiche. Préparées par script le 17/11, à relire par Aryann.
+- [x] Résultat : 735 sites, **tous avec une année** (de 1978 à 2026). Les noms : 694 libellés français de Wikidata, 39 titres UNESCO, 2 libellés multilingues.
+- [ ] Les noms ne vont pas dans le ZIP. La page dira que les noms viennent de Wikidata et, pour 39 d'entre eux, de la fiche UNESCO.
 
 **4. Allemagne, Belgique, Pays-Bas : trancher maintenant**
 - [ ] Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE) et une nouvelle simulation du quiz.
