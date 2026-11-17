@@ -369,9 +369,16 @@ def lire_corrections_unesco():
     return corrections
 
 
-def compter_unesco(resultats, codes):
-    """Compte les sites par numéro de base (voir numero_de_base) et par catégorie."""
-    sites = defaultdict(lambda: defaultdict(lambda: {"criteres": set(), "elements": set()}))
+def sites_unesco(resultats, codes):
+    """
+    Détail des sites UNESCO de chaque pays, regroupés par numéro de base (voir
+    numero_de_base), corrections de data/corrections_unesco.csv appliquées.
+    Renvoie {iso3: {base: {"categorie": culturel | naturel | mixte | sans_categorie,
+                           "ids": {identifiant UNESCO: {QID Wikidata, ...}}}}},
+    bases triées par numéro. Les sites exclus par une correction n'y figurent pas.
+    Sert au comptage (compter_unesco) et aux noms des sites (build_unesco_noms.py).
+    """
+    bruts = defaultdict(lambda: defaultdict(lambda: {"criteres": set(), "ids": defaultdict(set)}))
     ids_invalides, labels_non_reconnus = set(), set()
 
     for l in resultats["results"]["bindings"]:
@@ -382,8 +389,8 @@ def compter_unesco(resultats, codes):
         if not base:                       # ex. valeur saisie par erreur dans Wikidata
             ids_invalides.add(f"{iso3}:{id_unesco[:30]}")
             continue
-        site = sites[iso3][base]
-        site["elements"].add(qid(valeur(l, "site")))
+        site = bruts[iso3][base]
+        site["ids"][id_unesco.strip()].add(qid(valeur(l, "site")))
         label = valeur(l, "critereLabel")
         if label:
             c = critere(label)
@@ -399,15 +406,14 @@ def compter_unesco(resultats, codes):
 
     corrections = lire_corrections_unesco()
     for (iso3, base) in corrections:
-        if base not in sites.get(iso3, {}):
+        if base not in bruts.get(iso3, {}):
             avertir(f"Correction UNESCO inutile : {iso3} {base} absent des données "
                     "(Wikidata a peut-être été corrigé entre-temps)")
 
-    comptes = {}
+    sites = {}
     for iso3 in codes:
-        n = {"unesco_culturel": 0, "unesco_naturel": 0, "unesco_mixte": 0,
-             "unesco_sans_categorie": 0}
-        for base, site in sorted(sites[iso3].items(), key=lambda x: int(x[0])):
+        sites[iso3] = {}
+        for base, site in sorted(bruts[iso3].items(), key=lambda x: int(x[0])):
             correction = corrections.get((iso3, base))
             if correction and correction["action"] == "exclure":
                 continue
@@ -422,12 +428,24 @@ def compter_unesco(resultats, codes):
                 categorie = "naturel"
             else:
                 categorie = "sans_categorie"
-                exemple = sorted(site["elements"])[0]
+                exemple = sorted(q for qs in site["ids"].values() for q in qs)[0]
                 avertir(f"{iso3} : site n°{base} sans critère dans Wikidata "
                         f"(https://www.wikidata.org/wiki/{exemple} / "
                         f"https://whc.unesco.org/en/list/{base}) -> à trancher dans "
                         f"{FICHIER_CORRECTIONS_UNESCO.name}")
-            n[f"unesco_{categorie}"] += 1
+            sites[iso3][base] = {"categorie": categorie,
+                                 "ids": {i: set(q) for i, q in site["ids"].items()}}
+    return sites
+
+
+def compter_unesco(resultats, codes):
+    """Compte les sites par catégorie, à partir du détail de sites_unesco."""
+    comptes = {}
+    for iso3, sites in sites_unesco(resultats, codes).items():
+        n = {"unesco_culturel": 0, "unesco_naturel": 0, "unesco_mixte": 0,
+             "unesco_sans_categorie": 0}
+        for site in sites.values():
+            n[f"unesco_{site['categorie']}"] += 1
         comptes[iso3] = n
     return comptes
 
