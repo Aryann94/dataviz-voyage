@@ -2,6 +2,19 @@
 
 *Mis à jour le 17 novembre 2026. Données terminées, page d'accueil terminée, les trois visualisations restent à faire. Document de passation pour les conversations suivantes et base de la section technique.*
 
+## Où on en est (17 novembre 2026)
+
+**Fait aujourd'hui :**
+- `pays_monde.csv` : les 199 pays (nom, ISO2, drapeau, revenu par habitant) ;
+- le fond de carte (`data/carte/`) ;
+- l'historique des visas 2019-2026 (57 versions) ;
+- les noms et années des 735 sites UNESCO (`unesco_sites.csv`).
+
+**Prochaines tâches, dans l'ordre :**
+1. Aryann relit les 54 lignes de `data/corrections_unesco_noms.csv`. À regarder en priorité : le n° 995 (titre bancal mais exact) et l'année du Laos pour le n° 951 (2003 = première inscription ; le Laos n'a rejoint le site qu'en 2025).
+2. Décider pour l'Allemagne, la Belgique et les Pays-Bas (section 8, tâche 4).
+3. Puis la suite de la section 8 : téléchargement (dictionnaire, licences, ZIP), quiz final, puis le site, une visualisation à la fois.
+
 ## 1. Le projet en bref
 
 - **Cours** : Web Graphique (DMA1EDA7), M1, Everardo Reyes. Rendu : lien GitHub, entre le 11 décembre 2026 et le 15 janvier 2027.
