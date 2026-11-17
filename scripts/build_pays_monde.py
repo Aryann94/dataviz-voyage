@@ -55,10 +55,16 @@ NOMS_IMPOSES = {
     "FSM": "Micronésie",              # Wikidata : « États fédérés de Micronésie »
 }
 
-# Drapeau imposé (nom du fichier sur Commons), quand celui de Wikidata pose question.
-# AFG : Wikidata donne « Flag of the Taliban.svg » (drapeau de fait) ; l'ONU utilise encore
-# « Flag of Afghanistan (2013–2021).svg ». Choix à faire, puis à écrire ici.
-DRAPEAUX_IMPOSES = {}
+# Règle des drapeaux : le drapeau reconnu par l'ONU quand il existe, sinon celui de Wikidata.
+# Wikidata donne le drapeau en usage ; il ne diffère de celui de l'ONU que pour l'Afghanistan :
+# « Flag of the Taliban.svg » (drapeau de fait) alors que le siège à l'ONU reste à la
+# République islamique. Attention : « Flag of Afghanistan.svg » redirige vers le drapeau
+# des talibans sur Commons, d'où le nom exact du fichier ci-dessous.
+# Pays hors ONU (Taïwan, Kosovo) : Wikidata. Observateurs (Palestine, Vatican) : Wikidata,
+# qui donne leur drapeau officiel.
+DRAPEAUX_IMPOSES = {
+    "AFG": "Flag of Afghanistan (2013–2021).svg",
+}
 
 INDICATEUR_RNB = "NY.GNP.PCAP.CD"     # RNB par habitant, méthode Atlas, $ US courants
 # Même série (World Development Indicators), servie par Data360, la nouvelle API de la
@@ -70,8 +76,13 @@ URL_RNB = ("https://data360api.worldbank.org/data360/data?DATABASE_ID=WB_WDI"
 TAILLE_PAGE = 1000                    # imposée par Data360
 AGE_MAX_ANS = 5                     # plus ancien -> rnb_statut = « ancien » (même seuil que pays.csv)
 
+# rnb_utilisable = true seulement si rnb_statut = ok. Une valeur « ancien » (plus de 5 ans)
+# n'est PAS comparée aux valeurs récentes : guerres, crises monétaires, inflation la rendent
+# trompeuse (Yémen 2018, Soudan du Sud 2015...). Sur la page : « revenu indisponible », pas de
+# grille, et la dernière valeur connue avec son année dans l'infobulle.
+
 COLONNES = ["iso3", "iso2", "nom_fr", "dans_selection", "wikidata_qid", "drapeau_url",
-            "rnb_hab_usd", "annee_rnb", "rnb_statut", "date_extraction"]
+            "rnb_hab_usd", "annee_rnb", "rnb_statut", "rnb_utilisable", "date_extraction"]
 
 avertissements = []
 
@@ -274,6 +285,7 @@ def main():
             "dans_selection": "true" if iso3 in selection else "false",
             "wikidata_qid": w.get("wikidata_qid", ""), "drapeau_url": w.get("drapeau_url", ""),
             "rnb_hab_usd": valeur_rnb, "annee_rnb": annee, "rnb_statut": statut,
+            "rnb_utilisable": "true" if statut == "ok" else "false",
             "date_extraction": aujourd_hui.isoformat(),
         })
 
@@ -314,6 +326,12 @@ def main():
     for statut in ("ok", "ancien", "absent"):
         print(f"  {statut:<7}: {len(par_statut[statut]):>3}  "
               f"{' '.join(par_statut[statut]) if statut != 'ok' else ''}")
+    indispo = [l for l in lignes if l["rnb_utilisable"] == "false"]
+    print(f"  revenu indisponible sur la page ({len(indispo)}) :")
+    for l in indispo:
+        derniere = (f"dernière valeur connue : {l['rnb_hab_usd']} $ ({l['annee_rnb']})"
+                    if l["rnb_hab_usd"] != "" else "aucune valeur")
+        print(f"    {l['iso3']} {l['nom_fr']:<16} {derniere}")
     annees = sorted({l["annee_rnb"] for l in lignes if l["annee_rnb"] != ""})
     print(f"  années présentes : {annees}")
     print(f"  dernière mise à jour de la série (à citer) : {maj_rnb}")

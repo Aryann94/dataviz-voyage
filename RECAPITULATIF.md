@@ -102,7 +102,7 @@ Types de données présents :
 | Vérification des visas | France Diplomatie, fiches « Entrée / séjour » (sept.-oct. 2026), europa.eu pour l'UE | vérification manuelle des 40 destinations du passeport français | 38/40 concordantes, 2 corrigées (Thaïlande 30 j, Sri Lanka ETA). S'y ajoute 1 correction hors passeport français : Canada → Sénégal = visa requis (réciprocité annoncée en août 2025) |
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
-| Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026 |
+| Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026. Drapeaux : règle ONU (section 5) |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
 | Salaires (écartés) | ILOSTAT `EAR_EHRA_SEX_CUR_NB_A` | téléchargement bulk | voir les décisions |
@@ -118,6 +118,14 @@ Quatre méthodes de collecte différentes (5 sources) : téléchargement, API RE
 - **Indice du niveau des prix** = PPA / taux de change (États-Unis = 1). Il sert à l'axe « prix » du quiz. **Corrélation de rang de 0,84** avec les budgets Budget Your Trip sur 41 pays : les deux sources indépendantes concordent. 3 pays mélangent 2024 et 2025 (Vietnam, Tanzanie, Émirats), effet négligeable.
 - **Budget** : somme des 4 catégories utilisée, parce que les totaux du site ne s'additionnent pas (Sénégal -55 %, Turquie +29 %, Kenya +17 % ; vérifié mot pour mot). **Argentine exclue** de la visualisation 3 : repas à 5,71 $ par jour, invraisemblable (prix en pesos non actualisés après l'inflation). Elle reste dans le quiz.
 - **Capitales** : Pretoria pour l'Afrique du Sud (siège du gouvernement), Colombo pour le Sri Lanka.
+- **Drapeaux (17/11) : le drapeau reconnu par l'ONU quand il existe, sinon celui de Wikidata.**
+  - Wikidata donne le drapeau en usage. Il ne diffère de celui de l'ONU que pour l'**Afghanistan** : Wikidata donne celui des talibans, alors que le siège à l'ONU reste à la République islamique. On impose donc le drapeau de 2013-2021 (`DRAPEAUX_IMPOSES` dans `build_pays_monde.py`). Piège : sur Commons, « Flag of Afghanistan.svg » redirige vers le drapeau des talibans, donc il faut le nom exact du fichier.
+  - Les pays qui ne sont pas membres de l'ONU (Taïwan, Kosovo) gardent le drapeau de Wikidata.
+  - Les observateurs (Palestine, Vatican) gardent aussi celui de Wikidata, qui est leur drapeau officiel.
+
+  On ne prend pas position : on suit l'institution de référence, et on retombe sur l'usage quand elle ne dit rien.
+- **Revenus anciens = indisponibles (17/11).** Une valeur de plus de 5 ans n'est **pas** comparée aux valeurs de 2025 : guerres (Yémen, Soudan du Sud), crises monétaires et inflation (Cuba) la rendent trompeuse. Ces 5 pays sont traités comme les 4 pays sans valeur : « revenu indisponible », pas de grille. On garde la dernière valeur connue et son année pour l'infobulle, par transparence. Colonne `rnb_utilisable` dans `pays_monde.csv`.
+- **Fond de carte (17/11) : point de vue de la France de Natural Earth, échelle 10m, simplifiée.** La vue par défaut suit les frontières de fait (Crimée dans la Russie, Somaliland séparé), et il n'existe pas de vue « ONU ». La vue de la France est cohérente avec un site en français et avec les vérifications faites sur France Diplomatie : Crimée en Ukraine, Somaliland dans la Somalie, Kosovo et Taïwan présents. **Limite à écrire sur la page** : le Sahara occidental y est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU.
 - **Descriptions** : 41 textes de 2 phrases, rédigés avec l'IA, à relire.
 
 ## 6. Formule du quiz
@@ -211,7 +219,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - Phrase calculée automatiquement, par exemple « Pour toi, ce voyage = 11 jours. Pour un habitant du Népal = presque un an. »
 - Exemple vérifié sur nos données : 10 jours au Japon en budget moyen = 1 400 $ (140 $ par jour). France (RNB 48 630 $, 2025) : environ 11 jours ; Inde (2 760 $) : environ 185 jours ; Népal (1 570 $) : environ 326 jours.
 - Limites à écrire sur la page : **billet d'avion non compté** (dépenses sur place seulement) ; **revenu moyen par habitant**, pas un salaire réel.
-- RNB des 199 pays : fait (`pays_monde.csv`). Le pays de départ peut donc être n'importe lequel des 199, sauf 4 pays sans valeur et 5 pays avec une valeur ancienne (voir 8 bis).
+- RNB des 199 pays : fait (`pays_monde.csv`). Le pays de départ peut être n'importe lequel des 199. **Quand `rnb_utilisable = false` (9 pays), on affiche « revenu indisponible », sans grille de carrés.** L'infobulle donne « dernière valeur connue : X $ (année) » quand il y en a une (Cuba, Érythrée, Liechtenstein, Soudan du Sud, Yémen), sinon « aucune donnée » (Monaco, Corée du Nord, Taïwan, Vatican).
 
 ## 7 ter. Le site : ce qui est fait (accueil, novembre 2026)
 
@@ -231,46 +239,70 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 
 **Reste à faire sur l'accueil** : `<main class="site">` est vide (les sections viendront ici) ; le tag affiche « Periple » sans accent (à vérifier : police ou choix voulu ?) ; `sounds/musique test.mp3` n'est pas utilisée mais elle est déployée (à supprimer ou à exclure).
 
-## 8. Prochaines étapes (le site)
+## 8. Prochaines étapes (liste unique, mise à jour le 17/11/2026)
 
-1. ~~Accueil~~ (fait, voir 7 ter). Structure de la suite de la page : quiz, globe des passeports, budget, section technique, téléchargement des données (ZIP : les CSV + dictionnaire des données).
-2. Nouveaux scripts de données : voir la liste complète en 8 bis.
-3. Bibliothèques : Three.js pour le globe, D3 pour le radar, le classement, la courbe, la grille de carrés et la carte de secours. Fond de carte Natural Earth : faire la jointure sur `ADM0_A3`, car France et Norvège ont `ISO_A3 = -99`.
-4. Réécrire les questions du quiz pour qu'elles soient plus amusantes (duels, situations, images), 10 à 12 questions, avec la même logique de calcul.
-5. Une visualisation à la fois, testée avant de passer à la suivante.
-6. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
+**Fait**
+- [x] **Accueil du site** (voir 7 ter).
+- [x] **Noms français, ISO2 et drapeaux des 199 pays** (Wikidata) → `pays_monde.csv`, avec `build_pays_monde.py`, le 17/11.
+  - Les 199 pays ont un nom, un ISO2 et un drapeau. Ces deux colonnes sont sans doublon (contrôle bloquant).
+  - Pour les 41 pays du quiz, le nom vient de `pays_liste.csv`.
+  - Trois noms Wikidata sont raccourcis à la main : Pays-Bas (« Royaume des Pays-Bas »), Palestine (« État de Palestine »), Micronésie.
+  - Le Kosovo est imposé (`Q1246`, ISO2 `XK`) parce qu'il n'a pas de code ISO officiel.
+  - Drapeaux : règle ONU (voir section 5). L'Afghanistan a le drapeau de 2013-2021.
+- [x] **RNB par habitant des 199 pays** (Banque mondiale, `NY.GNP.PCAP.CD`), dans le même fichier, le 17/11.
+  - **Récupéré par Data360** (data360api.worldbank.org), la nouvelle API de la Banque mondiale, parce que l'ancienne API v2 renvoyait des erreurs 502 et des délais dépassés ce jour-là. C'est la même série WDI.
+  - **Contrôle : les 41 pays du quiz ont exactement la même valeur et la même année que dans `pays.csv`.**
+  - 190 pays sont utilisables (2022 à 2025). 9 sont « revenu indisponible » (`rnb_utilisable = false`) :
+    - 5 valeurs de plus de 5 ans : Cuba 2019, Érythrée 2011, Liechtenstein 2009, Soudan du Sud 2015, Yémen 2018 ;
+    - 4 sans valeur : Monaco, Corée du Nord, Taïwan, Vatican.
 
-## 8 bis. Données encore à collecter (liste du 17/11/2026)
+    Le Kosovo et la Palestine sont couverts. La règle d'affichage est dans la section 5.
 
-**Indispensable**
-- [x] **Noms français, ISO2 et drapeaux des 199 pays** (Wikidata) → `pays_monde.csv`, fait le 17/11 avec `build_pays_monde.py`. Les 199 pays ont un nom, un ISO2 et un drapeau, et ces deux colonnes sont sans doublon (contrôle bloquant). Pour les 41 pays du quiz, le nom vient de `pays_liste.csv`. Trois noms Wikidata sont raccourcis à la main : Pays-Bas (« Royaume des Pays-Bas »), Palestine (« État de Palestine »), Micronésie. Le Kosovo est imposé (`Q1246`, ISO2 `XK`) parce qu'il n'a pas de code ISO officiel.
-  - **À décider : le drapeau de l'Afghanistan.** Wikidata donne celui des talibans (drapeau de fait). L'ONU utilise encore celui de 2013-2021. Le choix se règle dans `DRAPEAUX_IMPOSES`.
-- [x] **RNB par habitant des 199 pays** (Banque mondiale, `NY.GNP.PCAP.CD`), dans le même fichier, fait le 17/11. **Récupéré par Data360** (data360api.worldbank.org), la nouvelle API de la Banque mondiale, parce que l'ancienne API v2 renvoyait des erreurs 502 et des délais dépassés ce jour-là. C'est la même série WDI. **Contrôle : les 41 pays du quiz ont exactement la même valeur et la même année que dans `pays.csv`.**
-  - Résultat : 190 pays `ok` (2022 à 2025), 5 `ancien` (plus de 5 ans : Cuba 2019, Érythrée 2011, Liechtenstein 2009, Soudan du Sud 2015, Yémen 2018), 4 `absent` (Monaco, Corée du Nord, Taïwan, Vatican). Le Kosovo et la Palestine sont couverts.
-  - **À décider** : quoi afficher pour ces 9 pays. Proposition : « revenu indisponible » et pas de grille de carrés pour les 4 `absent` ; pour les 5 `ancien`, la valeur avec son année bien visible, ou le même traitement que les `absent`.
-- [ ] **Prépositions des noms de pays** (« au Japon », « en France », « aux États-Unis », « à Singapour » ; « du Népal », « de France », « des Philippines ») pour les phrases générées. Elles ne viennent d'aucune source : règle simple + liste d'exceptions, à relire.
-- [ ] **Historique des visas 2019-2026** : `build_visas_historique.py` lit les 56 versions Git d'ilyankou + la version imorte de 2026, et décode l'ancien format (`Value` en 2019). Il faut aussi :
-  - un **statut en plus, `covid_ban`** (9 812 cases en août 2021), avec sa couleur et sa ligne de légende ;
-  - une **définition unique de « sans visa »** pour le compteur du globe et pour la courbe (`sans_visa` seul, ou avec le visa à l'arrivée et l'ETA ?) ;
-  - un **format léger pour le site** : un fichier compact par année (matrice de codes de statut), et un CSV complet pour le téléchargement ;
-  - les corrections de `corrections_visas.csv` ne s'appliquent qu'à 2026.
-- [ ] **Noms français des sites UNESCO**, pour « Pourquoi ce pays ? ». `wikidata_unesco.json` a les identifiants des sites mais pas leurs noms : il faut une requête Wikidata de plus. Les libellés viennent de Wikidata (CC0), pas de l'UNESCO, et il faut le dire sur la page. Les conditions de l'UNESCO interdisent de republier sa liste : on garde ces noms **hors du ZIP**.
-- [ ] **Fond de carte Natural Earth** + une table qui relie `ADM0_A3` aux 199 codes des passeports. Il ne suffit pas de régler France et Norvège (`-99`) : d'autres codes diffèrent, par exemple Kosovo `XKX` → `KOS` et Palestine `PSE` → `PSX` (à vérifier dans le fichier). Les **micro-États absents de la carte** (Andorre, Monaco, Saint-Marin, Vatican, Liechtenstein, Singapour, Maldives, Bahreïn, plusieurs îles) sont affichés par un point cliquable. Le même fond sert à la carte à plat de secours en D3.
-- [ ] **Allemagne, Belgique, Pays-Bas : trancher maintenant.** Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE), et une nouvelle simulation du quiz.
+**1. Fond de carte** (méthode validée le 17/11, en cours)
+- [ ] `build_carte.py` : Natural Earth v5.1.2, **point de vue de la France, échelle 10m** (`ne_10m_admin_0_countries_fra`, URL figée et empreinte SHA-256 vérifiée ; le fichier brut de 13 Mo n'est pas commité).
+- [ ] Jointure sur `ADM0_A3` : 196 codes identiques, 3 réglés par une table (`PSX`→`PSE`, `SDS`→`SSD`, `KOS`→`XKX`). Contrôle bloquant : chacun des 199 codes correspond à une seule entité.
+- [ ] Territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) et Antarctique : en gris, « non couvert par Passport Index », avec le pays souverain dans l'infobulle.
+- [ ] Simplification et nettoyage par **mapshaper**, qui garde les frontières communes (la commande exacte sera dans la section 4). Sortie : `data/carte/pays_carte.topojson`. Contrôle : aucun petit pays ni aucune île ne disparaît.
+- [ ] Repères cliquables pour les pays dont la surface sur la carte est inférieure à **2 500 km²**, placés sur `LABEL_X` et `LABEL_Y`.
+- [ ] `data/carte/correspondance_carte.csv` (une ligne par entité Natural Earth) et un rapport.
+- [ ] Page de test D3 (`prototype/carte-test.html`) à regarder avant le commit.
 
-**Pour le téléchargement (3 points)**
+**2. Historique des visas 2019-2026**
+- [ ] `build_visas_historique.py` lit les 56 versions Git d'ilyankou et la version imorte de 2026, et décode l'ancien format (`Value` en 2019).
+- [ ] Un **statut en plus, `covid_ban`** (9 812 cases en août 2021), avec sa couleur et sa ligne de légende.
+- [ ] Une **définition unique de « sans visa »** pour le compteur du globe et pour la courbe (`sans_visa` seul, ou avec le visa à l'arrivée et l'ETA ?).
+- [ ] Un **format léger pour le site** (un fichier compact par année, avec une matrice de codes de statut) et un CSV complet pour le téléchargement.
+- [ ] Les corrections de `corrections_visas.csv` ne s'appliquent qu'à 2026.
+
+**3. Noms français des sites UNESCO**, pour « Pourquoi ce pays ? »
+- [ ] Une requête Wikidata de plus : `wikidata_unesco.json` a les identifiants des sites mais pas leurs noms. Les libellés viennent de Wikidata (CC0), pas de l'UNESCO, et il faut le dire sur la page. Les noms restent **hors du ZIP**, parce que les conditions de l'UNESCO interdisent de republier sa liste.
+
+**4. Allemagne, Belgique, Pays-Bas : trancher maintenant**
+- [ ] Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE) et une nouvelle simulation du quiz.
+
+**5. Téléchargement des données (3 points)**
 - [ ] Un **dictionnaire des données** : chaque colonne, avec son unité, sa source et son année.
-- [ ] Un **fichier des licences et crédits** dans le ZIP. Passport Index est sous licence MIT, qui oblige à joindre la notice de copyright. La Banque mondiale (CC BY 4.0) demande une attribution. Les photos ont un auteur et une licence. Le CIA Factbook est dans le domaine public.
+- [ ] Un **fichier des licences et crédits**. Passport Index est sous licence MIT, qui oblige à joindre la notice de copyright. La Banque mondiale (CC BY 4.0) demande une attribution. Les photos ont un auteur et une licence. Le CIA Factbook est dans le domaine public. Il faut aussi les crédits de Natural Earth (domaine public).
 - [ ] **Budget Your Trip : vérifier leurs conditions d'utilisation** avant de redistribuer `budget.csv` et `saisie_budget.csv`. Au minimum, citer clairement la source dans le fichier.
 - [ ] Le **ZIP** des CSV.
 
-**À faire à la main (Aryann)**
+**6. Quiz final**
+- [ ] Réécrire les questions pour qu'elles soient plus amusantes : 10 à 12 questions (duels, situations, images), avec des choix qui coûtent, et la même logique de calcul.
+- [ ] Les photos des duels, prises sur Wikimedia Commons, avec l'auteur et la licence.
+- [ ] La simulation de toutes les combinaisons : aucun pays au-dessus de 12 % des parties, et au moins 38 pays sur 41 dans un top 3.
+
+**7. Le site**
+- [ ] La structure de `<main>` : quiz, globe des passeports, budget, section technique, téléchargement.
+- [ ] Bibliothèques : Three.js pour le globe ; D3 pour le radar, le classement, la courbe, la grille de carrés et la carte de secours ; topojson-client pour lire le fond de carte.
+- [ ] Une visualisation à la fois, testée avant de passer à la suivante.
+- [ ] L'introduction et la section technique à rédiger, puis le déploiement sur GitHub Pages.
+
+**8. À faire à la main (Aryann)**
 - [ ] Relire les 41 descriptions.
 - [ ] Choisir de meilleures photos pour 5 à 10 pays.
 
-**Pour les nouvelles questions du quiz**
-- [ ] Les photos des duels, prises sur Wikimedia Commons, avec l'auteur et la licence.
-- [ ] La simulation de toutes les combinaisons : aucun pays au-dessus de 12 % des parties, et au moins 38 pays sur 41 dans un top 3.
+**9. Prépositions des noms de pays : en dernier**
+- [ ] D'abord **tourner les phrases pour s'en passer** (« Départ : Népal », « Destination : Japon »). Un tableau de 199 prépositions écrit à la main (« au Japon », « aux Philippines », « à Singapour »…) risque de contenir des erreurs. On ne le fera que si une phrase ne peut vraiment pas s'écrire autrement.
 
 **Secondaire**
 - [ ] Monnaie du budget : si on affiche les montants en euros, il faut un taux USD → EUR daté, noté dans le dictionnaire.
