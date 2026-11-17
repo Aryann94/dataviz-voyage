@@ -1,7 +1,6 @@
 # Dataviz voyage : récapitulatif du projet (phase données terminée)
 
-*Mis à jour le 15 octobre 2026. Document de passation pour les conversations suivantes et base de la section technique.*
-> **Page d'accueil terminée** (loader avec compteur, choix avec ou sans le son, chute de l'astronaute en 3D, plongée dans le casque au défilement, musique et sons, boutons magnétiques, navigation au clavier, logo et nom du site : Periple).
+*Mis à jour le 16 octobre 2026. Document de passation pour les conversations suivantes et base de la section technique.*
 
 ## 1. Le projet en bref
 
@@ -145,22 +144,35 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **Les visas** datent de février 2026, sauf pour le passeport français, vérifié en octobre 2026. Afficher la date sur la carte.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
-## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 15/11/2026)
+## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 17/11/2026)
 
-**Fil conducteur : « Où partir, et à quel prix selon d'où tu viens ».** Le passeport choisi par le visiteur change la carte des visas et le budget (en jours de revenu). Les visualisations sont reliées : un pays sélectionné quelque part est mis en avant partout, et le résultat du quiz renvoie vers « voir les visas » et « voir le budget ».
+**Fil conducteur : « Où partir, et à quel prix selon d'où tu viens ».** Le passeport choisi par le visiteur change la carte des visas et le budget (en jours de revenu). Les trois visualisations restent **séparées** (une par section, chacune avec son interaction propre) et sont seulement reliées par des liens : sous le résultat du quiz, « Voir ce qu'il faut pour aller en [pays] » ouvre le globe avec ce pays déjà choisi, et « Voir le budget » ouvre le budget sur ce pays.
 
-**Nom du site : à choisir.** Piste préférée : « Point de départ » (voir la conversation du 15/11 pour le logo).
+**Nom du site : à choisir** parmi les noms courts proposés le 15/11 : Cap, Sésame (préféré de Claude), Escale, Départ, Périple, D'ici. À éviter : Atlas, Globe (trop courants), Tampon (double sens).
+
+**Texte d'accueil retenu (version B, 17/11)** :
+```html
+<h2 class="visor-line visor-title">Où partir, et à quel prix ?</h2>
+<p class="visor-line visor-text">Selon le passeport que tu as en poche, le même voyage ne demande ni les mêmes papiers ni le même effort. Trouve ton pays, regarde ce qu'il faut pour y entrer, puis ce qu'il te coûte vraiment.</p>
+<div class="visor-line visor-cta"><a class="visor-btn btn btn--primary" href="destinations.html" data-magnetic="0.15">Trouver mon pays</a></div>
+```
+`destinations.html` est un nom provisoire : la page ouvre le quiz.
 
 **Types de visualisation (5)** : radar, classement en barres, globe 3D, courbe dans le temps, grille de carrés + barres empilées.
 
 ### 1. Quiz → radar + classement
 - Radar à 6 pointes (hexagone, un par critère) : profil du joueur contre profil du pays.
-- Révélation animée à la fin : le globe tourne vers le pays trouvé, puis le classement des 41 pays apparaît. Pas de classement en direct pendant le quiz (ça gâcherait le suspense).
-- Clic sur un pays du classement = radar mis à jour. **Classement triable par critère** après le résultat, pour que le quiz soit aussi une visualisation qu'on explore.
+- **Révélation sur le classement lui-même** à la fin : les pays se rangent un par un jusqu'au résultat. Le globe n'est plus utilisé ici (décision du 17/11 : séparer le quiz et le globe). Pas de classement en direct pendant le quiz (ça gâcherait le suspense).
+- Clic sur un pays du classement = radar mis à jour. **Classement triable par critère** après le résultat.
+- **Mode « Et si… »** (après le résultat) : couper un critère (« et si le prix ne comptait pas ? ») ou changer son importance ; le classement se réorganise en direct avec une animation. Les curseurs n'apparaissent qu'après le quiz, jamais pendant.
+- **« Pourquoi ce pays ? » : chaque pointe du radar est cliquable** et affiche le fait brut derrière la note : culture = nombre de sites UNESCO et leurs noms (`wikidata_unesco.json`) ; nature = % de forêt, densité, zones protégées ; villes = % de la population dans des villes de plus d'un million d'habitants ; prix = niveau des prix ; distance = km depuis Paris ; mer = km de côtes et latitude.
+- **« Le saviez-vous ? » générés à partir des données**, jamais écrits à la main (pour ne rien inventer). Exemples tirés des données du 16/10 : « La Suisse est le 2ᵉ pays le plus cher de la liste, juste après l'Islande » ; « La Suisse fait partie des 4 pays sans accès à la mer ». Ce sont des phrases construites à partir des rangs et des seuils (le plus, le moins, parmi les N…), donc vraies par construction.
+- Idées non retenues pour l'instant : « ce qui t'a rapproché / éloigné » (contributions de chaque critère) et photos supplémentaires des sites UNESCO.
 
 ### 2. Visas → globe 3D en WebGL (Three.js écrit à la main)
 - **Three.js codé soi-même, pas globe.gl** : le but est d'apprendre (sélection des pays au clic par raycasting, couleurs par statut, transitions animées). Feu vert du prof pour les bibliothèques.
 - **Accessibilité et performances obligatoires** : si WebGL n'est pas disponible, carte à plat en D3 à la place ; tout doit marcher au clavier avec une recherche de pays ; `prefers-reduced-motion` respecté (pas de rotation automatique).
+- Le globe est sa propre section, séparée du quiz (on y arrive par le menu ou par le lien sous le résultat du quiz).
 - On fait tourner le globe à la souris ; un clic sur un pays prend son passeport (on voit que les règles ne sont pas réciproques) ; au survol, statut et jours autorisés ; compteur « X pays sans visa ». Bouton « carte à plat ».
 - **Fiche pays au clic** :
   - règles dans les deux sens (« toi chez eux », « eux chez toi ») ;

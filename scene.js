@@ -135,6 +135,7 @@ const ZOOM = {
   fill:  0.7,            // taille finale du casque : plus petit = plus gros (moins de 1 = déborde de l'écran)
   helmet: 0.75,          // rayon du casque, en fraction de la longueur de l'os de la tête
   aimY:  -0.2,           // visée verticale (en rayons de casque) : négatif = plus bas, pour centrer la visière
+  aimX:  -0.04,              // visée horizontale (en rayons de casque) : négatif = plus à gauche, pour centrer la visière
   fade:  [0.50, 0.85],   // le paysage s'efface en douceur dans le ciel crème (début, fin de la course)
 };
 
@@ -248,9 +249,11 @@ function visorMatcap() {
   rim.addColorStop(0, 'rgba(0,0,0,0)'); rim.addColorStop(1, VISOR.rim);
   g.fillStyle = rim; g.fillRect(0, 0, s, s);
   g.fillStyle = VISOR.glint;                                                          // reflets nets, façon dessin animé
-  g.save(); g.translate(s * 0.34, s * 0.3); g.rotate(-0.7);
-  g.beginPath(); g.ellipse(0, 0, s * 0.14, s * 0.05, 0, 0, Math.PI * 2); g.fill();
-  g.beginPath(); g.ellipse(s * 0.21, 0, s * 0.035, s * 0.018, 0, 0, Math.PI * 2); g.fill();
+  const touch = matchMedia('(pointer: coarse)').matches;
+  const G = touch ? { x: 0.24, y: 0.2, k: 0.6 } : { x: 0.34, y: 0.3, k: 1 };   // téléphone : reflet plus petit, plus près du bord
+  g.save(); g.translate(s * G.x, s * G.y); g.rotate(-0.7);
+  g.beginPath(); g.ellipse(0, 0, s * 0.14 * G.k, s * 0.05 * G.k, 0, 0, Math.PI * 2); g.fill();
+  g.beginPath(); g.ellipse(s * 0.21 * G.k, 0, s * 0.035 * G.k, s * 0.018 * G.k, 0, 0, Math.PI * 2); g.fill();
   g.restore();
   const t = new THREE.CanvasTexture(c);
   t.colorSpace = THREE.SRGBColorSpace;
@@ -899,6 +902,7 @@ export async function init({ onProgress = () => {} } = {}) {
       const R = _h0.distanceTo(_h1) * ZOOM.helmet;                    // rayon du casque
       _tgt.addVectors(_h0, _h1).multiplyScalar(0.5);
       _tgt.y += ZOOM.aimY * R;
+      _tgt.x += ZOOM.aimX * R;
       const tanMin = Math.tan(THREE.MathUtils.degToRad(FOV / 2)) * Math.min(1, camera.aspect);   // écran étroit : on cadre sur la largeur
       const dist = R * ZOOM.fill / tanMin;
       camera.position.set(_tgt.x * dk, _tgt.y * dk, lerp(CAM_Z, _tgt.z + dist, dk));

@@ -66,16 +66,29 @@ body::before {                                          /* ciel fixe : marche au
 }
 .scroll-cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 6px; border-radius: 4px; }
 
-/* ===== Visière : texte et bouton (apparaissent en fin de plongée) ===== */
 .visor-content {
   position: absolute; inset: 0; z-index: 3;
-  display: grid; place-content: center; justify-items: center; gap: 2.4vh;
-  padding: 0 8vw; text-align: center; color: var(--cream);
+  display: grid; place-content: center; justify-items: center; gap: 0;   /* espacements gérés un par un, comme dans Figma */
+  padding: 0 6vw; text-align: center; color: #FFFFFF;
   visibility: hidden;                                   /* GSAP l'affiche au bon moment */
 }
-.visor-title { margin: 0; font: 400 clamp(2.6rem, 7vw, 6.5rem)/.9 'Evori', system-ui, sans-serif; text-transform: uppercase; }
-.visor-text  { margin: 0; max-width: 34ch; font: 500 clamp(1rem, 1.4vw, 1.3rem)/1.45 'Bricolage Grotesque', system-ui, sans-serif; opacity: .85; }
+.visor-title {
+  margin: 0; white-space: nowrap;                       /* toujours sur une ligne */
+  font: 800 clamp(1.5rem, 6.4vw, 3rem)/1 'Bricolage Grotesque', system-ui, sans-serif;   /* 48 px sur ordinateur, plus petit sur téléphone */
+  letter-spacing: -0.02em; text-transform: uppercase;
+}
+.visor-text {
+  margin: 8px 0 0;                                      /* 8 px sous le titre */
+  max-width: min(35rem, 84vw); text-wrap: pretty;
+  font: 500 1rem/1.4 'Bricolage Grotesque', system-ui, sans-serif;   /* 16 px */
+}
+.visor-cta { margin-top: 32px; }                        /* 48 px avant le bouton */
 @media (prefers-reduced-motion: reduce) { .visor-content { background: var(--ink); } }   /* sans plongée : fond encre */
+
+@media (max-width: 600px) {
+  .visor-content { padding: 0 24px; }                  /* téléphone : 24 px de chaque côté */
+  .visor-text { max-width: none; }                     /* le texte prend toute la largeur disponible */
+}
 
 /* ===== Révélation ligne par ligne, sous masque (hero.js) ===== */
 .line-mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .12em; margin-bottom: -.12em; }   /* marge : les jambages ne sont pas coupés */
