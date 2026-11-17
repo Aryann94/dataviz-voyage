@@ -1,0 +1,200 @@
+iso3,iso2,nom_fr,dans_selection,wikidata_qid,drapeau_url,rnb_hab_usd,annee_rnb,rnb_statut,date_extraction
+AFG,AF,Afghanistan,false,Q889,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Taliban.svg,390,2024,ok,2026-11-17
+AGO,AO,Angola,false,Q916,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Angola.svg,2860,2025,ok,2026-11-17
+ALB,AL,Albanie,false,Q222,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Albania.svg,12060,2025,ok,2026-11-17
+AND,AD,Andorre,false,Q228,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Andorra.svg,53230,2025,ok,2026-11-17
+ARE,AE,Émirats arabes unis,true,Q878,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Arab%20Emirates.svg,51550,2024,ok,2026-11-17
+ARG,AR,Argentine,true,Q414,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Argentina.svg,14650,2025,ok,2026-11-17
+ARM,AM,Arménie,false,Q399,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Armenia.svg,9020,2025,ok,2026-11-17
+ATG,AG,Antigua-et-Barbuda,false,Q781,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Antigua%20and%20Barbuda.svg,23790,2025,ok,2026-11-17
+AUS,AU,Australie,true,Q408,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Australia%20%28converted%29.svg,64120,2025,ok,2026-11-17
+AUT,AT,Autriche,false,Q40,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Austria.svg,60360,2025,ok,2026-11-17
+AZE,AZ,Azerbaïdjan,false,Q227,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Azerbaijan.svg,7360,2025,ok,2026-11-17
+BDI,BI,Burundi,false,Q967,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Burundi.svg,240,2025,ok,2026-11-17
+BEL,BE,Belgique,false,Q31,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belgium.svg,59500,2025,ok,2026-11-17
+BEN,BJ,Bénin,false,Q962,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg,1600,2025,ok,2026-11-17
+BFA,BF,Burkina Faso,false,Q965,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Burkina%20Faso.svg,980,2025,ok,2026-11-17
+BGD,BD,Bangladesh,false,Q902,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg,2840,2025,ok,2026-11-17
+BGR,BG,Bulgarie,false,Q219,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg,17780,2025,ok,2026-11-17
+BHR,BH,Bahreïn,false,Q398,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bahrain.svg,28790,2025,ok,2026-11-17
+BHS,BS,Bahamas,false,Q778,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Bahamas.svg,37020,2024,ok,2026-11-17
+BIH,BA,Bosnie-Herzégovine,false,Q225,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg,9940,2025,ok,2026-11-17
+BLR,BY,Biélorussie,false,Q184,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belarus.svg,9160,2025,ok,2026-11-17
+BLZ,BZ,Belize,false,Q242,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Belize.svg,7530,2025,ok,2026-11-17
+BOL,BO,Bolivie,false,Q750,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg,4420,2025,ok,2026-11-17
+BRA,BR,Brésil,true,Q155,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brazil.svg,10550,2025,ok,2026-11-17
+BRB,BB,Barbade,false,Q244,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Barbados.svg,27080,2025,ok,2026-11-17
+BRN,BN,Brunei,false,Q921,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Brunei.svg,34790,2025,ok,2026-11-17
+BTN,BT,Bhoutan,false,Q917,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bhutan.svg,4310,2025,ok,2026-11-17
+BWA,BW,Botswana,false,Q963,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Botswana.svg,7390,2025,ok,2026-11-17
+CAF,CF,République centrafricaine,false,Q929,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Central%20African%20Republic.svg,560,2025,ok,2026-11-17
+CAN,CA,Canada,true,Q16,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Canada%20%28Pantone%29.svg,56420,2025,ok,2026-11-17
+CHE,CH,Suisse,true,Q39,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Switzerland.svg,110330,2025,ok,2026-11-17
+CHL,CL,Chili,true,Q298,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Chile.svg,16960,2025,ok,2026-11-17
+CHN,CN,Chine,true,Q148,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20People%27s%20Republic%20of%20China.svg,14230,2025,ok,2026-11-17
+CIV,CI,Côte d'Ivoire,false,Q1008,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20C%C3%B4te%20d%27Ivoire.svg,2780,2025,ok,2026-11-17
+CMR,CM,Cameroun,false,Q1009,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cameroon.svg,1860,2025,ok,2026-11-17
+COD,CD,République démocratique du Congo,false,Q974,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Democratic%20Republic%20of%20the%20Congo.svg,720,2025,ok,2026-11-17
+COG,CG,République du Congo,false,Q971,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Republic%20of%20the%20Congo.svg,2280,2025,ok,2026-11-17
+COL,CO,Colombie,true,Q739,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg,7900,2025,ok,2026-11-17
+COM,KM,Comores,false,Q970,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Comoros.svg,1950,2025,ok,2026-11-17
+CPV,CV,Cap-Vert,false,Q1011,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cape%20Verde%20%2810-17%29.svg,5590,2025,ok,2026-11-17
+CRI,CR,Costa Rica,true,Q800,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Costa%20Rica.svg,17930,2025,ok,2026-11-17
+CUB,CU,Cuba,false,Q241,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cuba.svg,9010,2019,ancien,2026-11-17
+CYP,CY,Chypre,false,Q229,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cyprus.svg,36110,2025,ok,2026-11-17
+CZE,CZ,Tchéquie,false,Q213,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Czech%20Republic.svg,32960,2025,ok,2026-11-17
+DEU,DE,Allemagne,false,Q183,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany.svg,60200,2025,ok,2026-11-17
+DJI,DJ,Djibouti,false,Q977,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Djibouti.svg,3960,2025,ok,2026-11-17
+DMA,DM,Dominique,false,Q784,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Dominica.svg,10690,2025,ok,2026-11-17
+DNK,DK,Danemark,false,Q35,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Denmark.svg,77190,2025,ok,2026-11-17
+DOM,DO,République dominicaine,false,Q786,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Dominican%20Republic.svg,10620,2025,ok,2026-11-17
+DZA,DZ,Algérie,false,Q262,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Algeria.svg,5850,2025,ok,2026-11-17
+ECU,EC,Équateur,false,Q736,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ecuador.svg,6890,2025,ok,2026-11-17
+EGY,EG,Égypte,true,Q79,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Egypt.svg,3260,2025,ok,2026-11-17
+ERI,ER,Érythrée,false,Q986,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Eritrea.svg,650,2011,ancien,2026-11-17
+ESP,ES,Espagne,true,Q29,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Spain.svg,37120,2025,ok,2026-11-17
+EST,EE,Estonie,false,Q191,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Estonia.svg,32310,2025,ok,2026-11-17
+ETH,ET,Éthiopie,false,Q115,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ethiopia.svg,1110,2025,ok,2026-11-17
+FIN,FI,Finlande,false,Q33,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Finland.svg,55250,2025,ok,2026-11-17
+FJI,FJ,Fidji,false,Q712,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Fiji.svg,6230,2025,ok,2026-11-17
+FRA,FR,France,true,Q142,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20France.svg,48630,2025,ok,2026-11-17
+FSM,FM,Micronésie,false,Q702,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Federated%20States%20of%20Micronesia.svg,4760,2025,ok,2026-11-17
+GAB,GA,Gabon,false,Q1000,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Gabon.svg,8090,2025,ok,2026-11-17
+GBR,GB,Royaume-Uni,true,Q145,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20Kingdom%20%283-5%29.svg,54550,2025,ok,2026-11-17
+GEO,GE,Géorgie,false,Q230,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg,8990,2025,ok,2026-11-17
+GHA,GH,Ghana,true,Q117,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ghana.svg,2630,2025,ok,2026-11-17
+GIN,GN,Guinée,false,Q1006,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guinea.svg,1730,2025,ok,2026-11-17
+GMB,GM,Gambie,false,Q1005,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20The%20Gambia.svg,930,2025,ok,2026-11-17
+GNB,GW,Guinée-Bissau,false,Q1007,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guinea-Bissau.svg,1090,2025,ok,2026-11-17
+GNQ,GQ,Guinée équatoriale,false,Q983,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Equatorial%20Guinea.svg,5890,2025,ok,2026-11-17
+GRC,GR,Grèce,true,Q41,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Greece.svg,25360,2025,ok,2026-11-17
+GRD,GD,Grenade,false,Q769,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Grenada.svg,11660,2025,ok,2026-11-17
+GTM,GT,Guatemala,false,Q774,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guatemala.svg,6360,2025,ok,2026-11-17
+GUY,GY,Guyana,false,Q734,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Guyana.svg,28470,2025,ok,2026-11-17
+HKG,HK,Hong Kong,false,Q8646,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Hong%20Kong.svg,62500,2025,ok,2026-11-17
+HND,HN,Honduras,false,Q783,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Honduras%20%281949%E2%80%932022%2C%202026%E2%80%93present%29.svg,3270,2025,ok,2026-11-17
+HRV,HR,Croatie,true,Q224,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Croatia.svg,25360,2025,ok,2026-11-17
+HTI,HT,Haïti,false,Q790,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Haiti.svg,2010,2025,ok,2026-11-17
+HUN,HU,Hongrie,true,Q28,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Hungary.svg,23850,2025,ok,2026-11-17
+IDN,ID,Indonésie,true,Q252,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Indonesia.svg,5120,2025,ok,2026-11-17
+IND,IN,Inde,true,Q668,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20India.svg,2760,2025,ok,2026-11-17
+IRL,IE,Irlande,false,Q27,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ireland.svg,87360,2025,ok,2026-11-17
+IRN,IR,Iran,false,Q794,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iran.svg,4650,2025,ok,2026-11-17
+IRQ,IQ,Irak,false,Q796,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iraq.svg,5690,2025,ok,2026-11-17
+ISL,IS,Islande,true,Q189,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Iceland.svg,89220,2025,ok,2026-11-17
+ISR,IL,Israël,false,Q801,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Israel.svg,56180,2025,ok,2026-11-17
+ITA,IT,Italie,true,Q38,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Italy.svg,42080,2025,ok,2026-11-17
+JAM,JM,Jamaïque,false,Q766,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jamaica.svg,7790,2025,ok,2026-11-17
+JOR,JO,Jordanie,true,Q810,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Jordan.svg,5260,2025,ok,2026-11-17
+JPN,JP,Japon,true,Q17,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan.svg,38340,2025,ok,2026-11-17
+KAZ,KZ,Kazakhstan,false,Q232,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg,13740,2025,ok,2026-11-17
+KEN,KE,Kenya,true,Q114,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg,2200,2025,ok,2026-11-17
+KGZ,KG,Kirghizistan,false,Q813,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kyrgyzstan.svg,2800,2025,ok,2026-11-17
+KHM,KH,Cambodge,false,Q424,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg,2750,2025,ok,2026-11-17
+KIR,KI,Kiribati,false,Q710,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kiribati.svg,3930,2025,ok,2026-11-17
+KNA,KN,Saint-Christophe-et-Niévès,false,Q763,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Kitts%20and%20Nevis.svg,24530,2025,ok,2026-11-17
+KOR,KR,Corée du Sud,true,Q884,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Korea.svg,37880,2025,ok,2026-11-17
+KWT,KW,Koweït,false,Q817,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kuwait.svg,41110,2024,ok,2026-11-17
+LAO,LA,Laos,true,Q819,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Laos.svg,2150,2025,ok,2026-11-17
+LBN,LB,Liban,false,Q822,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lebanon.svg,3560,2024,ok,2026-11-17
+LBR,LR,Liberia,false,Q1014,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Liberia.svg,830,2025,ok,2026-11-17
+LBY,LY,Libye,false,Q1016,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Libya.svg,7250,2025,ok,2026-11-17
+LCA,LC,Sainte-Lucie,false,Q760,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Lucia.svg,13410,2025,ok,2026-11-17
+LIE,LI,Liechtenstein,false,Q347,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Liechtenstein.svg,116380,2009,ancien,2026-11-17
+LKA,LK,Sri Lanka,true,Q854,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg,4670,2025,ok,2026-11-17
+LSO,LS,Lesotho,false,Q1013,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lesotho.svg,1280,2025,ok,2026-11-17
+LTU,LT,Lituanie,false,Q37,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Lithuania.svg,30500,2025,ok,2026-11-17
+LUX,LU,Luxembourg,false,Q32,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Luxembourg.svg,95720,2025,ok,2026-11-17
+LVA,LV,Lettonie,false,Q211,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Latvia.svg,24980,2025,ok,2026-11-17
+MAC,MO,Macao,false,Q14773,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Macau.svg,69920,2024,ok,2026-11-17
+MAR,MA,Maroc,true,Q1028,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Morocco.svg,4360,2025,ok,2026-11-17
+MCO,MC,Monaco,false,Q235,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Monaco.svg,,,absent,2026-11-17
+MDA,MD,Moldavie,false,Q217,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Moldova.svg,8050,2025,ok,2026-11-17
+MDG,MG,Madagascar,false,Q1019,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Madagascar.svg,560,2025,ok,2026-11-17
+MDV,MV,Maldives,false,Q826,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Maldives.svg,12950,2025,ok,2026-11-17
+MEX,MX,Mexique,true,Q96,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mexico.svg,13730,2025,ok,2026-11-17
+MHL,MH,Îles Marshall,false,Q709,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Marshall%20Islands.svg,9710,2025,ok,2026-11-17
+MKD,MK,Macédoine du Nord,false,Q221,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Macedonia.svg,9490,2025,ok,2026-11-17
+MLI,ML,Mali,false,Q912,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mali.svg,1120,2025,ok,2026-11-17
+MLT,MT,Malte,false,Q233,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malta.svg,41440,2025,ok,2026-11-17
+MMR,MM,Birmanie,false,Q836,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Myanmar.svg,1320,2025,ok,2026-11-17
+MNE,ME,Monténégro,false,Q236,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Montenegro.svg,14150,2025,ok,2026-11-17
+MNG,MN,Mongolie,false,Q711,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongolia.svg,6210,2025,ok,2026-11-17
+MOZ,MZ,Mozambique,false,Q1029,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mozambique.svg,570,2025,ok,2026-11-17
+MRT,MR,Mauritanie,false,Q1025,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mauritania.svg,2210,2025,ok,2026-11-17
+MUS,MU,Maurice,false,Q1027,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mauritius.svg,14040,2025,ok,2026-11-17
+MWI,MW,Malawi,false,Q1020,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malawi.svg,600,2025,ok,2026-11-17
+MYS,MY,Malaisie,false,Q833,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Malaysia.svg,12380,2025,ok,2026-11-17
+NAM,NA,Namibie,false,Q1030,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Namibia.svg,4340,2025,ok,2026-11-17
+NER,NE,Niger,false,Q1032,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Niger.svg,750,2025,ok,2026-11-17
+NGA,NG,Nigeria,false,Q1033,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nigeria.svg,1360,2025,ok,2026-11-17
+NIC,NI,Nicaragua,false,Q811,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nicaragua.svg,2850,2025,ok,2026-11-17
+NLD,NL,Pays-Bas,false,Q29999,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Netherlands.svg,68530,2025,ok,2026-11-17
+NOR,NO,Norvège,false,Q20,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Norway.svg,97310,2025,ok,2026-11-17
+NPL,NP,Népal,true,Q837,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg,1570,2025,ok,2026-11-17
+NRU,NR,Nauru,false,Q697,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nauru.svg,20690,2025,ok,2026-11-17
+NZL,NZ,Nouvelle-Zélande,true,Q664,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20New%20Zealand.svg,46630,2025,ok,2026-11-17
+OMN,OM,Oman,false,Q842,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Oman.svg,19520,2024,ok,2026-11-17
+PAK,PK,Pakistan,false,Q843,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Pakistan.svg,1500,2025,ok,2026-11-17
+PAN,PA,Panama,false,Q804,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Panama.svg,19140,2025,ok,2026-11-17
+PER,PE,Pérou,true,Q419,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Peru.svg,8430,2025,ok,2026-11-17
+PHL,PH,Philippines,false,Q928,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Philippines.svg,4850,2025,ok,2026-11-17
+PLW,PW,Palaos,false,Q695,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Palau.svg,19890,2025,ok,2026-11-17
+PNG,PG,Papouasie-Nouvelle-Guinée,false,Q691,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Papua%20New%20Guinea.svg,2890,2025,ok,2026-11-17
+POL,PL,Pologne,false,Q36,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Poland.svg,25520,2025,ok,2026-11-17
+PRK,KP,Corée du Nord,false,Q423,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20North%20Korea.svg,,,absent,2026-11-17
+PRT,PT,Portugal,true,Q45,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Portugal%20%28official%29.svg,29930,2025,ok,2026-11-17
+PRY,PY,Paraguay,false,Q733,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Paraguay.svg,6750,2025,ok,2026-11-17
+PSE,PS,Palestine,false,Q219060,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Palestine.svg,3250,2025,ok,2026-11-17
+QAT,QA,Qatar,false,Q846,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Qatar.svg,74330,2025,ok,2026-11-17
+ROU,RO,Roumanie,false,Q218,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Romania.svg,20190,2025,ok,2026-11-17
+RUS,RU,Russie,false,Q159,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Russia.svg,15960,2025,ok,2026-11-17
+RWA,RW,Rwanda,false,Q1037,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Rwanda.svg,1150,2025,ok,2026-11-17
+SAU,SA,Arabie saoudite,false,Q851,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saudi%20Arabia.svg,36070,2025,ok,2026-11-17
+SDN,SD,Soudan,false,Q1049,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sudan.svg,900,2025,ok,2026-11-17
+SEN,SN,Sénégal,true,Q1041,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Senegal.svg,1780,2025,ok,2026-11-17
+SGP,SG,Singapour,false,Q334,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Singapore.svg,81760,2025,ok,2026-11-17
+SLB,SB,Îles Salomon,false,Q685,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Solomon%20Islands.svg,2020,2025,ok,2026-11-17
+SLE,SL,Sierra Leone,false,Q1044,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sierra%20Leone.svg,830,2025,ok,2026-11-17
+SLV,SV,Salvador,false,Q792,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20El%20Salvador.svg,5410,2025,ok,2026-11-17
+SMR,SM,Saint-Marin,false,Q238,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20San%20Marino.svg,53910,2023,ok,2026-11-17
+SOM,SO,Somalie,false,Q1045,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Somalia.svg,640,2025,ok,2026-11-17
+SRB,RS,Serbie,false,Q403,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Serbia.svg,13480,2025,ok,2026-11-17
+SSD,SS,Soudan du Sud,false,Q958,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Sudan.svg,1050,2015,ancien,2026-11-17
+STP,ST,Sao Tomé-et-Principe,false,Q1039,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20S%C3%A3o%20Tom%C3%A9%20and%20Pr%C3%ADncipe.svg,3800,2025,ok,2026-11-17
+SUR,SR,Suriname,false,Q730,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Suriname.svg,6140,2025,ok,2026-11-17
+SVK,SK,Slovaquie,false,Q214,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Slovakia.svg,26410,2025,ok,2026-11-17
+SVN,SI,Slovénie,false,Q215,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Slovenia.svg,35520,2025,ok,2026-11-17
+SWE,SE,Suède,false,Q34,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sweden.svg,63010,2025,ok,2026-11-17
+SWZ,SZ,Eswatini,false,Q1050,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Eswatini.svg,3730,2025,ok,2026-11-17
+SYC,SC,Seychelles,false,Q1042,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Seychelles.svg,19200,2025,ok,2026-11-17
+SYR,SY,Syrie,false,Q858,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Syria%20%282025-%29.svg,720,2022,ok,2026-11-17
+TCD,TD,Tchad,false,Q657,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Chad.svg,970,2025,ok,2026-11-17
+TGO,TG,Togo,false,Q945,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Togo%20%283-2%29.svg,1350,2025,ok,2026-11-17
+THA,TH,Thaïlande,true,Q869,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Thailand.svg,7690,2025,ok,2026-11-17
+TJK,TJ,Tadjikistan,false,Q863,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tajikistan.svg,2080,2025,ok,2026-11-17
+TKM,TM,Turkménistan,false,Q874,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg,6340,2025,ok,2026-11-17
+TLS,TL,Timor oriental,false,Q574,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20East%20Timor.svg,1510,2025,ok,2026-11-17
+TON,TO,Tonga,false,Q678,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tonga.svg,6840,2025,ok,2026-11-17
+TTO,TT,Trinité-et-Tobago,false,Q754,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Trinidad%20and%20Tobago.svg,18550,2025,ok,2026-11-17
+TUN,TN,Tunisie,false,Q948,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tunisia.svg,4300,2025,ok,2026-11-17
+TUR,TR,Turquie,true,Q43,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkey.svg,16300,2025,ok,2026-11-17
+TUV,TV,Tuvalu,false,Q672,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tuvalu.svg,9780,2025,ok,2026-11-17
+TWN,TW,Taïwan,false,Q865,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Republic%20of%20China.svg,,,absent,2026-11-17
+TZA,TZ,Tanzanie,true,Q924,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Tanzania.svg,1270,2025,ok,2026-11-17
+UGA,UG,Ouganda,false,Q1036,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg,1120,2025,ok,2026-11-17
+UKR,UA,Ukraine,false,Q212,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ukraine.svg,5510,2025,ok,2026-11-17
+URY,UY,Uruguay,false,Q77,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uruguay.svg,24020,2025,ok,2026-11-17
+USA,US,États-Unis,true,Q30,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20United%20States%20%28DDD-F-416E%20specifications%29.svg,88810,2025,ok,2026-11-17
+UZB,UZ,Ouzbékistan,false,Q265,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uzbekistan.svg,3670,2025,ok,2026-11-17
+VAT,VA,Vatican,false,Q237,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vatican%20City%20%282023%E2%80%93present%29.svg,,,absent,2026-11-17
+VCT,VC,Saint-Vincent-et-les-Grenadines,false,Q757,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Vincent%20and%20the%20Grenadines.svg,12000,2025,ok,2026-11-17
+VEN,VE,Venezuela,false,Q717,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Venezuela.svg,3860,2025,ok,2026-11-17
+VNM,VN,Vietnam,true,Q881,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vietnam.svg,4970,2025,ok,2026-11-17
+VUT,VU,Vanuatu,false,Q686,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Vanuatu.svg,4410,2025,ok,2026-11-17
+WSM,WS,Samoa,false,Q683,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Samoa.svg,5640,2025,ok,2026-11-17
+XKX,XK,Kosovo,false,Q1246,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kosovo.svg,7760,2025,ok,2026-11-17
+YEM,YE,Yémen,false,Q805,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Yemen.svg,740,2018,ancien,2026-11-17
+ZAF,ZA,Afrique du Sud,true,Q258,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20South%20Africa.svg,6270,2025,ok,2026-11-17
+ZMB,ZM,Zambie,false,Q953,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zambia.svg,1200,2025,ok,2026-11-17
+ZWE,ZW,Zimbabwe,false,Q954,https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Zimbabwe.svg,2660,2025,ok,2026-11-17

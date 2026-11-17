@@ -1,12 +1,13 @@
-# Dataviz voyage : récapitulatif du projet (phase données terminée)
+# Périple (dataviz voyage) : récapitulatif du projet
 
-*Mis à jour le 16 octobre 2026. Document de passation pour les conversations suivantes et base de la section technique.*
+*Mis à jour le 17 novembre 2026. Données terminées, page d'accueil terminée, les trois visualisations restent à faire. Document de passation pour les conversations suivantes et base de la section technique.*
 
 ## 1. Le projet en bref
 
 - **Cours** : Web Graphique (DMA1EDA7), M1, Everardo Reyes. Rendu : lien GitHub, entre le 11 décembre 2026 et le 15 janvier 2027.
 - **Barème /20** : présentation (5), explication technique (5), interactivité, avec 3 visualisations différentes et fonctionnelles (7), partage des données en CSV/XLS (3).
 - **Contraintes** : HTML, CSS et JavaScript « vanilla », bibliothèques légères autorisées (D3, Chart.js, Leaflet), aucun CMS. Couleurs pas trop vives. Travail en solo. IA autorisée par le prof, à condition de savoir expliquer le travail.
+- **Nom du site** : **Périple** (décidé en novembre 2026, logo dans `img/logo.svg`).
 - **Sujet** : le voyage. Trois activités sur la page :
   1. **Quiz « Quel pays pour moi ? »** : questions en cartes, puis le pays qui ressemble le plus au joueur, avec un **radar** de comparaison.
   2. **Carte des passeports** : choisir un passeport et voir le monde coloré selon les visas (199 pays).
@@ -19,17 +20,36 @@
 dataviz-voyage/
 ├── data/
 │   ├── pays.csv                 FINAL - 1 ligne par pays (41), 39 colonnes : faits bruts
+│   ├── pays_monde.csv           FINAL - les 199 pays de la carte : nom français, ISO2, drapeau, RNB par habitant
 │   ├── scores.csv               FINAL - notes du quiz 0-100 (6 axes) + distance depuis Paris
 │   ├── visas.csv                FINAL - 39 402 paires passeport -> destination
 │   ├── budget.csv               FINAL - format long : pays x niveau x catégorie (40 pays)
 │   ├── pays_liste.csv           saisie manuelle : les 41 pays, nom, région, choix de capitale/photo
 │   ├── descriptions_pays.csv    saisie manuelle : 41 textes de présentation
 │   ├── saisie_budget.csv        relevé Budget Your Trip (format large)
-│   ├── corrections_visas.csv    41 vérifications manuelles avec source et date
+│   ├── corrections_visas.csv    41 vérifications manuelles avec source et date (40 pour le passeport français + Canada → Sénégal)
 │   ├── corrections_unesco.csv   5 corrections justifiées du comptage UNESCO
 │   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, CIA Factbook, ILOSTAT)
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
-└── scripts/                     Python, bibliothèque standard (+ certifi)
+├── scripts/                     Python, bibliothèque standard (+ certifi)
+│
+├── index.html                   la page (pour l'instant : préchargeur + hero)
+├── style.css                    couleurs (encre #0D0D33, crème #FFF7E6, ciel), polices, hero, boutons
+├── main.js                      chef d'orchestre : chargement → 100 % → choix du son → dispersion → chute → défilement
+├── clouds.js, disperse.js       nuages du préchargeur et leur dispersion
+├── counter.js, progress.js      compteur 0-100 % et suivi réel du chargement (images, Three.js, modèle)
+├── gate.js                      « Entrer avec le son » / « sans le son »
+├── sound.js                     Web Audio API : musique (intro + boucle), vent généré, souffles, étouffement dans le casque
+├── scene.js                     scène 3D Three.js : astronaute en rendu toon, traits de vitesse, paysage en plans, plongée
+├── hero.js                      textes du hero (arrivée, puis texte d'accueil dans la visière)
+├── scroll.js                    Lenis + ScrollTrigger : avance de la plongée, déblocage, navigation au clavier
+├── buttons.js                   boutons « magnétiques » et effet de roulement du texte
+├── img/                         nuages, 4 plans du paysage, logo, favicons (WebP)
+├── models/astronaute.glb        modèle 3D de l'astronaute
+├── sounds/                      musique.mp3, whoosh.mp3 (et musique test.mp3, non utilisée)
+├── fonts/Evori.ttf              police du titre
+├── prototype/quiz-prototype.html  référence pour la logique du quiz (pas pour le design)
+└── .github/workflows/pages.yml  déploiement GitHub Pages à chaque push sur main
 ```
 
 **Ordre d'exécution** (depuis la racine, `py` sous Windows) :
@@ -41,6 +61,7 @@ dataviz-voyage/
 5. `import_budget_collage.py` puis `build_budget.py` : budget Budget Your Trip → `budget.csv`
 6. `build_pays.py` : assemble `pays.csv`, avec des contrôles bloquants
 7. `build_scores.py` : calcule `scores.csv` (6 axes) et teste 8 profils de voyageurs
+8. `build_pays_monde.py` : les 199 pays de `visas.csv`. Wikidata donne les noms, ISO2 et drapeaux, et Data360 de la Banque mondiale donne le RNB. Résultat : `pays_monde.csv`. Le script réutilise les fonctions réseau des scripts 2 et 3, et il a besoin de `visas.csv`, `pays_liste.csv` et `pays.csv`.
 
 Le site charge directement les CSV de `data/` (par exemple avec `d3.csv()`). Les fichiers téléchargeables sont donc exactement ceux qui font tourner la page.
 
@@ -78,9 +99,10 @@ Types de données présents :
 | Donnée | Source | Méthode | Licence / remarque |
 |---|---|---|---|
 | Visas | Passport Index (dépôt GitHub imorte/passport-index-data, données du 18/02/2026) | téléchargement CSV + nettoyage | MIT |
-| Vérification des visas | France Diplomatie, fiches « Entrée / séjour » (sept.-oct. 2026), europa.eu pour l'UE | vérification manuelle des 40 destinations du passeport français | 38/40 concordantes, 2 corrigées (Thaïlande 30 j, Sri Lanka ETA) |
+| Vérification des visas | France Diplomatie, fiches « Entrée / séjour » (sept.-oct. 2026), europa.eu pour l'UE | vérification manuelle des 40 destinations du passeport français | 38/40 concordantes, 2 corrigées (Thaïlande 30 j, Sri Lanka ETA). S'y ajoute 1 correction hors passeport français : Canada → Sénégal = visa requis (réciprocité annoncée en août 2025) |
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
+| Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026 |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
 | Salaires (écartés) | ILOSTAT `EAR_EHRA_SEX_CUR_NB_A` | téléchargement bulk | voir les décisions |
@@ -148,7 +170,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 
 **Fil conducteur : « Où partir, et à quel prix selon d'où tu viens ».** Le passeport choisi par le visiteur change la carte des visas et le budget (en jours de revenu). Les trois visualisations restent **séparées** (une par section, chacune avec son interaction propre) et sont seulement reliées par des liens : sous le résultat du quiz, « Voir ce qu'il faut pour aller en [pays] » ouvre le globe avec ce pays déjà choisi, et « Voir le budget » ouvre le budget sur ce pays.
 
-**Nom du site : à choisir** parmi les noms courts proposés le 15/11 : Cap, Sésame (préféré de Claude), Escale, Départ, Périple, D'ici. À éviter : Atlas, Globe (trop courants), Tampon (double sens).
+**Nom du site : Périple**, choisi parmi les noms courts proposés le 15/11 (Cap, Sésame, Escale, Départ, Périple, D'ici). Écartés : Atlas, Globe (trop courants), Tampon (double sens).
 
 **Texte d'accueil retenu (version B, 17/11)** :
 ```html
@@ -156,7 +178,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 <p class="visor-line visor-text">Selon le passeport que tu as en poche, le même voyage ne demande ni les mêmes papiers ni le même effort. Trouve ton pays, regarde ce qu'il faut pour y entrer, puis ce qu'il te coûte vraiment.</p>
 <div class="visor-line visor-cta"><a class="visor-btn btn btn--primary" href="destinations.html" data-magnetic="0.15">Trouver mon pays</a></div>
 ```
-`destinations.html` est un nom provisoire : la page ouvre le quiz.
+`destinations.html` est un nom provisoire : la page ouvre le quiz. **En attendant, le bouton pointe vers `prototype/quiz-prototype.html`.**
 
 **Types de visualisation (5)** : radar, classement en barres, globe 3D, courbe dans le temps, grille de carrés + barres empilées.
 
@@ -189,16 +211,72 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - Phrase calculée automatiquement, par exemple « Pour toi, ce voyage = 11 jours. Pour un habitant du Népal = presque un an. »
 - Exemple vérifié sur nos données : 10 jours au Japon en budget moyen = 1 400 $ (140 $ par jour). France (RNB 48 630 $, 2025) : environ 11 jours ; Inde (2 760 $) : environ 185 jours ; Népal (1 570 $) : environ 326 jours.
 - Limites à écrire sur la page : **billet d'avion non compté** (dépenses sur place seulement) ; **revenu moyen par habitant**, pas un salaire réel.
-- À faire : récupérer le RNB des 199 pays (script Banque mondiale, environ 10 min), sinon limiter le pays de départ à nos 41 pays.
+- RNB des 199 pays : fait (`pays_monde.csv`). Le pays de départ peut donc être n'importe lequel des 199, sauf 4 pays sans valeur et 5 pays avec une valeur ancienne (voir 8 bis).
 
-## 8. Prochaines étapes (nouvelle conversation : le site)
+## 7 ter. Le site : ce qui est fait (accueil, novembre 2026)
 
-1. Structure de la page : accueil et intro, quiz, globe des passeports, budget, section technique, téléchargement des données (ZIP : les CSV + dictionnaire des données).
-2. Nouveaux scripts de données : `build_visas_historique.py` (56 versions Git + 2026, décodage de l'ancien format) et RNB des 199 pays.
+**Déroulé de la page d'accueil** (orchestré par `main.js`) :
+1. **Préchargeur** : des nuages couvrent l'écran, un compteur va de 0 à 100 % en suivant le vrai chargement (images, Three.js, modèle 3D). Test : `index.html?sim=4000` simule un chargement de 4 s.
+2. **Choix d'entrée** à 100 % : « Entrer avec le son » ou « Entrer sans le son » (les navigateurs interdisent le son sans clic).
+3. **Dispersion des nuages**, puis **chute de l'astronaute** (entrée par le haut, culbute, gestes, traits de vitesse) et freinage. Le paysage (4 plans) monte en parallaxe, qui suit la souris ou l'inclinaison du téléphone.
+4. **Arrivée** : les petits textes apparaissent (« Periple » à gauche, « Scroll pour explorer » à droite), et le défilement est débloqué.
+5. **Plongée au défilement** : la caméra entre dans la visière du casque, et le texte d'accueil (version B) apparaît dedans, avec le bouton « Trouver mon pays ».
+
+**Choix techniques** :
+- Three.js 0.187 (import map, CDN jsDelivr) avec un rendu toon écrit à la main : 2 tons, contour, ombres lissées, duotone. GSAP 3.15 et ScrollTrigger pour les animations, Lenis pour le défilement doux.
+- Son en Web Audio API : la musique démarre à l'atterrissage et boucle entre 10 s et 42 s. Le vent est généré (bruit filtré selon la vitesse), la musique baisse quand le vent souffle fort, et le son est étouffé pendant la plongée dans le casque.
+- **Accessibilité** : `prefers-reduced-motion` respecté (pas de Lenis ni d'animations des textes), parcours au clavier (Tab entre « Scroll pour explorer », le bouton son et « Trouver mon pays »), préchargeur en `role="progressbar"`, site visible même sans JavaScript.
+- **Sécurité** : si la 3D échoue, le site se débloque quand même. Le préchargeur est retiré quoi qu'il arrive.
+- **Déploiement** : la GitHub Action publie à chaque push sur `main`, sans `scripts/`, `data/raw/`, `data/intermediaire/` ni les `.md`.
+
+**Reste à faire sur l'accueil** : `<main class="site">` est vide (les sections viendront ici) ; le tag affiche « Periple » sans accent (à vérifier : police ou choix voulu ?) ; `sounds/musique test.mp3` n'est pas utilisée mais elle est déployée (à supprimer ou à exclure).
+
+## 8. Prochaines étapes (le site)
+
+1. ~~Accueil~~ (fait, voir 7 ter). Structure de la suite de la page : quiz, globe des passeports, budget, section technique, téléchargement des données (ZIP : les CSV + dictionnaire des données).
+2. Nouveaux scripts de données : voir la liste complète en 8 bis.
 3. Bibliothèques : Three.js pour le globe, D3 pour le radar, le classement, la courbe, la grille de carrés et la carte de secours. Fond de carte Natural Earth : faire la jointure sur `ADM0_A3`, car France et Norvège ont `ISO_A3 = -99`.
 4. Réécrire les questions du quiz pour qu'elles soient plus amusantes (duels, situations, images), 10 à 12 questions, avec la même logique de calcul.
 5. Une visualisation à la fois, testée avant de passer à la suivante.
 6. Puis : relire les descriptions, choisir de meilleures photos pour 5 à 10 pays, rédiger l'introduction et la section technique, déployer sur GitHub Pages.
+
+## 8 bis. Données encore à collecter (liste du 17/11/2026)
+
+**Indispensable**
+- [x] **Noms français, ISO2 et drapeaux des 199 pays** (Wikidata) → `pays_monde.csv`, fait le 17/11 avec `build_pays_monde.py`. Les 199 pays ont un nom, un ISO2 et un drapeau, et ces deux colonnes sont sans doublon (contrôle bloquant). Pour les 41 pays du quiz, le nom vient de `pays_liste.csv`. Trois noms Wikidata sont raccourcis à la main : Pays-Bas (« Royaume des Pays-Bas »), Palestine (« État de Palestine »), Micronésie. Le Kosovo est imposé (`Q1246`, ISO2 `XK`) parce qu'il n'a pas de code ISO officiel.
+  - **À décider : le drapeau de l'Afghanistan.** Wikidata donne celui des talibans (drapeau de fait). L'ONU utilise encore celui de 2013-2021. Le choix se règle dans `DRAPEAUX_IMPOSES`.
+- [x] **RNB par habitant des 199 pays** (Banque mondiale, `NY.GNP.PCAP.CD`), dans le même fichier, fait le 17/11. **Récupéré par Data360** (data360api.worldbank.org), la nouvelle API de la Banque mondiale, parce que l'ancienne API v2 renvoyait des erreurs 502 et des délais dépassés ce jour-là. C'est la même série WDI. **Contrôle : les 41 pays du quiz ont exactement la même valeur et la même année que dans `pays.csv`.**
+  - Résultat : 190 pays `ok` (2022 à 2025), 5 `ancien` (plus de 5 ans : Cuba 2019, Érythrée 2011, Liechtenstein 2009, Soudan du Sud 2015, Yémen 2018), 4 `absent` (Monaco, Corée du Nord, Taïwan, Vatican). Le Kosovo et la Palestine sont couverts.
+  - **À décider** : quoi afficher pour ces 9 pays. Proposition : « revenu indisponible » et pas de grille de carrés pour les 4 `absent` ; pour les 5 `ancien`, la valeur avec son année bien visible, ou le même traitement que les `absent`.
+- [ ] **Prépositions des noms de pays** (« au Japon », « en France », « aux États-Unis », « à Singapour » ; « du Népal », « de France », « des Philippines ») pour les phrases générées. Elles ne viennent d'aucune source : règle simple + liste d'exceptions, à relire.
+- [ ] **Historique des visas 2019-2026** : `build_visas_historique.py` lit les 56 versions Git d'ilyankou + la version imorte de 2026, et décode l'ancien format (`Value` en 2019). Il faut aussi :
+  - un **statut en plus, `covid_ban`** (9 812 cases en août 2021), avec sa couleur et sa ligne de légende ;
+  - une **définition unique de « sans visa »** pour le compteur du globe et pour la courbe (`sans_visa` seul, ou avec le visa à l'arrivée et l'ETA ?) ;
+  - un **format léger pour le site** : un fichier compact par année (matrice de codes de statut), et un CSV complet pour le téléchargement ;
+  - les corrections de `corrections_visas.csv` ne s'appliquent qu'à 2026.
+- [ ] **Noms français des sites UNESCO**, pour « Pourquoi ce pays ? ». `wikidata_unesco.json` a les identifiants des sites mais pas leurs noms : il faut une requête Wikidata de plus. Les libellés viennent de Wikidata (CC0), pas de l'UNESCO, et il faut le dire sur la page. Les conditions de l'UNESCO interdisent de republier sa liste : on garde ces noms **hors du ZIP**.
+- [ ] **Fond de carte Natural Earth** + une table qui relie `ADM0_A3` aux 199 codes des passeports. Il ne suffit pas de régler France et Norvège (`-99`) : d'autres codes diffèrent, par exemple Kosovo `XKX` → `KOS` et Palestine `PSE` → `PSX` (à vérifier dans le fichier). Les **micro-États absents de la carte** (Andorre, Monaco, Saint-Marin, Vatican, Liechtenstein, Singapour, Maldives, Bahreïn, plusieurs îles) sont affichés par un point cliquable. Le même fond sert à la carte à plat de secours en D3.
+- [ ] **Allemagne, Belgique, Pays-Bas : trancher maintenant.** Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE), et une nouvelle simulation du quiz.
+
+**Pour le téléchargement (3 points)**
+- [ ] Un **dictionnaire des données** : chaque colonne, avec son unité, sa source et son année.
+- [ ] Un **fichier des licences et crédits** dans le ZIP. Passport Index est sous licence MIT, qui oblige à joindre la notice de copyright. La Banque mondiale (CC BY 4.0) demande une attribution. Les photos ont un auteur et une licence. Le CIA Factbook est dans le domaine public.
+- [ ] **Budget Your Trip : vérifier leurs conditions d'utilisation** avant de redistribuer `budget.csv` et `saisie_budget.csv`. Au minimum, citer clairement la source dans le fichier.
+- [ ] Le **ZIP** des CSV.
+
+**À faire à la main (Aryann)**
+- [ ] Relire les 41 descriptions.
+- [ ] Choisir de meilleures photos pour 5 à 10 pays.
+
+**Pour les nouvelles questions du quiz**
+- [ ] Les photos des duels, prises sur Wikimedia Commons, avec l'auteur et la licence.
+- [ ] La simulation de toutes les combinaisons : aucun pays au-dessus de 12 % des parties, et au moins 38 pays sur 41 dans un top 3.
+
+**Secondaire**
+- [ ] Monnaie du budget : si on affiche les montants en euros, il faut un taux USD → EUR daté, noté dans le dictionnaire.
+- [ ] Visas : regarder si une version de Passport Index plus récente que février 2026 existe. La mise à jour obligerait à refaire les vérifications sur France Diplomatie, donc ce n'est pas prioritaire.
+
+**Rien à collecter** : les « Le saviez-vous ? » et le mode « Et si… » utilisent les données qu'on a déjà.
 
 **Décision du 16/10/2026 : on fige les 6 critères.** Langue et climat ont été étudiés puis écartés :
 - **langue** : avec les langues officielles, l'Inde (anglais officiel, alphabet latin pour l'anglais) obtient le même dépaysement que les États-Unis, ce qui est absurde ; le Maroc, où le français est très parlé sans être officiel, serait compté comme très dépaysant ;
@@ -210,4 +288,4 @@ Un critère approximatif qui produit des résultats absurdes coûte plus de cré
 
 Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (mode rapide environ 8 questions, mode précis environ 15), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
 
-Questions ouvertes : Nom du site et logo ? Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
+Questions ouvertes : Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
