@@ -9,3 +9,6 @@ desktop.ini
 
 # Fichiers temporaires d'Excel
 ~$*
+
+# Natural Earth brut (13 Mo) : retrouvable par l'URL figée et l'empreinte SHA-256 de build_carte.py
+data/raw/natural_earth/

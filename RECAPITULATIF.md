@@ -24,6 +24,9 @@ dataviz-voyage/
 │   ├── scores.csv               FINAL - notes du quiz 0-100 (6 axes) + distance depuis Paris
 │   ├── visas.csv                FINAL - 39 402 paires passeport -> destination
 │   ├── budget.csv               FINAL - format long : pays x niveau x catégorie (40 pays)
+│   ├── carte/
+│   │   ├── pays_carte.topojson      FINAL - fond de carte du globe et de la carte à plat (249 entités, 1,2 Mo)
+│   │   └── correspondance_carte.csv une ligne par entité Natural Earth : code passeport, règle, repère, surface
 │   ├── pays_liste.csv           saisie manuelle : les 41 pays, nom, région, choix de capitale/photo
 │   ├── descriptions_pays.csv    saisie manuelle : 41 textes de présentation
 │   ├── saisie_budget.csv        relevé Budget Your Trip (format large)
@@ -49,6 +52,7 @@ dataviz-voyage/
 ├── sounds/                      musique.mp3, whoosh.mp3 (et musique test.mp3, non utilisée)
 ├── fonts/Evori.ttf              police du titre
 ├── prototype/quiz-prototype.html  référence pour la logique du quiz (pas pour le design)
+├── prototype/carte-test.html    page de vérification du fond de carte (D3, carte à plat)
 └── .github/workflows/pages.yml  déploiement GitHub Pages à chaque push sur main
 ```
 
@@ -62,6 +66,9 @@ dataviz-voyage/
 6. `build_pays.py` : assemble `pays.csv`, avec des contrôles bloquants
 7. `build_scores.py` : calcule `scores.csv` (6 axes) et teste 8 profils de voyageurs
 8. `build_pays_monde.py` : les 199 pays de `visas.csv`. Wikidata donne les noms, ISO2 et drapeaux, et Data360 de la Banque mondiale donne le RNB. Résultat : `pays_monde.csv`. Le script réutilise les fonctions réseau des scripts 2 et 3, et il a besoin de `visas.csv`, `pays_liste.csv` et `pays.csv`.
+9. `build_carte.py` : fond de carte Natural Earth (point de vue de la France, 10m), jointure avec `pays_monde.csv`, simplification par mapshaper → `data/carte/`. Il demande **Node.js** (installé le 17/11, v26 LTS) pour `npx mapshaper`. Le fichier brut de 13 Mo est téléchargé dans `data/raw/natural_earth/`, qui n'est pas commité.
+
+**Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
 
 Le site charge directement les CSV de `data/` (par exemple avec `d3.csv()`). Les fichiers téléchargeables sont donc exactement ceux qui font tourner la page.
 
@@ -104,10 +111,49 @@ Types de données présents :
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
 | Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026. Drapeaux : règle ONU (section 5) |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
+| Fond de carte | Natural Earth v5.1.2, `ne_10m_admin_0_countries_fra` (point de vue de la France), dépôt nvkelso/natural-earth-vector | téléchargement (URL figée + SHA-256) + jointure + mapshaper | domaine public ; préparé le 17/11/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
 | Salaires (écartés) | ILOSTAT `EAR_EHRA_SEX_CUR_NB_A` | téléchargement bulk | voir les décisions |
 
 Quatre méthodes de collecte différentes (5 sources) : téléchargement, API REST, SPARQL, relevé manuel.
+
+### Fond de carte : la commande mapshaper et ses réglages (`build_carte.py`)
+
+```
+npx --yes mapshaper@0.7.101 -i data/raw/natural_earth/carte_avant_simplification.geojson
+    -clean
+    -simplify visvalingam weighted 25% keep-shapes
+    -rename-layers pays
+    -o format=topojson quantization=400000 data/carte/pays_carte.topojson
+```
+
+Avant mapshaper, le script Python fait :
+- le téléchargement, avec contrôle de l'empreinte SHA-256 ;
+- la jointure sur `ADM0_A3` ;
+- les propriétés de chaque entité (`iso3`, `adm0_a3`, `nom_fr`, `couvert`, `souverain`, repère).
+
+Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repère en un seul champ `[lon, lat]`. Voici ce que fait chaque réglage, et pourquoi :
+
+| Réglage | Ce qu'il fait | Pourquoi cette valeur |
+|---|---|---|
+| `mapshaper@0.7.101` | version figée (29/10/2026) | la série 0.8 date de la semaine du 15/11 : trop récente pour s'y fier |
+| `-clean` | répare la géométrie : supprime les fines bandes vides entre voisins (« slivers »), les chevauchements et les auto-intersections | ici, 4 bandes sur 9 supprimées, et les 249 entités gardées |
+| `-simplify visvalingam` | retire d'abord les points qui forment les plus petits triangles avec leurs voisins, c'est-à-dire les détails les moins visibles | garde mieux l'allure des côtes que Douglas-Peucker |
+| `weighted` | pénalise les angles aigus, pour des contours plus lisses | réglage conseillé par mapshaper pour les cartes |
+| `25%` | garde 25 % des points (547 351 → 123 924) | **mesuré** : à 6 %, des îles de plus de 500 km² disparaissaient ; à 25 %, toutes les îles de plus de 100 km² restent, pour environ 1 Mo |
+| `keep-shapes` | empêche un **pays** de disparaître entièrement (au moins une forme gardée par entité) | ça ne protège pas chaque **île** : 1 495 îlots sur 4 253 polygones sont retirés, tous de moins de 100 km² (contrôle bloquant au-delà) |
+| simplification **topologique** | mapshaper simplifie une seule fois chaque frontière commune à deux pays | donc ni trou ni chevauchement entre voisins, contrairement à une simplification pays par pays |
+| `format=topojson` | chaque frontière n'est stockée qu'une fois (« arcs » partagés), avec des coordonnées entières codées en différences | fichier beaucoup plus léger que le GeoJSON |
+| `quantization=400000` | arrondit les coordonnées à une grille de 1/400 000 de l'étendue (environ 100 m) | à 100 000 (environ 400 m), le Vatican était écrasé en un segment d'aire nulle, que D3 peut dessiner comme « le globe entier » |
+
+**Taille** : 12 916 Ko brut / 4 618 Ko compressé (gzip) avant, **1 246 Ko brut / 418 Ko compressé** après.
+
+**Contrôles bloquants du script** :
+- les 199 codes sont présents, une seule fois ;
+- aucune entité n'est vide après simplification ;
+- aucune île de 100 km² ou plus n'est perdue ;
+- tous les contours extérieurs sont dans le sens horaire, comme D3 l'attend ;
+- l'empreinte SHA-256 de la source est conforme.
 
 ## 5. Décisions et justifications (à reprendre dans la section technique)
 
@@ -172,6 +218,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **La nature** compte autant les grands espaces vides que les forêts. Les déserts peuplés sont pénalisés (Maroc 0, Égypte 14), la montagne n'est pas mesurée (la Suisse reste à 37). La forêt de la FAO inclut les savanes boisées (Sénégal 45 %).
 - **Les zones protégées** sont gonflées en Europe par Natura 2000. **Les villes** : le Sri Lanka est à 0 à cause de sa définition statistique très étroite de Colombo.
 - **Les visas** datent de février 2026, sauf pour le passeport français, vérifié en octobre 2026. Afficher la date sur la carte.
+- **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
 ## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 17/11/2026)
@@ -258,14 +305,31 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 
     Le Kosovo et la Palestine sont couverts. La règle d'affichage est dans la section 5.
 
-**1. Fond de carte** (méthode validée le 17/11, en cours)
-- [ ] `build_carte.py` : Natural Earth v5.1.2, **point de vue de la France, échelle 10m** (`ne_10m_admin_0_countries_fra`, URL figée et empreinte SHA-256 vérifiée ; le fichier brut de 13 Mo n'est pas commité).
-- [ ] Jointure sur `ADM0_A3` : 196 codes identiques, 3 réglés par une table (`PSX`→`PSE`, `SDS`→`SSD`, `KOS`→`XKX`). Contrôle bloquant : chacun des 199 codes correspond à une seule entité.
-- [ ] Territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) et Antarctique : en gris, « non couvert par Passport Index », avec le pays souverain dans l'infobulle.
-- [ ] Simplification et nettoyage par **mapshaper**, qui garde les frontières communes (la commande exacte sera dans la section 4). Sortie : `data/carte/pays_carte.topojson`. Contrôle : aucun petit pays ni aucune île ne disparaît.
-- [ ] Repères cliquables pour les pays dont la surface sur la carte est inférieure à **2 500 km²**, placés sur `LABEL_X` et `LABEL_Y`.
-- [ ] `data/carte/correspondance_carte.csv` (une ligne par entité Natural Earth) et un rapport.
-- [ ] Page de test D3 (`prototype/carte-test.html`) à regarder avant le commit.
+**1. Fond de carte** (fait et validé le 17/11 avec `build_carte.py`)
+- [x] Natural Earth v5.1.2, **point de vue de la France, échelle 10m** (`ne_10m_admin_0_countries_fra`). URL figée et empreinte SHA-256 vérifiée. Le fichier brut de 13 Mo n'est pas commité.
+- [x] Jointure sur `ADM0_A3` : 196 codes identiques, 3 réglés par une table (`PSX`→`PSE`, `SDS`→`SSD`, `KOS`→`XKX`). **Aucun des 199 passeports ne manque sur la carte.**
+- [x] 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) et l'Antarctique sont en gris, avec le pays souverain dans les propriétés. Les noms faux de Natural Earth sont corrigés : les îles Spratleys s'appelaient « Wake ».
+- [x] Simplification et nettoyage par mapshaper : la commande et ses réglages sont dans la section 4. **Les îles de plus de 100 km² sont toutes gardées.** Les îlots plus petits peuvent disparaître : `keep-shapes` protège chaque pays, pas chaque île.
+- [x] **31 repères** pour les pays de **moins de 3 000 km²** sur la carte. Le seuil était de 2 500 km², il a été relevé le 17/11 pour inclure le Luxembourg et Samoa, comme prévu au départ. Les repères sont placés sur `LABEL_X` et `LABEL_Y`. La surface est mesurée sur la forme Natural Earth 10m, elle est donc proche de la surface réelle sans être identique (le Vatican y fait moins de 0,1 km²).
+
+  | Pays | km² | Pays | km² | Pays | km² |
+  |---|---:|---|---:|---|---:|
+  | Vatican | < 0,1 | Saint-Christophe-et-Niévès | 265 | Tonga | 605 |
+  | Monaco | 19 | Malte | 326 | Sainte-Lucie | 607 |
+  | Tuvalu | 23 | Grenade | 349 | Micronésie | 637 |
+  | Nauru | 29 | Saint-Vincent-et-les-Grenadines | 369 | Bahreïn | 689 |
+  | Macao | 30 | Seychelles | 438 | Dominique | 733 |
+  | Saint-Marin | 60 | Barbade | 446 | Kiribati | 954 |
+  | Maldives | 109 | Andorre | 452 | Hong Kong | 1 039 |
+  | Liechtenstein | 137 | Antigua-et-Barbuda | 453 | Sao Tomé-et-Principe | 1 042 |
+  | Îles Marshall | 166 | Palaos | 494 | Comores | 1 679 |
+  | | | Singapour | 513 | Maurice | 2 020 |
+  | | | | | Luxembourg | 2 600 |
+  | | | | | Samoa | 2 791 |
+
+  **À régler sur le globe** : en vue entière, les repères européens (Monaco, Vatican, Saint-Marin, Liechtenstein, et aussi Andorre, le Luxembourg et Malte) se chevauchent. Ceux des Petites Antilles aussi. Deux pistes : les **regrouper** en un seul point qui s'ouvre au clic ou au zoom, ou les **afficher selon le zoom** (un repère n'apparaît que lorsqu'il est assez loin de ses voisins à l'écran). La recherche au clavier reste toujours possible.
+- [x] `data/carte/correspondance_carte.csv` et le rapport.
+- [x] Page de test `prototype/carte-test.html` vérifiée par Aryann le 17/11.
 
 **2. Historique des visas 2019-2026**
 - [ ] `build_visas_historique.py` lit les 56 versions Git d'ilyankou et la version imorte de 2026, et décode l'ancien format (`Value` en 2019).

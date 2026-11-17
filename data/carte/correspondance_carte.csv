@@ -1,0 +1,250 @@
+adm0_a3,nom_ne,iso_a3_ne,iso3_passeport,regle,repere,surface_km2,note
+ABW,Aruba,ABW,,sans_passeport,false,170.4,"pays constitutif, souverain : Pays-Bas"
+AFG,Afghanistan,AFG,AFG,identique,false,642392.5,
+AGO,Angola,AGO,AGO,identique,false,1249439.4,
+AIA,Anguilla,AIA,,sans_passeport,false,87.7,"dépendance, souverain : Royaume-Uni"
+ALB,Albania,ALB,ALB,identique,false,28298.4,
+ALD,Åland,ALA,,sans_passeport,false,936.8,"pays constitutif, souverain : Finlande"
+AND,Andorra,AND,AND,identique,true,451.5,
+ARE,United Arab Emirates,ARE,ARE,identique,false,71247.2,
+ARG,Argentina,ARG,ARG,identique,false,2783121.8,
+ARM,Armenia,ARM,ARM,identique,false,29555.0,
+ASM,American Samoa,ASM,,sans_passeport,false,181.0,"dépendance, souverain : États-Unis"
+ATA,Antarctica,ATA,,sans_passeport,false,12258370.5,statut indéterminé
+ATC,Ashmore and Cartier Is.,-99,,sans_passeport,false,2.7,"dépendance, souverain : Australie"
+ATF,Fr. S. and Antarctic Lands,ATF,,sans_passeport,false,7257.0,"dépendance, souverain : France"
+ATG,Antigua and Barb.,ATG,ATG,identique,true,453.3,
+AUS,Australia,AUS,AUS,identique,false,7705923.8,
+AUT,Austria,AUT,AUT,identique,false,83755.9,
+AZE,Azerbaijan,AZE,AZE,identique,false,86152.9,
+BDI,Burundi,BDI,BDI,identique,false,27161.4,
+BEL,Belgium,BEL,BEL,identique,false,30561.2,
+BEN,Benin,BEN,BEN,identique,false,116590.0,
+BFA,Burkina Faso,BFA,BFA,identique,false,273826.7,
+BGD,Bangladesh,BGD,BGD,identique,false,137217.4,
+BGR,Bulgaria,BGR,BGR,identique,false,112568.3,
+BHR,Bahrain,BHR,BHR,identique,true,689.4,
+BHS,Bahamas,BHS,BHS,identique,false,12631.9,
+BIH,Bosnia and Herz.,BIH,BIH,identique,false,51721.6,
+BLM,St-Barthélemy,BLM,,sans_passeport,false,24.5,"dépendance, souverain : France"
+BLR,Belarus,BLR,BLR,identique,false,206632.1,
+BLZ,Belize,BLZ,BLZ,identique,false,22373.2,
+BMU,Bermuda,BMU,,sans_passeport,false,62.3,"dépendance, souverain : Royaume-Uni"
+BOL,Bolivia,BOL,BOL,identique,false,1090454.1,
+BRA,Brazil,BRA,BRA,identique,false,8504682.5,
+BRB,Barbados,BRB,BRB,identique,true,445.9,
+BRI,Brazilian Island,-99,,sans_passeport,false,2.8,statut indéterminé
+BRN,Brunei,BRN,BRN,identique,false,5741.8,
+BRT,Bir Tawil,-99,,sans_passeport,false,2024.8,statut indéterminé
+BTN,Bhutan,BTN,BTN,identique,false,40487.6,
+BWA,Botswana,BWA,BWA,identique,false,580514.9,
+CAF,Central African Rep.,CAF,CAF,identique,false,620643.7,
+CAN,Canada,CAN,CAN,identique,false,9894499.0,
+CHE,Switzerland,CHE,CHE,identique,false,41326.0,
+CHL,Chile,CHL,CHL,identique,false,736364.4,
+CHN,China,CHN,CHN,identique,false,9373405.7,
+CIV,Côte d'Ivoire,CIV,CIV,identique,false,322038.6,
+CLP,Clipperton I.,-99,,sans_passeport,false,5.0,"dépendance, souverain : France"
+CMR,Cameroon,CMR,CMR,identique,false,466331.2,
+COD,Democratic Republic of the Congo,COD,COD,identique,false,2335422.4,
+COG,Republic of the Congo,COG,COG,identique,false,346428.7,
+COK,Cook Is.,COK,,sans_passeport,false,191.7,"dépendance, souverain : Nouvelle-Zélande"
+COL,Colombia,COL,COL,identique,false,1140094.8,
+COM,Comoros,COM,COM,identique,true,1678.8,
+CPV,Cabo Verde,CPV,CPV,identique,false,3940.4,
+CRI,Costa Rica,CRI,CRI,identique,false,51360.0,
+CSI,Coral Sea Is.,-99,,sans_passeport,false,0.0,"dépendance, souverain : Australie"
+CUB,Cuba,CUB,CUB,identique,false,110222.0,
+CUW,Curaçao,CUW,,sans_passeport,false,465.0,"pays constitutif, souverain : Pays-Bas"
+CYM,Cayman Is.,CYM,,sans_passeport,false,310.1,"dépendance, souverain : Royaume-Uni"
+CYP,Cyprus,CYP,CYP,identique,false,9056.0,
+CZE,Czechia,CZE,CZE,identique,false,78497.3,
+DEU,Germany,DEU,DEU,identique,false,356378.8,
+DJI,Djibouti,DJI,DJI,identique,false,21933.9,
+DMA,Dominica,DMA,DMA,identique,true,732.9,
+DNK,Denmark,DNK,DNK,identique,false,42494.3,
+DOM,Dominican Rep.,DOM,DOM,identique,false,48589.1,
+DZA,Algeria,DZA,DZA,identique,false,2312302.0,
+ECU,Ecuador,ECU,ECU,identique,false,256155.2,
+EGY,Egypt,EGY,EGY,identique,false,1002869.9,
+ERI,Eritrea,ERI,ERI,identique,false,122972.1,
+ESB,Dhekelia,-99,,sans_passeport,false,127.4,"dépendance, souverain : Royaume-Uni"
+ESP,Spain,ESP,ESP,identique,false,506328.2,
+EST,Estonia,EST,EST,identique,false,45576.3,
+ETH,Ethiopia,ETH,ETH,identique,false,1132066.4,
+FIN,Finland,FIN,FIN,identique,false,330937.9,
+FJI,Fiji,FJI,FJI,identique,false,18992.2,
+FLK,Falkland Is.,FLK,,sans_passeport,false,11553.4,"territoire disputé, souverain : Royaume-Uni"
+FRA,France,-99,FRA,identique,false,635737.1,
+FRO,Faeroe Islands,FRO,,sans_passeport,false,1320.6,"dépendance, souverain : Danemark"
+FSM,Micronesia,FSM,FSM,identique,true,636.6,
+GAB,Gabon,GAB,GAB,identique,false,261133.3,
+GBR,United Kingdom,GBR,GBR,identique,false,242736.8,
+GEO,Georgia,GEO,GEO,identique,false,69462.3,
+GGY,Guernsey,GGY,,sans_passeport,false,73.7,"pays constitutif, souverain : Royaume-Uni"
+GHA,Ghana,GHA,GHA,identique,false,239676.4,
+GIB,Gibraltar,GIB,,sans_passeport,false,3.7,"territoire disputé, souverain : Royaume-Uni"
+GIN,Guinea,GIN,GIN,identique,false,245290.1,
+GMB,Gambia,GMB,GMB,identique,false,10540.6,
+GNB,Guinea-Bissau,GNB,GNB,identique,false,32957.3,
+GNQ,Eq. Guinea,GNQ,GNQ,identique,false,26791.1,
+GRC,Greece,GRC,GRC,identique,false,131243.7,
+GRD,Grenada,GRD,GRD,identique,true,348.6,
+GRL,Greenland,GRL,,sans_passeport,false,2137888.7,"pays constitutif, souverain : Danemark"
+GTM,Guatemala,GTM,GTM,identique,false,109192.0,
+GUM,Guam,GUM,,sans_passeport,false,566.3,"dépendance, souverain : États-Unis"
+GUY,Guyana,GUY,GUY,identique,false,212139.4,
+HKG,Hong Kong,HKG,HKG,identique,true,1038.8,
+HMD,Heard I. and McDonald Is.,HMD,,sans_passeport,false,393.2,"dépendance, souverain : Australie"
+HND,Honduras,HND,HND,identique,false,112641.6,
+HRV,Croatia,HRV,HRV,identique,false,54900.2,
+HTI,Haiti,HTI,HTI,identique,false,26974.2,
+HUN,Hungary,HUN,HUN,identique,false,92946.6,
+IDN,Indonesia,IDN,IDN,identique,false,1888146.4,
+IMN,Isle of Man,IMN,,sans_passeport,false,572.3,"pays constitutif, souverain : Royaume-Uni"
+IND,India,IND,IND,identique,false,3160404.3,
+IOA,Indian Ocean Ter.,-99,,sans_passeport,false,112.4,"dépendance, souverain : Australie"
+IOT,Br. Indian Ocean Ter.,IOT,,sans_passeport,false,49.3,"territoire disputé, souverain : Royaume-Uni"
+IRL,Ireland,IRL,IRL,identique,false,69160.2,
+IRN,Iran,IRN,IRN,identique,false,1623487.7,
+IRQ,Iraq,IRQ,IRQ,identique,false,437585.4,
+ISL,Iceland,ISL,ISL,identique,false,101722.6,
+ISR,Israel,ISR,ISR,identique,false,20907.0,
+ITA,Italy,ITA,ITA,identique,false,300678.0,
+JAM,Jamaica,JAM,JAM,identique,false,11068.0,
+JEY,Jersey,JEY,,sans_passeport,false,118.7,"pays constitutif, souverain : Royaume-Uni"
+JOR,Jordan,JOR,JOR,identique,false,88940.4,
+JPN,Japan,JPN,JPN,identique,false,373331.8,
+KAZ,Kazakhstan,KAZ,KAZ,identique,false,2712841.8,
+KEN,Kenya,KEN,KEN,identique,false,588319.9,
+KGZ,Kyrgyzstan,KGZ,KGZ,identique,false,198712.6,
+KHM,Cambodia,KHM,KHM,identique,false,181754.2,
+KIR,Kiribati,KIR,KIR,identique,true,954.1,
+KNA,Saint Kitts and Nevis,KNA,KNA,identique,true,265.0,
+KOR,Republic of Korea,KOR,KOR,identique,false,98521.0,
+KOS,Kosovo,-99,XKX,table,false,10895.1,"Kosovo : pas de code ISO officiel ; XKX = code d'usage (UE, Banque mondiale)"
+KWT,Kuwait,KWT,KWT,identique,false,17495.6,
+LAO,Laos,LAO,LAO,identique,false,228827.0,
+LBN,Lebanon,LBN,LBN,identique,false,10025.1,
+LBR,Liberia,LBR,LBR,identique,false,95709.6,
+LBY,Libya,LBY,LBY,identique,false,1626531.4,
+LCA,Saint Lucia,LCA,LCA,identique,true,607.4,
+LIE,Liechtenstein,LIE,LIE,identique,true,136.9,
+LKA,Sri Lanka,LKA,LKA,identique,false,66573.0,
+LSO,Lesotho,LSO,LSO,identique,false,30143.0,
+LTU,Lithuania,LTU,LTU,identique,false,64641.2,
+LUX,Luxembourg,LUX,LUX,identique,true,2599.8,
+LVA,Latvia,LVA,LVA,identique,false,64259.0,
+MAC,Macao,MAC,MAC,identique,true,30.2,
+MAF,Saint-Martin,MAF,,sans_passeport,false,68.5,"dépendance, souverain : France"
+MAR,Morocco,MAR,MAR,identique,false,683125.2,
+MCO,Monaco,MCO,MCO,identique,true,18.8,
+MDA,Moldova,MDA,MDA,identique,false,33115.8,
+MDG,Madagascar,MDG,MDG,identique,false,594752.8,
+MDV,Maldives,MDV,MDV,identique,true,109.2,
+MEX,Mexico,MEX,MEX,identique,false,1962242.7,
+MHL,Marshall Is.,MHL,MHL,identique,true,165.5,
+MKD,North Macedonia,MKD,MKD,identique,false,25349.0,
+MLI,Mali,MLI,MLI,identique,false,1256812.7,
+MLT,Malta,MLT,MLT,identique,true,325.6,
+MMR,Myanmar,MMR,MMR,identique,false,664957.2,
+MNE,Montenegro,MNE,MNE,identique,false,13704.1,
+MNG,Mongolia,MNG,MNG,identique,false,1560553.3,
+MNP,N. Mariana Is.,MNP,,sans_passeport,false,581.3,"dépendance, souverain : États-Unis"
+MOZ,Mozambique,MOZ,MOZ,identique,false,791021.3,
+MRT,Mauritania,MRT,MRT,identique,false,1039353.8,
+MSR,Montserrat,MSR,,sans_passeport,false,99.9,"dépendance, souverain : Royaume-Uni"
+MUS,Mauritius,MUS,MUS,identique,true,2020.2,
+MWI,Malawi,MWI,MWI,identique,false,119848.6,
+MYS,Malaysia,MYS,MYS,identique,false,329334.8,
+NAM,Namibia,NAM,NAM,identique,false,824823.9,
+NCL,New Caledonia,NCL,,sans_passeport,false,18892.2,"dépendance, souverain : France"
+NER,Niger,NER,NER,identique,false,1185161.2,
+NFK,Norfolk Island,NFK,,sans_passeport,false,41.2,"dépendance, souverain : Australie"
+NGA,Nigeria,NGA,NGA,identique,false,911216.7,
+NIC,Nicaragua,NIC,NIC,identique,false,129176.6,
+NIU,Niue,NIU,,sans_passeport,false,221.2,"dépendance, souverain : Nouvelle-Zélande"
+NLD,Netherlands,NLD,NLD,identique,false,37253.4,
+NOR,Norway,-99,NOR,identique,false,379542.4,
+NPL,Nepal,NPL,NPL,identique,false,147323.5,
+NRU,Nauru,NRU,NRU,identique,true,28.9,
+NZL,New Zealand,NZL,NZL,identique,false,268108.7,
+OMN,Oman,OMN,OMN,identique,false,312089.9,
+PAK,Pakistan,PAK,PAK,identique,false,873936.1,
+PAN,Panama,PAN,PAN,identique,false,74843.0,
+PCN,Pitcairn Is.,PCN,,sans_passeport,false,42.7,"dépendance, souverain : Royaume-Uni"
+PER,Peru,PER,PER,identique,false,1295126.7,
+PGA,Spratly Is.,-99,,sans_passeport,false,12.0,statut indéterminé
+PHL,Philippines,PHL,PHL,identique,false,294429.9,
+PLW,Palau,PLW,PLW,identique,true,494.0,
+PNG,Papua New Guinea,PNG,PNG,identique,false,467150.5,
+POL,Poland,POL,POL,identique,false,312217.9,
+PRI,Puerto Rico,PRI,,sans_passeport,false,9034.6,"dépendance, souverain : États-Unis"
+PRK,Dem. Rep. Korea,PRK,PRK,identique,false,122246.0,
+PRT,Portugal,PRT,PRT,identique,false,91302.6,
+PRY,Paraguay,PRY,PRY,identique,false,400858.3,
+PSX,Palestine,PSE,PSE,table,false,6078.8,Natural Earth : PSX (Palestine) ; ISO 3166 : PSE
+PYF,Fr. Polynesia,PYF,,sans_passeport,false,3348.2,"dépendance, souverain : France"
+QAT,Qatar,QAT,QAT,identique,false,11172.8,
+ROU,Romania,ROU,ROU,identique,false,235805.7,
+RUS,Russia,RUS,RUS,identique,false,16859270.7,
+RWA,Rwanda,RWA,RWA,identique,false,25418.3,
+SAU,Saudi Arabia,SAU,SAU,identique,false,1926006.5,
+SCR,Scarborough Reef,-99,,sans_passeport,false,0.1,statut indéterminé
+SDN,Sudan,SDN,SDN,identique,false,1851075.3,
+SDS,S. Sudan,SSD,SSD,table,false,629530.4,Natural Earth : SDS (Soudan du Sud) ; ISO 3166 : SSD
+SEN,Senegal,SEN,SEN,identique,false,196942.5,
+SGP,Singapore,SGP,SGP,identique,true,512.8,
+SGS,S. Geo. and the Is.,SGS,,sans_passeport,false,3904.1,"dépendance, souverain : Royaume-Uni"
+SHN,Saint Helena,SHN,,sans_passeport,false,367.3,"dépendance, souverain : Royaume-Uni"
+SLB,Solomon Is.,SLB,SLB,identique,false,27312.0,
+SLE,Sierra Leone,SLE,SLE,identique,false,71911.7,
+SLV,El Salvador,SLV,SLV,identique,false,20616.1,
+SMR,San Marino,SMR,SMR,identique,true,60.2,
+SOM,Somalia,SOM,SOM,identique,false,641965.3,
+SPM,St. Pierre and Miquelon,SPM,,sans_passeport,false,242.1,"dépendance, souverain : France"
+SRB,Serbia,SRB,SRB,identique,false,77470.5,
+STP,Sao Tome and Principe,STP,STP,identique,true,1041.8,
+SUR,Suriname,SUR,SUR,identique,false,145764.4,
+SVK,Slovakia,SVK,SVK,identique,false,48308.4,
+SVN,Slovenia,SVN,SVN,identique,false,20276.5,
+SWE,Sweden,SWE,SWE,identique,false,443493.0,
+SWZ,eSwatini,SWZ,SWZ,identique,false,17142.8,
+SXM,Sint Maarten,SXM,,sans_passeport,false,23.4,"pays constitutif, souverain : Pays-Bas"
+SYC,Seychelles,SYC,SYC,identique,true,437.5,
+SYR,Syria,SYR,SYR,identique,false,185952.1,
+TCA,Turks and Caicos Is.,TCA,,sans_passeport,false,446.4,"dépendance, souverain : Royaume-Uni"
+TCD,Chad,TCD,TCD,identique,false,1270723.1,
+TGO,Togo,TGO,TGO,identique,false,57101.5,
+THA,Thailand,THA,THA,identique,false,516275.4,
+TJK,Tajikistan,TJK,TJK,identique,false,142136.4,
+TKM,Turkmenistan,TKM,TKM,identique,false,470449.2,
+TLS,Timor-Leste,TLS,TLS,identique,false,15145.1,
+TON,Tonga,TON,TON,identique,true,604.9,
+TTO,Trinidad and Tobago,TTO,TTO,identique,false,5143.6,
+TUN,Tunisia,TUN,TUN,identique,false,156654.7,
+TUR,Turkey,TUR,TUR,identique,false,779426.4,
+TUV,Tuvalu,TUV,TUV,identique,true,23.1,
+TWN,Taiwan,TWN,TWN,identique,false,36281.4,
+TZA,Tanzania,TZA,TZA,identique,false,945555.9,
+UGA,Uganda,UGA,UGA,identique,false,242936.0,
+UKR,Ukraine,UKR,UKR,identique,false,597212.4,
+UMI,U.S. Minor Outlying Is.,UMI,,sans_passeport,false,28.1,"dépendance, souverain : États-Unis"
+URY,Uruguay,URY,URY,identique,false,177439.5,
+USA,United States,USA,USA,identique,false,9447839.4,
+USG,Guantanamo Bay USNB,-99,,sans_passeport,false,65.5,"territoire à bail, souverain : Cuba"
+UZB,Uzbekistan,UZB,UZB,identique,false,447179.9,
+VAT,Vatican,VAT,VAT,identique,true,0.0,
+VCT,St. Vin. and Gren.,VCT,VCT,identique,true,369.1,
+VEN,Venezuela,VEN,VEN,identique,false,916571.3,
+VGB,British Virgin Is.,VGB,,sans_passeport,false,145.4,"dépendance, souverain : Royaume-Uni"
+VIR,U.S. Virgin Is.,VIR,,sans_passeport,false,355.9,"dépendance, souverain : États-Unis"
+VNM,Vietnam,VNM,VNM,identique,false,329986.9,
+VUT,Vanuatu,VUT,VUT,identique,false,12338.9,
+WLF,Wallis and Futuna Islands,WLF,,sans_passeport,false,139.8,"dépendance, souverain : France"
+WSB,Akrotiri,-99,,sans_passeport,false,98.7,"dépendance, souverain : Royaume-Uni"
+WSM,Samoa,WSM,WSM,identique,true,2790.8,
+YEM,Yemen,YEM,YEM,identique,false,454649.2,
+ZAF,South Africa,ZAF,ZAF,identique,false,1221445.8,
+ZMB,Zambia,ZMB,ZMB,identique,false,754730.0,
+ZWE,Zimbabwe,ZWE,ZWE,identique,false,390529.2,

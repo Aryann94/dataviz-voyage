@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test du fond de carte</title>
+<!-- Page de vérification de data/carte/pays_carte.topojson (pas une page du site).
+     Lancer un petit serveur depuis la racine du projet :  py -m http.server 8000
+     puis ouvrir http://localhost:8000/prototype/carte-test.html -->
+<style>
+  :root {
+    --ink: #0D0D33; --cream: #FFF7E6; --sea: #E9EEF2;
+    --pays: #E4D3AE; --pays-survol: #C9A96B; --gris: #CFCFCF; --repere: #B5523B;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 system-ui, sans-serif; color: var(--ink); background: var(--cream); }
+  header { padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+  h1 { font-size: 17px; margin: 0; }
+  .stats { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  .stats b { font-variant-numeric: tabular-nums; }
+  .ok { color: #2F6B3A; } .ko { color: #B5523B; }
+  .outils { display: flex; gap: 8px; align-items: center; margin-left: auto; }
+  input, button { font: inherit; padding: 5px 9px; border: 1px solid var(--ink); border-radius: 6px; background: #fff; color: var(--ink); }
+  button { cursor: pointer; }
+  #carte { display: block; width: 100%; height: calc(100vh - 110px); min-height: 360px; background: var(--sea); cursor: grab; }
+  #carte:active { cursor: grabbing; }
+  .pays { fill: var(--pays); stroke: var(--ink); stroke-width: .35; vector-effect: non-scaling-stroke; }
+  .pays.gris { fill: var(--gris); }
+  .pays:hover, .pays.choisi { fill: var(--pays-survol); }
+  .pays.gris:hover { fill: #B3B3B3; }
+  .grille { fill: none; stroke: var(--ink); stroke-opacity: .08; vector-effect: non-scaling-stroke; }
+  .repere { fill: var(--repere); stroke: #fff; vector-effect: non-scaling-stroke; }
+  .repere:hover, .repere.choisi { fill: var(--ink); }
+  .legende { padding: 6px 16px; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; }
+  .legende i { display: inline-block; width: 12px; height: 12px; border: 1px solid var(--ink); vertical-align: -2px; margin-right: 5px; }
+  #bulle { position: fixed; pointer-events: none; background: #fff; border: 1px solid var(--ink); border-radius: 6px;
+           padding: 6px 9px; font-size: 13px; max-width: 280px; opacity: 0; transition: opacity .1s; }
+  #bulle small { color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Test du fond de carte</h1>
+  <div class="stats" id="stats">Chargement…</div>
+  <div class="outils">
+    <input id="recherche" list="noms" placeholder="Aller à un pays…" aria-label="Aller à un pays">
+    <datalist id="noms"></datalist>
+    <button id="reinit" type="button">Vue entière</button>
+  </div>
+</header>
+<svg id="carte" role="img" aria-label="Carte du monde de test"></svg>
+<div class="legende">
+  <span><i style="background:var(--pays)"></i>pays couvert par Passport Index</span>
+  <span><i style="background:var(--gris)"></i>territoire non couvert</span>
+  <span><i style="background:var(--repere);border-radius:50%"></i>repère (moins de 3 000 km²)</span>
+  <span>Molette ou pincement : zoom. Glisser : déplacer.</span>
+</div>
+<div id="bulle" role="status"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+(async () => {
+  const [topo, paysCsv] = await Promise.all([
+    d3.json('../data/carte/pays_carte.topojson'),
+    d3.csv('../data/pays_monde.csv'),
+  ]);
+  const entites = topojson.feature(topo, topo.objects.pays).features;
+  const frontieres = topojson.mesh(topo, topo.objects.pays, (a, b) => a !== b);
+
+  // --- Contrôles affichés : les 199 codes sont-ils tous là, une seule fois ? ---
+  const attendus = new Set(paysCsv.map(d => d.iso3));
+  const presents = d3.rollup(entites.filter(f => f.properties.iso3), v => v.length, f => f.properties.iso3);
+  const manquants = [...attendus].filter(c => !presents.has(c));
+  const doubles = [...presents].filter(([, n]) => n > 1).map(([c]) => c);
+  const reperes = entites.filter(f => f.properties.repere);
+  const gris = entites.filter(f => !f.properties.couvert);
+  document.getElementById('stats').innerHTML = `
+    <span>${entites.length} entités</span>
+    <span class="${manquants.length || doubles.length ? 'ko' : 'ok'}"><b>${presents.size}/${attendus.size}</b> codes passeport
+      ${manquants.length ? '— manquants : ' + manquants.join(', ') : ''}${doubles.length ? ' — en double : ' + doubles.join(', ') : ''}</span>
+    <span>${gris.length} territoires en gris</span>
+    <span>${reperes.length} repères</span>`;
+
+  // --- Carte ---
+  const svg = d3.select('#carte');
+  const { width, height } = svg.node().getBoundingClientRect();
+  svg.attr('viewBox', [0, 0, width, height]);
+  const projection = d3.geoEqualEarth().fitExtent([[12, 12], [width - 12, height - 12]], { type: 'Sphere' });
+  const chemin = d3.geoPath(projection);
+  const zone = svg.append('g');
+
+  zone.append('path').datum({ type: 'Sphere' }).attr('d', chemin).attr('fill', '#DCE6EC');
+  zone.append('path').datum(d3.geoGraticule10()).attr('class', 'grille').attr('d', chemin);
+  const formes = zone.append('g').selectAll('path').data(entites).join('path')
+    .attr('class', d => 'pays' + (d.properties.couvert ? '' : ' gris'))
+    .attr('d', chemin);
+  zone.append('path').datum(frontieres).attr('d', chemin)
+    .attr('fill', 'none').attr('stroke', '#0D0D33').attr('stroke-width', .5).attr('vector-effect', 'non-scaling-stroke');
+  const points = zone.append('g').selectAll('circle').data(reperes).join('circle')
+    .attr('class', 'repere')
+    .attr('cx', d => projection(d.properties.repere)[0])
+    .attr('cy', d => projection(d.properties.repere)[1])
+    .attr('r', 3.5);
+
+  // --- Infobulle ---
+  const bulle = document.getElementById('bulle');
+  const texte = p => `<b>${p.nom_fr}</b><br><small>iso3 : ${p.iso3 ?? '—'} · Natural Earth : ${p.adm0_a3}</small><br>` +
+    (p.couvert ? 'Couvert par Passport Index' : `Non couvert${p.souverain ? ' · territoire : ' + p.souverain : ''}`) +
+    (p.repere ? `<br><small>repère : ${p.repere[1]}° N, ${p.repere[0]}° E</small>` : '');
+  function montrer(event, d) {
+    bulle.innerHTML = texte(d.properties);
+    bulle.style.left = Math.min(event.clientX + 14, innerWidth - 290) + 'px';
+    bulle.style.top = (event.clientY + 14) + 'px';
+    bulle.style.opacity = 1;
+  }
+  formes.on('pointermove', montrer).on('pointerleave', () => bulle.style.opacity = 0);
+  points.on('pointermove', montrer).on('pointerleave', () => bulle.style.opacity = 0);
+
+  // --- Zoom (les repères gardent la même taille à l'écran) ---
+  const zoom = d3.zoom().scaleExtent([1, 200]).on('zoom', ({ transform }) => {
+    zone.attr('transform', transform);
+    points.attr('r', 3.5 / transform.k).attr('stroke-width', 1 / transform.k);
+  });
+  svg.call(zoom);
+  document.getElementById('reinit').onclick = () => svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity);
+
+  // --- Aller à un pays (vérifier les petits) ---
+  const parNom = new Map(entites.map(f => [f.properties.nom_fr, f]));
+  d3.select('#noms').selectAll('option').data([...parNom.keys()].sort(d3.ascending)).join('option').attr('value', d => d);
+  document.getElementById('recherche').addEventListener('change', e => {
+    const f = parNom.get(e.target.value);
+    if (!f) return;
+    formes.classed('choisi', d => d === f);
+    points.classed('choisi', d => d === f);
+    let [[x0, y0], [x1, y1]] = chemin.bounds(f);
+    if (f.properties.repere) {                                   // très petit : on cadre autour du repère
+      const [x, y] = projection(f.properties.repere);
+      [x0, y0, x1, y1] = [x - 4, y - 4, x + 4, y + 4];
+    }
+    const k = Math.min(200, 0.8 / Math.max((x1 - x0) / width, (y1 - y0) / height));
+    svg.transition().duration(800).call(zoom.transform,
+      d3.zoomIdentity.translate(width / 2, height / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+  });
+})().catch(err => {
+  document.getElementById('stats').innerHTML =
+    `<span class="ko">Erreur : ${err.message}. Lance « py -m http.server 8000 » depuis la racine du projet.</span>`;
+});
+</script>
+</body>
+</html>
