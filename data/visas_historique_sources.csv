@@ -1,0 +1,58 @@
+date,source,commit,format,description_format,sha256,lignes,photo_annuelle,ecart_jours,trou_avant
+2019-04-17,ilyankou,9c98e61f1633d2a54acbe70af2d46e0dc299a6ee,value_2019,"colonne Value, codes 0-3 (2 = eTA, 1 = visa à l'arrivée)",ecbecf241a47d3d39b08bd5677f1d820f5f8cb5363dd7cb4bed01e4e115470fe,39602,true,,false
+2019-05-23,ilyankou,d4f79121e45c5e8d50ada8e96f5044146bb3ed02,value_2019,"colonne Value, codes 0-3 (2 = eTA, 1 = visa à l'arrivée)",69201e84c804acd5c813347b74b82c5c432e51a626506820e55f70b8e61ca245,39602,false,36,false
+2019-07-18,ilyankou,5de68514af0fa6718cda0f8048a6a6fe12213c7d,value_2019,"colonne Value, codes 0-3 (2 = eTA, 1 = visa à l'arrivée)",29e51e104b1ef9c4c662b72008310aa52cf1a296ae7a4f17a3518091c1089a15,39602,false,56,false
+2019-09-28,ilyankou,cece8fbc06cba87650e157b9c5c9334660a3bb96,value_2019,"colonne Value, codes 0-3 (2 = eTA, 1 = visa à l'arrivée)",71e057468fc8191cf424f9b2ca1e1c35864c7df7413b8c3a46e194431516a0da,39602,false,72,false
+2019-10-28,ilyankou,3194c8b5a9fa8e6207c5d28c0c1b76dd3136bb71,code_2019,"colonne Code, codes 0-3 (2 = visa à l'arrivée, 1 = eTA)",2e28ee07a40538de1ed870ebd853904e1337884da4946b04fdbd0f2c6c59dcf1,39403,false,30,false
+2019-11-23,ilyankou,92a083381ba806f9d0cd17a8be1d2071df493bb7,code_2019,"colonne Code, codes 0-3 (2 = visa à l'arrivée, 1 = eTA)",67aa36d9945350c86d11a173eed2d09b341f6730d6055e374c4cc6cf42296b60,39403,false,26,false
+2019-12-17,ilyankou,d170423f851e48f0ef14a288641f1bd7a5664b36,code_2019,"colonne Code, codes 0-3 (2 = visa à l'arrivée, 1 = eTA)",d937e560f33a953422ad34ab57b75645d324e60539b3bf21cbbacad98e704ca9,39403,false,24,false
+2020-01-13,ilyankou,bdc2e65ada47ef9819a29e623bbb4ea730651fb5,code_2019,"colonne Code, codes 0-3 (2 = visa à l'arrivée, 1 = eTA)",4d59d01eeb61417c4fb297646f3341ff8a4f8b37319b2857d7d23d46b7df22dc,39403,true,27,false
+2020-02-08,ilyankou,ba7ae95253362c583c26dbdef9e625bde6a92558,code_2020,"colonne Code, jours + VF/VOA/ETA/VR (VOA et ETA inversés dans les données)",057d36f8d5f758a39dd7b0d9e56f90ce9d61af45157167c8e3a08c881d1b7bb7,39403,false,26,false
+2020-03-09,ilyankou,4a0e976450412b40363fc2e43b314f321c3addf8,code_2020,"colonne Code, jours + VF/VOA/ETA/VR (VOA et ETA inversés dans les données)",c3eda931a0395e1d7a4ac8279bb457d0066c5306c7c859a4578a5fc1eba9d174,39403,false,30,false
+2020-04-02,ilyankou,ab85544ad0828fa69be2a1ac136fe3c20e23350e,code_2020,"colonne Code, jours + VF/VOA/ETA/VR (VOA et ETA inversés dans les données)",56426e4b9d453f5e3e484478af5b74299f90f496393331d3fc34c7a39120ad20,39403,false,24,false
+2020-05-09,ilyankou,a52cd2b60269d7aa1337aec6234325b08a5c2af4,code_2020,"colonne Code, jours + VF/VOA/ETA/VR (VOA et ETA inversés dans les données)",569138a0b21244c607642fca0f44864ecdbbce14de940bd2537d6f29d0ac9b94,39403,false,37,false
+2020-11-19,ilyankou,3bdc98876614ef5ec85e7aa659e59432a94e3ab3,requirement,"colonne Requirement, jours + texte",031531db90a331d22d14bd12eae285a602257316e9d5dd03d2632ceff3f0c83a,39602,false,194,true
+2021-01-25,ilyankou,2dbec84208627c970c434ba4e2ea7e5e08b48cf2,requirement,"colonne Requirement, jours + texte",422d3dbc2bc605d3b3fdfd77d1cdfbe2b3e12db5e6f10b5a1928dada0b441d8b,39602,true,67,false
+2021-02-19,ilyankou,1b2d733cd543c49c9ee156ee2e90415d20d78cce,requirement,"colonne Requirement, jours + texte",abd06fd90a56cfc6aa57065f546fcf62e046e9797a2f16c2a4542aaf3bfde8fa,39602,false,25,false
+2021-05-13,ilyankou,5ecbd821c1d25c8b3c309fa19eed7b08385e45db,requirement,"colonne Requirement, jours + texte",5bb7e5a8ac1418a9c6a86bb6b9ba44ee062de3334bed6f6eccc1c036726e7eed,39602,false,83,false
+2021-08-09,ilyankou,78345078a6371a99284e802df110033e15b8a9e7,requirement,"colonne Requirement, jours + texte",bf4c6cc2b0e8ed6e9acae7f6a00a0be8a9acc13ad8794991a444f90458a5bc49,39602,false,88,false
+2021-09-24,ilyankou,e8fb082c7b800c8936eaa288bc864014597715d9,requirement,"colonne Requirement, jours + texte",591ee84f54b4296900e135d91c6874fb663e9e0dd0959e00bc0eb6029ea1bd29,39602,false,46,false
+2021-10-28,ilyankou,88606792efdf9ab85042e4d1c6d9369cb4afec68,requirement,"colonne Requirement, jours + texte",9a0cc7c822ae3dc15238fc5cb0d1cce933fbb1f5eb40eed2b6eb8b12319fe24c,39602,false,34,false
+2021-11-21,ilyankou,d58d6cbd9decf345b9520dbf9e1dfe56d7e977c4,requirement,"colonne Requirement, jours + texte",64765380a018715e45ec83ddcaa1ad0515e105c653bda63d8bf98f03ed9a3455,39602,false,24,false
+2021-12-14,ilyankou,21a0a498b654a29aefec96f605113260a453fdbe,requirement,"colonne Requirement, jours + texte",f2415fa402a52a65f3c8b1d67dbba643a7a03aea4dedbb98b570c3b509a6db61,39602,false,23,false
+2022-01-05,ilyankou,3dd33306cfbe5c8ef386b03b7cf5cc66f3036a49,requirement,"colonne Requirement, jours + texte",19a2233e480a394718e1438485c33e10d14d3482d401b30b207d2820ce38e43b,39602,true,22,false
+2022-02-10,ilyankou,ea7400ef6e6dc1d16445ce905b90fc38401a7c63,requirement,"colonne Requirement, jours + texte",d4a70ed8d2b1826780725f5d7818676e5ebcbd93f929146f39b159b9d320d4d9,39602,false,36,false
+2022-03-06,ilyankou,21ec8be4015eaa2091776274108c2b3d24693403,requirement,"colonne Requirement, jours + texte",b414370c6bd6748315915ff74aa5fc4bb509e85db0a668b9118c5f8fbce77906,39602,false,24,false
+2022-04-10,ilyankou,d6d99bb6dd1909daaf1527e4f1090d2a281096e8,requirement,"colonne Requirement, jours + texte",9ce5617d631627dda3ca1e631b6541a62cd3f9b142f2e31590300d400748bc55,39602,false,35,false
+2022-05-02,ilyankou,50cd29982af3c1f47055a03a2a467aad6677cc2b,requirement,"colonne Requirement, jours + texte",8c139f31b626d0fa91bc58435efe803d78dd555d6b98aae6e3cb13a4396943e7,39602,false,22,false
+2022-06-06,ilyankou,d35c810aff1a28c710e47d85c67881ed10972ceb,requirement,"colonne Requirement, jours + texte",6bb459a40cb8c8b927b1b8c02ec5169b8ea482538f2698ab24c8d0d763a6931a,39602,false,35,false
+2022-07-03,ilyankou,56477760fa326e8a1acc8936711ac69f3a1d5faa,requirement,"colonne Requirement, jours + texte",2471f2dd4dfcbe1cd9417e9398b9d9ca040dd175646fa8609abf4739e8178791,39602,false,27,false
+2022-08-03,ilyankou,b0ad107daf2ca9745923a42c3e2c59f4bf37cdcf,requirement,"colonne Requirement, jours + texte",84fc2efc222e80b8b5f8e98a915acc4fd6316d10c70cd5ed22295c6526f574fe,39602,false,31,false
+2022-09-10,ilyankou,2e6ea3293ae7aa485ae583c5b4ce21bd8e18a7c4,requirement,"colonne Requirement, jours + texte",79a458125fb0ec9ce3b68ea913c8e85bac5885abe8165f2b5d178d4010cbc0f4,39602,false,38,false
+2022-10-05,ilyankou,8020fff3f6cdec11e427737109aad27ee33c6cf1,requirement,"colonne Requirement, jours + texte",bfc2491bd85fc6c83eaaa580daf444912207dd81aa50570b34e644aeec560932,39602,false,25,false
+2022-11-06,ilyankou,6ce35de2857f5b837aa21b828534614ce6ebbac8,requirement,"colonne Requirement, jours + texte",f308d0b3e277de1aa469defc8db5f1aa81b7bd8e32f8ab8e8977a592b3bc8357,39602,false,32,false
+2022-12-21,ilyankou,a0fa450a429a5b0f22cb61b4b284e4cadcbae7b6,requirement,"colonne Requirement, jours + texte",8dce250764ba5fab2cb9f680975d4f1e77903f89dde614ddcf4819ec0e76e8d0,39602,false,45,false
+2023-01-11,ilyankou,8cbf15385b87da40e23abf12ef784fe51287f26e,requirement,"colonne Requirement, jours + texte",693dacedae8ea390d9b26fcead662bd4f30c6ad359523a5bd0e2cbac2287d256,39602,true,21,false
+2023-02-09,ilyankou,0ce8aa386da7a7d6490f99646314c4fcce1d6ccf,requirement,"colonne Requirement, jours + texte",c3f6aed98c2200973f0702d64f264eece285b944b60e1a3aeafeb827db78132d,39602,false,29,false
+2023-03-12,ilyankou,dd73984e5ba1ec4222838b066d5e4946a767c1ae,requirement,"colonne Requirement, jours + texte",9ca55a185220584496f2de231d8cca164e49d1569fad118f6817ff1d8d78ca0f,39602,false,31,false
+2023-04-06,ilyankou,3b101b31837bcad2ca56a2d52e8cff41a9bf42bc,requirement,"colonne Requirement, jours + texte",c1256d632ec5c464a636962f4a53f39d718e4873e6c43115836eb1fec564717f,39602,false,25,false
+2023-08-15,ilyankou,908e57d82d0e3c66523728afe55c8607c74e8dfc,requirement,"colonne Requirement, jours + texte",c6c55fded98a1eb5fa9a3e834f1a3ead702817f6114a4373a7241620ed7714af,39602,false,131,true
+2023-09-03,ilyankou,f6d1573ffed744f6f9f81df4e18f59b8d93e0b29,requirement,"colonne Requirement, jours + texte",3180880f0cc655a46cd61b0e6a072486f39da9e2f28dc50bde029721b8a19bbd,39602,false,19,false
+2023-10-11,ilyankou,06146f435a81b7831b516cfd966a721789819f06,requirement,"colonne Requirement, jours + texte",0ad932b56f08f71a3cf3bbd137ec25b0ce128e7eaf90f99a1c60b1211172b5ae,39602,false,38,false
+2023-11-06,ilyankou,912c65fdcb0c736831800ebef50d422593900cc4,requirement,"colonne Requirement, jours + texte",86f9db0eb10885c47ddeb3b3cea99d484feed58aa95c07ee0eac50333681881a,39602,false,26,false
+2023-12-03,ilyankou,72a4edfc35f2d24b0ee26c53504a71002e82ae21,requirement,"colonne Requirement, jours + texte",9eeb7772abfd4c45c8bca1fb78d52a992428a8c46b309942d50b7c3c9228ffe1,39602,false,27,false
+2024-01-05,ilyankou,f60da8b065e5d55ede60a68786d7ce696bdc421c,requirement,"colonne Requirement, jours + texte",308d6bdea59a8dd2f49371e7b5d26690a1bfe953d6e63a0b7e7319175e7bc1e3,39602,true,33,false
+2024-02-07,ilyankou,440ee776c526ee6fc7d6fdf37455f5858f2506d9,requirement,"colonne Requirement, jours + texte",b55ab866cc1e87a4998afc7902351b2bbbeb252f0f90cdc03d03ea0cb37ca6b7,39602,false,33,false
+2024-03-02,ilyankou,f92b7a43eedcbc69adf61eedce0763fef1c5c909,requirement,"colonne Requirement, jours + texte",9e3dbcb1c4a33629c0047caa54bbadd20f84f434b0000851ba4e8fc58fdb72ac,39602,false,24,false
+2024-04-08,ilyankou,ecf28b1f0d6694be627c8c124f40017e09d20d1f,requirement,"colonne Requirement, jours + texte",16dd5db876c54a70f0441f0ce17a1bb4087d72fcc0897f88fc21c4a910425a4e,39602,false,37,false
+2024-05-08,ilyankou,5d17b42b49360876cc7cfef7c7c35bae0938e82d,requirement,"colonne Requirement, jours + texte",2f16b22d00756f9d3d3930260c966fe6e88afb486f358156c34d685124822e07,39602,false,30,false
+2024-05-27,ilyankou,cc82c336da0884be63ee21c32f95e2b7d57373d7,requirement,"colonne Requirement, jours + texte",d59b0308f9cf781ff8223b69d90ba4e83a790847e608903bd7f5c8c416dc8735,39602,false,19,false
+2024-06-10,ilyankou,dda5c8cfcbabe4096d31ba491c3791df83833bf6,requirement,"colonne Requirement, jours + texte",610dc16cf55bddfc2cf6a790b07552bb9e5a2f92cb089db691b90ced719f55e1,39602,false,14,false
+2024-07-02,ilyankou,2c7cbe4b6e5e09f7929eb3b5935943ac8dd2f06f,requirement,"colonne Requirement, jours + texte",fa7f46f99516b6ced759ec1c2d6acdf829b44a2068745a8162c143dacd6709b4,39602,false,22,false
+2024-08-03,ilyankou,5a3df2b26a16c2da82744cdc273b48f6f875890c,requirement,"colonne Requirement, jours + texte",7db2b85e74154d0625d7703c072010095660862c255aa9223fe83930867b3a8e,39602,false,32,false
+2024-10-29,ilyankou,ca7700aaae409c31deea41f20c8c49deae920cab,requirement,"colonne Requirement, jours + texte",a5d9c8dccd48672c059c343d695e2913fc8ff011774bfc5eec039f97cae8ccdd,39602,false,87,false
+2024-11-11,ilyankou,f0509840e1c6c7a5fb11fdac018c1035c0a231fd,requirement,"colonne Requirement, jours + texte",2709de2c1a61326aba5705497a48153d7a9d307fb10b21bb43f6783327fda593,39602,false,13,false
+2024-12-04,ilyankou,32d2327216acff80ecb85befd160f1450ba06af4,requirement,"colonne Requirement, jours + texte",8d55ba6bc328c5ded7f188713acd12257a2ffa5b9aaaaa2ff02df576618087a4,39602,false,23,false
+2025-01-02,ilyankou,32836c806181f048592136987ad9258db3fd799c,requirement,"colonne Requirement, jours + texte",e888cc6f02e7e6606d12432fd08789eefd8752a4c1c58cfe7875e3ee4735a0ea,39602,true,29,false
+2025-01-12,ilyankou,a46dbc872002e01f6465a69071a7ed5b6dc8fc7b,requirement,"colonne Requirement, jours + texte",8fda21d4075ea39cee1d76a50104fa4b0870cccdbc6fbdfbe98986e18d798b33,39602,false,10,false
+2026-02-18,imorte + corrections,,projet_2026,data/visas.csv (imorte 18/02/2026 + corrections France Diplomatie),a33ab39999b186e15e29d8afd01faa37627d71272f442ccf57a112023a4211e3,39402,true,402,true

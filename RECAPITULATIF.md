@@ -23,6 +23,10 @@ dataviz-voyage/
 │   ├── pays_monde.csv           FINAL - les 199 pays de la carte : nom français, ISO2, drapeau, RNB par habitant
 │   ├── scores.csv               FINAL - notes du quiz 0-100 (6 axes) + distance depuis Paris
 │   ├── visas.csv                FINAL - 39 402 paires passeport -> destination
+│   ├── visas_historique_comptes.csv FINAL - passeport x version (57 dates, 2019-2026) : nombre de pays par statut (courbe)
+│   ├── visas_historique.json        FINAL - 8 photos annuelles (une matrice 199 x 199 par année) pour le curseur du globe
+│   ├── visas_historique_annuel.csv  FINAL - les 8 photos en format long (8 Mo) : pour le ZIP, pas chargé par le site
+│   ├── visas_historique_sources.csv une ligne par version : commit, format, empreinte SHA-256, photo, trou
 │   ├── budget.csv               FINAL - format long : pays x niveau x catégorie (40 pays)
 │   ├── carte/
 │   │   ├── pays_carte.topojson      FINAL - fond de carte du globe et de la carte à plat (249 entités, 1,2 Mo)
@@ -68,6 +72,8 @@ dataviz-voyage/
 8. `build_pays_monde.py` : les 199 pays de `visas.csv`. Wikidata donne les noms, ISO2 et drapeaux, et Data360 de la Banque mondiale donne le RNB. Résultat : `pays_monde.csv`. Le script réutilise les fonctions réseau des scripts 2 et 3, et il a besoin de `visas.csv`, `pays_liste.csv` et `pays.csv`.
 9. `build_carte.py` : fond de carte Natural Earth (point de vue de la France, 10m), jointure avec `pays_monde.csv`, simplification par mapshaper → `data/carte/`. Il demande **Node.js** (installé le 17/11, v26 LTS) pour `npx mapshaper`. Le fichier brut de 13 Mo est téléchargé dans `data/raw/natural_earth/`, qui n'est pas commité.
 
+10. `build_visas_historique.py` : historique des visas (56 versions de l'historique Git d'ilyankou + la version 2026 du projet). Il demande **git** et `visas.csv`. Le clone d'ilyankou (8 Mo) est dans `data/raw/passport_index_historique/`, qui n'est pas commité, et il est figé au commit `e111423`.
+
 **Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
 
 Le site charge directement les CSV de `data/` (par exemple avec `d3.csv()`). Les fichiers téléchargeables sont donc exactement ceux qui font tourner la page.
@@ -95,6 +101,15 @@ Types de données présents :
 ### `visas.csv`
 `passeport_iso3, destination_iso3, statut, jours, date_verification`. Valeurs de `statut` : `sans_visa`, `visa_arrivee`, `eta`, `e_visa`, `visa_requis`, `interdit`.
 
+### Historique des visas
+- `visas_historique_comptes.csv` : `passeport_iso3, date, source, format, sans_visa, visa_arrivee, eta, e_visa, visa_requis, covid_ban, interdit, sans_demarche, demarche, ferme, total, ecart_jours, trou_avant`.
+  - `sans_demarche` = `sans_visa` + `visa_arrivee`.
+  - `demarche` = eTA + e-visa + visa requis.
+  - `ferme` = Covid + interdit.
+  - `trou_avant = true` : plus de 100 jours depuis la version précédente, donc la courbe ne relie pas les deux points (pointillés).
+- `visas_historique.json` : `codes` (199, ordre des lignes et des colonnes), `statuts` (lettre → statut et classe historique), `classes_historiques`, `photos` (`annee, date, source, commit, format, detail_fiable, matrice`). `matrice[i × 199 + j]` = passeport `codes[i]` vers `codes[j]`. Les lettres : S sans visa, A visa à l'arrivée, T eTA, E e-visa, R visa requis, C Covid, I interdit, - même pays.
+- `visas_historique_annuel.csv` : `passeport_iso3, destination_iso3, annee, statut, jours`.
+
 ### `budget.csv`
 `iso3, niveau (petit|moyen|confort), categorie (hebergement|transport|repas|activites), montant_usd_jour, total_site_usd, source_url, date_releve, date_maj_site`.
 
@@ -106,6 +121,7 @@ Types de données présents :
 | Donnée | Source | Méthode | Licence / remarque |
 |---|---|---|---|
 | Visas | Passport Index (dépôt GitHub imorte/passport-index-data, données du 18/02/2026) | téléchargement CSV + nettoyage | MIT |
+| Historique des visas | Passport Index : historique Git d'ilyankou/passport-index-dataset (56 versions, 17/04/2019 → 12/01/2025, commit figé `e111423`) | `git show` de chaque version + décodage de 4 formats | MIT ; dépôt archivé |
 | Vérification des visas | France Diplomatie, fiches « Entrée / séjour » (sept.-oct. 2026), europa.eu pour l'UE | vérification manuelle des 40 destinations du passeport français | 38/40 concordantes, 2 corrigées (Thaïlande 30 j, Sri Lanka ETA). S'y ajoute 1 correction hors passeport français : Canada → Sénégal = visa requis (réciprocité annoncée en août 2025) |
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
@@ -171,6 +187,18 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 
   On ne prend pas position : on suit l'institution de référence, et on retombe sur l'usage quand elle ne dit rien.
 - **Revenus anciens = indisponibles (17/11).** Une valeur de plus de 5 ans n'est **pas** comparée aux valeurs de 2025 : guerres (Yémen, Soudan du Sud), crises monétaires et inflation (Cuba) la rendent trompeuse. Ces 5 pays sont traités comme les 4 pays sans valeur : « revenu indisponible », pas de grille. On garde la dernière valeur connue et son année pour l'infobulle, par transparence. Colonne `rnb_utilisable` dans `pays_monde.csv`.
+- **« Pays sans démarche avant le départ » (17/11) = sans visa + visa à l'arrivée.** C'est la même définition partout : le compteur du globe en 2026, la courbe, l'historique.
+  - C'est la seule mesure stable dans les quatre formats du jeu de données. La frontière entre eTA, e-visa et visa requis, elle, change avec le format : pas d'e-visa avant novembre 2020, et les eTA sont comptées avec les e-visas jusqu'en décembre 2024.
+  - Le libellé n'est pas « sans visa », parce que le visa à l'arrivée est souvent payant.
+  - Le compte strict « sans visa » reste dans l'infobulle.
+- **Couleurs du globe en mode historique (17/11) : des classes comparables sur toute la période.**
+  - sans visa ;
+  - visa à l'arrivée ;
+  - démarche avant le départ (eTA, e-visa et visa requis regroupés) ;
+  - **plus une classe « entrée fermée »** (interdiction Covid, « no admission »). Elle ne pouvait entrer dans aucune des trois : jusqu'à 12 362 paires en janvier 2021.
+
+  Le détail en 5 classes (sans visa, visa à l'arrivée, eTA, e-visa, visa requis) ne s'affiche que pour 2026 : champ `detail_fiable` du JSON.
+- **Une photo par année pour le curseur du globe** : la première version de chaque année (17/04/2019, 13/01/2020, 25/01/2021, 05/01/2022, 11/01/2023, 05/01/2024, 02/01/2025, 18/02/2026). La courbe, elle, utilise les 57 versions.
 - **Fond de carte (17/11) : point de vue de la France de Natural Earth, échelle 10m, simplifiée.** La vue par défaut suit les frontières de fait (Crimée dans la Russie, Somaliland séparé), et il n'existe pas de vue « ONU ». La vue de la France est cohérente avec un site en français et avec les vérifications faites sur France Diplomatie : Crimée en Ukraine, Somaliland dans la Somalie, Kosovo et Taïwan présents. **Limite à écrire sur la page** : le Sahara occidental y est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU.
 - **Descriptions** : 41 textes de 2 phrases, rédigés avec l'IA, à relire.
 
@@ -218,6 +246,13 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **La nature** compte autant les grands espaces vides que les forêts. Les déserts peuplés sont pénalisés (Maroc 0, Égypte 14), la montagne n'est pas mesurée (la Suisse reste à 37). La forêt de la FAO inclut les savanes boisées (Sénégal 45 %).
 - **Les zones protégées** sont gonflées en Europe par Natura 2000. **Les villes** : le Sri Lanka est à 0 à cause de sa définition statistique très étroite de Colombo.
 - **Les visas** datent de février 2026, sauf pour le passeport français, vérifié en octobre 2026. Afficher la date sur la carte.
+- **L'historique des visas a quatre formats successifs**. Deux pièges sont corrigés dans le script : en 2019, les codes 1 et 2 changent de sens entre deux formats ; et de février à mai 2020, les étiquettes « VOA » et « ETA » sont inversées dans les données elles-mêmes (France → États-Unis valait « visa à l'arrivée »). Six tests de bon sens bloquants vérifient chaque version. Les catégories eTA, e-visa et visa requis ne sont pas comparables d'une période à l'autre : d'où les classes regroupées.
+- **Trois trous dans l'historique** : juin-octobre 2020 (194 jours sans version), mai-juillet 2023 (131 jours), janvier 2025-février 2026 (402 jours). La courbe les montre en pointillés.
+- **Rupture de source en 2026** : ilyankou jusqu'en janvier 2025, puis imorte (février 2026) avec les corrections France Diplomatie. Mesuré le 17/11 :
+  - imorte reprend exactement le vocabulaire d'ilyankou (même site source, mêmes 199 codes, eTA séparée) ;
+  - en 13,2 mois, 2 761 paires changent de statut, soit 209 par mois, **moins** que le rythme habituel entre deux versions d'ilyankou en 2023-2024 (284 par mois). Rien n'indique donc une rupture de méthode ;
+  - pour la France, on passe de 157 à 148 pays sans démarche. −8 viennent du temps et de la source : ce sont des changements réels et vérifiables, comme l'ETA britannique (avril 2025), l'ETA israélienne, l'e-visa en Mauritanie ou en Somalie, et le visa à l'arrivée en Namibie. −1 vient des corrections France Diplomatie (Sri Lanka : ETA).
+  - Ce qu'on ne peut pas séparer : les deux sources n'ont aucune date en commun, donc un petit effet de méthode reste possible.
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
@@ -250,13 +285,13 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **Three.js codé soi-même, pas globe.gl** : le but est d'apprendre (sélection des pays au clic par raycasting, couleurs par statut, transitions animées). Feu vert du prof pour les bibliothèques.
 - **Accessibilité et performances obligatoires** : si WebGL n'est pas disponible, carte à plat en D3 à la place ; tout doit marcher au clavier avec une recherche de pays ; `prefers-reduced-motion` respecté (pas de rotation automatique).
 - Le globe est sa propre section, séparée du quiz (on y arrive par le menu ou par le lien sous le résultat du quiz).
-- On fait tourner le globe à la souris ; un clic sur un pays prend son passeport (on voit que les règles ne sont pas réciproques) ; au survol, statut et jours autorisés ; compteur « X pays sans visa ». Bouton « carte à plat ».
+- On fait tourner le globe à la souris ; un clic sur un pays prend son passeport (on voit que les règles ne sont pas réciproques) ; au survol, statut et jours autorisés ; compteur « X pays sans démarche avant le départ » (sans visa + visa à l'arrivée ; le nombre strict « sans visa » est dans l'infobulle). Bouton « carte à plat ».
 - **Fiche pays au clic** :
   - règles dans les deux sens (« toi chez eux », « eux chez toi ») ;
   - pour le passeport français, la note vérifiée sur France Diplomatie avec le lien et la date (`corrections_visas.csv`) ;
   - photo et description (41 pays) ;
   - courbe du nombre de pays sans visa pour ce passeport de 2019 à 2026.
-- **Historique des visas 2019-2026** : le dépôt archivé ilyankou/passport-index-dataset garde **56 versions** de `passport-index-tidy-iso3.csv` dans son historique Git (17/04/2019 au 12/01/2025), plus la version imorte du 18/02/2026. Vérifié le 03/11 : passeport français sans visa 98 pays en août 2021 (Covid : 9 812 cases « covid ban »), 122 en avril 2023, 127 en janvier 2025. **Le format change** : les versions de 2019 ont une colonne `Value` (codes numériques) au lieu de `Requirement`, à décoder dans le nouveau script. Usage : curseur d'années sous le globe (la Terre change de couleur année par année) et courbe. Corrige aussi le point faible « dates » du jeu de données.
+- **Historique des visas 2019-2026** (fait le 17/11, `build_visas_historique.py`) : 56 versions de l'historique Git d'ilyankou (17/04/2019 → 12/01/2025) + la version 2026 du projet, soit 57 dates. **Passeport français, pays sans démarche avant le départ (dont sans visa)** : 159 (120) en avril 2019 ; 163 (120) en janvier 2020 ; 123 (95) en novembre 2020, avec 37 destinations fermées par le Covid ; 123 (98) en août 2021 ; 153 (122) en avril 2023 ; 157 (127) en janvier 2025 ; 148 (123) en février 2026. Usage : un curseur d'années sous le globe (8 photos, en classes comparables) et une courbe par passeport (57 points, en pointillés sur les trous). Ça corrige aussi le point faible « dates » du jeu de données.
 - **Tampon de passeport stylisé** à la place d'une image de visa : dessiné en SVG à partir des données (pays, statut, durée), visiblement illustratif. Chaque pays cliqué ajoute un tampon au passeport virtuel du visiteur. Pas d'images de vrais visas : introuvables pour 199 pays, droits d'auteur, et imiter un document officiel ne se fait pas.
 
 ### 3. Budget → « combien de jours de revenu pour ce voyage »
@@ -331,12 +366,13 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] `data/carte/correspondance_carte.csv` et le rapport.
 - [x] Page de test `prototype/carte-test.html` vérifiée par Aryann le 17/11.
 
-**2. Historique des visas 2019-2026**
-- [ ] `build_visas_historique.py` lit les 56 versions Git d'ilyankou et la version imorte de 2026, et décode l'ancien format (`Value` en 2019).
-- [ ] Un **statut en plus, `covid_ban`** (9 812 cases en août 2021), avec sa couleur et sa ligne de légende.
-- [ ] Une **définition unique de « sans visa »** pour le compteur du globe et pour la courbe (`sans_visa` seul, ou avec le visa à l'arrivée et l'ETA ?).
-- [ ] Un **format léger pour le site** (un fichier compact par année, avec une matrice de codes de statut) et un CSV complet pour le téléchargement.
-- [ ] Les corrections de `corrections_visas.csv` ne s'appliquent qu'à 2026.
+**2. Historique des visas 2019-2026** (fait le 17/11)
+- [x] `build_visas_historique.py` : 56 versions d'ilyankou (le commit du 28/10/2019, qui supprime le fichier, est ignoré) + 2026. Quatre formats décodés, et les deux inversions de codes corrigées. **Six tests de bon sens et le contrôle des 39 402 paires passent sur les 57 versions.**
+- [x] Définition unique : « pays sans démarche avant le départ » = sans visa + visa à l'arrivée (section 5).
+- [x] Classes du globe en mode historique (sans visa, visa à l'arrivée, démarche, entrée fermée), et le détail en 5 classes seulement pour 2026 (`detail_fiable`).
+- [x] Les trous sont repérés (`trou_avant`, au-delà de 100 jours) : 19/11/2020, 15/08/2023, 18/02/2026.
+- [x] Rupture de source 2025 → 2026 mesurée (section 7).
+- [x] Fichiers : `visas_historique_comptes.csv` (859 Ko), `visas_historique.json` (312 Ko), `visas_historique_annuel.csv` (8 Mo, pour le ZIP), `visas_historique_sources.csv`.
 
 **3. Noms français des sites UNESCO**, pour « Pourquoi ce pays ? »
 - [ ] Une requête Wikidata de plus : `wikidata_unesco.json` a les identifiants des sites mais pas leurs noms. Les libellés viennent de Wikidata (CC0), pas de l'UNESCO, et il faut le dire sur la page. Les noms restent **hors du ZIP**, parce que les conditions de l'UNESCO interdisent de republier sa liste.

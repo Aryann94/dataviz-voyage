@@ -12,3 +12,6 @@ desktop.ini
 
 # Natural Earth brut (13 Mo) : retrouvable par l'URL figée et l'empreinte SHA-256 de build_carte.py
 data/raw/natural_earth/
+
+# Clone du dépôt ilyankou (historique Git des visas) : retrouvable par le commit figé de build_visas_historique.py
+data/raw/passport_index_historique/
