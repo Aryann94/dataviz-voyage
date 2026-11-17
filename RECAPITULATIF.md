@@ -36,6 +36,7 @@ dataviz-voyage/
 │   ├── saisie_budget.csv        relevé Budget Your Trip (format large)
 │   ├── corrections_visas.csv    41 vérifications manuelles avec source et date (40 pour le passeport français + Canada → Sénégal)
 │   ├── corrections_unesco.csv   5 corrections justifiées du comptage UNESCO
+│   ├── unesco_sites.csv         FINAL - 735 sites des 41 pays : nom (Wikidata), catégorie, année d'inscription. Chargé par le site, PAS dans le ZIP
 │   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, CIA Factbook, ILOSTAT)
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
 ├── scripts/                     Python, bibliothèque standard (+ certifi)
@@ -73,6 +74,8 @@ dataviz-voyage/
 9. `build_carte.py` : fond de carte Natural Earth (point de vue de la France, 10m), jointure avec `pays_monde.csv`, simplification par mapshaper → `data/carte/`. Il demande **Node.js** (installé le 17/11, v26 LTS) pour `npx mapshaper`. Le fichier brut de 13 Mo est téléchargé dans `data/raw/natural_earth/`, qui n'est pas commité.
 
 10. `build_visas_historique.py` : historique des visas (56 versions de l'historique Git d'ilyankou + la version 2026 du projet). Il demande **git** et `visas.csv`. Le clone d'ilyankou (8 Mo) est dans `data/raw/passport_index_historique/`, qui n'est pas commité, et il est figé au commit `e111423`.
+11. `build_unesco_noms.py` : noms et années d'inscription des sites UNESCO des 41 pays → `unesco_sites.csv`. Il repart de `wikidata_unesco.json` (16/10) et de la même fonction `sites_unesco()` que le comptage. `--verifier 10` compare 10 années tirées au hasard à whc.unesco.org (par curl : le site refuse urllib).
+    - Garde-fou : `test_comptage_unesco.py` vérifie que le comptage recalculé depuis les données brutes retombe exactement sur `pays.csv`.
 
 **Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
 
@@ -110,6 +113,9 @@ Types de données présents :
 - `visas_historique.json` : `codes` (199, ordre des lignes et des colonnes), `statuts` (lettre → statut et classe historique), `classes_historiques`, `photos` (`annee, date, source, commit, format, detail_fiable, matrice`). `matrice[i × 199 + j]` = passeport `codes[i]` vers `codes[j]`. Les lettres : S sans visa, A visa à l'arrivée, T eTA, E e-visa, R visa requis, C Covid, I interdit, - même pays.
 - `visas_historique_annuel.csv` : `passeport_iso3, destination_iso3, annee, statut, jours`.
 
+### `unesco_sites.csv`
+`iso3, id_unesco, categorie (culturel | naturel | mixte), nom_fr, langue_nom (fr | mul | wikifr | en | manuel), wikidata_qid, regle_choix (exact | revision | extension | global_… | manuel), annee_inscription, transfrontalier, lien_unesco`. Une ligne par pays et par site : un site transfrontalier apparaît une fois par pays concerné (56 lignes).
+
 ### `budget.csv`
 `iso3, niveau (petit|moyen|confort), categorie (hebergement|transport|repas|activites), montant_usd_jour, total_site_usd, source_url, date_releve, date_maj_site`.
 
@@ -126,6 +132,7 @@ Types de données présents :
 | Capitales, GPS, images, drapeaux, UNESCO | Wikidata (SPARQL, query.wikidata.org) + Wikimedia Commons (API) | requêtes SPARQL | CC0 / licences des photos conservées |
 | Indicateurs | Banque mondiale (API WDI) : `ER.LND.PTLD.ZS`, `EN.POP.DNST`, `AG.LND.FRST.ZS`, `SP.URB.TOTL.IN.ZS`, `EN.URB.MCTY.TL.ZS`, `NY.GNP.PCAP.CD`, `PA.NUS.PPP`, `PA.NUS.FCRF` | API REST JSON | CC BY 4.0, séries mises à jour le 08/10/2026 |
 | Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026. Drapeaux : règle ONU (section 5) |
+| Noms et années des sites UNESCO | Wikidata : libellés (fr, puis multilingue, puis titre Wikipédia en français, puis en) et désignation « patrimoine mondial » (P1435 = Q9259, date de début P580) | SPARQL sur les éléments déjà relevés le 16/10 | CC0 ; années contrôlées sur un échantillon de whc.unesco.org (10/10 identiques le 17/11) |
 | Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
 | Fond de carte | Natural Earth v5.1.2, `ne_10m_admin_0_countries_fra` (point de vue de la France), dépôt nvkelso/natural-earth-vector | téléchargement (URL figée + SHA-256) + jointure + mapshaper | domaine public ; préparé le 17/11/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
@@ -255,6 +262,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
   - en 13,2 mois, 2 761 paires changent de statut, soit 209 par mois, **moins** que le rythme habituel entre deux versions d'ilyankou en 2023-2024 (284 par mois). Rien n'indique donc une rupture de méthode ;
   - pour la France, on passe de 157 à 148 pays sans démarche. −8 viennent du temps et de la source : ce sont des changements réels et vérifiables, comme l'ETA britannique (avril 2025), l'ETA israélienne, l'e-visa en Mauritanie ou en Somalie, et le visa à l'arrivée en Namibie. −1 vient des corrections France Diplomatie (Sri Lanka : ETA).
   - Ce qu'on ne peut pas séparer : les deux sources n'ont aucune date en commun, donc un petit effet de méthode reste possible.
+- **Les noms des sites UNESCO** sont les libellés de Wikidata, souvent le titre de l'article Wikipédia (« Mont-Saint-Michel »), pas toujours le nom officiel de l'UNESCO. 34 sites n'ont pas de libellé français : 2 viennent du libellé multilingue (Las Médulas, Caral), et 32 sont en anglais pour l'instant. **Les années d'inscription** : 15 sites n'en ont pas dans Wikidata, et on n'en invente pas. Une date antérieure à 1978 (la première liste) est écartée comme erreur : le Serengeti « 1960 » (en réalité inscrit en 1981).
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
@@ -279,8 +287,8 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **Révélation sur le classement lui-même** à la fin : les pays se rangent un par un jusqu'au résultat. Le globe n'est plus utilisé ici (décision du 17/11 : séparer le quiz et le globe). Pas de classement en direct pendant le quiz (ça gâcherait le suspense).
 - Clic sur un pays du classement = radar mis à jour. **Classement triable par critère** après le résultat.
 - **Mode « Et si… »** (après le résultat) : couper un critère (« et si le prix ne comptait pas ? ») ou changer son importance ; le classement se réorganise en direct avec une animation. Les curseurs n'apparaissent qu'après le quiz, jamais pendant.
-- **« Pourquoi ce pays ? » : chaque pointe du radar est cliquable** et affiche le fait brut derrière la note : culture = nombre de sites UNESCO et leurs noms (`wikidata_unesco.json`) ; nature = % de forêt, densité, zones protégées ; villes = % de la population dans des villes de plus d'un million d'habitants ; prix = niveau des prix ; distance = km depuis Paris ; mer = km de côtes et latitude.
-- **« Le saviez-vous ? » générés à partir des données**, jamais écrits à la main (pour ne rien inventer). Exemples tirés des données du 16/10 : « La Suisse est le 2ᵉ pays le plus cher de la liste, juste après l'Islande » ; « La Suisse fait partie des 4 pays sans accès à la mer ». Ce sont des phrases construites à partir des rangs et des seuils (le plus, le moins, parmi les N…), donc vraies par construction.
+- **« Pourquoi ce pays ? » : chaque pointe du radar est cliquable** et affiche le fait brut derrière la note : culture = nombre de sites UNESCO et leurs noms (`unesco_sites.csv` : sites culturels et mixtes ; pour la nature, sites naturels et mixtes) ; nature = % de forêt, densité, zones protégées ; villes = % de la population dans des villes de plus d'un million d'habitants ; prix = niveau des prix ; distance = km depuis Paris ; mer = km de côtes et latitude.
+- **« Le saviez-vous ? » générés à partir des données**, jamais écrits à la main (pour ne rien inventer). Exemples tirés des données du 16/10 : « La Suisse est le 2ᵉ pays le plus cher de la liste, juste après l'Islande » ; « La Suisse fait partie des 4 pays sans accès à la mer ». Ce sont des phrases construites à partir des rangs et des seuils (le plus, le moins, parmi les N…), donc vraies par construction. **Elles devront gérer les égalités** : beaucoup de sites sont inscrits la même année (36 en 1987, 34 en 1997, 22 en 1979…), et plusieurs pays peuvent avoir le même nombre de sites. Par exemple, « parmi les plus anciens sites inscrits (1978) », jamais « le plus ancien » quand il y en a plusieurs. Les sites sans année sont exclus de ces phrases.
 - Idées non retenues pour l'instant : « ce qui t'a rapproché / éloigné » (contributions de chaque critère) et photos supplémentaires des sites UNESCO.
 
 ### 2. Visas → globe 3D en WebGL (Three.js écrit à la main)
@@ -376,8 +384,14 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] Rupture de source 2025 → 2026 mesurée (section 7).
 - [x] Fichiers : `visas_historique_comptes.csv` (859 Ko), `visas_historique.json` (312 Ko), `visas_historique_annuel.csv` (8 Mo, pour le ZIP), `visas_historique_sources.csv`.
 
-**3. Noms français des sites UNESCO**, pour « Pourquoi ce pays ? »
-- [ ] Une requête Wikidata de plus : `wikidata_unesco.json` a les identifiants des sites mais pas leurs noms. Les libellés viennent de Wikidata (CC0), pas de l'UNESCO, et il faut le dire sur la page. Les noms restent **hors du ZIP**, parce que les conditions de l'UNESCO interdisent de republier sa liste.
+**3. Noms français des sites UNESCO**, pour « Pourquoi ce pays ? » (fait le 17/11, à finir)
+- [x] Réorganisation de `build_pays_wikidata.py` : `sites_unesco()` donne le détail des sites, et `compter_unesco()` s'appuie dessus. `test_comptage_unesco.py` retombe exactement sur `pays.csv` (41 pays, 735 sites), avant et après (commit séparé).
+- [x] `build_unesco_noms.py` → `unesco_sites.csv` : 735 sites nommés, des comptes identiques à `pays.csv` (contrôle bloquant).
+  - Choix de l'élément : 680 avec l'identifiant exact, 46 avec une révision (`228rev`), 9 avec une extension (`311bis`). Aucun n'a eu besoin de la recherche dans tout Wikidata.
+- [x] Années d'inscription : la plus ancienne date de « patrimoine mondial » parmi les éléments du site. Elles vont de 1978 à 2026. **10/10 identiques** à whc.unesco.org sur un échantillon tiré au hasard. 15 sites sans année.
+- [ ] **À trancher : la règle de départage des 49 sites qui ont plusieurs éléments avec l'identifiant exact.** « Le plus d'articles Wikipédia » choisit souvent le monument célèbre plutôt que l'ensemble inscrit : château de Versailles au lieu de « palais et parc de Versailles », Parthénon au lieu de l'Acropole, Sainte-Sophie au lieu des « zones historiques d'Istanbul », ruines de Saint-Paul au lieu du « centre historique de Macao ».
+- [ ] 32 noms en anglais à traduire, dans `corrections_unesco_noms.csv`, avec leur source.
+- [ ] Les noms ne vont pas dans le ZIP. La page dira que les noms viennent de Wikidata.
 
 **4. Allemagne, Belgique, Pays-Bas : trancher maintenant**
 - [ ] Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE) et une nouvelle simulation du quiz.
