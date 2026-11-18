@@ -11,8 +11,8 @@ Données : budget.csv, et les colonnes budget_dispo et budget_moyen_usd_jour de 
 Page de chaque pays : colonne source_url de budget.csv.
 Date du relevé : 16 octobre 2026 (colonne date_releve).
 Dernière mise à jour indiquée par le site : colonne date_maj_site.
-Méthode : tableaux copiés-collés à la main depuis les pages du site pour une partie des pays,
-relevés avec l'aide d'une IA pour les autres, puis contrôlés par script.
+Méthode : tableaux copiés-collés à la main pour une partie des pays, relevés avec l'aide d'une
+IA pour les autres, puis contrôlés par script.
 Usage : projet étudiant, non commercial.
 Droits : les conditions du site réservent la reproduction à son accord écrit. Ces chiffres ne
 sont pas sous licence libre. Cette citation n'est pas une autorisation : pour les réutiliser,

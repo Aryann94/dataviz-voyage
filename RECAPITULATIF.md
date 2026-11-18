@@ -9,7 +9,7 @@
 - on ne republie plus de contenu venant de whc.unesco.org : les noms et années repris des fiches sont remplacés par Wikipédia en français, et `unesco_sites.csv` peut entrer dans le ZIP (section 5) ;
 - `budget.csv` reste sur le site et dans le ZIP, avec une citation claire de Budget Your Trip (section 5).
 
-**Préparé le 18/11 pour le téléchargement :** `build_excel.py`, la nouvelle photo de l'Indonésie (volcan Bromo), `LICENCES.txt`, `LISEZMOI.txt` et le dictionnaire de 138 colonnes (`data/documentation/`).
+**Fait le 18/11 :** le téléchargement est prêt, avec `data/telechargement/periple_donnees.zip` (2,6 Mo, 16 fichiers) : les 12 CSV, le classeur Excel, le dictionnaire de 138 colonnes, `LICENCES.txt` et `LISEZMOI.txt`. La photo de l'Indonésie est remplacée (volcan Bromo).
 
 **Méthode de travail depuis le 18/11 :** Claude décide seul selon `CLAUDE.md` et le récap, et ne pose une question que dans les cas prévus par `CLAUDE.md`.
 
@@ -20,8 +20,8 @@
 - les noms et années des 735 sites UNESCO (`unesco_sites.csv`).
 
 **Prochaines tâches, dans l'ordre :**
-1. Le ZIP final (section 8, tâche 5).
-2. Puis la suite de la section 8 : quiz final, puis le site, une visualisation à la fois.
+1. Le quiz final (section 8, tâche 6).
+2. Puis le site, une visualisation à la fois (section 8, tâche 7).
 3. **À la fin du projet : une séance où Claude explique simplement à Aryann chaque partie (données, scripts, visualisations)**, pour qu'Aryann puisse répondre au prof à l'oral.
 
 ## 1. Le projet en bref
@@ -105,6 +105,7 @@ dataviz-voyage/
     - Garde-fou : `test_comptage_unesco.py` vérifie que le comptage recalculé depuis les données brutes retombe exactement sur `pays.csv`.
 12. `build_dictionnaire.py` : décrit les 138 colonnes des 12 CSV du téléchargement. Il s'arrête si une colonne manque, n'a pas de source, d'année, d'unité (nombres) ou d'explication de ses cases vides.
 13. `build_excel.py` : classeur avec une feuille par CSV et une pour le dictionnaire, relu cellule par cellule. `visas_historique_annuel.csv` reste hors du classeur.
+14. `build_zip.py` : relance les étapes 12 et 13, puis écrit `data/telechargement/periple_donnees.zip`. Il s'arrête si un fichier écarté y entre, si la citation de Budget Your Trip ou une notice MIT manque, si une photo n'a pas de crédit, ou si l'archive relue diffère de ses sources. Même contenu, même archive.
 
 **Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
 
@@ -450,7 +451,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] **Photo de l'Indonésie remplacée** (18/11) : `Jakarta.jpg` portait un avertissement sur la liberté de panorama. Nouvelle photo : caldeira du Tengger et volcan Bromo, par Jakub Hałun, CC BY-SA 4.0, image de qualité sur Commons, sans bâtiment ni personne au premier plan.
 - [x] **Classeur Excel** (18/11) : ouverture validée dans Excel par Aryann. Testé dans LibreOffice : 4,5 à 8,2 s et 7,1 Mo avec l'historique annuel, 1,8 à 2,0 s et 1,5 Mo sans. Cette feuille est retirée, le CSV reste dans le ZIP et le LISEZMOI le signale.
 - [x] Noms de sites retirés des notes de `corrections_unesco.csv`.
-- [ ] Le **ZIP** : les 12 CSV, le classeur, le dictionnaire, `LICENCES.txt` et `LISEZMOI.txt`.
+- [x] **ZIP** (18/11) : `data/telechargement/periple_donnees.zip`, 2,6 Mo, avec les 12 CSV dans `donnees/`, le classeur, le dictionnaire, `LICENCES.txt` et `LISEZMOI.txt`. Extrait et recontrôlé : CSV identiques, classeur ouvert dans LibreOffice en 2,0 s.
 
 **6. Quiz final**
 - [ ] Réécrire les questions pour qu'elles soient plus amusantes : 10 à 12 questions (duels, situations, images), avec des choix qui coûtent, et la même logique de calcul.
