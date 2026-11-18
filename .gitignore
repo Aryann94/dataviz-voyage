@@ -18,3 +18,6 @@ data/raw/passport_index_historique/
 
 # Cache des fiches whc.unesco.org (titres officiels non republiés : clé de comparaison seulement)
 data/raw/unesco_fiches/
+
+# Classeur Excel généré : il est livré dans le ZIP du téléchargement
+data/telechargement/*.xlsx

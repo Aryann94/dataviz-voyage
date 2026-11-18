@@ -1,0 +1,61 @@
+PÉRIPLE : DONNÉES À TÉLÉCHARGER
+Mis à jour le 18 novembre 2026
+
+Ces fichiers sont ceux qui font fonctionner le site Périple, un projet étudiant non commercial
+sur le voyage : un quiz, une carte des passeports et un budget de voyage.
+
+
+OUVRIR LES DONNÉES
+- Le plus simple : ouvrir periple_donnees.xlsx dans Excel. Il contient une feuille par fichier
+  CSV et le dictionnaire des données.
+- Une seule exception : visas_historique_annuel.csv (315 216 lignes) n'est pas dans le classeur,
+  car cette feuille ralentissait nettement son ouverture. Il reste disponible en CSV.
+- Les CSV sont dans le dossier donnees. Ils sont en UTF-8, avec la virgule comme séparateur et
+  le point comme décimale. Dans Excel : Données > À partir d'un fichier texte/CSV, puis choisir
+  l'encodage UTF-8 et le délimiteur virgule. Un double-clic peut mal afficher les accents et
+  les colonnes.
+
+
+LES FICHIERS
+periple_donnees.xlsx             le classeur Excel
+dictionnaire_donnees.csv         chaque colonne : sens, unité, source, licence, année
+LICENCES.txt                     sources, licences, crédits et notices à conserver
+
+Dans le dossier donnees :
+pays.csv                         les 41 pays du quiz : faits, sources et crédits des photos
+scores.csv                       les 6 notes du quiz, de 0 à 100, et la distance depuis Paris
+pays_monde.csv                   les 199 pays de la carte : nom, codes, drapeau, revenu
+budget.csv                       budget quotidien de 40 pays, par niveau et par catégorie
+unesco_sites.csv                 les sites du patrimoine mondial des 41 pays
+visas.csv                        règles d'entrée pour 39 402 paires passeport-destination
+visas_historique_comptes.csv     nombre de destinations par passeport, de 2019 à 2026
+visas_historique_annuel.csv      règles d'entrée par paire, une photo par année
+visas_historique_sources.csv     les 57 versions utilisées pour l'historique
+corrections_visas.csv            vérifications manuelles des visas, avec leurs sources
+corrections_unesco.csv           corrections du comptage des sites
+carte/correspondance_carte.csv   lien entre le fond de carte et les codes de passeport
+
+Le code iso3 relie les fichiers entre eux. Les codes passeport_iso3 et destination_iso3 des
+fichiers de visas utilisent les mêmes codes.
+
+
+SOURCE DES BUDGETS : BUDGET YOUR TRIP
+Site : https://www.budgetyourtrip.com (lien de chaque pays dans la colonne source_url).
+Relevé du 16 octobre 2026 : tableaux copiés-collés à la main pour une partie des pays, relevés
+avec l'aide d'une IA pour les autres, puis contrôlés par script.
+Usage : projet étudiant, non commercial.
+Les conditions du site réservent la reproduction à son accord écrit. Ces chiffres ne sont pas
+sous licence libre, et cette citation n'est pas une autorisation. Pour les réutiliser, il faut
+s'adresser à Budget Your Trip.
+
+
+À SAVOIR AVANT D'UTILISER LES DONNÉES
+- Les notes du quiz sont relatives aux 41 pays choisis. Cette sélection couvre tous les
+  continents et tous les types de voyage, mais elle n'a aucun pays des Caraïbes, limite
+  l'Afrique du Nord au Maroc et à l'Égypte, et ne compte pas l'Allemagne, la Belgique ni les
+  Pays-Bas.
+- Les budgets ne comptent pas le billet d'avion. L'Argentine en est exclue, car ses montants
+  sont invraisemblables.
+- Le revenu est un revenu moyen par habitant, pas un salaire.
+- Les visas datent de février 2026, sauf les lignes vérifiées à la main en octobre 2026.
+- Les noms de sites du patrimoine mondial ne sont pas les noms officiels de l'UNESCO.

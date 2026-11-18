@@ -7,6 +7,7 @@ Assemble data/pays.csv (le fichier final, publié sur le site) à partir de :
     data/intermediaire/pays_banquemondiale.csv   indicateurs Banque mondiale
     data/intermediaire/pays_cotes.csv            côtes, surface, latitude (CIA Factbook)
     data/descriptions_pays.csv                   textes de présentation (rédigés à la main)
+    data/corrections_credits_photos.csv          photos remplacées, avec auteur, licence et lien
 
 Au premier lancement, data/descriptions_pays.csv est créé avec des descriptions vides,
 à remplir ensuite. Les salaires ILOSTAT ne sont PAS intégrés (choix documenté :
@@ -21,6 +22,8 @@ import datetime
 import sys
 from pathlib import Path
 
+from build_pays_wikidata import url_image
+
 RACINE = Path(__file__).resolve().parent.parent
 DATA = RACINE / "data"
 FICHIER_LISTE = DATA / "pays_liste.csv"
@@ -28,6 +31,7 @@ FICHIER_WIKIDATA = DATA / "intermediaire" / "pays_wikidata.csv"
 FICHIER_BM = DATA / "intermediaire" / "pays_banquemondiale.csv"
 FICHIER_COTES = DATA / "intermediaire" / "pays_cotes.csv"
 FICHIER_DESCRIPTIONS = DATA / "descriptions_pays.csv"
+FICHIER_CREDITS = DATA / "corrections_credits_photos.csv"
 FICHIER_SORTIE = DATA / "pays.csv"
 
 # Colonnes du fichier final, dans l'ordre : (nom, source)
@@ -111,6 +115,23 @@ def lire(chemin, obligatoire=True):
     return par_pays
 
 
+def lire_credits(liste):
+    """Photos remplacées à la main : chaque ligne a son auteur, sa licence, sa source et sa date."""
+    credits = lire(FICHIER_CREDITS)
+    for iso3, l in credits.items():
+        if iso3 not in liste:
+            problemes.append(f"{FICHIER_CREDITS.name} : {iso3} n'est pas dans la liste")
+        elif l["image_commons"] != liste[iso3]["image_commons"]:
+            problemes.append(f"{FICHIER_CREDITS.name} : {iso3}, fichier différent de pays_liste.csv")
+        if not (l["image_auteur"] and l["image_licence"]):
+            problemes.append(f"{FICHIER_CREDITS.name} : {iso3} sans auteur ou sans licence")
+        if not l["source_url"].startswith("https://commons.wikimedia.org/"):
+            problemes.append(f"{FICHIER_CREDITS.name} : {iso3} sans lien vers Commons")
+        if not l["date_verification"]:
+            problemes.append(f"{FICHIER_CREDITS.name} : {iso3} sans date de vérification")
+    return credits
+
+
 def creer_modele_descriptions(liste):
     with FICHIER_DESCRIPTIONS.open("w", encoding="utf-8", newline="") as f:
         ecrivain = csv.writer(f)
@@ -147,6 +168,7 @@ def main():
 
     print("3. Assemblage")
     budgets = budgets_moyens()
+    credits_photos = lire_credits(liste)
     lignes = []
     aujourd_hui = datetime.date.today().isoformat()
     for iso3 in liste:
@@ -154,6 +176,12 @@ def main():
         for colonne, source in COLONNES:
             if source in sources:
                 ligne[colonne] = sources[source].get(iso3, {}).get(colonne, "")
+        if iso3 in credits_photos:
+            ligne["image_url"] = url_image(credits_photos[iso3]["image_commons"], largeur=800)
+            ligne["image_auteur"] = credits_photos[iso3]["image_auteur"]
+            ligne["image_licence"] = credits_photos[iso3]["image_licence"]
+        if ligne["image_url"] and not (ligne["image_auteur"] and ligne["image_licence"]):
+            problemes.append(f"{iso3} : photo sans auteur ou sans licence")
         # calculs
         unesco = [ligne["unesco_culturel"], ligne["unesco_naturel"], ligne["unesco_mixte"],
                   sources["wikidata"].get(iso3, {}).get("unesco_sans_categorie", "")]

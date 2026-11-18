@@ -6,7 +6,12 @@
 
 **Décidé le 18/11 :**
 - on n'ajoute aucun pays, la sélection reste à 41 pays (raison en section 5, trous connus en section 7) ;
-- on ne republie plus de contenu venant de whc.unesco.org : les noms et années repris des fiches sont remplacés par Wikipédia en français, et `unesco_sites.csv` peut entrer dans le ZIP (section 5).
+- on ne republie plus de contenu venant de whc.unesco.org : les noms et années repris des fiches sont remplacés par Wikipédia en français, et `unesco_sites.csv` peut entrer dans le ZIP (section 5) ;
+- `budget.csv` reste sur le site et dans le ZIP, avec une citation claire de Budget Your Trip (section 5).
+
+**Préparé le 18/11 pour le téléchargement :** `build_excel.py`, la nouvelle photo de l'Indonésie (volcan Bromo), `LICENCES.txt`, `LISEZMOI.txt` et le dictionnaire de 138 colonnes (`data/documentation/`).
+
+**Méthode de travail depuis le 18/11 :** Claude décide seul selon `CLAUDE.md` et le récap, et ne pose une question que dans les cas prévus par `CLAUDE.md`.
 
 **Fait le 17/11 :**
 - `pays_monde.csv` : les 199 pays (nom, ISO2, drapeau, revenu par habitant) ;
@@ -15,8 +20,9 @@
 - les noms et années des 735 sites UNESCO (`unesco_sites.csv`).
 
 **Prochaines tâches, dans l'ordre :**
-1. Téléchargement des données (section 8, tâche 5) : fichier Excel, dictionnaire, licences, citation de Budget Your Trip, crédit de la photo de Jakarta, ZIP.
+1. Le ZIP final (section 8, tâche 5).
 2. Puis la suite de la section 8 : quiz final, puis le site, une visualisation à la fois.
+3. **À la fin du projet : une séance où Claude explique simplement à Aryann chaque partie (données, scripts, visualisations)**, pour qu'Aryann puisse répondre au prof à l'oral.
 
 ## 1. Le projet en bref
 
@@ -54,6 +60,9 @@ dataviz-voyage/
 │   ├── corrections_unesco.csv   5 corrections justifiées du comptage UNESCO
 │   ├── unesco_sites.csv         FINAL - 735 sites des 41 pays : nom (Wikidata ou Wikipédia), catégorie, année d'inscription, sources. Chargé par le site et mis dans le ZIP
 │   ├── corrections_unesco_noms.csv 54 corrections : titre d'article et année de Wikipédia en français (lien permanent en source), élément imposé. La fiche UNESCO sert seulement à vérifier
+│   ├── corrections_credits_photos.csv photos remplacées, avec auteur, licence, lien et date (Indonésie)
+│   ├── documentation/           LISEZMOI.txt, LICENCES.txt, dictionnaire_donnees.csv (pour le ZIP)
+│   ├── telechargement/          ZIP du téléchargement ; le classeur Excel généré n'est pas commité
 │   ├── intermediaire/           sorties par source (Wikidata, Banque mondiale, CIA Factbook, ILOSTAT)
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
 ├── scripts/                     Python, bibliothèque standard (+ certifi)
@@ -94,6 +103,8 @@ dataviz-voyage/
 11. `build_unesco_noms.py` : noms et années d'inscription des sites UNESCO des 41 pays → `unesco_sites.csv`. Il repart de `wikidata_unesco.json` (16/10) et de la même fonction `sites_unesco()` que le comptage. `--depuis-brut` relit le relevé Wikidata sans requête. `--verifier 10` compare 10 années tirées au hasard à whc.unesco.org (par curl : le site refuse urllib).
     - `build_unesco_wikipedia.py` (à lancer avant, si on refait les corrections) : cherche les articles de Wikipédia en français et écrit `corrections_unesco_noms.csv`, avec le relevé dans `data/raw/wikipedia_unesco.json`.
     - Garde-fou : `test_comptage_unesco.py` vérifie que le comptage recalculé depuis les données brutes retombe exactement sur `pays.csv`.
+12. `build_dictionnaire.py` : décrit les 138 colonnes des 12 CSV du téléchargement. Il s'arrête si une colonne manque, n'a pas de source, d'année, d'unité (nombres) ou d'explication de ses cases vides.
+13. `build_excel.py` : classeur avec une feuille par CSV et une pour le dictionnaire, relu cellule par cellule. `visas_historique_annuel.csv` reste hors du classeur.
 
 **Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
 
@@ -152,7 +163,7 @@ Types de données présents :
 | Noms, ISO2, drapeaux et RNB des 199 pays | Wikidata (SPARQL) + Banque mondiale via **Data360** (data360api.worldbank.org, même série `NY.GNP.PCAP.CD`) | requête SPARQL + API REST paginée | CC0 / CC BY 4.0 ; extraction du 17/11/2026. Drapeaux : règle ONU (section 5) |
 | Noms et années des sites UNESCO | Wikidata : libellés (fr, puis multilingue, puis titre Wikipédia en français, puis en) et désignation « patrimoine mondial » (P1435 = Q9259, date de début P580) | SPARQL sur les éléments déjà relevés le 16/10 | CC0 ; années contrôlées sur deux échantillons de whc.unesco.org (2 × 10/10 identiques le 17/11) |
 | Corrections des sites UNESCO | Wikipédia en français : titres d'articles (liens Wikidata, listes « Patrimoine mondial en… »), infobox, catégories « inscrit en <année> » | API MediaWiki, relevé du 18/11/2026, lien permanent par valeur | CC BY-SA, attribution à mettre dans les licences. 37 noms et 15 années. Les fiches whc.unesco.org servent seulement à vérifier (15 années sur 15 identiques) et à départager des éléments Wikidata : rien n'en est publié (cache non commité) |
-| Budget | Budget Your Trip (pages mises à jour en 2026) | copier-coller des tableaux, extraction par script (20 pays relevés via IA, 21 collés à la main) | relevé du 16/10/2026 |
+| Budget | Budget Your Trip (pages mises à jour en 2026) | à la main pour une partie des pays, avec l'aide d'une IA pour les autres, puis extraction et contrôle par script. `budget_collage.txt` garde 20 tableaux collés à la main. La Corée du Sud a été collée dans une conversation avec Claude, qui a recopié les chiffres, et 20 autres pays ont été relevés via IA | relevé du 16/10/2026 ; usage étudiant non commercial ; reproduction réservée à l'accord écrit du site, pas de licence libre |
 | Fond de carte | Natural Earth v5.1.2, `ne_10m_admin_0_countries_fra` (point de vue de la France), dépôt nvkelso/natural-earth-vector | téléchargement (URL figée + SHA-256) + jointure + mapshaper | domaine public ; préparé le 17/11/2026 |
 | Côtes, surface, latitude | CIA World Factbook, copie archivée github.com/factbook/factbook.json (la CIA a arrêté le Factbook en février 2026) | téléchargement JSON + lecture du texte (« 29,751 km ») | domaine public ; le Vietnam est compté sans ses îles |
 | Salaires (écartés) | ILOSTAT `EAR_EHRA_SEX_CUR_NB_A` | téléchargement bulk | voir les décisions |
@@ -206,6 +217,7 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 - **Salaires ILOSTAT écartés** : 7 pays manquants (dont le Japon, la Chine et l'Australie), des sources mélangées (enquête ménages / registres), des années de 2017 à 2025, des incohérences (l'Espagne au-dessus de la France, l'Afrique du Sud à 1,38 $/h). Remplacés par le **revenu national brut par habitant** (Banque mondiale), complet et homogène. Sur la page, on parlera de « jours de revenu moyen », pas d'« heures de travail ».
 - **Indice du niveau des prix** = PPA / taux de change (États-Unis = 1). Il sert à l'axe « prix » du quiz. **Corrélation de rang de 0,84** avec les budgets Budget Your Trip sur 41 pays : les deux sources indépendantes concordent. 3 pays mélangent 2024 et 2025 (Vietnam, Tanzanie, Émirats), effet négligeable.
 - **Budget** : somme des 4 catégories utilisée, parce que les totaux du site ne s'additionnent pas (Sénégal -55 %, Turquie +29 %, Kenya +17 % ; vérifié mot pour mot). **Argentine exclue** de la visualisation 3 : repas à 5,71 $ par jour, invraisemblable (prix en pesos non actualisés après l'inflation). Elle reste dans le quiz.
+- **Budget Your Trip (décision du 18/11)** : Aryann a lu les conditions du site, qui réservent la reproduction à son accord écrit. C'est un projet étudiant non commercial, et `budget.csv` reste sur le site et dans le ZIP. `LICENCES.txt`, `LISEZMOI.txt` et ce récap citent la source : https://www.budgetyourtrip.com, lien de chaque pays dans `source_url`, relevé du 16/10/2026, usage étudiant non commercial. La citation précise qu'elle ne vaut pas autorisation et que ces chiffres ne sont pas sous licence libre.
 - **Capitales** : Pretoria pour l'Afrique du Sud (siège du gouvernement), Colombo pour le Sri Lanka.
 - **Drapeaux (17/11) : le drapeau reconnu par l'ONU quand il existe, sinon celui de Wikidata.**
   - Wikidata donne le drapeau en usage. Il ne diffère de celui de l'ONU que pour l'**Afghanistan** : Wikidata donne celui des talibans, alors que le siège à l'ONU reste à la République islamique. On impose donc le drapeau de 2013-2021 (`DRAPEAUX_IMPOSES` dans `build_pays_monde.py`). Piège : sur Commons, « Flag of Afghanistan.svg » redirige vers le drapeau des talibans, donc il faut le nom exact du fichier.
@@ -432,10 +444,13 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] La sélection reste à 41 pays (raison en section 5, trous connus en section 7).
 
 **5. Téléchargement des données (3 points)**
-- [ ] Un **dictionnaire des données** : chaque colonne, avec son unité, sa source et son année.
-- [ ] Un **fichier des licences et crédits**. Passport Index est sous licence MIT, qui oblige à joindre la notice de copyright. La Banque mondiale (CC BY 4.0) demande une attribution. Les photos ont un auteur et une licence. Le CIA Factbook est dans le domaine public. Il faut aussi les crédits de Natural Earth (domaine public) et de Wikipédia (CC BY-SA, pour les 37 noms et les 15 années des sites UNESCO).
-- [ ] **Budget Your Trip : vérifier leurs conditions d'utilisation** avant de redistribuer `budget.csv` et `saisie_budget.csv`. Au minimum, citer clairement la source dans le fichier.
-- [ ] Le **ZIP** des CSV.
+- [x] **Dictionnaire des données** (18/11) : 138 colonnes, 12 fichiers.
+- [x] **Licences et crédits** (18/11) : `data/documentation/LICENCES.txt`, avec les deux notices MIT complètes.
+- [x] **Budget Your Trip** (18/11) : conditions lues par Aryann, source citée (section 5). `saisie_budget.csv` n'entre pas dans le ZIP.
+- [x] **Photo de l'Indonésie remplacée** (18/11) : `Jakarta.jpg` portait un avertissement sur la liberté de panorama. Nouvelle photo : caldeira du Tengger et volcan Bromo, par Jakub Hałun, CC BY-SA 4.0, image de qualité sur Commons, sans bâtiment ni personne au premier plan.
+- [x] **Classeur Excel** (18/11) : ouverture validée dans Excel par Aryann. Testé dans LibreOffice : 4,5 à 8,2 s et 7,1 Mo avec l'historique annuel, 1,8 à 2,0 s et 1,5 Mo sans. Cette feuille est retirée, le CSV reste dans le ZIP et le LISEZMOI le signale.
+- [x] Noms de sites retirés des notes de `corrections_unesco.csv`.
+- [ ] Le **ZIP** : les 12 CSV, le classeur, le dictionnaire, `LICENCES.txt` et `LISEZMOI.txt`.
 
 **6. Quiz final**
 - [ ] Réécrire les questions pour qu'elles soient plus amusantes : 10 à 12 questions (duels, situations, images), avec des choix qui coûtent, et la même logique de calcul.

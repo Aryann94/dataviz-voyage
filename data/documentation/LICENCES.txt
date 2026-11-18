@@ -1,0 +1,146 @@
+PÉRIPLE : LICENCES ET CRÉDITS DES DONNÉES
+Mis à jour le 18 novembre 2026
+
+Ce téléchargement n'a pas de licence unique. Chaque donnée garde les conditions de sa source.
+Le détail, colonne par colonne, est dans dictionnaire_donnees.csv.
+
+
+1. BUDGET YOUR TRIP
+Site : https://www.budgetyourtrip.com
+Données : budget.csv, et les colonnes budget_dispo et budget_moyen_usd_jour de pays.csv.
+Page de chaque pays : colonne source_url de budget.csv.
+Date du relevé : 16 octobre 2026 (colonne date_releve).
+Dernière mise à jour indiquée par le site : colonne date_maj_site.
+Méthode : tableaux copiés-collés à la main depuis les pages du site pour une partie des pays,
+relevés avec l'aide d'une IA pour les autres, puis contrôlés par script.
+Usage : projet étudiant, non commercial.
+Droits : les conditions du site réservent la reproduction à son accord écrit. Ces chiffres ne
+sont pas sous licence libre. Cette citation n'est pas une autorisation : pour les réutiliser,
+il faut s'adresser à Budget Your Trip.
+
+
+2. BANQUE MONDIALE
+Source : Banque mondiale, Indicateurs du développement dans le monde (WDI).
+https://data.worldbank.org
+Licence : CC BY 4.0, https://datacatalog.worldbank.org/public-licenses#cc-by
+Extraction : 16 octobre 2026 pour pays.csv, 17 novembre 2026 pour pays_monde.csv.
+Modifications : valeurs arrondies, et niveau_prix calculé (PA.NUS.PPP / PA.NUS.FCRF).
+Indicateurs utilisés et source d'origine indiquée par la Banque mondiale :
+  ER.LND.PTLD.ZS     zones_protegees_pct   Protected Planet (WDPA)
+  EN.POP.DNST        densite_hab_km2       FAO et estimations de population
+  AG.LND.FRST.ZS     foret_pct             FAOSTAT
+  SP.URB.TOTL.IN.ZS  pop_urbaine_pct       Nations unies, World Urbanization Prospects
+  EN.URB.MCTY.TL.ZS  pop_villes_1m_pct     Nations unies, World Urbanization Prospects
+  NY.GNP.PCAP.CD     rnb_hab_usd           instituts statistiques nationaux et banques centrales
+  PA.NUS.PPP         niveau_prix           International Comparison Program
+  PA.NUS.FCRF        niveau_prix           FMI, International Financial Statistics
+
+
+3. PASSPORT INDEX
+Données : visas.csv, visas_historique_comptes.csv, visas_historique_annuel.csv,
+visas_historique_sources.csv.
+Sources : https://github.com/imorte/passport-index-data (version du 18 février 2026)
+          https://github.com/ilyankou/passport-index-dataset (56 versions, 2019 à 2025)
+Licence : MIT. Les deux notices sont reproduites à la fin de ce fichier.
+Modifications : statuts recodés, formats successifs harmonisés, et 41 vérifications manuelles
+appliquées (corrections_visas.csv).
+
+
+4. VÉRIFICATIONS DES VISAS
+France Diplomatie, europa.eu et autres pages citées ligne par ligne dans la colonne source_url
+de corrections_visas.csv. Seuls le résultat de la vérification et le lien sont repris.
+
+
+5. WIKIDATA
+Capitales, coordonnées, codes, drapeaux, numéros et comptage des sites du patrimoine mondial,
+et la plupart des noms et années de unesco_sites.csv.
+https://www.wikidata.org
+Licence : CC0, https://creativecommons.org/publicdomain/zero/1.0/deed.fr
+
+
+6. WIKIPÉDIA EN FRANÇAIS
+37 noms et 15 années de unesco_sites.csv.
+Contributeurs : voir l'historique de chaque article, à partir du lien permanent donné dans les
+colonnes source_nom et source_annee.
+Licence : CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/deed.fr
+Modification : les précisions entre parenthèses des titres sont retirées (« Rhodes (ville) »
+devient « Rhodes »).
+
+
+7. WIKIMEDIA COMMONS
+Les photos et les drapeaux ne sont pas fournis : les fichiers donnent seulement leurs liens.
+Photos : auteur et licence dans les colonnes image_auteur et image_licence de pays.csv.
+Drapeaux : la licence de chaque fichier est sur sa page Commons (colonne drapeau_url).
+https://commons.wikimedia.org
+
+
+8. CIA WORLD FACTBOOK
+Colonnes cotes_km, sans_littoral, superficie_terres_km2 et lat_centre de pays.csv.
+Source : CIA World Factbook (domaine public), copie archivée sous licence CC0 :
+https://github.com/factbook/factbook.json
+
+
+9. NATURAL EARTH
+Colonnes de correspondance_carte.csv qui décrivent les entités de la carte.
+Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.
+Domaine public, https://www.naturalearthdata.com/about/terms-of-use/
+
+
+10. UNESCO
+Aucun contenu de whc.unesco.org n'est repris. Les fiches ont servi à vérifier des données, et
+les colonnes lien_unesco et source_url de corrections_unesco.csv donnent seulement des liens.
+Les noms de unesco_sites.csv ne sont pas les noms officiels de l'UNESCO.
+
+
+11. CRÉATIONS DU PROJET
+Scores du quiz, calculs, choix de sélection et descriptions des pays (41 textes rédigés avec
+l'aide d'une IA). Ces données dérivées dépendent aussi des sources ci-dessus.
+
+
+NOTICE MIT : imorte/passport-index-data
+---------------------------------------
+MIT License
+
+Copyright (c) 2019
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+NOTICE MIT : ilyankou/passport-index-dataset
+--------------------------------------------
+MIT License
+
+Copyright (c) 2019 Ilya Ilyankou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

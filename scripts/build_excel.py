@@ -4,6 +4,10 @@ build_excel.py
 Classeur Excel du téléchargement : une feuille par CSV, en-têtes en gras, première ligne figée,
 filtres et colonnes à une largeur lisible. Les CSV sont seulement lus, jamais modifiés.
 
+visas_historique_annuel.csv (315 216 lignes) reste en CSV seulement : mesuré dans LibreOffice le
+18/11/2026, le classeur se charge en 1,8 à 2,0 s sans cette feuille, en 4,5 à 8,2 s avec, et il
+passe de 1,5 à 7,1 Mo.
+
 Écrit avec la bibliothèque standard : un fichier .xlsx est un ZIP de fichiers XML.
 
 Dans une feuille, une colonne est numérique si toutes ses valeurs sont des nombres ; le nombre
@@ -37,8 +41,10 @@ FICHIERS = [
     "pays.csv", "scores.csv", "pays_monde.csv", "budget.csv", "unesco_sites.csv", "visas.csv",
     "visas_historique_comptes.csv", "visas_historique_annuel.csv",
     "visas_historique_sources.csv", "corrections_visas.csv", "corrections_unesco.csv",
-    "carte/correspondance_carte.csv",
+    "carte/correspondance_carte.csv", "documentation/dictionnaire_donnees.csv",
 ]
+HORS_CLASSEUR = {"visas_historique_annuel.csv"}
+FEUILLES = [f for f in FICHIERS if f not in HORS_CLASSEUR]
 
 COLONNES_TEXTE = {"commit", "sha256"}          # identifiants, même s'ils ressemblent à des nombres
 NOMBRE = re.compile(r"-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][-+]?\d+)?")
@@ -250,12 +256,12 @@ def relire_et_comparer(chemin, tableaux):
 
 
 def main():
-    avant = {r: empreinte(DONNEES / r) for r in FICHIERS if (DONNEES / r).exists()}
+    avant = {r: empreinte(DONNEES / r) for r in FEUILLES if (DONNEES / r).exists()}
     erreurs, tableaux = [], []
-    noms = [nom_feuille(r) for r in FICHIERS]
+    noms = [nom_feuille(r) for r in FEUILLES]
     if len(set(n.lower() for n in noms)) != len(noms):
         erreurs.append("deux feuilles auraient le même nom")
-    for relatif in FICHIERS:
+    for relatif in FEUILLES:
         entete, corps = lire_csv(relatif, erreurs)
         tableaux.append((relatif, entete, corps))
     if erreurs:
