@@ -16,15 +16,19 @@ Un site a souvent plusieurs éléments Wikidata. Choix de l'élément qui le rep
   À égalité : l'élément décrit comme site du patrimoine mondial (P31 = Q9259), puis le plus
   d'articles Wikipédia, puis le plus petit identifiant.
 Nom : libellé français de Wikidata, sinon libellé multilingue (« mul »), sinon titre de
-l'article Wikipédia en français, sinon anglais (colonne langue_nom), sinon correction manuelle.
+l'article Wikipédia en français, sinon anglais (colonne langue_nom).
 Année d'inscription : la plus ancienne date de début (P580) de la désignation « patrimoine
 mondial » (P1435 = Q9259) parmi tous les éléments du site ; vide si aucune (rien d'inventé).
+Corrections (data/corrections_unesco_noms.csv, produit par build_unesco_wikipedia.py) : titre
+d'article et année de Wikipédia en français, avec le lien de l'article (colonnes source_nom
+et source_annee).
 
-Les noms viennent de Wikidata (CC0), pas de la liste de l'UNESCO, dont les conditions
-interdisent la republication : ce fichier n'entre PAS dans le ZIP de téléchargement.
+Rien n'est repris de whc.unesco.org : les fiches ne servent qu'à vérifier et à départager des
+éléments Wikidata (jamais écrites dans un fichier publié), et lien_unesco n'est qu'un lien.
 
 Lancement depuis la racine :
     py scripts/build_unesco_noms.py
+    py scripts/build_unesco_noms.py --depuis-brut    (relit le relevé Wikidata, sans requête)
     py scripts/build_unesco_noms.py --verifier 10    (compare 10 années à whc.unesco.org)
 """
 
@@ -51,6 +55,7 @@ from build_pays_wikidata import (
 
 RACINE = Path(__file__).resolve().parent.parent
 FICHIER_BRUT = RACINE / "data" / "raw" / "wikidata_unesco.json"
+FICHIER_BRUT_NOMS = RACINE / "data" / "raw" / "wikidata_unesco_noms.json"
 FICHIER_LISTE = RACINE / "data" / "pays_liste.csv"
 FICHIER_PAYS = RACINE / "data" / "pays.csv"
 FICHIER_CORRECTIONS = RACINE / "data" / "corrections_unesco_noms.csv"   # facultatif
@@ -66,7 +71,9 @@ SEUIL_TITRE = 0.6                     # en dessous : départage douteux -> corre
 PREMIERE_LISTE = 1978                 # première inscription au patrimoine mondial : avant = erreur
 
 COLONNES = ["iso3", "id_unesco", "categorie", "nom_fr", "langue_nom", "wikidata_qid",
-            "regle_choix", "departage", "annee_inscription", "transfrontalier", "lien_unesco"]
+            "regle_choix", "departage", "annee_inscription", "transfrontalier", "lien_unesco",
+            "source_nom", "source_annee"]
+PREFIXE_WIKIPEDIA = "https://fr.wikipedia.org/w/index.php?title="
 
 avertissements = []
 
@@ -99,27 +106,25 @@ SELECT ?site ?fr ?mul ?wikifr ?en ?nature ?liens ?debut WHERE {
 """
 
 
+def lire_trouves(brut):
+    trouves = defaultdict(set)
+    for l in (brut["results"]["bindings"] if brut else []):
+        trouves[valeur(l, "id")].add(qid(valeur(l, "site")))
+    return trouves
+
+
 def chercher_partout(ids):
     """Éléments portant ces identifiants UNESCO, dans tout Wikidata."""
     if not ids:
         return {}, []
     brut = requete_sparql(REQUETE_GLOBALE % " ".join(f'"{i}"' for i in sorted(ids)))
-    trouves = defaultdict(set)
-    for l in brut["results"]["bindings"]:
-        trouves[valeur(l, "id")].add(qid(valeur(l, "site")))
-    return trouves, brut
+    return lire_trouves(brut), brut
 
 
-def infos_elements(qids):
+def lire_infos(bruts):
     infos = defaultdict(lambda: {"fr": "", "mul": "", "wikifr": "", "en": "", "est_site": False,
                                  "liens": 0, "annees": set()})
-    bruts = []
-    qids = sorted(qids, key=lambda q: int(q[1:]))
-    for i in range(0, len(qids), TAILLE_LOT):
-        lot = qids[i:i + TAILLE_LOT]
-        print(f"   éléments {i + 1} à {i + len(lot)} sur {len(qids)}")
-        brut = requete_sparql(REQUETE_INFOS % " ".join(f"wd:{q}" for q in lot))
-        bruts.append(brut)
+    for brut in bruts:
         for l in brut["results"]["bindings"]:
             e = infos[qid(valeur(l, "site"))]
             for cle in ("fr", "mul", "wikifr", "en"):
@@ -130,7 +135,17 @@ def infos_elements(qids):
             m = re.match(r"(-?\d{4})", valeur(l, "debut"))
             if m:
                 e["annees"].add(int(m.group(1)))
-    return infos, bruts
+    return infos
+
+
+def infos_elements(qids):
+    bruts = []
+    qids = sorted(qids, key=lambda q: int(q[1:]))
+    for i in range(0, len(qids), TAILLE_LOT):
+        lot = qids[i:i + TAILLE_LOT]
+        print(f"   éléments {i + 1} à {i + len(lot)} sur {len(qids)}")
+        bruts.append(requete_sparql(REQUETE_INFOS % " ".join(f"wd:{q}" for q in lot)))
+    return lire_infos(bruts), bruts
 
 
 # --- Choix de l'élément ----------------------------------------------------------------
@@ -156,16 +171,21 @@ SELECT ?a ?b WHERE {
 """
 
 
+def lire_parties(brut, groupes):
+    groupes = [g for g in groupes if len(g) > 1]
+    paires = {(qid(valeur(l, "a")), qid(valeur(l, "b")))
+              for l in (brut["results"]["bindings"] if brut else [])}
+    return {(a, b) for a, b in paires if any(a in g and b in g for g in groupes)}
+
+
 def relations_parties(groupes):
     """Paires (a, b) où a est une partie de b, a et b candidats d'un même site."""
-    groupes = [g for g in groupes if len(g) > 1]
-    if not groupes:
+    multiples = [g for g in groupes if len(g) > 1]
+    if not multiples:
         return set(), {}
-    tous = " ".join(f"wd:{q}" for q in sorted({q for g in groupes for q in g}))
+    tous = " ".join(f"wd:{q}" for q in sorted({q for g in multiples for q in g}))
     brut = requete_sparql(REQUETE_PARTIES % (tous, tous))
-    paires = {(qid(valeur(l, "a")), qid(valeur(l, "b"))) for l in brut["results"]["bindings"]}
-    meme_site = {(a, b) for a, b in paires if any(a in g and b in g for g in groupes)}
-    return meme_site, brut
+    return lire_parties(brut, multiples), brut
 
 
 def retirer_parties(qids, parties):
@@ -180,11 +200,12 @@ def departager(qids, infos):
 
 def lire_corrections():
     """
-    data/corrections_unesco_noms.csv : id_unesco, nom_fr, annee_inscription, wikidata_qid,
-    source_url, note. nom_fr = titre EXACT de la fiche française whc.unesco.org/fr/list/<n°>
-    (pas de traduction libre) ; annee_inscription = « Date d'inscription » de la même fiche ;
-    wikidata_qid = « aucun » si aucun élément Wikidata ne représente le site entier, ou un
-    QID pour imposer l'élément (quand la règle « partie de » se trompe de sens).
+    data/corrections_unesco_noms.csv (écrit par build_unesco_wikipedia.py) : nom_fr = titre de
+    l'article de Wikipédia en français, annee_inscription = année donnée par Wikipédia, chacun
+    avec son lien (source_nom, source_annee) ; wikidata_qid = « aucun » si aucun élément
+    Wikidata ne représente le site entier, ou un QID pour imposer l'élément (quand la règle
+    « partie de » se trompe de sens) ; iso3 = pays concerné si la correction n'en vise qu'un.
+    Une ligne sans valeur signale un site sans article.
     """
     if not FICHIER_CORRECTIONS.exists():
         return {}
@@ -192,10 +213,12 @@ def lire_corrections():
         lignes = [{k: (v or "").strip() for k, v in l.items()} for l in csv.DictReader(f)]
     erreurs = []
     for l in lignes:
-        if not l.get("source_url"):
-            erreurs.append(f"{l.get('id_unesco')} : source_url obligatoire")
-        if not (l.get("nom_fr") or l.get("annee_inscription") or l.get("wikidata_qid")):
-            erreurs.append(f"{l.get('id_unesco')} : ni nom_fr, ni annee_inscription, ni wikidata_qid")
+        for champ, source in (("nom_fr", "source_nom"), ("annee_inscription", "source_annee")):
+            if l.get(champ) and not l.get(source, "").startswith(PREFIXE_WIKIPEDIA):
+                erreurs.append(f"{l.get('id_unesco')} : {champ} sans lien vers Wikipédia en français")
+        if not (l.get("nom_fr") or l.get("annee_inscription") or l.get("wikidata_qid")
+                or l.get("rattachement_nom") == "sans_article"):
+            erreurs.append(f"{l.get('id_unesco')} : ligne vide")
         if l.get("annee_inscription") and not re.fullmatch(r"(19[7-9]\d|20\d\d)", l["annee_inscription"]):
             erreurs.append(f"{l.get('id_unesco')} : année invalide {l['annee_inscription']}")
     if erreurs:
@@ -298,20 +321,27 @@ def main():
             regles[(iso3, base)] = (regle, qs)
             if not regle:
                 a_chercher |= {base, base + "rev", base + "bis"}
-    print(f"2. Wikidata : {len(a_chercher) // 3} site(s) sans élément d'ensemble sur place, "
-          "recherche dans tout Wikidata")
-    trouves, brut_global = chercher_partout(a_chercher)
-
-    tous_qids = {q for s in sites.values() for site in s.values()
-                 for qs in site["ids"].values() for q in qs}
-    tous_qids |= {q for qs in trouves.values() for q in qs}
-    print(f"3. Wikidata : libellés, nature, articles Wikipédia et dates d'inscription")
-    infos, bruts = infos_elements(tous_qids)
-    print("4. Wikidata : relations « fait partie de » / « contient » entre candidats d'un même site")
-    parties, brut_parties = relations_parties([qs for _, qs in regles.values()])
+    groupes = [qs for _, qs in regles.values()]
+    if "--depuis-brut" in sys.argv:         # aucune requête : mêmes données Wikidata que le relevé
+        print(f"2-4. Wikidata : relecture de {FICHIER_BRUT_NOMS.name}")
+        sauve = json.loads(FICHIER_BRUT_NOMS.read_text(encoding="utf-8"))
+        trouves = lire_trouves(sauve["recherche_globale"])
+        infos = lire_infos(sauve["infos"])
+        parties = lire_parties(sauve["parties"], groupes)
+    else:
+        print(f"2. Wikidata : {len(a_chercher) // 3} site(s) sans élément d'ensemble sur place, "
+              "recherche dans tout Wikidata")
+        trouves, brut_global = chercher_partout(a_chercher)
+        tous_qids = {q for s in sites.values() for site in s.values()
+                     for qs in site["ids"].values() for q in qs}
+        tous_qids |= {q for qs in trouves.values() for q in qs}
+        print(f"3. Wikidata : libellés, nature, articles Wikipédia et dates d'inscription")
+        infos, bruts = infos_elements(tous_qids)
+        print("4. Wikidata : relations « fait partie de » / « contient » entre candidats d'un même site")
+        parties, brut_parties = relations_parties(groupes)
+        sauver_brut("wikidata_unesco_noms.json", {"recherche_globale": brut_global, "infos": bruts,
+                                                   "parties": brut_parties})
     print(f"   {len(parties)} relation(s) trouvée(s)")
-    sauver_brut("wikidata_unesco_noms.json", {"recherche_globale": brut_global, "infos": bruts,
-                                               "parties": brut_parties})
 
     corrections = lire_corrections()
     lignes, delicats = [], {"plusieurs": [], "sans_exact": []}
@@ -338,6 +368,8 @@ def main():
             else:
                 choisi = departager(restants, infos) if restants else ""
             correction = corrections.get(base, {})
+            if correction.get("iso3") and correction["iso3"] != iso3:
+                correction = {}                  # correction valable pour un seul pays du site
             force = correction.get("wikidata_qid", "")
             if force.startswith("Q"):            # élément imposé (la règle « partie de » se trompe)
                 tous_elements = {q for qs2 in site["ids"].values() for q in qs2}
@@ -348,8 +380,8 @@ def main():
             # français, puis libellé multilingue (« mul », souvent seul depuis 2024, ex. Las
             # Médulas), puis titre de l'article Wikipédia en français, puis anglais
             nom, langue = next(((e[c], c) for c in ("fr", "mul", "wikifr", "en") if e[c]), ("", ""))
-            if correction.get("nom_fr"):          # titre exact de la fiche française de l'UNESCO
-                nom, langue = correction["nom_fr"], "unesco_fr"
+            if correction.get("nom_fr"):          # titre de l'article de Wikipédia en français
+                nom, langue = correction["nom_fr"], "wikifr"
                 regle = regle or "manuel"
             if force == "aucun":
                 choisi, departage = "", "correction"    # aucun élément ne représente le site entier
@@ -361,11 +393,11 @@ def main():
                         f"antérieure(s) à la première liste ({PREMIERE_LISTE})")
                 annees -= set(impossibles)
             if correction.get("annee_inscription"):
-                annee_fiche = int(correction["annee_inscription"])
-                if annees and min(annees) != annee_fiche:
-                    avertir(f"{iso3}:{base} : Wikidata {min(annees)}, fiche UNESCO {annee_fiche} "
-                            "-> fiche UNESCO retenue")
-                annees = {annee_fiche}
+                annee_wikipedia = int(correction["annee_inscription"])
+                if annees and min(annees) != annee_wikipedia:
+                    avertir(f"{iso3}:{base} : Wikidata {min(annees)}, Wikipédia {annee_wikipedia} "
+                            "-> Wikipédia retenue")
+                annees = {annee_wikipedia}
             ligne = {
                 "iso3": iso3, "id_unesco": base, "categorie": site["categorie"],
                 "nom_fr": nom, "langue_nom": langue, "wikidata_qid": choisi,
@@ -373,6 +405,9 @@ def main():
                 "annee_inscription": min(annees) if annees else "",
                 "transfrontalier": "true" if len(pays_du_site[base]) > 1 else "false",
                 "lien_unesco": URL_UNESCO.format(base),
+                "source_nom": correction.get("source_nom", "") if correction.get("nom_fr") else "",
+                "source_annee": (correction.get("source_annee", "")
+                                 if correction.get("annee_inscription") else ""),
             }
             lignes.append(ligne)
             # cas délicats, pour le rapport
@@ -394,6 +429,10 @@ def main():
     sans_nom = [f"{l['iso3']}:{l['id_unesco']}" for l in lignes if not l["nom_fr"]]
     if sans_nom:
         erreurs.append(f"sites sans nom (à ajouter dans {FICHIER_CORRECTIONS.name}) : {sans_nom}")
+    venus_unesco = [f"{l['iso3']}:{l['id_unesco']}" for l in lignes
+                    if l["langue_nom"] == "unesco_fr" or "unesco.org" in l["source_nom"] + l["source_annee"]]
+    if venus_unesco:
+        erreurs.append(f"contenu encore attribué à whc.unesco.org : {venus_unesco}")
     if erreurs:
         sys.exit("Contrôles échoués, fichier non écrit :\n  - " + "\n  - ".join(erreurs))
 

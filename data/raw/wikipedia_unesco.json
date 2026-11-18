@@ -1,0 +1,2341 @@
+{
+ "date_releve": "2026-11-18",
+ "listes": {
+  "ARE": {
+   "titre": "Liste du patrimoine mondial aux Émirats arabes unis",
+   "oldid": 238118945
+  },
+  "ARG": {
+   "titre": "Liste du patrimoine mondial en Argentine",
+   "oldid": 239031900
+  },
+  "AUS": {
+   "titre": "Liste du patrimoine mondial en Australie",
+   "oldid": 241405410
+  },
+  "BRA": {
+   "titre": "Liste du patrimoine mondial au Brésil",
+   "oldid": 239048979
+  },
+  "CHN": {
+   "titre": "Liste du patrimoine mondial en Chine",
+   "oldid": 238118306
+  },
+  "CRI": {
+   "titre": "Liste du patrimoine mondial au Costa Rica",
+   "oldid": 239074077
+  },
+  "EGY": {
+   "titre": "Liste du patrimoine mondial en Égypte",
+   "oldid": 239049123
+  },
+  "ESP": {
+   "titre": "Liste du patrimoine mondial en Espagne",
+   "oldid": 239085319
+  },
+  "FRA": {
+   "titre": "Liste du patrimoine mondial en France",
+   "oldid": 239327868
+  },
+  "GBR": {
+   "titre": "Liste du patrimoine mondial au Royaume-Uni",
+   "oldid": 240072897
+  },
+  "GRC": {
+   "titre": "Liste du patrimoine mondial en Grèce",
+   "oldid": 238151963
+  },
+  "IDN": {
+   "titre": "Liste du patrimoine mondial en Indonésie",
+   "oldid": 234978302
+  },
+  "IND": {
+   "titre": "Liste du patrimoine mondial en Inde",
+   "oldid": 241429238
+  },
+  "ITA": {
+   "titre": "Liste du patrimoine mondial en Italie",
+   "oldid": 241439146
+  },
+  "JPN": {
+   "titre": "Liste du patrimoine mondial au Japon",
+   "oldid": 238125625
+  },
+  "KEN": {
+   "titre": "Liste du patrimoine mondial au Kenya",
+   "oldid": 238886383
+  },
+  "KOR": {
+   "titre": "Liste du patrimoine mondial en Corée du Sud",
+   "oldid": 238230853
+  },
+  "LAO": {
+   "titre": "Liste du patrimoine mondial au Laos",
+   "oldid": 234755608
+  },
+  "MEX": {
+   "titre": "Liste du patrimoine mondial au Mexique",
+   "oldid": 239832049
+  },
+  "SEN": {
+   "titre": "Liste du patrimoine mondial au Sénégal",
+   "oldid": 239832061
+  },
+  "THA": {
+   "titre": "Liste du patrimoine mondial en Thaïlande",
+   "oldid": 238120719
+  },
+  "TZA": {
+   "titre": "Liste du patrimoine mondial en Tanzanie",
+   "oldid": 239832337
+  },
+  "VNM": {
+   "titre": "Liste du patrimoine mondial au Vietnam",
+   "oldid": 228836364
+  }
+ },
+ "lignes": {
+  "84": [
+   {
+    "iso3": "FRA",
+    "annee": 1979,
+    "liens": [
+     "Basilique Sainte-Marie-Madeleine de Vézelay",
+     "Vézelay"
+    ]
+   }
+  ],
+  "87": [
+   {
+    "iso3": "EGY",
+    "annee": 1979,
+    "liens": [
+     "Thèbes (Égypte)",
+     "Vallée des Rois"
+    ]
+   }
+  ],
+  "156": [
+   {
+    "iso3": "TZA",
+    "annee": 1981,
+    "liens": [
+     "Parc national du Serengeti"
+    ]
+   }
+  ],
+  "162": [
+   {
+    "iso3": "FRA",
+    "annee": 1981,
+    "liens": [
+     "Cathédrale Notre-Dame d'Amiens"
+    ]
+   }
+  ],
+  "186": [
+   {
+    "iso3": "AUS",
+    "annee": 1982,
+    "liens": [
+     "Île Lord Howe"
+    ]
+   }
+  ],
+  "233": [
+   {
+    "iso3": "IND",
+    "annee": 1993,
+    "liens": [
+     "Qûtb Minâr",
+     "Delhi"
+    ]
+   }
+  ],
+  "249": [
+   {
+    "iso3": "IND",
+    "annee": 1984,
+    "liens": [
+     "Mahabalipuram"
+    ]
+   }
+  ],
+  "252": [
+   {
+    "iso3": "IND",
+    "annee": 1983,
+    "liens": [
+     "Taj Mahal"
+    ]
+   }
+  ],
+  "428": [
+   {
+    "iso3": "GBR",
+    "annee": 1987,
+    "liens": [
+     "Bath"
+    ]
+   }
+  ],
+  "438": [
+   {
+    "iso3": "CHN",
+    "annee": 1987,
+    "liens": [
+     "Grande Muraille"
+    ]
+   }
+  ],
+  "481": [
+   {
+    "iso3": "LAO",
+    "annee": 2001,
+    "liens": [
+     "Vat Phou",
+     "Champassak"
+    ]
+   }
+  ],
+  "482": [
+   {
+    "iso3": "MEX",
+    "annee": 1988,
+    "liens": [
+     "Guanajuato"
+    ]
+   }
+  ],
+  "493": [
+   {
+    "iso3": "GRC",
+    "annee": 1988,
+    "liens": [
+     "Rhodes (ville)"
+    ]
+   }
+  ],
+  "549": [
+   {
+    "iso3": "ITA",
+    "annee": 1997,
+    "liens": [
+     "Palais de Caserte",
+     "Aqueduc Carolino",
+     "San Leucio (Caserte)"
+    ]
+   }
+  ],
+  "574": [
+   {
+    "iso3": "THA",
+    "annee": 1991,
+    "liens": [
+     "Sukhothaï"
+    ]
+   }
+  ],
+  "578": [
+   {
+    "iso3": "AUS",
+    "annee": 1991,
+    "liens": [
+     "Baie Shark",
+     "Australie-Occidentale"
+    ]
+   }
+  ],
+  "642": [
+   {
+    "iso3": "IDN",
+    "annee": 1991,
+    "liens": [
+     "Temple de Prambanan"
+    ]
+   }
+  ],
+  "778": [
+   {
+    "iso3": "CHN",
+    "annee": 1996,
+    "liens": [
+     "Mont Lu"
+    ]
+   }
+  ],
+  "791": [
+   {
+    "iso3": "MEX",
+    "annee": 1996,
+    "liens": [
+     "Uxmal"
+    ]
+   }
+  ],
+  "811": [
+   {
+    "iso3": "CHN",
+    "annee": 1997,
+    "liens": [
+     "Vieille ville de Lijiang"
+    ]
+   }
+  ],
+  "876": [
+   {
+    "iso3": "ESP",
+    "annee": 1998,
+    "liens": [
+     "Alcalá de Henares"
+    ]
+   }
+  ],
+  "890": [
+   {
+    "iso3": "BRA",
+    "annee": 1999,
+    "liens": [
+     "Diamantina"
+    ]
+   }
+  ],
+  "895": [
+   {
+    "iso3": "MEX",
+    "annee": 1999,
+    "liens": [
+     "Campeche (ville)"
+    ]
+   }
+  ],
+  "941": [
+   {
+    "iso3": "GRC",
+    "annee": 1999,
+    "liens": [
+     "Mycènes",
+     "Tirynthe"
+    ]
+   }
+  ],
+  "948": [
+   {
+    "iso3": "VNM",
+    "annee": 1999,
+    "liens": [
+     "Hội An"
+    ]
+   }
+  ],
+  "951": [
+   {
+    "iso3": "VNM",
+    "annee": 2003,
+    "liens": [
+     "Parc national de Phong Nha-Kẻ Bàng"
+    ]
+   },
+   {
+    "iso3": "LAO",
+    "annee": 2025,
+    "liens": [
+     "Parc national de Phong Nha-Kẻ Bàng"
+    ]
+   }
+  ],
+  "954": [
+   {
+    "iso3": "EGY",
+    "annee": 2002,
+    "liens": [
+     "Monastère Sainte-Catherine du Sinaï"
+    ]
+   }
+  ],
+  "976": [
+   {
+    "iso3": "KOR",
+    "annee": 2000,
+    "liens": [
+     "Gyeongju"
+    ]
+   }
+  ],
+  "983": [
+   {
+    "iso3": "GBR",
+    "annee": 2000,
+    "liens": [
+     "Saint George's (Bermudes)",
+     "Bermudes"
+    ]
+   }
+  ],
+  "993": [
+   {
+    "iso3": "BRA",
+    "annee": 2001,
+    "liens": [
+     "Goiás (ville)"
+    ]
+   }
+  ],
+  "995": [
+   {
+    "iso3": "ARG",
+    "annee": 2000,
+    "liens": [
+     "Córdoba (Argentine)"
+    ]
+   }
+  ],
+  "999": [
+   {
+    "iso3": "BRA",
+    "annee": 2000,
+    "liens": [
+     "Pantanal"
+    ]
+   }
+  ],
+  "1055": [
+   {
+    "iso3": "KEN",
+    "annee": 2001,
+    "liens": [
+     "Lamu (ville)"
+    ]
+   }
+  ],
+  "1084": [
+   {
+    "iso3": "GBR",
+    "annee": 2003,
+    "liens": [
+     "Jardins botaniques royaux de Kew"
+    ]
+   }
+  ],
+  "1193": [
+   {
+    "iso3": "JPN",
+    "annee": 2005,
+    "liens": [
+     "Péninsule de Shiretoko"
+    ]
+   }
+  ],
+  "1194": [
+   {
+    "iso3": "IDN",
+    "annee": 2012,
+    "liens": [
+     "Bali (province)",
+     "Subak",
+     "Tri Hita Karana"
+    ]
+   }
+  ],
+  "1226": [
+   {
+    "iso3": "SEN",
+    "annee": 2006,
+    "liens": [
+     "Cercles mégalithiques de Sénégambie"
+    ]
+   }
+  ],
+  "1274": [
+   {
+    "iso3": "MEX",
+    "annee": 2008,
+    "liens": [
+     "San Miguel de Allende",
+     "Sanctuaire de Jésus Nazareno de Atotonilco"
+    ]
+   }
+  ],
+  "1317": [
+   {
+    "iso3": "FRA",
+    "annee": 2010,
+    "liens": [
+     "Pitons, cirques et remparts de l'île de La Réunion"
+    ]
+   }
+  ],
+  "1343": [
+   {
+    "iso3": "ARE",
+    "annee": 2011,
+    "liens": [
+     "Al-Aïn"
+    ]
+   }
+  ],
+  "1453": [
+   {
+    "iso3": "CRI",
+    "annee": 2014,
+    "liens": [
+     "Sphères mégalithiques du Costa Rica"
+    ]
+   }
+  ],
+  "1500": [
+   {
+    "iso3": "GBR",
+    "annee": 2016,
+    "liens": [
+     "Grotte de Gorham"
+    ]
+   }
+  ],
+  "1513": [
+   {
+    "iso3": "IND",
+    "annee": 2016,
+    "liens": [
+     "Parc national de Khangchendzonga"
+    ]
+   }
+  ],
+  "1559": [
+   {
+    "iso3": "CHN",
+    "annee": 2018,
+    "liens": [
+     "Réserve naturelle de Fanjingshan"
+    ]
+   }
+  ],
+  "1577": [
+   {
+    "iso3": "AUS",
+    "annee": 2019,
+    "liens": []
+   }
+  ],
+  "1592": [
+   {
+    "iso3": "CHN",
+    "annee": 2019,
+    "liens": [
+     "Culture de Liangzhu"
+    ]
+   }
+  ],
+  "1618": [
+   {
+    "iso3": "ESP",
+    "annee": 2021,
+    "liens": [
+     "Paseo de la Castellana",
+     "Parc du Retiro"
+    ]
+   }
+  ],
+  "1671": [
+   {
+    "iso3": "IDN",
+    "annee": 2023,
+    "liens": [
+     "Yogyakarta"
+    ]
+   }
+  ],
+  "1681": [
+   {
+    "iso3": "ARG",
+    "annee": 2023,
+    "liens": [
+     "Escuela de Mecánica de la Armada",
+     "Centre clandestin de détention"
+    ]
+   }
+  ],
+  "1698": [
+   {
+    "iso3": "JPN",
+    "annee": 2024,
+    "liens": [
+     "Mines d'or de Sado",
+     "Sadoga-shima"
+    ]
+   }
+  ],
+  "1708": [
+   {
+    "iso3": "ITA",
+    "annee": 2024,
+    "liens": [
+     "Voie Appienne"
+    ]
+   }
+  ],
+  "1709": [
+   {
+    "iso3": "AUS",
+    "annee": 2025,
+    "liens": [
+     "Paysage culturel",
+     "Murujuga"
+    ]
+   }
+  ],
+  "1732": [
+   {
+    "iso3": "VNM",
+    "annee": 2025,
+    "liens": []
+   }
+  ],
+  "1747": [
+   {
+    "iso3": "BRA",
+    "annee": 2025,
+    "liens": [
+     "Parc national des Cavernas do Peruaçu"
+    ]
+   }
+  ]
+ },
+ "articles": {
+  "Al-Aïn": {
+   "oldid": 237355601,
+   "element": "Q234600",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Alcalá de Henares": {
+   "oldid": 238219529,
+   "element": "Q46940",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Aqueduc Carolino": {
+   "oldid": 228357424,
+   "element": "Q841554",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1997
+   ]
+  },
+  "Australie-Occidentale": {
+   "oldid": 240144838,
+   "element": "Q3206",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Badaling": {
+   "oldid": 241267176,
+   "element": "Q798826",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1987
+   ]
+  },
+  "Baie Shark": {
+   "oldid": 231165465,
+   "element": "Q217487",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Bali (province)": {
+   "oldid": 239964165,
+   "element": "Q3125978",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Basilique Sainte-Marie-Madeleine de Vézelay": {
+   "oldid": 241385660,
+   "element": "Q217452",
+   "homonymie": false,
+   "infobox": [
+    [
+     "84",
+     "1979"
+    ]
+   ],
+   "categories_annee": [
+    1979,
+    1998
+   ]
+  },
+  "Bath": {
+   "oldid": 241026710,
+   "element": "Q22889",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1987
+   ]
+  },
+  "Bermudes": {
+   "oldid": 239482108,
+   "element": "Q23635",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Budj Bim": {
+   "oldid": 225469445,
+   "element": "Q260465",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Campeche (ville)": {
+   "oldid": 237460102,
+   "element": "Q61301",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Cathédrale Notre-Dame d'Amiens": {
+   "oldid": 241027816,
+   "element": "Q106934",
+   "homonymie": false,
+   "infobox": [
+    [
+     "162",
+     "1981"
+    ]
+   ],
+   "categories_annee": [
+    1981,
+    1998
+   ]
+  },
+  "Centre clandestin de détention": {
+   "oldid": 237679602,
+   "element": "Q2944950",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Cercles de pierres de Sine Ngayène": {
+   "oldid": 226109989,
+   "element": "Q2946551",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Cercles de pierres de Wanar": {
+   "oldid": 214454084,
+   "element": "Q2946554",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Cercles mégalithiques de Sénégambie": {
+   "oldid": 237778160,
+   "element": "Q846901",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Champassak": {
+   "oldid": 216686720,
+   "element": "Q611444",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Culture de Liangzhu": {
+   "oldid": 240500374,
+   "element": "Q1204909",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Córdoba (Argentine)": {
+   "oldid": 238982858,
+   "element": "Q44210",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Delhi": {
+   "oldid": 241432257,
+   "element": "Q1353",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Diamantina": {
+   "oldid": 239292513,
+   "element": "Q34028",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Escuela de Mecánica de la Armada": {
+   "oldid": 238102836,
+   "element": "Q1292306",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2023
+   ]
+  },
+  "Estancia Santa Catalina": {
+   "oldid": 238935501,
+   "element": "Q2760489",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "Estancia d'Alta Gracia": {
+   "oldid": 238935499,
+   "element": "Q3899974",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "Estancia jésuite de Caroya": {
+   "oldid": 238935503,
+   "element": "Q5848754",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "Fort Sainte-Catherine (Bermudes)": {
+   "oldid": 237129446,
+   "element": "Q8564779",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Fort Victoria": {
+   "oldid": 237129240,
+   "element": "Q17510883",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Fort de Jiayuguan": {
+   "oldid": 241269181,
+   "element": "Q1193122",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1987
+   ]
+  },
+  "Goiás (ville)": {
+   "oldid": 225646615,
+   "element": "Q427697",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Grande Muraille": {
+   "oldid": 241156230,
+   "element": "Q12501",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1987
+   ]
+  },
+  "Grotte de Gorham": {
+   "oldid": 236149997,
+   "element": "Q1355749",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2016
+   ]
+  },
+  "Guanajuato": {
+   "oldid": 238341049,
+   "element": "Q61306",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Gyeongju": {
+   "oldid": 238935730,
+   "element": "Q42097",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "Hội An": {
+   "oldid": 240225268,
+   "element": "Q36160",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1999
+   ]
+  },
+  "Jardins botaniques royaux de Kew": {
+   "oldid": 241445916,
+   "element": "Q188617",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2003
+   ]
+  },
+  "Kabah": {
+   "oldid": 239579938,
+   "element": "Q325468",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Karnak": {
+   "oldid": 224318837,
+   "element": "Q522862",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Labná": {
+   "oldid": 239578217,
+   "element": "Q1522451",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Lac Batur": {
+   "oldid": 217454260,
+   "element": "Q13511216",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Lamu (ville)": {
+   "oldid": 238497399,
+   "element": "Q272799",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Mahabalipuram": {
+   "oldid": 238194914,
+   "element": "Q208000",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1984
+   ]
+  },
+  "Mines d'or de Sado": {
+   "oldid": 235506266,
+   "element": "Q11248197",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2024
+   ]
+  },
+  "Monastère Sainte-Catherine du Sinaï": {
+   "oldid": 241198087,
+   "element": "Q185362",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Mont Lu": {
+   "oldid": 241271430,
+   "element": "Q622616",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1996
+   ]
+  },
+  "Murujuga": {
+   "oldid": 240471680,
+   "element": "Q269163",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2025
+   ]
+  },
+  "Mycènes": {
+   "oldid": 238910262,
+   "element": "Q132564",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1999
+   ]
+  },
+  "Namsan (Gyeongju)": {
+   "oldid": 225464315,
+   "element": "Q489229",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Nécropole thébaine": {
+   "oldid": 238420316,
+   "element": "Q29223",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Palais de Caserte": {
+   "oldid": 241394566,
+   "element": "Q327983",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1997
+   ]
+  },
+  "Pantanal": {
+   "oldid": 238935647,
+   "element": "Q157603",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "Parc du Retiro": {
+   "oldid": 238198465,
+   "element": "Q1131807",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2021
+   ]
+  },
+  "Parc national de Khangchendzonga": {
+   "oldid": 239298733,
+   "element": "Q2605019",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2016
+   ]
+  },
+  "Parc national de Phong Nha-Kẻ Bàng": {
+   "oldid": 241057565,
+   "element": "Q23513",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Parc national des Cavernas do Peruaçu": {
+   "oldid": 228331630,
+   "element": "Q1051873",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Parc national du Serengeti": {
+   "oldid": 240177100,
+   "element": "Q11812902",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1981
+   ]
+  },
+  "Paseo de la Castellana": {
+   "oldid": 238198481,
+   "element": "Q1473674",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2021
+   ]
+  },
+  "Paseo del Prado et Buen Retiro, un paysage des arts et des sciences": {
+   "oldid": 216970687,
+   "element": "Q107675480",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Passe de Shanhai": {
+   "oldid": 241267892,
+   "element": "Q1048381",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1987
+   ]
+  },
+  "Paysage culturel": {
+   "oldid": 238886554,
+   "element": "Q1129474",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Pitons, cirques et remparts de l'île de La Réunion": {
+   "oldid": 234835369,
+   "element": "Q2710055",
+   "homonymie": false,
+   "infobox": [
+    [
+     "1317",
+     "2010"
+    ]
+   ],
+   "categories_annee": []
+  },
+  "Pura Ulun Danu Batur": {
+   "oldid": 168275156,
+   "element": "Q2390081",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Péninsule de Shiretoko": {
+   "oldid": 223569643,
+   "element": "Q629238",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Qûtb Minâr": {
+   "oldid": 238594399,
+   "element": "Q187635",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1993
+   ]
+  },
+  "Rhodes (ville)": {
+   "oldid": 239449173,
+   "element": "Q188731",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1988
+   ]
+  },
+  "Réserve naturelle de Fanjingshan": {
+   "oldid": 238848353,
+   "element": "Q30296178",
+   "homonymie": false,
+   "infobox": [
+    [
+     "1559",
+     "2018"
+    ]
+   ],
+   "categories_annee": [
+    2018
+   ]
+  },
+  "Sadoga-shima": {
+   "oldid": 240757180,
+   "element": "Q998623",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Saint George's (Bermudes)": {
+   "oldid": 238935936,
+   "element": "Q28063",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2000
+   ]
+  },
+  "San Leucio (Caserte)": {
+   "oldid": 228180966,
+   "element": "Q846499",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1997
+   ]
+  },
+  "San Miguel de Allende": {
+   "oldid": 233495248,
+   "element": "Q753891",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Sanctuaire de Jésus Nazareno de Atotonilco": {
+   "oldid": 224259821,
+   "element": "Q1510389",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Sayil": {
+   "oldid": 234251982,
+   "element": "Q1419214",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Sphères mégalithiques du Costa Rica": {
+   "oldid": 238164563,
+   "element": "Q282275",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2014
+   ]
+  },
+  "Subak": {
+   "oldid": 240721367,
+   "element": "Q4315",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2012
+   ]
+  },
+  "Sukhothaï": {
+   "oldid": 239335409,
+   "element": "Q423654",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1991
+   ]
+  },
+  "Taj Mahal": {
+   "oldid": 240695883,
+   "element": "Q9141",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Temple d'Amon (Louxor)": {
+   "oldid": 237107412,
+   "element": "Q319841",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Temple de Prambanan": {
+   "oldid": 238542008,
+   "element": "Q47721",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1991
+   ]
+  },
+  "Thèbes (Égypte)": {
+   "oldid": 233781706,
+   "element": "Q101583",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1979
+   ]
+  },
+  "Tirynthe": {
+   "oldid": 238910265,
+   "element": "Q217379",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1999
+   ]
+  },
+  "Tri Hita Karana": {
+   "oldid": 192284861,
+   "element": "Q4462914",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Uxmal": {
+   "oldid": 241192804,
+   "element": "Q213232",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1996
+   ]
+  },
+  "Vallée des Rois": {
+   "oldid": 240885388,
+   "element": "Q133423",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1979
+   ]
+  },
+  "Vat Phou": {
+   "oldid": 236127744,
+   "element": "Q579860",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Vieille ville de Lijiang": {
+   "oldid": 241268313,
+   "element": "Q618394",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1997
+   ]
+  },
+  "Voie Appienne": {
+   "oldid": 241275084,
+   "element": "Q189417",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    2024
+   ]
+  },
+  "Vézelay": {
+   "oldid": 240165881,
+   "element": "Q204979",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Yogyakarta": {
+   "oldid": 232245677,
+   "element": "Q7568",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  },
+  "Étang du Dragon noir": {
+   "oldid": 238857779,
+   "element": "Q4920688",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": [
+    1997
+   ]
+  },
+  "Île Lord Howe": {
+   "oldid": 240209960,
+   "element": "Q104784",
+   "homonymie": false,
+   "infobox": [],
+   "categories_annee": []
+  }
+ },
+ "elements": {
+  "Q1028566": {
+   "frwiki": "",
+   "p757": [
+    "1194rev-005"
+   ]
+  },
+  "Q1048381": {
+   "frwiki": "Passe de Shanhai",
+   "p757": [
+    "438-002"
+   ]
+  },
+  "Q106934": {
+   "frwiki": "Cathédrale Notre-Dame d'Amiens",
+   "p757": [
+    "162",
+    "868-062",
+    "162bis"
+   ]
+  },
+  "Q1074330": {
+   "frwiki": "",
+   "p757": [
+    "233"
+   ]
+  },
+  "Q107675480": {
+   "frwiki": "Paseo del Prado et Buen Retiro, un paysage des arts et des sciences",
+   "p757": [
+    "1618"
+   ]
+  },
+  "Q11675923": {
+   "frwiki": "",
+   "p757": [
+    "1698-003"
+   ]
+  },
+  "Q11812902": {
+   "frwiki": "Parc national du Serengeti",
+   "p757": [
+    "156"
+   ]
+  },
+  "Q118342381": {
+   "frwiki": "",
+   "p757": [
+    "1698-001"
+   ]
+  },
+  "Q1193122": {
+   "frwiki": "Fort de Jiayuguan",
+   "p757": [
+    "438-003"
+   ]
+  },
+  "Q121297971": {
+   "frwiki": "",
+   "p757": [
+    "1343-001"
+   ]
+  },
+  "Q121298169": {
+   "frwiki": "",
+   "p757": [
+    "1343-002"
+   ]
+  },
+  "Q127378385": {
+   "frwiki": "",
+   "p757": [
+    "1698"
+   ]
+  },
+  "Q127947880": {
+   "frwiki": "",
+   "p757": [
+    "1698-002"
+   ]
+  },
+  "Q1292306": {
+   "frwiki": "Escuela de Mecánica de la Armada",
+   "p757": [
+    "1681"
+   ]
+  },
+  "Q129503044": {
+   "frwiki": "",
+   "p757": [
+    "1708"
+   ]
+  },
+  "Q132564": {
+   "frwiki": "Mycènes",
+   "p757": [
+    "941-001"
+   ]
+  },
+  "Q13511216": {
+   "frwiki": "Lac Batur",
+   "p757": [
+    "1194rev-002"
+   ]
+  },
+  "Q1395364": {
+   "frwiki": "",
+   "p757": [
+    "574-002"
+   ]
+  },
+  "Q141298543": {
+   "frwiki": "",
+   "p757": [
+    "87"
+   ]
+  },
+  "Q141673269": {
+   "frwiki": "",
+   "p757": [
+    "1747"
+   ]
+  },
+  "Q1419214": {
+   "frwiki": "Sayil",
+   "p757": [
+    "791-002"
+   ]
+  },
+  "Q1510389": {
+   "frwiki": "Sanctuaire de Jésus Nazareno de Atotonilco",
+   "p757": [
+    "1274-002"
+   ]
+  },
+  "Q1522451": {
+   "frwiki": "Labná",
+   "p757": [
+    "791-004"
+   ]
+  },
+  "Q15613314": {
+   "frwiki": "",
+   "p757": [
+    "1274",
+    "1351-015"
+   ]
+  },
+  "Q157603": {
+   "frwiki": "Pantanal",
+   "p757": [
+    "999"
+   ]
+  },
+  "Q15904183": {
+   "frwiki": "",
+   "p757": [
+    "1592"
+   ]
+  },
+  "Q16481408": {
+   "frwiki": "",
+   "p757": [
+    "1732"
+   ]
+  },
+  "Q16564811": {
+   "frwiki": "",
+   "p757": [
+    "995-003"
+   ]
+  },
+  "Q16564814": {
+   "frwiki": "",
+   "p757": [
+    "995-006"
+   ]
+  },
+  "Q16892306": {
+   "frwiki": "",
+   "p757": [
+    "1343-007"
+   ]
+  },
+  "Q16945635": {
+   "frwiki": "",
+   "p757": [
+    "941"
+   ]
+  },
+  "Q16962666": {
+   "frwiki": "",
+   "p757": [
+    "549rev"
+   ]
+  },
+  "Q17134727": {
+   "frwiki": "",
+   "p757": [
+    "1194rev"
+   ]
+  },
+  "Q17208861": {
+   "frwiki": "",
+   "p757": [
+    "1193"
+   ]
+  },
+  "Q17510883": {
+   "frwiki": "Fort Victoria",
+   "p757": [
+    "983-017"
+   ]
+  },
+  "Q1869866": {
+   "frwiki": "",
+   "p757": [
+    "186"
+   ]
+  },
+  "Q18748726": {
+   "frwiki": "Royal Botanic Gardens, Kew",
+   "p757": [
+    "1084"
+   ]
+  },
+  "Q188617": {
+   "frwiki": "Jardins botaniques royaux de Kew",
+   "p757": [
+    "1084"
+   ]
+  },
+  "Q189417": {
+   "frwiki": "Voie Appienne",
+   "p757": [
+    "1708"
+   ]
+  },
+  "Q20400017": {
+   "frwiki": "",
+   "p757": [
+    "1343-011"
+   ]
+  },
+  "Q213232": {
+   "frwiki": "Uxmal",
+   "p757": [
+    "791-001"
+   ]
+  },
+  "Q217379": {
+   "frwiki": "Tirynthe",
+   "p757": [
+    "941-002"
+   ]
+  },
+  "Q217452": {
+   "frwiki": "Basilique Sainte-Marie-Madeleine de Vézelay",
+   "p757": [
+    "84"
+   ]
+  },
+  "Q22889": {
+   "frwiki": "Bath",
+   "p757": [
+    "428"
+   ]
+  },
+  "Q23513": {
+   "frwiki": "Parc national de Phong Nha-Kẻ Bàng",
+   "p757": [
+    "951",
+    "951bis"
+   ]
+  },
+  "Q2390081": {
+   "frwiki": "Pura Ulun Danu Batur",
+   "p757": [
+    "1194rev-001"
+   ]
+  },
+  "Q24434043": {
+   "frwiki": "",
+   "p757": [
+    "1559"
+   ]
+  },
+  "Q2468771": {
+   "frwiki": "",
+   "p757": [
+    "954"
+   ]
+  },
+  "Q25386203": {
+   "frwiki": "",
+   "p757": [
+    "1709"
+   ]
+  },
+  "Q260465": {
+   "frwiki": "Budj Bim",
+   "p757": [
+    "1577"
+   ]
+  },
+  "Q2605019": {
+   "frwiki": "Parc national de Khangchendzonga",
+   "p757": [
+    "1513"
+   ]
+  },
+  "Q2710055": {
+   "frwiki": "Pitons, cirques et remparts de l'île de La Réunion",
+   "p757": [
+    "1317"
+   ]
+  },
+  "Q272799": {
+   "frwiki": "Lamu (ville)",
+   "p757": [
+    "1055"
+   ]
+  },
+  "Q2760489": {
+   "frwiki": "Estancia Santa Catalina",
+   "p757": [
+    "995-004"
+   ]
+  },
+  "Q28663704": {
+   "frwiki": "",
+   "p757": [
+    "1681"
+   ]
+  },
+  "Q2888517": {
+   "frwiki": "",
+   "p757": [
+    "1453-001"
+   ]
+  },
+  "Q29223": {
+   "frwiki": "Nécropole thébaine",
+   "p757": [
+    "87-003"
+   ]
+  },
+  "Q2946551": {
+   "frwiki": "Cercles de pierres de Sine Ngayène",
+   "p757": [
+    "1226-003"
+   ]
+  },
+  "Q2946554": {
+   "frwiki": "Cercles de pierres de Wanar",
+   "p757": [
+    "1226-004"
+   ]
+  },
+  "Q319841": {
+   "frwiki": "Temple d'Amon (Louxor)",
+   "p757": [
+    "87-002"
+   ]
+  },
+  "Q325468": {
+   "frwiki": "Kabah",
+   "p757": [
+    "791-003"
+   ]
+  },
+  "Q3522747": {
+   "frwiki": "",
+   "p757": [
+    "249"
+   ]
+  },
+  "Q36160": {
+   "frwiki": "Hội An",
+   "p757": []
+  },
+  "Q38153585": {
+   "frwiki": "",
+   "p757": [
+    "1577"
+   ]
+  },
+  "Q38162559": {
+   "frwiki": "",
+   "p757": [
+    "1577"
+   ]
+  },
+  "Q38167074": {
+   "frwiki": "",
+   "p757": [
+    "578"
+   ]
+  },
+  "Q3888860": {
+   "frwiki": "",
+   "p757": [
+    "481"
+   ]
+  },
+  "Q3899974": {
+   "frwiki": "Estancia d'Alta Gracia",
+   "p757": [
+    "995-002"
+   ]
+  },
+  "Q3962347": {
+   "frwiki": "",
+   "p757": [
+    "1343"
+   ]
+  },
+  "Q4047": {
+   "frwiki": "",
+   "p757": [
+    "778"
+   ]
+  },
+  "Q423654": {
+   "frwiki": "Sukhothaï",
+   "p757": [
+    "574-001"
+   ]
+  },
+  "Q4703456": {
+   "frwiki": "",
+   "p757": [
+    "1343-004"
+   ]
+  },
+  "Q47531644": {
+   "frwiki": "",
+   "p757": [
+    "876"
+   ]
+  },
+  "Q47721": {
+   "frwiki": "Temple de Prambanan",
+   "p757": [
+    "642"
+   ]
+  },
+  "Q489229": {
+   "frwiki": "Namsan (Gyeongju)",
+   "p757": [
+    "976-001"
+   ]
+  },
+  "Q4920688": {
+   "frwiki": "Étang du Dragon noir",
+   "p757": [
+    "811-002"
+   ]
+  },
+  "Q495241": {
+   "frwiki": "",
+   "p757": [
+    "976"
+   ]
+  },
+  "Q4986623": {
+   "frwiki": "",
+   "p757": [
+    "428"
+   ]
+  },
+  "Q5055056": {
+   "frwiki": "",
+   "p757": [
+    "1747"
+   ]
+  },
+  "Q51100199": {
+   "frwiki": "",
+   "p757": [
+    "1055"
+   ]
+  },
+  "Q522862": {
+   "frwiki": "Karnak",
+   "p757": [
+    "87-001"
+   ]
+  },
+  "Q5352180": {
+   "frwiki": "",
+   "p757": [
+    "1453-003"
+   ]
+  },
+  "Q56275601": {
+   "frwiki": "",
+   "p757": [
+    "1343-013"
+   ]
+  },
+  "Q56276755": {
+   "frwiki": "",
+   "p757": [
+    "1343-015"
+   ]
+  },
+  "Q5762131": {
+   "frwiki": "",
+   "p757": [
+    "895"
+   ]
+  },
+  "Q5765542": {
+   "frwiki": "",
+   "p757": [
+    "951"
+   ]
+  },
+  "Q5848754": {
+   "frwiki": "Estancia jésuite de Caroya",
+   "p757": [
+    "995-005"
+   ]
+  },
+  "Q5965459": {
+   "frwiki": "",
+   "p757": [
+    "948"
+   ]
+  },
+  "Q5994983": {
+   "frwiki": "",
+   "p757": [
+    "995"
+   ]
+  },
+  "Q60346199": {
+   "frwiki": "",
+   "p757": [
+    "1500"
+   ]
+  },
+  "Q61306": {
+   "frwiki": "Guanajuato",
+   "p757": [
+    "482",
+    "1351-016"
+   ]
+  },
+  "Q618394": {
+   "frwiki": "Vieille ville de Lijiang",
+   "p757": [
+    "811-001"
+   ]
+  },
+  "Q64401449": {
+   "frwiki": "",
+   "p757": [
+    "84",
+    "84bis"
+   ]
+  },
+  "Q64401614": {
+   "frwiki": "",
+   "p757": [
+    "84-001"
+   ]
+  },
+  "Q64401905": {
+   "frwiki": "",
+   "p757": [
+    "84-002"
+   ]
+  },
+  "Q64816567": {
+   "frwiki": "",
+   "p757": [
+    "983-001"
+   ]
+  },
+  "Q64816691": {
+   "frwiki": "",
+   "p757": [
+    "983-002"
+   ]
+  },
+  "Q64816692": {
+   "frwiki": "",
+   "p757": [
+    "983-003"
+   ]
+  },
+  "Q64816693": {
+   "frwiki": "",
+   "p757": [
+    "983-004"
+   ]
+  },
+  "Q64816694": {
+   "frwiki": "",
+   "p757": [
+    "983-005"
+   ]
+  },
+  "Q64816696": {
+   "frwiki": "",
+   "p757": [
+    "983-007"
+   ]
+  },
+  "Q64816697": {
+   "frwiki": "",
+   "p757": [
+    "983-008"
+   ]
+  },
+  "Q64816698": {
+   "frwiki": "",
+   "p757": [
+    "983-009"
+   ]
+  },
+  "Q64816699": {
+   "frwiki": "",
+   "p757": [
+    "983-010"
+   ]
+  },
+  "Q64816700": {
+   "frwiki": "",
+   "p757": [
+    "983-011"
+   ]
+  },
+  "Q64816701": {
+   "frwiki": "",
+   "p757": [
+    "983-012"
+   ]
+  },
+  "Q64816702": {
+   "frwiki": "",
+   "p757": [
+    "983-013"
+   ]
+  },
+  "Q64816703": {
+   "frwiki": "",
+   "p757": [
+    "983-014"
+   ]
+  },
+  "Q64816705": {
+   "frwiki": "",
+   "p757": [
+    "983-015"
+   ]
+  },
+  "Q64816706": {
+   "frwiki": "",
+   "p757": [
+    "983-018"
+   ]
+  },
+  "Q64816707": {
+   "frwiki": "",
+   "p757": [
+    "983-019"
+   ]
+  },
+  "Q64816708": {
+   "frwiki": "",
+   "p757": [
+    "983-020"
+   ]
+  },
+  "Q64816709": {
+   "frwiki": "",
+   "p757": [
+    "983-021"
+   ]
+  },
+  "Q64816710": {
+   "frwiki": "",
+   "p757": [
+    "983-022"
+   ]
+  },
+  "Q64816711": {
+   "frwiki": "",
+   "p757": [
+    "983-023"
+   ]
+  },
+  "Q64816712": {
+   "frwiki": "",
+   "p757": [
+    "983-024"
+   ]
+  },
+  "Q65114170": {
+   "frwiki": "",
+   "p757": [
+    "1453"
+   ]
+  },
+  "Q65114345": {
+   "frwiki": "",
+   "p757": [
+    "1453-002"
+   ]
+  },
+  "Q65114438": {
+   "frwiki": "",
+   "p757": [
+    "1453-004"
+   ]
+  },
+  "Q65455940": {
+   "frwiki": "",
+   "p757": [
+    "791"
+   ]
+  },
+  "Q65961372": {
+   "frwiki": "",
+   "p757": [
+    "438"
+   ]
+  },
+  "Q65964838": {
+   "frwiki": "",
+   "p757": [
+    "811",
+    "811bis"
+   ]
+  },
+  "Q65965238": {
+   "frwiki": "",
+   "p757": [
+    "811-004"
+   ]
+  },
+  "Q65998809": {
+   "frwiki": "",
+   "p757": [
+    "249-001"
+   ]
+  },
+  "Q65998810": {
+   "frwiki": "",
+   "p757": [
+    "249-002"
+   ]
+  },
+  "Q65998811": {
+   "frwiki": "",
+   "p757": [
+    "249-003"
+   ]
+  },
+  "Q66023239": {
+   "frwiki": "",
+   "p757": [
+    "1194rev-003"
+   ]
+  },
+  "Q66023240": {
+   "frwiki": "",
+   "p757": [
+    "1194rev-004"
+   ]
+  },
+  "Q66051672": {
+   "frwiki": "",
+   "p757": [
+    "1592-001"
+   ]
+  },
+  "Q66051676": {
+   "frwiki": "",
+   "p757": [
+    "1592-002"
+   ]
+  },
+  "Q66051680": {
+   "frwiki": "",
+   "p757": [
+    "1592-003"
+   ]
+  },
+  "Q66051686": {
+   "frwiki": "",
+   "p757": [
+    "1592-004"
+   ]
+  },
+  "Q66197428": {
+   "frwiki": "",
+   "p757": [
+    "976-001"
+   ]
+  },
+  "Q66197431": {
+   "frwiki": "",
+   "p757": [
+    "976-002"
+   ]
+  },
+  "Q66197435": {
+   "frwiki": "",
+   "p757": [
+    "976-003"
+   ]
+  },
+  "Q66197439": {
+   "frwiki": "",
+   "p757": [
+    "976-004"
+   ]
+  },
+  "Q66197443": {
+   "frwiki": "",
+   "p757": [
+    "976-005"
+   ]
+  },
+  "Q66207258": {
+   "frwiki": "",
+   "p757": [
+    "1343-003"
+   ]
+  },
+  "Q66207282": {
+   "frwiki": "",
+   "p757": [
+    "1343-005"
+   ]
+  },
+  "Q66207286": {
+   "frwiki": "",
+   "p757": [
+    "1343-006"
+   ]
+  },
+  "Q66207318": {
+   "frwiki": "",
+   "p757": [
+    "1343-008"
+   ]
+  },
+  "Q66207325": {
+   "frwiki": "",
+   "p757": [
+    "1343-009"
+   ]
+  },
+  "Q66207331": {
+   "frwiki": "",
+   "p757": [
+    "1343-010"
+   ]
+  },
+  "Q66207355": {
+   "frwiki": "",
+   "p757": [
+    "1343-012"
+   ]
+  },
+  "Q66207386": {
+   "frwiki": "",
+   "p757": [
+    "1343-014"
+   ]
+  },
+  "Q66207409": {
+   "frwiki": "",
+   "p757": [
+    "1343-016"
+   ]
+  },
+  "Q66207417": {
+   "frwiki": "",
+   "p757": [
+    "1343-017"
+   ]
+  },
+  "Q66545466": {
+   "frwiki": "",
+   "p757": [
+    "1194"
+   ]
+  },
+  "Q66582204": {
+   "frwiki": "",
+   "p757": [
+    "1194"
+   ]
+  },
+  "Q680065": {
+   "frwiki": "",
+   "p757": [
+    "574-003"
+   ]
+  },
+  "Q753891": {
+   "frwiki": "San Miguel de Allende",
+   "p757": [
+    "1274-001"
+   ]
+  },
+  "Q7587704": {
+   "frwiki": "",
+   "p757": [
+    "983-006"
+   ]
+  },
+  "Q7865260": {
+   "frwiki": "",
+   "p757": [
+    "983"
+   ]
+  },
+  "Q798826": {
+   "frwiki": "Badaling",
+   "p757": [
+    "438-001"
+   ]
+  },
+  "Q8343760": {
+   "frwiki": "",
+   "p757": [
+    "890"
+   ]
+  },
+  "Q8343761": {
+   "frwiki": "",
+   "p757": [
+    "993"
+   ]
+  },
+  "Q837642": {
+   "frwiki": "",
+   "p757": [
+    "995"
+   ]
+  },
+  "Q84403674": {
+   "frwiki": "",
+   "p757": [
+    "642"
+   ]
+  },
+  "Q8564779": {
+   "frwiki": "Fort Sainte-Catherine (Bermudes)",
+   "p757": [
+    "983-016"
+   ]
+  },
+  "Q865097": {
+   "frwiki": "",
+   "p757": [
+    "574"
+   ]
+  },
+  "Q876685": {
+   "frwiki": "",
+   "p757": [
+    "493"
+   ]
+  },
+  "Q9141": {
+   "frwiki": "Taj Mahal",
+   "p757": [
+    "252"
+   ]
+  },
+  "Q96012243": {
+   "frwiki": "",
+   "p757": [
+    "1671"
+   ]
+  },
+  "Q98769058": {
+   "frwiki": "",
+   "p757": [
+    "1226"
+   ]
+  },
+  "Q99237891": {
+   "frwiki": "",
+   "p757": [
+    "999"
+   ]
+  }
+ }
+}

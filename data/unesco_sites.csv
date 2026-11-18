@@ -1,736 +1,736 @@
-iso3,id_unesco,categorie,nom_fr,langue_nom,wikidata_qid,regle_choix,departage,annee_inscription,transfrontalier,lien_unesco
-FRA,80,culturel,Mont-Saint-Michel et sa baie,fr,Q17117964,exact,aucun,1979,false,https://whc.unesco.org/fr/list/80
-FRA,81,culturel,cathédrale Notre-Dame de Chartres,fr,Q180274,exact,aucun,1979,false,https://whc.unesco.org/fr/list/81
-FRA,83,culturel,palais et parc de Versailles,fr,Q3034552,exact,partie_de,1979,false,https://whc.unesco.org/fr/list/83
-FRA,84,culturel,basilique et colline de Vézelay,fr,Q64401449,exact,titre_unesco,1979,false,https://whc.unesco.org/fr/list/84
-FRA,85,culturel,sites préhistoriques et grottes ornées de la vallée de la Vézère,fr,Q463159,exact,aucun,1979,false,https://whc.unesco.org/fr/list/85
-FRA,160,culturel,château de Fontainebleau,fr,Q201428,exact,aucun,1981,false,https://whc.unesco.org/fr/list/160
-FRA,162,culturel,cathédrale Notre-Dame d'Amiens,fr,Q106934,exact,aucun,1981,false,https://whc.unesco.org/fr/list/162
-FRA,163,culturel,théâtre antique et ses abords et « Arc de Triomphe » d'Orange,fr,Q15726321,exact,aucun,1981,false,https://whc.unesco.org/fr/list/163
-FRA,164,culturel,Monuments romains et romans d'Arles,fr,Q1279597,exact,aucun,1981,false,https://whc.unesco.org/fr/list/164
-FRA,165,culturel,abbaye de Fontenay,fr,Q464918,exact,aucun,1981,false,https://whc.unesco.org/fr/list/165
-FRA,203,culturel,"De la grande saline de Salins-les-Bains à la saline royale d’Arc-et-Senans, la production du sel ignigène",fr,Q15726441,exact,aucun,1982,false,https://whc.unesco.org/fr/list/203
-FRA,228,culturel,Centre historique d’Avignon,fr,Q15241016,revision,aucun,1995,false,https://whc.unesco.org/fr/list/228
-FRA,229,culturel,"Places Stanislas, de la Carrière et d'Alliance",fr,Q15728409,exact,aucun,1983,false,https://whc.unesco.org/fr/list/229
-FRA,230,culturel,Saint-Savin,fr,Q738657,exact,aucun,1983,false,https://whc.unesco.org/fr/list/230
-FRA,258,naturel,"Golfe de Porto : calanche de Piana, golfe de Girolata, réserve de Scandola",fr,Q15728421,exact,aucun,1983,false,https://whc.unesco.org/fr/list/258
-FRA,344,culturel,pont du Gard,fr,Q189764,exact,aucun,1985,false,https://whc.unesco.org/fr/list/344
-FRA,345,culturel,cité de Carcassonne,fr,Q389269,exact,aucun,1997,false,https://whc.unesco.org/fr/list/345
-FRA,495,culturel,"Strasbourg, Grande-Île et Neustadt",fr,Q55523908,exact,aucun,1988,false,https://whc.unesco.org/fr/list/495
-FRA,600,culturel,rives de la Seine à Paris,fr,Q2233532,exact,aucun,1991,false,https://whc.unesco.org/fr/list/600
-FRA,601,culturel,"cathédrale Notre-Dame, ancienne abbaye Saint-Rémi et palais du Tau, Reims",fr,Q16912637,exact,titre_unesco,1991,false,https://whc.unesco.org/fr/list/601
-FRA,635,culturel,cathédrale Saint-Étienne de Bourges,fr,Q207985,exact,aucun,1992,false,https://whc.unesco.org/fr/list/635
-FRA,770,culturel,canal du Midi,fr,Q202494,exact,aucun,1996,false,https://whc.unesco.org/fr/list/770
-FRA,773,mixte,Pyrénées-Mont Perdu,fr,Q3411434,exact,aucun,1997,true,https://whc.unesco.org/fr/list/773
-FRA,868,culturel,chemins de Saint-Jacques-de-Compostelle en France,fr,Q2962473,exact,aucun,1992,false,https://whc.unesco.org/fr/list/868
-FRA,872,culturel,site historique de Lyon,fr,Q131531231,exact,titre_unesco,1998,false,https://whc.unesco.org/fr/list/872
-FRA,873,culturel,"Provins, ville de foire médiévale",fr,Q28827968,exact,aucun,2001,false,https://whc.unesco.org/fr/list/873
-FRA,932,culturel,juridiction de Saint-Émilion,fr,Q2987951,exact,aucun,1999,false,https://whc.unesco.org/fr/list/932
-FRA,933,culturel,Val de Loire entre Sully-sur-Loire et Chalonnes,fr,Q2789507,exact,aucun,2000,false,https://whc.unesco.org/fr/list/933
-FRA,943,culturel,beffrois de Belgique et de France,fr,Q750675,exact,aucun,1999,true,https://whc.unesco.org/fr/list/943
-FRA,1115,naturel,Lagons de Nouvelle-Calédonie,fr,Q1330981,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1115
-FRA,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133
-FRA,1153,culturel,"Les Causses et les Cévennes, paysage culturel de l’agro-pastoralisme méditerranéen",fr,Q10444176,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1153
-FRA,1181,culturel,centre-ville reconstruit du Havre,fr,Q2944797,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1181
-FRA,1256,culturel,port de la Lune,fr,Q2249113,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1256
-FRA,1283,culturel,Fortifications de Vauban,fr,Q833781,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1283
-FRA,1317,naturel,"Pitons, cirques et remparts de l'île de La Réunion",fr,Q2710055,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1317
-FRA,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321
-FRA,1337,culturel,cité épiscopale d'Albi,fr,Q1778266,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1337
-FRA,1360,culturel,bassin minier du Nord-Pas-de-Calais,fr,Q392215,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1360
-FRA,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363
-FRA,1425,culturel,les climats du vignoble de Bourgogne,fr,Q20650612,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1425
-FRA,1426,culturel,grotte Chauvet,fr,Q374096,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1426
-FRA,1434,naturel,Haut lieu tectonique Chaîne des Puys - faille de Limagne,fr,Q64832437,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1434
-FRA,1465,culturel,"Coteaux, maisons et caves de Champagne",fr,Q20650698,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1465
-FRA,1529,culturel,Marae de Taputapuātea,fr,Q3287362,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1529
-FRA,1567,culturel,Les sites funéraires et mémoriels de la Première Guerre mondiale (Front Ouest),fr,Q64685453,revision,aucun,2023,true,https://whc.unesco.org/fr/list/1567
-FRA,1569,culturel,maison carrée,fr,Q677659,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1569
-FRA,1581,culturel,"Les Plages du Débarquement, Normandie, 1944",fr,Q3390891,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1581
-FRA,1603,naturel,Terres et mers australes françaises,fr,Q140814404,exact,titre_unesco,2019,false,https://whc.unesco.org/fr/list/1603
-FRA,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613
-FRA,1625,culturel,phare de Cordouan,fr,Q199234,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1625
-FRA,1635,culturel,"Nice, la ville de la villégiature d’hiver de riviera",fr,Q108094935,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1635
-FRA,1657,naturel,Aires volcaniques et forestières de la Martinique,fr,Q64842970,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1657
-FRA,1707,mixte,îles Marquises,fr,Q172697,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1707
-FRA,1725,culturel,mégalithes de Carnac et des rives du Morbihan,fr,Q135287050,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1725
-FRA,1755,culturel,forteresses royales capétiennes du Languedoc,fr,Q140698900,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1755
-ESP,310,culturel,grotte d’Altamira et art rupestre paléolithique du nord de l’Espagne,fr,Q899302,exact,aucun,1985,false,https://whc.unesco.org/fr/list/310
-ESP,311,culturel,Vieille ville de Ségovie et son aqueduc,fr,Q15728389,revision,aucun,1985,false,https://whc.unesco.org/fr/list/311
-ESP,312,culturel,Monuments d’Oviedo et du royaume des Asturies,fr,Q10588848,exact,aucun,1985,false,https://whc.unesco.org/fr/list/312
-ESP,313,culturel,centre historique de Cordoue,fr,Q10749904,exact,aucun,1984,false,https://whc.unesco.org/fr/list/313
-ESP,314,culturel,Alhambra,fr,Q47476,exact,aucun,1984,false,https://whc.unesco.org/fr/list/314
-ESP,316,culturel,cathédrale Sainte-Marie de Burgos,fr,Q744420,exact,aucun,1984,false,https://whc.unesco.org/fr/list/316
-ESP,318,culturel,monastère et site de l'Escurial,fr,Q5821857,exact,aucun,1984,false,https://whc.unesco.org/fr/list/318
-ESP,320,culturel,œuvres d'Antoni Gaudí,fr,Q921745,extension,aucun,1984,false,https://whc.unesco.org/fr/list/320
-ESP,347,culturel,vieille ville de Saint-Jacques-de-Compostelle,fr,Q12386144,exact,aucun,1985,false,https://whc.unesco.org/fr/list/347
-ESP,348,culturel,Vieille ville d'Ávila avec ses églises extra-muros,fr,Q15839120,exact,aucun,1985,false,https://whc.unesco.org/fr/list/348
-ESP,378,culturel,Architecture mudéjare d'Aragon,fr,Q64861487,exact,aucun,1986,false,https://whc.unesco.org/fr/list/378
-ESP,379,culturel,Ville historique de Tolède,fr,Q17255635,exact,aucun,1986,false,https://whc.unesco.org/fr/list/379
-ESP,380,naturel,parc national de Garajonay,fr,Q464942,exact,aucun,1986,false,https://whc.unesco.org/fr/list/380
-ESP,381,culturel,Vieille ville de Salamanque,fr,Q12156631,exact,aucun,1988,false,https://whc.unesco.org/fr/list/381
-ESP,383,culturel,"La Cathédrale, l'Alcázar et l'Archivo de Indias de Séville",fr,Q9709444,exact,aucun,1987,false,https://whc.unesco.org/fr/list/383
-ESP,384,culturel,vieille ville de Cáceres,fr,Q9757828,exact,aucun,1986,false,https://whc.unesco.org/fr/list/384
-ESP,417,mixte,Ibiza,fr,Q52631,exact,aucun,1999,false,https://whc.unesco.org/fr/list/417
-ESP,518,culturel,monastère de Poblet,fr,Q645157,exact,aucun,1991,false,https://whc.unesco.org/fr/list/518
-ESP,522,culturel,Ensembles monumentaux Renaissance de Úbeda et Baeza,fr,Q15831671,exact,aucun,2003,false,https://whc.unesco.org/fr/list/522
-ESP,664,culturel,ensemble archéologique de Mérida,fr,Q15233334,exact,aucun,1993,false,https://whc.unesco.org/fr/list/664
-ESP,665,culturel,monastère royal de Sainte Marie de Guadalupe,fr,Q750248,exact,aucun,1993,false,https://whc.unesco.org/fr/list/665
-ESP,669,culturel,chemins de Saint-Jacques-de-Compostelle : Camino francés et chemins du nord de l’Espagne,fr,Q39081159,exact,aucun,1993,false,https://whc.unesco.org/fr/list/669
-ESP,685,naturel,parc national de Doñana,fr,Q463141,exact,aucun,1994,false,https://whc.unesco.org/fr/list/685
-ESP,773,mixte,Pyrénées-Mont Perdu,fr,Q3411434,exact,aucun,1997,true,https://whc.unesco.org/fr/list/773
-ESP,781,culturel,Ville historique fortifiée de Cuenca,fr,Q15965460,exact,aucun,1996,false,https://whc.unesco.org/fr/list/781
-ESP,782,culturel,Lonja de la seda,fr,Q588009,exact,aucun,1996,false,https://whc.unesco.org/fr/list/782
-ESP,803,culturel,Las Médulas,mul,Q696803,exact,aucun,1997,false,https://whc.unesco.org/fr/list/803
-ESP,804,culturel,"Palais de la musique catalane et hôpital de Sant Pau, Barcelone",fr,Q64955212,exact,aucun,1997,false,https://whc.unesco.org/fr/list/804
-ESP,805,culturel,monastère de San Millán de la Cogolla,fr,Q2284354,exact,aucun,1997,false,https://whc.unesco.org/fr/list/805
-ESP,866,culturel,sites d’art rupestre préhistorique de la vallée de Côa et de Siega Verde,fr,Q39258498,extension,aucun,2010,true,https://whc.unesco.org/fr/list/866
-ESP,874,culturel,art rupestre du bassin méditerranéen de la péninsule Ibérique,fr,Q1975533,exact,partie_de,1998,false,https://whc.unesco.org/fr/list/874
-ESP,875,culturel,Ensemble archéologique de Tarragone,fr,Q3119914,exact,partie_de,2000,false,https://whc.unesco.org/fr/list/875
-ESP,876,culturel,Université et quartier historique d'Alcalá de Henares,unesco_fr,Q47531644,exact,aucun,1998,false,https://whc.unesco.org/fr/list/876
-ESP,929,culturel,San Cristóbal de La Laguna,fr,Q54898,exact,aucun,1999,false,https://whc.unesco.org/fr/list/929
-ESP,930,culturel,Palmeraie d'Elche,fr,Q930784,exact,aucun,2000,false,https://whc.unesco.org/fr/list/930
-ESP,987,culturel,muraille de Lugo,fr,Q2733427,exact,aucun,2000,false,https://whc.unesco.org/fr/list/987
-ESP,988,culturel,églises romanes de la Vall de Boí,fr,Q1091515,exact,aucun,2000,false,https://whc.unesco.org/fr/list/988
-ESP,989,culturel,Atapuerca,fr,Q923894,exact,aucun,2000,false,https://whc.unesco.org/fr/list/989
-ESP,1044,culturel,Paysage culturel d’Aranjuez,fr,Q6057341,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1044
-ESP,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133
-ESP,1217,culturel,pont de Biscaye,fr,Q331996,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1217
-ESP,1258,naturel,parc national du Teide,fr,Q715124,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1258
-ESP,1312,culturel,Tour d'Hercule,fr,Q245151,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1312
-ESP,1313,culturel,patrimoine du mercure,fr,Q3370031,exact,aucun,2012,true,https://whc.unesco.org/fr/list/1313
-ESP,1371,culturel,Paysage culturel de la Serra de Tramuntana,fr,Q64860434,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1371
-ESP,1501,culturel,site de dolmens d'Antequera,fr,Q97633694,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1501
-ESP,1528,culturel,Culture talayotique de Minorque,fr,Q64990632,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1528
-ESP,1560,culturel,Madinat Azahra,fr,Q211252,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1560
-ESP,1578,culturel,paysage culturel de Risco Caído et des montagnes sacrées de Gran Canaria,fr,Q55495511,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1578
-ESP,1618,culturel,"Paseo del Prado et Buen Retiro, un paysage des arts et des sciences",fr,Q107675480,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1618
-ITA,91,culturel,"Centre historique de Rome, les biens du Saint-Siège situés dans cette ville bénéficiant des droits d'extra-territorialité et Saint-Paul-hors-les-Murs",fr,Q18448486,exact,aucun,1980,true,https://whc.unesco.org/fr/list/91
-ITA,93,culturel,église Santa Maria delle Grazie de Milan,fr,Q244952,exact,aucun,1980,false,https://whc.unesco.org/fr/list/93
-ITA,94,culturel,art rupestre du Valcamonica,fr,Q945514,exact,aucun,1979,false,https://whc.unesco.org/fr/list/94
-ITA,174,culturel,Centre historique de Florence,fr,Q2707802,exact,aucun,1982,false,https://whc.unesco.org/fr/list/174
-ITA,175,culturel,villa médicéenne,fr,Q574879,exact,aucun,2013,false,https://whc.unesco.org/fr/list/175
-ITA,394,culturel,Venise et sa lagune,fr,Q11352141,exact,partie_de,1987,false,https://whc.unesco.org/fr/list/394
-ITA,395,culturel,piazza dei Miracoli,fr,Q750245,exact,aucun,1987,false,https://whc.unesco.org/fr/list/395
-ITA,398,culturel,Castel del Monte,fr,Q215897,exact,aucun,1996,false,https://whc.unesco.org/fr/list/398
-ITA,549,culturel,"Palais royal du XVIIIe siècle de Caserte avec le parc, l’aqueduc de Vanvitelli et l’ensemble de San Leucio",unesco_fr,Q16962666,revision,aucun,1997,false,https://whc.unesco.org/fr/list/549
-ITA,550,culturel,centre historique de San Gimignano,fr,Q9724840,exact,aucun,1990,false,https://whc.unesco.org/fr/list/550
-ITA,670,culturel,Sassi et parc des églises rupestres de Matera,fr,Q55739617,exact,aucun,1993,false,https://whc.unesco.org/fr/list/670
-ITA,712,culturel,Vicenza et Villas de Palladio en Vénétie,fr,Q370956,exact,aucun,1994,false,https://whc.unesco.org/fr/list/712
-ITA,717,culturel,centre historique de Sienne,fr,Q17163322,exact,aucun,1995,false,https://whc.unesco.org/fr/list/717
-ITA,726,culturel,Centre historique de Naples,fr,Q832957,exact,aucun,1995,false,https://whc.unesco.org/fr/list/726
-ITA,730,culturel,Crespi d'Adda,fr,Q726842,exact,aucun,1995,false,https://whc.unesco.org/fr/list/730
-ITA,733,culturel,Ferrare et son delta du Pô,fr,Q16735627,exact,aucun,1995,false,https://whc.unesco.org/fr/list/733
-ITA,787,culturel,Les trulli d'Alberobello,fr,Q16913064,exact,aucun,1996,false,https://whc.unesco.org/fr/list/787
-ITA,788,culturel,Monuments paléochrétiens de Ravenne,fr,Q16886821,exact,aucun,1996,false,https://whc.unesco.org/fr/list/788
-ITA,789,culturel,Centre historique de Pienza,fr,Q2945646,exact,aucun,1996,false,https://whc.unesco.org/fr/list/789
-ITA,797,culturel,Vérone,fr,Q2028,exact,titre_unesco,2000,false,https://whc.unesco.org/fr/list/797
-ITA,823,culturel,Résidences de la famille royale de Savoie,fr,Q461272,exact,aucun,1997,false,https://whc.unesco.org/fr/list/823
-ITA,824,culturel,jardin botanique de Padoue,fr,Q598892,exact,aucun,1997,false,https://whc.unesco.org/fr/list/824
-ITA,825,culturel,Zone archéologique et la basilique patriarcale d’Aquilée,fr,Q3575761,extension,aucun,1998,false,https://whc.unesco.org/fr/list/825
-ITA,826,culturel,"Portovenere, Cinque Terre et les îles",fr,Q10351991,exact,aucun,1997,false,https://whc.unesco.org/fr/list/826
-ITA,827,culturel,"Cathédrale, Torre Civica et Piazza Grande, Modène",fr,Q15221022,exact,aucun,1997,false,https://whc.unesco.org/fr/list/827
-ITA,828,culturel,Centre historique d'Urbino,fr,Q17163308,exact,aucun,1998,false,https://whc.unesco.org/fr/list/828
-ITA,829,culturel,"zones archéologiques de Pompéi, Herculanum et Torre Annunziata",fr,Q16920958,exact,aucun,1997,false,https://whc.unesco.org/fr/list/829
-ITA,830,culturel,côte amalfitaine,fr,Q212214,exact,aucun,1997,false,https://whc.unesco.org/fr/list/830
-ITA,831,culturel,Vallée des Temples,fr,Q636774,exact,aucun,1997,false,https://whc.unesco.org/fr/list/831
-ITA,832,culturel,villa romaine du Casale,fr,Q505617,exact,aucun,1997,false,https://whc.unesco.org/fr/list/832
-ITA,833,culturel,Su Nuraxi,fr,Q253241,exact,aucun,1997,false,https://whc.unesco.org/fr/list/833
-ITA,842,culturel,"Parc national du Cilento et du Vallo Diano, avec les sites archéologiques de Paestum et Velia et la Chartreuse de Padula",fr,Q65016468,exact,titre_unesco,1998,false,https://whc.unesco.org/fr/list/842
-ITA,907,culturel,villa d'Hadrien,fr,Q272777,exact,aucun,1999,false,https://whc.unesco.org/fr/list/907
-ITA,908,naturel,îles Éoliennes,fr,Q179883,exact,aucun,2000,false,https://whc.unesco.org/fr/list/908
-ITA,990,culturel,"Assise, la Basilique de San Francesco et autres sites franciscains",fr,Q16913154,exact,aucun,2000,false,https://whc.unesco.org/fr/list/990
-ITA,1024,culturel,Villes du baroque tardif de la vallée de Noto,fr,Q18649472,revision,aucun,2002,false,https://whc.unesco.org/fr/list/1024
-ITA,1025,culturel,villa d'Este,fr,Q746063,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1025
-ITA,1026,culturel,Val d'Orcia,fr,Q217449,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1026
-ITA,1068,culturel,Sacri Monti du Piémont et de Lombardie,fr,Q753162,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1068
-ITA,1090,naturel,site fossilifère du Monte San Giorgio,fr,Q3485435,exact,aucun,2003,true,https://whc.unesco.org/fr/list/1090
-ITA,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133
-ITA,1158,culturel,nécropoles étrusques de Cerveteri et de Tarquinia,fr,Q15602246,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1158
-ITA,1200,culturel,Syracuse et la nécropole rocheuse de Pantalica,fr,Q15604441,exact,partie_de,2005,false,https://whc.unesco.org/fr/list/1200
-ITA,1211,culturel,"Gênes, les Strade Nuove et le système des palais des Rolli",fr,Q10293286,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1211
-ITA,1237,naturel,Les Dolomites,fr,Q65028346,revision,aucun,1998,false,https://whc.unesco.org/fr/list/1237
-ITA,1276,culturel,chemin de fer rhétique dans les paysages de l'Albula et de la Bernina,fr,Q2962401,exact,aucun,2008,true,https://whc.unesco.org/fr/list/1276
-ITA,1287,culturel,Mantoue et Sabbioneta,fr,Q15623665,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1287
-ITA,1318,culturel,Les Lombards en Italie. Lieux de pouvoir,fr,Q1214318,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1318
-ITA,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363
-ITA,1390,culturel,Paysage viticole du Piémont : Langhe-Roero et Monferrato,fr,Q17296768,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1390
-ITA,1427,naturel,parc de l'Etna,fr,Q499242,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1427
-ITA,1487,culturel,Palerme arabo-normande et les cathédrales de Cefalú et Monreale,fr,Q20963672,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1487
-ITA,1533,culturel,ouvrages de défense vénitiens du XVIe au XVIIe siècle : Stato da Terra - Stato da Mar occidental,fr,Q32797097,exact,aucun,2017,true,https://whc.unesco.org/fr/list/1533
-ITA,1538,culturel,"Ivrée, cité industrielle du XXe siècle",fr,Q109123298,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1538
-ITA,1571,culturel,Les Collines du Prosecco de Conegliano et Valdobbiadene,fr,Q65029145,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1571
-ITA,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613
-ITA,1623,culturel,cycles de fresques du XIVe siècle à Padoue,fr,Q107674350,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1623
-ITA,1650,culturel,arcades de Bologne,fr,Q3909051,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1650
-ITA,1692,naturel,Karst et grottes évaporitiques de l'Apennin du Nord,fr,Q122730699,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1692
-ITA,1708,culturel,Via Appia. Regina Viarum,unesco_fr,Q129503044,exact,partie_de,2024,false,https://whc.unesco.org/fr/list/1708
-ITA,1730,culturel,domus de janas,fr,Q1238775,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1730
-ITA,1762,culturel,Le système des théâtres à l’italienne en condominio des XVIIIe et XIXe siècles en Italie centrale,fr,Q127466372,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1762
-PRT,206,culturel,centre historique d'Angra do Heroísmo,fr,Q2945656,exact,aucun,1983,false,https://whc.unesco.org/fr/list/206
-PRT,263,culturel,Monastère des Hiéronymites et tour de Belém à Lisbonne,fr,Q15229898,extension,aucun,1983,false,https://whc.unesco.org/fr/list/263
-PRT,264,culturel,monastère de Saint Marie de la Victoire à Batalha,fr,Q174779,exact,aucun,1983,false,https://whc.unesco.org/fr/list/264
-PRT,265,culturel,couvent de l'ordre du Christ,fr,Q736692,exact,aucun,1983,false,https://whc.unesco.org/fr/list/265
-PRT,361,culturel,Centre historique d'Évora,fr,Q8343770,exact,aucun,1986,false,https://whc.unesco.org/fr/list/361
-PRT,505,culturel,monastère d'Alcobaça,fr,Q593147,exact,aucun,1989,false,https://whc.unesco.org/fr/list/505
-PRT,723,culturel,Paysage culturel de Sintra,fr,Q3848197,exact,aucun,1995,false,https://whc.unesco.org/fr/list/723
-PRT,755,culturel,Centre historique de Porto,fr,Q3848157,exact,aucun,1996,false,https://whc.unesco.org/fr/list/755
-PRT,866,culturel,sites d’art rupestre préhistorique de la vallée de Côa et de Siega Verde,fr,Q39258498,extension,aucun,1998,true,https://whc.unesco.org/fr/list/866
-PRT,934,naturel,forêt laurifère de Madère,fr,Q11257230,exact,aucun,1999,false,https://whc.unesco.org/fr/list/934
-PRT,1031,culturel,Centre historique de Guimarães et zone du Couros,fr,Q2945649,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1031
-PRT,1046,culturel,Région viticole du Haut-Douro,fr,Q649738,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1046
-PRT,1117,culturel,Paysage viticole de l'île du Pico,fr,Q2448665,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1117
-PRT,1367,culturel,Ville de garnison frontalière d’Elvas et ses fortifications,fr,Q5524023,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1367
-PRT,1387,culturel,Université de Coimbra – Alta et Sofia,fr,Q15229957,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1387
-PRT,1573,culturel,édifice royal de Mafra,fr,Q54948065,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1573
-PRT,1590,culturel,sanctuaire du Bon-Jésus-du-Mont de Braga,fr,Q2707216,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1590
-GRC,392,culturel,temple d'Apollon à Bassae,fr,Q38278862,exact,aucun,1986,false,https://whc.unesco.org/fr/list/392
-GRC,393,culturel,site archéologique de Delphes,fr,Q17652439,exact,aucun,1987,false,https://whc.unesco.org/fr/list/393
-GRC,404,culturel,Acropole d'Athènes,fr,Q131013,exact,partie_de,1987,false,https://whc.unesco.org/fr/list/404
-GRC,454,mixte,Mont Athos,fr,Q136100444,exact,aucun,1988,false,https://whc.unesco.org/fr/list/454
-GRC,455,mixte,monastères des Météores,fr,Q3125051,exact,aucun,1988,false,https://whc.unesco.org/fr/list/455
-GRC,456,culturel,Monuments paléochrétiens et byzantins de Thessalonique,fr,Q732708,exact,aucun,1988,false,https://whc.unesco.org/fr/list/456
-GRC,491,culturel,sanctuaire d'Asclépios à Épidaure,fr,Q7698713,exact,aucun,1988,false,https://whc.unesco.org/fr/list/491
-GRC,493,culturel,Ville médiévale de Rhodes,unesco_fr,Q876685,exact,aucun,1988,false,https://whc.unesco.org/fr/list/493
-GRC,511,culturel,Mistra,fr,Q19053,exact,aucun,1989,false,https://whc.unesco.org/fr/list/511
-GRC,517,culturel,Olympie,fr,Q38888,exact,aucun,1989,false,https://whc.unesco.org/fr/list/517
-GRC,530,culturel,Délos,fr,Q173148,exact,aucun,1990,false,https://whc.unesco.org/fr/list/530
-GRC,537,culturel,"monastères de Daphni, de Hosios Loukas et Nea Moni de Chios",fr,Q11317256,exact,aucun,1990,false,https://whc.unesco.org/fr/list/537
-GRC,595,culturel,Pythagoreion et Heraion de Samos,fr,Q16363506,exact,aucun,1992,false,https://whc.unesco.org/fr/list/595
-GRC,780,culturel,Aigai,fr,Q16963755,exact,aucun,1996,false,https://whc.unesco.org/fr/list/780
-GRC,941,culturel,Sites archéologiques de Mycènes et de Tirynthe,unesco_fr,Q16945635,exact,aucun,1999,false,https://whc.unesco.org/fr/list/941
-GRC,942,culturel,Centre historique (Chorá) avec le monastère de Saint Jean « le théologien » et la grotte de l'Apocalypse sur l'île de Patmos,fr,Q17132271,exact,partie_de,1999,false,https://whc.unesco.org/fr/list/942
-GRC,978,culturel,vieille ville de Corfou,fr,Q38283757,exact,titre_unesco,2007,false,https://whc.unesco.org/fr/list/978
-GRC,1517,culturel,Philippes,fr,Q379652,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1517
-GRC,1695,culturel,Zagóri,fr,Q2712111,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1695
-GRC,1719,mixte,Le mont Olympe et son environnement,fr,Q64737832,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1719
-GRC,1733,culturel,Centres palatiaux minoens,fr,Q64737740,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1733
-GBR,369,naturel,Chaussée des Géants,fr,Q106187,exact,aucun,1986,false,https://whc.unesco.org/fr/list/369
-GBR,370,culturel,cathédrale et château de Durham,fr,Q15732525,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/370
-GBR,371,culturel,vallée d'Ironbridge,fr,Q647958,exact,aucun,1986,false,https://whc.unesco.org/fr/list/371
-GBR,372,culturel,parc de Studley Royal avec les ruines de l'abbaye de Fountains,fr,Q16363480,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/372
-GBR,373,culturel,"Stonehenge, Avebury et sites associés",fr,Q587584,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/373
-GBR,374,culturel,châteaux forts et enceintes du roi Édouard Ier dans l'ancienne principauté de Gwynedd,fr,Q837627,exact,aucun,1986,false,https://whc.unesco.org/fr/list/374
-GBR,387,mixte,Saint-Kilda,fr,Q166479,exact,aucun,1986,false,https://whc.unesco.org/fr/list/387
-GBR,422,culturel,Lake District,fr,Q211778,revision,aucun,2017,false,https://whc.unesco.org/fr/list/422
-GBR,425,culturel,palais de Blenheim,fr,Q208181,exact,aucun,1987,false,https://whc.unesco.org/fr/list/425
-GBR,426,culturel,palais de Westminster et l'abbaye de Westminster incluant l'église Sainte-Marguerite,fr,Q10344038,exact,aucun,1987,false,https://whc.unesco.org/fr/list/426
-GBR,428,culturel,Ville de Bath,unesco_fr,Q22889,exact,douteux,1987,false,https://whc.unesco.org/fr/list/428
-GBR,429,culturel,New Lanark,fr,Q743108,exact,aucun,2001,false,https://whc.unesco.org/fr/list/429
-GBR,430,culturel,frontières de l’Empire romain,fr,Q4147903,exact,aucun,1987,true,https://whc.unesco.org/fr/list/430
-GBR,487,naturel,Henderson,fr,Q379759,exact,aucun,1988,false,https://whc.unesco.org/fr/list/487
-GBR,488,culturel,tour de Londres,fr,Q62378,exact,aucun,1988,false,https://whc.unesco.org/fr/list/488
-GBR,496,culturel,"Cathédrale, abbaye Saint-Augustin et église Saint-Martin à Cantorbéry",fr,Q15924897,exact,aucun,1988,false,https://whc.unesco.org/fr/list/496
-GBR,514,culturel,Cœur néolithique des Orcades,fr,Q1334966,exact,aucun,1999,false,https://whc.unesco.org/fr/list/514
-GBR,728,culturel,Vieille ville et Nouvelle ville d'Edimbourg,fr,Q15260680,exact,aucun,1995,false,https://whc.unesco.org/fr/list/728
-GBR,740,naturel,Îles de Gough et Inaccessible,fr,Q16891784,exact,aucun,1995,false,https://whc.unesco.org/fr/list/740
-GBR,795,culturel,Maritime Greenwich,fr,Q16921416,exact,aucun,1997,false,https://whc.unesco.org/fr/list/795
-GBR,983,culturel,"Ville historique de St George et les fortifications associées, aux Bermudes",unesco_fr,Q7865260,exact,aucun,2000,false,https://whc.unesco.org/fr/list/983
-GBR,984,culturel,Paysage industriel de Blaenavon,fr,Q23818211,exact,aucun,2000,false,https://whc.unesco.org/fr/list/984
-GBR,1028,culturel,Saltaire,fr,Q838920,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1028
-GBR,1029,naturel,littoral du Dorset et de l'est du Devon,fr,Q575976,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1029
-GBR,1030,culturel,Usines de la vallée de la Derwent,fr,Q646076,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1030
-GBR,1084,culturel,Jardins botaniques royaux de Kew,unesco_fr,Q18748726,exact,partie_de,2003,false,https://whc.unesco.org/fr/list/1084
-GBR,1215,culturel,Paysage minier des Cornouailles et de l'ouest du Devon,fr,Q464566,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1215
-GBR,1303,culturel,Pont-canal et canal de Pontcysyllte,fr,Q24677919,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1303
-GBR,1468,culturel,Colonies de l’Église morave,fr,Q128009257,extension,aucun,2015,true,https://whc.unesco.org/fr/list/1468
-GBR,1485,culturel,pont du Forth,fr,Q275,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1485
-GBR,1500,culturel,Ensemble des grottes de Gorham,unesco_fr,Q60346199,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1500
-GBR,1594,culturel,observatoire Jodrell Bank,fr,Q1569783,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1594
-GBR,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613
-GBR,1633,culturel,Le paysage d'ardoise du nord-ouest du pays de Galles,fr,Q107719670,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1633
-GBR,1722,naturel,Flow Country,fr,Q1847928,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1722
-ISL,1152,culturel,Þingvellir,fr,Q107370,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1152
-ISL,1267,naturel,Surtsey,fr,Q178124,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1267
-ISL,1604,naturel,parc national du Vatnajökull,fr,Q1353292,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1604
-HRV,95,culturel,Vieille ville de Dubrovnik,fr,Q910661,exact,aucun,1979,false,https://whc.unesco.org/fr/list/95
-HRV,97,culturel,Noyau historique de Split avec le palais de Dioclétien,fr,Q17132416,exact,aucun,1979,false,https://whc.unesco.org/fr/list/97
-HRV,98,naturel,parc national des lacs de Plitvice,fr,Q189849,exact,aucun,1979,false,https://whc.unesco.org/fr/list/98
-HRV,809,culturel,basilique euphrasienne de Poreč,fr,Q645105,exact,aucun,1997,false,https://whc.unesco.org/fr/list/809
-HRV,810,culturel,Ville historique de Trogir,fr,Q17132483,exact,aucun,1997,false,https://whc.unesco.org/fr/list/810
-HRV,963,culturel,cathédrale Saint-Jacques de Šibenik,fr,Q391973,exact,aucun,2000,false,https://whc.unesco.org/fr/list/963
-HRV,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133
-HRV,1240,culturel,Plaine de Stari Grad,fr,Q614212,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1240
-HRV,1504,culturel,cimetières de tombes médiévales stećci,fr,Q29000652,exact,aucun,2016,true,https://whc.unesco.org/fr/list/1504
-HRV,1533,culturel,ouvrages de défense vénitiens du XVIe au XVIIe siècle : Stato da Terra - Stato da Mar occidental,fr,Q32797097,exact,aucun,2017,true,https://whc.unesco.org/fr/list/1533
-CHE,267,culturel,vieille ville de Berne,fr,Q687973,exact,aucun,1983,false,https://whc.unesco.org/fr/list/267
-CHE,268,culturel,abbaye de Saint-Gall,fr,Q155699,exact,aucun,1983,false,https://whc.unesco.org/fr/list/268
-CHE,269,culturel,couvent bénédictin de Saint-Jean-des-Sœurs,fr,Q757067,exact,aucun,1983,false,https://whc.unesco.org/fr/list/269
-CHE,884,culturel,châteaux de Bellinzone,fr,Q510279,exact,aucun,2000,false,https://whc.unesco.org/fr/list/884
-CHE,1037,naturel,Alpes suisses Jungfrau-Aletsch,fr,Q616912,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1037
-CHE,1090,naturel,site fossilifère du Monte San Giorgio,fr,Q3485435,exact,aucun,2003,true,https://whc.unesco.org/fr/list/1090
-CHE,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133
-CHE,1179,naturel,haut lieu tectonique suisse Sardona,fr,Q312118,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1179
-CHE,1243,culturel,Lavaux,fr,Q688060,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1243
-CHE,1276,culturel,chemin de fer rhétique dans les paysages de l'Albula et de la Bernina,fr,Q2962401,exact,aucun,2008,true,https://whc.unesco.org/fr/list/1276
-CHE,1302,culturel,"La Chaux-de-Fonds / Le Locle, urbanisme horloger",fr,Q3207298,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1302
-CHE,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321
-CHE,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363
-HUN,400,culturel,"Budapest, avec les rives du Danube, le quartier du château de Buda et l’avenue Andrássy",fr,Q851122,exact,titre_unesco,1987,false,https://whc.unesco.org/fr/list/400
-HUN,401,culturel,Hollókő,fr,Q622865,exact,aucun,1987,false,https://whc.unesco.org/fr/list/401
-HUN,474,culturel,parc national Hortobágy,fr,Q61757,exact,aucun,1999,false,https://whc.unesco.org/fr/list/474
-HUN,725,naturel,grottes du karst d'Aggtelek et du karst de Slovaquie,fr,Q608090,exact,partie_de,1995,true,https://whc.unesco.org/fr/list/725
-HUN,758,culturel,abbaye de Pannonhalma,fr,Q936285,exact,aucun,1996,false,https://whc.unesco.org/fr/list/758
-HUN,772,culturel,paysage culturel de Fertö / Neusiedlersee,fr,Q2925869,revision,aucun,2001,true,https://whc.unesco.org/fr/list/772
-HUN,853,culturel,nécropole paléochrétienne de Pécs,fr,Q927535,exact,aucun,2000,false,https://whc.unesco.org/fr/list/853
-HUN,1063,culturel,paysage culturel historique de la région viticole de Tokaj,fr,Q64559620,exact,aucun,2002,false,https://whc.unesco.org/fr/list/1063
-JPN,660,culturel,monuments bouddhiques de la région du temple de Horyu,fr,Q1333799,exact,titre_unesco,1993,false,https://whc.unesco.org/fr/list/660
-JPN,661,culturel,château de Himeji,fr,Q188754,exact,aucun,1993,false,https://whc.unesco.org/fr/list/661
-JPN,662,naturel,Yakushima,fr,Q242176,exact,aucun,1993,false,https://whc.unesco.org/fr/list/662
-JPN,663,naturel,Shirakami-Sanchi,fr,Q501638,exact,aucun,1993,false,https://whc.unesco.org/fr/list/663
-JPN,688,culturel,monuments historiques de l'ancienne Kyoto,fr,Q874027,exact,aucun,1994,false,https://whc.unesco.org/fr/list/688
-JPN,734,culturel,villages historiques de Shirakawa-gō et Gokayama,fr,Q877626,exact,aucun,1995,false,https://whc.unesco.org/fr/list/734
-JPN,775,culturel,dôme de Genbaku,fr,Q231140,exact,aucun,1996,false,https://whc.unesco.org/fr/list/775
-JPN,776,culturel,sanctuaire d'Itsukushima,fr,Q191763,exact,aucun,1996,false,https://whc.unesco.org/fr/list/776
-JPN,870,culturel,monuments historiques de l'ancienne Nara,fr,Q1055749,exact,aucun,1998,false,https://whc.unesco.org/fr/list/870
-JPN,913,culturel,sanctuaires et temples de Nikkō,fr,Q1063133,exact,aucun,1999,false,https://whc.unesco.org/fr/list/913
-JPN,972,culturel,Sites Gusuku et biens culturels associés du royaume de Ryūkyū,fr,Q1333330,exact,aucun,2000,false,https://whc.unesco.org/fr/list/972
-JPN,1142,culturel,sites sacrés et chemins de pèlerinage dans les monts Kii,fr,Q611345,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1142
-JPN,1193,naturel,Shiretoko,unesco_fr,Q17208861,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1193
-JPN,1246,culturel,Iwami Ginzan,fr,Q174139,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1246
-JPN,1277,culturel,"Hiraizumi – Temples, jardins et sites archéologiques représentant la Terre Pure bouddhiste",fr,Q2896261,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1277
-JPN,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321
-JPN,1362,naturel,archipel d'Ogasawara,fr,Q13383295,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1362
-JPN,1418,culturel,"Fujisan, lieu sacré et source d'inspiration artistique",fr,Q16482294,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1418
-JPN,1449,culturel,filature de soie de Tomioka et patrimoine industriel associé,fr,Q7769551,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1449
-JPN,1484,culturel,"Sites de la révolution industrielle Meiji au Japon : sidérurgie, construction navale et extraction houillère",fr,Q7751872,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1484
-JPN,1495,culturel,sites chrétiens cachés de la région de Nagasaki,fr,Q93643,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1495
-JPN,1535,culturel,Île sacrée d'Okinoshima et sites associés dans la région de Munakata,fr,Q324638,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1535
-JPN,1574,naturel,"île Amami-Ōshima, île Tokunoshima, partie nord de l'île d'Okinawa et île d'Iriomote",fr,Q11444847,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1574
-JPN,1593,culturel,Ensemble de kofun de Mozu-Furuichi : tertres funéraires de l’ancien Japon,fr,Q55524104,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1593
-JPN,1632,culturel,Sites préhistoriques Jōmon dans le nord du Japon,fr,Q11402500,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1632
-JPN,1698,culturel,Mines d’or de l’île de Sado,unesco_fr,Q127378385,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1698
-JPN,1757,culturel,Anciennes capitales d’Asuka et de Fujiwara,fr,Q4811849,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1757
-KOR,736,culturel,grotte de Seokguram et temple Bulguksa,fr,Q16912957,exact,aucun,1995,false,https://whc.unesco.org/fr/list/736
-KOR,737,culturel,Haeinsa Janggyeong Panjeon,fr,Q490798,exact,aucun,1995,false,https://whc.unesco.org/fr/list/737
-KOR,738,culturel,sanctuaire de Jongmyo,fr,Q490497,exact,aucun,1995,false,https://whc.unesco.org/fr/list/738
-KOR,816,culturel,Changdeokgung,fr,Q477157,exact,aucun,1997,false,https://whc.unesco.org/fr/list/816
-KOR,817,culturel,forteresse de Hwaseong,fr,Q482423,exact,aucun,1997,false,https://whc.unesco.org/fr/list/817
-KOR,976,culturel,Zones historiques de Gyeongju,unesco_fr,Q495241,exact,aucun,2000,false,https://whc.unesco.org/fr/list/976
-KOR,977,culturel,"sites de dolmens de Gochang, Hwasun et Ganghwa",fr,Q495286,exact,aucun,2000,false,https://whc.unesco.org/fr/list/977
-KOR,1264,naturel,île volcanique et tunnels de lave de Jeju,fr,Q495733,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1264
-KOR,1319,culturel,tombes royales de la dynastie Joseon,fr,Q495276,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1319
-KOR,1324,culturel,Villages historiques de Corée : Hahoe et Yangdong,fr,Q3113345,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1324
-KOR,1439,culturel,Namhansanseong,fr,Q562529,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1439
-KOR,1477,culturel,Aires historiques de Baekje,fr,Q20650483,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1477
-KOR,1498,culturel,"Seowon, académies néo-confucéennes coréennes",fr,Q65099260,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1498
-KOR,1562,culturel,"Sansa, monastères bouddhistes de montagne en Corée",fr,Q55306582,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1562
-KOR,1591,naturel,"Getbol, étendues cotidales coréennes",fr,Q107715736,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1591
-KOR,1666,culturel,Tumuli de Gaya,fr,Q66201394,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1666
-KOR,1740,culturel,Pétroglyphes d'Ulsan,fr,Q135335250,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1740
-CHN,437,mixte,mont Tai,fr,Q216059,exact,aucun,1987,false,https://whc.unesco.org/fr/list/437
-CHN,438,culturel,La Grande Muraille,fr,Q65961372,exact,aucun,1987,false,https://whc.unesco.org/fr/list/438
-CHN,439,culturel,palais impériaux des dynasties Ming et Qing à Beijing et à Shenyang,fr,Q4920250,exact,aucun,1987,false,https://whc.unesco.org/fr/list/439
-CHN,440,culturel,grottes de Mogao,fr,Q43286,exact,aucun,1987,false,https://whc.unesco.org/fr/list/440
-CHN,441,culturel,mausolée de l'empereur Qin,fr,Q910180,exact,aucun,1987,false,https://whc.unesco.org/fr/list/441
-CHN,449,culturel,Zhoukoudian,fr,Q499552,exact,aucun,1987,false,https://whc.unesco.org/fr/list/449
-CHN,547,mixte,monts Huang,fr,Q36034,exact,aucun,1990,false,https://whc.unesco.org/fr/list/547
-CHN,637,naturel,vallée de Jiuzhaigou,fr,Q4111,exact,aucun,1990,false,https://whc.unesco.org/fr/list/637
-CHN,638,naturel,Huanglong,fr,Q4107,exact,aucun,1992,false,https://whc.unesco.org/fr/list/638
-CHN,640,naturel,Wulingyuan,fr,Q4187,exact,aucun,1992,false,https://whc.unesco.org/fr/list/640
-CHN,703,culturel,résidence de montagne de Chengde,fr,Q1046818,exact,aucun,1994,false,https://whc.unesco.org/fr/list/703
-CHN,704,culturel,Temple et cimetière de Confucius et résidence de la famille Kong à Qufu,fr,Q1038473,exact,aucun,1994,false,https://whc.unesco.org/fr/list/704
-CHN,705,culturel,Ensemble de bâtiments anciens des montagnes de Wudang,fr,Q11124244,exact,aucun,1994,false,https://whc.unesco.org/fr/list/705
-CHN,707,culturel,palais du Potala,fr,Q71229,exact,aucun,1994,false,https://whc.unesco.org/fr/list/707
-CHN,778,culturel,parc national de Lushan,fr,Q4047,exact,aucun,1996,false,https://whc.unesco.org/fr/list/778
-CHN,779,mixte,"Paysage panoramique du mont Emei, incluant le paysage panoramique du grand Bouddha de Leshan",fr,Q16914686,exact,aucun,1996,false,https://whc.unesco.org/fr/list/779
-CHN,811,culturel,Vieille ville de Lijiang,fr,Q65964838,exact,aucun,1997,false,https://whc.unesco.org/fr/list/811
-CHN,812,culturel,Vieille ville de Ping Yao,fr,Q65965285,exact,aucun,1997,false,https://whc.unesco.org/fr/list/812
-CHN,813,culturel,jardins classiques de Suzhou,fr,Q1144337,exact,aucun,1997,false,https://whc.unesco.org/fr/list/813
-CHN,880,culturel,palais d'Été,fr,Q4132,exact,aucun,1998,false,https://whc.unesco.org/fr/list/880
-CHN,881,culturel,temple du ciel,fr,Q125445,exact,aucun,1998,false,https://whc.unesco.org/fr/list/881
-CHN,911,mixte,Monts Wuyi,fr,Q207692,exact,aucun,1999,false,https://whc.unesco.org/fr/list/911
-CHN,912,culturel,Sculptures rupestres de Dazu,fr,Q651278,exact,aucun,1999,false,https://whc.unesco.org/fr/list/912
-CHN,1001,culturel,Mont Qingcheng et système d’irrigation de Dujiangyan,fr,Q14230458,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1001
-CHN,1002,culturel,anciens villages du sud du Anhui - Xidi et Hongcun,fr,Q15224718,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1002
-CHN,1003,culturel,grottes de Longmen,fr,Q273834,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1003
-CHN,1004,culturel,tombes impériales des dynasties Ming et Qing,fr,Q817164,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1004
-CHN,1039,culturel,grottes de Yungang,fr,Q308805,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1039
-CHN,1083,naturel,Trois fleuves parallèles au Yunnan,fr,Q575035,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1083
-CHN,1110,culturel,Centre historique de Macao,fr,Q2601433,exact,titre_unesco,2005,false,https://whc.unesco.org/fr/list/1110
-CHN,1111,culturel,rizières en terrasses des Hani de Honghe,fr,Q11605230,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1111
-CHN,1112,culturel,Diaolou de Kaiping,fr,Q16303641,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1112
-CHN,1113,culturel,Tulou du Fujian,fr,Q718001,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1113
-CHN,1114,culturel,Yin Xu,fr,Q464904,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1114
-CHN,1135,culturel,capitales et tombes de l'ancien royaume de Koguryo,fr,Q134873,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1135
-CHN,1213,naturel,sanctuaires des pandas géants du Sichuan,fr,Q629902,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1213
-CHN,1248,naturel,Karst de Chine du Sud,fr,Q853364,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1248
-CHN,1279,culturel,mont Wutai,fr,Q120314,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1279
-CHN,1292,naturel,mont Sanqing,fr,Q873358,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1292
-CHN,1305,culturel,Monuments historiques de Dengfeng au « centre du ciel et de la terre »,fr,Q5934942,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1305
-CHN,1334,culturel,Paysage culturel du lac de l’Ouest de Hangzhou,fr,Q15660376,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1334
-CHN,1335,naturel,Danxia de Chine,fr,Q1286650,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1335
-CHN,1388,naturel,site fossilifère de Chengjiang,fr,Q3485434,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1388
-CHN,1389,culturel,Shangdu,fr,Q471765,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1389
-CHN,1414,naturel,Tianshan au Xinjiang,fr,Q17993813,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1414
-CHN,1442,culturel,Routes de la soie: le réseau de routes du corridor de Chang’an-Tian-shan,fr,Q17277933,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1442
-CHN,1443,culturel,Grand Canal,fr,Q31347,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1443
-CHN,1474,culturel,Sites du tusi,fr,Q19852428,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1474
-CHN,1508,culturel,peintures rupestres du mont Hua,fr,Q1632877,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1508
-CHN,1509,naturel,réserve naturelle de Shennongjia,fr,Q3457361,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1509
-CHN,1540,naturel,Hoh Xil,fr,Q1790760,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1540
-CHN,1541,culturel,Gulangyu,fr,Q1025339,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1541
-CHN,1559,naturel,Fanjingshan,unesco_fr,Q24434043,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1559
-CHN,1561,culturel,Quanzhou : emporium mondial de la Chine des Song et des Yuan,fr,Q47001746,revision,aucun,2021,false,https://whc.unesco.org/fr/list/1561
-CHN,1592,culturel,Ruines archéologiques de la cité de Liangzhu,unesco_fr,Q15904183,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1592
-CHN,1606,naturel,Sanctuaire d’oiseaux migrateurs le long du littoral de la mer Jaune et du golfe de Bohai de Chine (phase I),fr,Q66057620,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1606
-CHN,1638,naturel,désert de Badain Jaran,fr,Q939033,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1638
-CHN,1665,culturel,Paysage culturel des forêts anciennes de théiers de la montagne Jingmai à Pu’er,fr,Q48928978,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1665
-CHN,1714,culturel,Axe central de Pékin,fr,Q6112171,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1714
-CHN,1736,culturel,nécropole des Xia occidentanux,fr,Q1069411,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1736
-CHN,1765,culturel,Sites de l’industrie de la porcelaine artisanale de Jingdezhen,fr,Q140693109,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1765
-THA,574,culturel,Ville historique de Sukhothaï et villes historiques associées,unesco_fr,Q865097,exact,aucun,1991,false,https://whc.unesco.org/fr/list/574
-THA,575,culturel,Ban Chiang,fr,Q584125,exact,aucun,1992,false,https://whc.unesco.org/fr/list/575
-THA,576,culturel,Parc historique d'Ayutthaya,fr,Q1025100,exact,aucun,1991,false,https://whc.unesco.org/fr/list/576
-THA,590,naturel,complexe forestier de Dong Phayayen-Khao Yai,fr,Q16963852,exact,aucun,2005,false,https://whc.unesco.org/fr/list/590
-THA,591,naturel,sanctuaires de faune de Thung Yai-Huai Kha Khaeng,fr,Q15725130,exact,partie_de,1991,false,https://whc.unesco.org/fr/list/591
-THA,1461,naturel,parc national de Kaeng Krachan,fr,Q1819232,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1461
-THA,1507,culturel,"Phu Phrabat, un témoignage de la tradition des pierres Sema de la période de Dvaravati",fr,Q127935365,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1507
-THA,1662,culturel,parc historique de Sri Thep,fr,Q1517758,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1662
-THA,1761,culturel,"Wat Phra Mahathat Woramahawihan, Nakhon Si Thammarat",fr,Q2552354,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1761
-VNM,672,naturel,baie d'Along,fr,Q190128,exact,aucun,1994,false,https://whc.unesco.org/fr/list/672
-VNM,678,culturel,Ensemble de monuments de Huế,fr,Q10810560,exact,partie_de,1993,false,https://whc.unesco.org/fr/list/678
-VNM,948,culturel,Vieille ville de Hoi An,unesco_fr,Q5965459,exact,titre_unesco,1999,false,https://whc.unesco.org/fr/list/948
-VNM,949,culturel,sanctuaire de Mỹ Sơn,fr,Q391406,exact,aucun,1999,false,https://whc.unesco.org/fr/list/949
-VNM,951,naturel,Parc national de Phong Nha-Ke Bang et Parc national de Hin Nam No,unesco_fr,Q23513,exact,aucun,2003,true,https://whc.unesco.org/fr/list/951
-VNM,1328,culturel,cité impériale de Thang Long,fr,Q206219,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1328
-VNM,1358,culturel,citadelle de la dynastie Hô,fr,Q190060,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1358
-VNM,1438,mixte,complexe paysager de Trang An,fr,Q10810559,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1438
-VNM,1732,culturel,"Ensemble de monuments et de paysages de Yen Tu-Vinh Nghiem-Con Son, Kiep Bac",unesco_fr,Q16481408,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1732
-IDN,592,culturel,Terrains du temple Borobudur,fr,Q29070,exact,aucun,1991,false,https://whc.unesco.org/fr/list/592
-IDN,593,culturel,site des premiers hommes de Sangiran,fr,Q842328,exact,aucun,1996,false,https://whc.unesco.org/fr/list/593
-IDN,608,naturel,parc national d'Ujung Kulon,fr,Q4522,exact,aucun,1991,false,https://whc.unesco.org/fr/list/608
-IDN,609,naturel,parc national de Komodo,fr,Q4520,exact,aucun,1991,false,https://whc.unesco.org/fr/list/609
-IDN,642,culturel,Ensemble de Prambanan,unesco_fr,Q84403674,exact,titre_unesco,1991,false,https://whc.unesco.org/fr/list/642
-IDN,955,naturel,parc national de Lorentz,fr,Q4516,exact,aucun,1999,false,https://whc.unesco.org/fr/list/955
-IDN,1167,naturel,patrimoine des forêts tropicales ombrophiles de Sumatra,fr,Q4521,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1167
-IDN,1194,culturel,Paysage culturel de la province de Bali : le système des subak en tant que manifestation de la philosophie du Tri Hita Karana,unesco_fr,,exact,correction,2012,false,https://whc.unesco.org/fr/list/1194
-IDN,1610,culturel,Mine d'Ombilin,fr,Q16965955,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1610
-IDN,1671,culturel,L’axe cosmologique de Yogyakarta et ses monuments historiques emblématiques,unesco_fr,Q96012243,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1671
-IND,231,culturel,fort Rouge,fr,Q45957,revision,aucun,2007,false,https://whc.unesco.org/fr/list/231
-IND,232,culturel,tombe de Humayun,fr,Q189648,exact,aucun,1993,false,https://whc.unesco.org/fr/list/232
-IND,233,culturel,"Qutb Minar et ses monuments, Delhi",unesco_fr,Q1074330,exact,aucun,1993,false,https://whc.unesco.org/fr/list/233
-IND,234,culturel,églises et couvents de Goa,fr,Q15726428,exact,aucun,1986,false,https://whc.unesco.org/fr/list/234
-IND,239,culturel,Pattadakal,fr,Q817250,revision,aucun,1987,false,https://whc.unesco.org/fr/list/239
-IND,240,culturel,ensemble monumental de Khajuraho,fr,Q167298,exact,aucun,1986,false,https://whc.unesco.org/fr/list/240
-IND,241,culturel,ensemble monumental de Hampi,fr,Q26732,exact,aucun,1986,false,https://whc.unesco.org/fr/list/241
-IND,242,culturel,Ajantâ,fr,Q184427,exact,aucun,1983,false,https://whc.unesco.org/fr/list/242
-IND,243,culturel,Ellorâ,fr,Q189616,exact,aucun,1983,false,https://whc.unesco.org/fr/list/243
-IND,244,culturel,grottes d'Elephanta,fr,Q649384,revision,aucun,1987,false,https://whc.unesco.org/fr/list/244
-IND,246,culturel,temple de Sûrya,fr,Q752091,exact,aucun,1984,false,https://whc.unesco.org/fr/list/246
-IND,247,culturel,forts de colline du Rajasthan,fr,Q10428494,revision,aucun,2013,false,https://whc.unesco.org/fr/list/247
-IND,249,culturel,Ensemble de monuments de Mahabalipuram,unesco_fr,Q3522747,exact,aucun,1984,false,https://whc.unesco.org/fr/list/249
-IND,250,culturel,Grands temples vivants Chola,fr,Q695229,exact,aucun,1987,false,https://whc.unesco.org/fr/list/250
-IND,251,culturel,fort d'Agra,fr,Q171857,exact,aucun,1983,false,https://whc.unesco.org/fr/list/251
-IND,252,culturel,Taj Mahal,fr,Q9141,exact,aucun,1983,false,https://whc.unesco.org/fr/list/252
-IND,255,culturel,Fatehpur-Sikrī,fr,Q179046,exact,aucun,1986,false,https://whc.unesco.org/fr/list/255
-IND,335,naturel,Parcs nationaux de Nanda Devi et de la Vallée des fleurs,fr,Q15839097,exact,aucun,1988,false,https://whc.unesco.org/fr/list/335
-IND,337,naturel,parc national de Kaziranga,fr,Q192764,exact,aucun,1985,false,https://whc.unesco.org/fr/list/337
-IND,338,naturel,parc national de Manas,fr,Q506511,exact,aucun,1985,false,https://whc.unesco.org/fr/list/338
-IND,340,naturel,parc national de Keoladeo,fr,Q235878,exact,aucun,1985,false,https://whc.unesco.org/fr/list/340
-IND,452,naturel,parc national des Sundarbans,fr,Q532440,exact,aucun,1987,false,https://whc.unesco.org/fr/list/452
-IND,524,culturel,Sânchî,fr,Q181123,exact,aucun,1989,false,https://whc.unesco.org/fr/list/524
-IND,922,culturel,Rani-ki-Vav,fr,Q7293002,exact,aucun,2014,false,https://whc.unesco.org/fr/list/922
-IND,925,culturel,Bhimbetka,fr,Q331603,exact,aucun,2003,false,https://whc.unesco.org/fr/list/925
-IND,927,culturel,Sārnāth,fr,Q324394,exact,aucun,2026,false,https://whc.unesco.org/fr/list/927
-IND,944,culturel,chemins de fer de montagne en Inde,fr,Q4528,exact,aucun,1999,false,https://whc.unesco.org/fr/list/944
-IND,945,culturel,Bombay - Chhatrapati Shivaji Maharaj,fr,Q235884,exact,aucun,2004,false,https://whc.unesco.org/fr/list/945
-IND,1056,culturel,temple de la Mahabodhi,fr,Q4513,exact,aucun,2002,false,https://whc.unesco.org/fr/list/1056
-IND,1101,culturel,parc archéologique de Champaner-Pavagadh,fr,Q844427,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1101
-IND,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321
-IND,1338,culturel,Jantar Mantar,fr,Q2045115,exact,titre_unesco,2010,false,https://whc.unesco.org/fr/list/1338
-IND,1342,naturel,Ghâts occidentaux,fr,Q4527,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1342
-IND,1375,culturel,Santiniketan,fr,Q1026431,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1375
-IND,1406,naturel,parc national du Grand Himalaya,fr,Q1544213,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1406
-IND,1480,culturel,Ensembles néo-gothique victorien et Art déco de Mumbai,fr,Q16942531,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1480
-IND,1502,culturel,Nâlandâ,fr,Q216243,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1502
-IND,1513,mixte,parc national de Khangchendzonga,fr,Q2605019,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1513
-IND,1551,culturel,Ville historique d’Ahmedabad,fr,Q5472448,exact,titre_unesco,2017,false,https://whc.unesco.org/fr/list/1551
-IND,1570,culturel,temple de Ramappa,fr,Q3380656,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1570
-IND,1605,culturel,Jaipur,fr,Q66485,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1605
-IND,1645,culturel,Dholavira,fr,Q9468,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1645
-IND,1670,culturel,Ensembles sacrés des Hoysala,fr,Q66023123,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1670
-IND,1711,culturel,Moidams – système de tertres funéraires de la dynastie Ahom,fr,Q6735332,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1711
-IND,1739,culturel,Paysages militaires marathes de l'Inde,fr,Q134720951,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1739
-NPL,120,naturel,parc national de Sagarmatha,fr,Q2211959,exact,aucun,1979,false,https://whc.unesco.org/fr/list/120
-NPL,121,culturel,vallée de Katmandou,fr,Q970717,exact,titre_unesco,1979,false,https://whc.unesco.org/fr/list/121
-NPL,284,naturel,parc national de Chitawan,fr,Q1075023,exact,aucun,1984,false,https://whc.unesco.org/fr/list/284
-NPL,666,culturel,Lumbinî,fr,Q9213,exact,aucun,1997,false,https://whc.unesco.org/fr/list/666
-LKA,200,culturel,Anurâdhapura,fr,Q5724,exact,titre_unesco,1982,false,https://whc.unesco.org/fr/list/200
-LKA,201,culturel,Polonnâruvâ,fr,Q394443,exact,aucun,1982,false,https://whc.unesco.org/fr/list/201
-LKA,202,culturel,Sigirîya,fr,Q272153,exact,aucun,1982,false,https://whc.unesco.org/fr/list/202
-LKA,405,naturel,réserve forestière de Sinharâja,fr,Q375634,exact,aucun,1988,false,https://whc.unesco.org/fr/list/405
-LKA,450,culturel,Kandy,fr,Q203197,exact,aucun,1988,false,https://whc.unesco.org/fr/list/450
-LKA,451,culturel,Vieille ville de Galle et ses fortifications,fr,Q15830652,exact,aucun,1988,false,https://whc.unesco.org/fr/list/451
-LKA,561,culturel,temple d'Or de Dambulla,fr,Q45690,exact,aucun,1991,false,https://whc.unesco.org/fr/list/561
-LKA,1203,naturel,Hauts plateaux du centre de Sri Lanka,fr,Q422941,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1203
-LAO,479,culturel,Luang Prabang,fr,Q190165,exact,aucun,1995,false,https://whc.unesco.org/fr/list/479
-LAO,481,culturel,Vat Phou et les anciens établissements associés du paysage culturel de Champassak,unesco_fr,Q3888860,exact,aucun,2001,false,https://whc.unesco.org/fr/list/481
-LAO,951,naturel,Parc national de Phong Nha-Ke Bang et Parc national de Hin Nam No,unesco_fr,Q5765542,exact,aucun,2025,true,https://whc.unesco.org/fr/list/951
-LAO,1587,culturel,Plaine des Jarres,fr,Q870258,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1587
-TUR,356,culturel,Zones historiques d'Istanbul,fr,Q5773394,exact,partie_de,1985,false,https://whc.unesco.org/fr/list/356
-TUR,357,mixte,Parc national de Göreme et sites rupestres de Cappadoce,fr,Q64705367,exact,aucun,1985,false,https://whc.unesco.org/fr/list/357
-TUR,358,culturel,Grande mosquée et hopital de Divriği,fr,Q581641,exact,aucun,1985,false,https://whc.unesco.org/fr/list/358
-TUR,377,culturel,Hattousa : la capitale hittite,fr,Q64699502,exact,aucun,1986,false,https://whc.unesco.org/fr/list/377
-TUR,448,culturel,Nemrut Dağı,fr,Q207917,exact,aucun,1987,false,https://whc.unesco.org/fr/list/448
-TUR,484,culturel,Xanthos-Letoon,fr,Q16912661,exact,aucun,1988,false,https://whc.unesco.org/fr/list/484
-TUR,485,mixte,Hierapolis-Pamukkale,fr,Q15924669,exact,aucun,1988,false,https://whc.unesco.org/fr/list/485
-TUR,614,culturel,Ville de Safranbolu,fr,Q64705254,exact,aucun,1994,false,https://whc.unesco.org/fr/list/614
-TUR,849,culturel,Troie,fr,Q22647,exact,aucun,1998,false,https://whc.unesco.org/fr/list/849
-TUR,1018,culturel,Éphèse,fr,Q64699469,revision,aucun,2015,false,https://whc.unesco.org/fr/list/1018
-TUR,1366,culturel,mosquée Selimiye,fr,Q184534,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1366
-TUR,1405,culturel,Çatal Höyük,fr,Q192522,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1405
-TUR,1452,culturel,Bursa et Cumalıkızık : la naissance de l’Empire ottoman,fr,Q60846866,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1452
-TUR,1457,culturel,Pergame et son paysage culturel à multiples strates,fr,Q64705007,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1457
-TUR,1488,culturel,paysage culturel de la forteresse de Diyarbakır et des jardins de l’Hevsel,fr,Q20963673,exact,partie_de,2015,false,https://whc.unesco.org/fr/list/1488
-TUR,1518,culturel,Ani,fr,Q546010,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1518
-TUR,1519,culturel,Aphrodisias,fr,Q64699201,exact,partie_de,2017,false,https://whc.unesco.org/fr/list/1519
-TUR,1572,culturel,Göbekli Tepe,fr,Q214944,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1572
-TUR,1622,culturel,Arslantepe,fr,Q705132,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1622
-TUR,1669,culturel,Gordion,fr,Q542854,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1669
-TUR,1694,culturel,mosquées hypostyles en bois de l'Anatolie médiévale,fr,Q64735123,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1694
-TUR,1731,culturel,Sardes et les tumuli lydiens de Bin Tepe,fr,Q64735723,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1731
-ARE,1343,culturel,"Sites culturels d’Al Aïn (Hafit, Hili, Bidaa Bint Saud et les oasis)",unesco_fr,Q3962347,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1343
-ARE,1724,naturel,Wadi Wurayah,fr,Q2538723,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1724
-ARE,1735,culturel,Djebel Faya,fr,Q6172505,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1735
-JOR,326,culturel,Pétra,fr,Q5788,exact,aucun,1985,false,https://whc.unesco.org/fr/list/326
-JOR,327,culturel,Qusair Amra,fr,Q499517,exact,aucun,1985,false,https://whc.unesco.org/fr/list/327
-JOR,689,culturel,Salt,fr,Q867586,exact,aucun,2021,false,https://whc.unesco.org/fr/list/689
-JOR,1093,culturel,Um er-Rasas,fr,Q822842,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1093
-JOR,1377,mixte,Wadi Rum,fr,Q40729,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1377
-JOR,1446,culturel,Al-Maghtas,fr,Q12193567,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1446
-JOR,1721,culturel,Um el-Jimal,fr,Q3107493,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1721
-JOR,1742,naturel,Réserve marine d’Aqaba,fr,Q31866622,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1742
-MAR,170,culturel,médina de Fès,fr,Q2072102,exact,aucun,1981,false,https://whc.unesco.org/fr/list/170
-MAR,331,culturel,médina de Marrakech,fr,Q966780,exact,aucun,1985,false,https://whc.unesco.org/fr/list/331
-MAR,444,culturel,Ksar Aït-ben-Haddou,fr,Q309436,exact,aucun,1987,false,https://whc.unesco.org/fr/list/444
-MAR,753,culturel,médina d'Essaouira,fr,Q11858823,revision,aucun,2001,false,https://whc.unesco.org/fr/list/753
-MAR,793,culturel,Médina de Meknès,fr,Q12352436,exact,aucun,1996,false,https://whc.unesco.org/fr/list/793
-MAR,836,culturel,Oualili,fr,Q391215,exact,aucun,1997,false,https://whc.unesco.org/fr/list/836
-MAR,837,culturel,Médina,fr,Q3847588,exact,aucun,1997,false,https://whc.unesco.org/fr/list/837
-MAR,1058,culturel,Mazagan,fr,Q555360,revision,aucun,2004,false,https://whc.unesco.org/fr/list/1058
-MAR,1401,culturel,"Rabat, capitale moderne et ville historique",fr,Q65926560,exact,titre_unesco,2012,false,https://whc.unesco.org/fr/list/1401
-EGY,86,culturel,Memphis et sa nécropole – les zones des pyramides de Guizeh à Dahchour,fr,Q1175856,exact,aucun,1979,false,https://whc.unesco.org/fr/list/86
-EGY,87,culturel,Thèbes antique et sa nécropole,fr,Q141298543,exact,aucun,1979,false,https://whc.unesco.org/fr/list/87
-EGY,88,culturel,Monuments de Nubie d'Abou Simbel à Philae,fr,Q4923872,exact,aucun,1979,false,https://whc.unesco.org/fr/list/88
-EGY,89,culturel,Caire islamique,fr,Q1100964,exact,aucun,1979,false,https://whc.unesco.org/fr/list/89
-EGY,90,culturel,Abou Mena,fr,Q9278,exact,aucun,1979,false,https://whc.unesco.org/fr/list/90
-EGY,954,culturel,Zone Sainte-Catherine,unesco_fr,Q2468771,exact,aucun,2002,false,https://whc.unesco.org/fr/list/954
-EGY,1186,naturel,Ouadi Al-Hitan,fr,Q501833,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1186
-ZAF,914,naturel,parc de la zone humide d'iSimangaliso,fr,Q310719,exact,aucun,1999,true,https://whc.unesco.org/fr/list/914
-ZAF,915,culturel,sites des hominidés fossiles d'Afrique du Sud,fr,Q1130112,exact,aucun,1999,false,https://whc.unesco.org/fr/list/915
-ZAF,916,culturel,Robben Island,fr,Q192493,exact,aucun,1999,false,https://whc.unesco.org/fr/list/916
-ZAF,985,mixte,Parc Maloti-Drakensberg,fr,Q6744547,exact,aucun,2000,true,https://whc.unesco.org/fr/list/985
-ZAF,1007,naturel,Royaume floral du Cap,fr,Q1974274,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1007
-ZAF,1099,culturel,Paysage culturel de Mapungubwe,fr,Q1136251,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1099
-ZAF,1162,naturel,dôme de Vredefort,fr,Q330095,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1162
-ZAF,1265,culturel,Richtersveld,fr,Q1353565,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1265
-ZAF,1545,culturel,paysage culturel des ǂKhomani,fr,Q33800328,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1545
-ZAF,1575,naturel,Barberton Makhonjwa,fr,Q19605615,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1575
-ZAF,1676,culturel,"Droits de l’homme, libération et réconciliation : les sites de mémoire de Nelson Mandela",fr,Q65936861,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1676
-ZAF,1723,culturel,L’émergence du comportement humain moderne : les sites d’occupation du Pléistocène en Afrique du Sud,fr,Q65936860,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1723
-KEN,800,naturel,parc national du mont Kenya,fr,Q1639468,exact,aucun,1997,false,https://whc.unesco.org/fr/list/800
-KEN,801,naturel,parcs nationaux du lac Turkana,fr,Q1647948,exact,aucun,1997,false,https://whc.unesco.org/fr/list/801
-KEN,1055,culturel,Ancienne ville de Lamu,fr,Q51100199,exact,correction,2001,false,https://whc.unesco.org/fr/list/1055
-KEN,1060,naturel,réseau des lacs du Kenya dans la vallée du grand rift,fr,Q2384313,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1060
-KEN,1231,culturel,forêts sacrées de kayas des Mijikenda,fr,Q1362222,revision,aucun,2008,false,https://whc.unesco.org/fr/list/1231
-KEN,1295,culturel,fort Jesus,fr,Q379080,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1295
-KEN,1450,culturel,Thimlich Ohinga,fr,Q3524629,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1450
-KEN,1720,culturel,Ruines de Gedi,fr,Q502518,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1720
-TZA,39,mixte,aire de conservation du Ngorongoro,fr,Q1217726,exact,aucun,1979,false,https://whc.unesco.org/fr/list/39
-TZA,144,culturel,Ruines de Kilwa Kisiwani et de Songo Mnara,fr,Q15726282,exact,aucun,1981,false,https://whc.unesco.org/fr/list/144
-TZA,156,naturel,parc national du Serengeti,fr,Q11812902,exact,aucun,1981,false,https://whc.unesco.org/fr/list/156
-TZA,173,culturel,Stone Town,fr,Q844417,revision,aucun,2000,false,https://whc.unesco.org/fr/list/173
-TZA,199,naturel,réserve de gibier de Sélous,fr,Q2268839,exact,aucun,1982,false,https://whc.unesco.org/fr/list/199
-TZA,403,naturel,parc national du Kilimandjaro,fr,Q756790,exact,aucun,1987,false,https://whc.unesco.org/fr/list/403
-TZA,1183,culturel,Sites d'art rupestre de Kondoa,fr,Q1404282,revision,aucun,2006,false,https://whc.unesco.org/fr/list/1183
-SEN,25,naturel,parc national des oiseaux du Djoudj,fr,Q733676,exact,aucun,1981,false,https://whc.unesco.org/fr/list/25
-SEN,26,culturel,île de Gorée,fr,Q244347,exact,aucun,1978,false,https://whc.unesco.org/fr/list/26
-SEN,153,naturel,parc national du Niokolo-Koba,fr,Q679891,exact,aucun,1981,false,https://whc.unesco.org/fr/list/153
-SEN,956,culturel,île de Saint-Louis,fr,Q1114640,exact,aucun,2000,false,https://whc.unesco.org/fr/list/956
-SEN,1226,culturel,Cercles mégalithiques de Sénégambie,unesco_fr,Q98769058,exact,aucun,2006,true,https://whc.unesco.org/fr/list/1226
-SEN,1359,culturel,delta du Saloum,fr,Q559363,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1359
-SEN,1407,culturel,Pays bassari,fr,Q2916296,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1407
-GHA,34,culturel,Forts de la côte ghanéenne,fr,Q778743,exact,aucun,1979,false,https://whc.unesco.org/fr/list/34
-GHA,35,culturel,bâtiments traditionnels Ashantis,fr,Q1141003,exact,aucun,1980,false,https://whc.unesco.org/fr/list/35
-USA,27,culturel,parc national de Mesa Verde,fr,Q237128,exact,aucun,1978,false,https://whc.unesco.org/fr/list/27
-USA,28,naturel,parc national de Yellowstone,fr,Q351,exact,aucun,1978,false,https://whc.unesco.org/fr/list/28
-USA,72,naturel,Kluane / Wrangell - Saint-Élie / Glacier Bay / Tatshenshini-Alsek,fr,Q604604,exact,aucun,1979,true,https://whc.unesco.org/fr/list/72
-USA,75,naturel,parc national du Grand Canyon,fr,Q220289,exact,aucun,1979,false,https://whc.unesco.org/fr/list/75
-USA,76,naturel,parc national des Everglades,fr,Q274131,exact,aucun,1979,false,https://whc.unesco.org/fr/list/76
-USA,78,culturel,Independence Hall,fr,Q390028,exact,aucun,1979,false,https://whc.unesco.org/fr/list/78
-USA,134,naturel,parc national et parcs d'état de Redwood,fr,Q63863168,exact,aucun,1980,false,https://whc.unesco.org/fr/list/134
-USA,150,naturel,parc national de Mammoth Cave,fr,Q242681,exact,aucun,1981,false,https://whc.unesco.org/fr/list/150
-USA,151,naturel,parc national Olympique,fr,Q372093,exact,aucun,1981,false,https://whc.unesco.org/fr/list/151
-USA,198,culturel,Cahokia,fr,Q333661,extension,aucun,1982,false,https://whc.unesco.org/fr/list/198
-USA,259,naturel,parc national des Great Smoky Mountains,fr,Q464004,exact,aucun,1983,false,https://whc.unesco.org/fr/list/259
-USA,266,culturel,La Fortaleza et le site historique national de San Juan à Porto Rico,fr,Q15813904,exact,aucun,1983,false,https://whc.unesco.org/fr/list/266
-USA,307,culturel,Liberty Island,fr,Q319821,exact,aucun,1984,false,https://whc.unesco.org/fr/list/307
-USA,308,naturel,parc national de Yosemite,fr,Q180402,exact,aucun,1984,false,https://whc.unesco.org/fr/list/308
-USA,353,culturel,culture Chaco,fr,Q65648486,revision,aucun,1987,false,https://whc.unesco.org/fr/list/353
-USA,354,naturel,parc international de la paix Waterton-Glacier,fr,Q828212,revision,aucun,1995,true,https://whc.unesco.org/fr/list/354
-USA,409,naturel,parc national des volcans d'Hawaï,fr,Q205952,exact,aucun,1987,false,https://whc.unesco.org/fr/list/409
-USA,442,culturel,Monticello et Université de Virginie à Charlottesville,fr,Q15830656,exact,aucun,1987,false,https://whc.unesco.org/fr/list/442
-USA,492,culturel,Pueblo de Taos,fr,Q252814,revision,aucun,1992,false,https://whc.unesco.org/fr/list/492
-USA,721,naturel,parc national des grottes de Carlsbad,fr,Q273195,exact,aucun,1995,false,https://whc.unesco.org/fr/list/721
-USA,1326,mixte,monument national marin de Papahānaumokuākea,fr,Q787425,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1326
-USA,1351,culturel,Camino Real de Tierra Adentro,fr,Q911953,exact,aucun,2010,true,https://whc.unesco.org/fr/list/1351
-USA,1435,culturel,Poverty Point,fr,Q964745,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1435
-USA,1466,culturel,missions de San Antonio,fr,Q10498483,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1466
-USA,1468,culturel,Colonies de l’Église morave,fr,Q128009257,extension,aucun,2015,true,https://whc.unesco.org/fr/list/1468
-USA,1496,culturel,œuvres architecturales du XXe siècle de Frank Lloyd Wright,fr,Q10498496,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1496
-USA,1689,culturel,Les ouvrages en terre cérémoniels Hopewell,fr,Q10525989,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1689
-USA,1751,naturel,Refuge national de faune et de flore sauvages d’Okefenokee,fr,Q7081911,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1751
-CAN,4,culturel,L'Anse aux Meadows,fr,Q189113,exact,aucun,1978,false,https://whc.unesco.org/fr/list/4
-CAN,24,naturel,réserve de parc national de Nahanni,fr,Q391391,exact,aucun,1978,false,https://whc.unesco.org/fr/list/24
-CAN,71,naturel,parc provincial Dinosaur,fr,Q289466,exact,aucun,1979,false,https://whc.unesco.org/fr/list/71
-CAN,72,naturel,Kluane / Wrangell - Saint-Élie / Glacier Bay / Tatshenshini-Alsek,fr,Q604604,exact,aucun,1979,true,https://whc.unesco.org/fr/list/72
-CAN,157,culturel,SGang Gwaay,fr,Q240832,exact,aucun,1981,false,https://whc.unesco.org/fr/list/157
-CAN,158,culturel,précipice à bisons Head-Smashed-In,fr,Q683110,exact,aucun,1981,false,https://whc.unesco.org/fr/list/158
-CAN,256,naturel,parc national Wood Buffalo,fr,Q391338,exact,aucun,1983,false,https://whc.unesco.org/fr/list/256
-CAN,300,culturel,Vieux-Québec,fr,Q2114279,exact,aucun,1985,false,https://whc.unesco.org/fr/list/300
-CAN,304,naturel,parcs des montagnes Rocheuses canadiennes,fr,Q72895,exact,aucun,1984,false,https://whc.unesco.org/fr/list/304
-CAN,354,naturel,parc international de la paix Waterton-Glacier,fr,Q828212,revision,aucun,1995,true,https://whc.unesco.org/fr/list/354
-CAN,419,naturel,parc national du Gros-Morne,fr,Q257598,exact,aucun,1987,false,https://whc.unesco.org/fr/list/419
-CAN,686,naturel,parc national de Miguasha,fr,Q631128,revision,aucun,1999,false,https://whc.unesco.org/fr/list/686
-CAN,741,culturel,Le Vieux Lunenburg,fr,Q28833066,exact,aucun,1995,false,https://whc.unesco.org/fr/list/741
-CAN,1221,culturel,canal Rideau,fr,Q18087815,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1221
-CAN,1285,naturel,falaises fossilifères de Joggins,fr,Q1439433,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1285
-CAN,1404,culturel,Grand-Pré,fr,Q1100749,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1404
-CAN,1412,culturel,lieu historique national de Red Bay,fr,Q3238270,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1412
-CAN,1415,mixte,Pimachiowin Aki,fr,Q7194595,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1415
-CAN,1497,naturel,réserve écologique de Mistaken Point,fr,Q3301928,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1497
-CAN,1564,culturel,Tr’ondëk-Klondike,fr,Q65118617,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1564
-CAN,1597,culturel,parc provincial Writing-on-Stone,fr,Q8038519,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1597
-CAN,1686,naturel,Anticosti,fr,Q122707293,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1686
-MEX,410,naturel,Sian Ka'an,fr,Q559789,exact,aucun,1987,false,https://whc.unesco.org/fr/list/410
-MEX,411,culturel,Palenque,fr,Q181427,exact,aucun,1987,false,https://whc.unesco.org/fr/list/411
-MEX,412,culturel,Centre historique de Mexico et Xochimilco,fr,Q15924695,exact,aucun,1987,false,https://whc.unesco.org/fr/list/412
-MEX,414,culturel,Teotihuacan,fr,Q172613,exact,aucun,1987,false,https://whc.unesco.org/fr/list/414
-MEX,415,culturel,Centre historique de Oaxaca et zone archéologique de Monte Alban,fr,Q16743243,exact,aucun,1987,false,https://whc.unesco.org/fr/list/415
-MEX,416,culturel,Centre historique de Puebla,fr,Q3848455,exact,aucun,1987,false,https://whc.unesco.org/fr/list/416
-MEX,482,culturel,Guanajuato,fr,Q61306,exact,aucun,1988,false,https://whc.unesco.org/fr/list/482
-MEX,483,culturel,Chichén Itzá,fr,Q5859,exact,aucun,1989,false,https://whc.unesco.org/fr/list/483
-MEX,554,naturel,Sanctuaire de baleines d'El Vizcaino,fr,Q12201148,exact,aucun,1993,false,https://whc.unesco.org/fr/list/554
-MEX,560,culturel,Paquimé,fr,Q853265,revision,aucun,1998,false,https://whc.unesco.org/fr/list/560
-MEX,585,culturel,Centre historique de Morelia,fr,Q3848089,exact,aucun,1991,false,https://whc.unesco.org/fr/list/585
-MEX,631,culturel,El Tajín,fr,Q753895,exact,aucun,1992,false,https://whc.unesco.org/fr/list/631
-MEX,676,culturel,Centre historique de Zacatecas,fr,Q3848116,exact,aucun,1993,false,https://whc.unesco.org/fr/list/676
-MEX,702,culturel,Premiers monastères du XVIe siècle sur les versants du Popocatépetl,fr,Q1141009,exact,aucun,1994,false,https://whc.unesco.org/fr/list/702
-MEX,714,culturel,peintures rupestres de la Sierra de San Francisco,fr,Q552005,exact,aucun,1993,false,https://whc.unesco.org/fr/list/714
-MEX,791,culturel,Ville précolombienne d'Uxmal,fr,Q65455940,exact,aucun,1996,false,https://whc.unesco.org/fr/list/791
-MEX,792,culturel,centre historique de Santiago de Querétaro,fr,Q3848141,exact,aucun,1996,false,https://whc.unesco.org/fr/list/792
-MEX,815,culturel,hospice Cabañas,fr,Q28416,exact,aucun,1997,false,https://whc.unesco.org/fr/list/815
-MEX,862,culturel,Tlacotalpan,fr,Q903792,exact,aucun,1998,false,https://whc.unesco.org/fr/list/862
-MEX,895,culturel,Ville historique fortifiée de Campeche,unesco_fr,Q5762131,exact,aucun,1999,false,https://whc.unesco.org/fr/list/895
-MEX,939,culturel,Xochicalco,fr,Q797120,exact,aucun,1999,false,https://whc.unesco.org/fr/list/939
-MEX,1061,mixte,Calakmul,fr,Q272771,extension,aucun,2002,false,https://whc.unesco.org/fr/list/1061
-MEX,1079,culturel,Missions franciscaines de la Sierra Gorda,fr,Q751146,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1079
-MEX,1136,culturel,maison-atelier de Luis Barragán,fr,Q1046414,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1136
-MEX,1182,naturel,Îles et aires protégées du Golfe de Californie,fr,Q2383410,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1182
-MEX,1209,culturel,Paysage d'agaves et anciennes installations industrielles de Tequila,fr,Q2104675,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1209
-MEX,1250,culturel,Ciudad Universitaria,fr,Q130025,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1250
-MEX,1274,culturel,Ville protégée de San Miguel et sanctuaire de Jésus Nazareno de Atotonilco,unesco_fr,Q15613314,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1274
-MEX,1290,naturel,réserve de biosphère du papillon monarque,fr,Q852546,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1290
-MEX,1351,culturel,Camino Real de Tierra Adentro,fr,Q911953,exact,aucun,1993,true,https://whc.unesco.org/fr/list/1351
-MEX,1352,culturel,grottes préhistoriques de Yagul et Mitla,fr,Q15661566,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1352
-MEX,1410,naturel,réserve de biosphère El Pinacate et le Grand désert d'Altar,fr,Q3821829,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1410
-MEX,1463,culturel,aqueduc de Padre Tembleque,fr,Q2840764,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1463
-MEX,1510,naturel,îles Revillagigedo,fr,Q849318,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1510
-MEX,1534,mixte,Réserve de biosphère Tehuacán-Cuicatlán,fr,Q5853681,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1534
-MEX,1704,culturel,route huichol vers Wiricuta,fr,Q5934961,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1704
-CRI,205,naturel,Réserves de la cordillère de Talamanca-La Amistad / Parc national La Amistad,fr,Q6106226,exact,aucun,1983,true,https://whc.unesco.org/fr/list/205
-CRI,820,naturel,parc national de l'île Cocos,fr,Q6062995,exact,aucun,1997,false,https://whc.unesco.org/fr/list/820
-CRI,928,naturel,zone de conservation de Guanacaste,fr,Q775154,exact,aucun,1999,false,https://whc.unesco.org/fr/list/928
-CRI,1453,culturel,Établissements de chefferies précolombiennes avec des sphères mégalithiques du Diquís,fr,Q65114170,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1453
-COL,285,culturel,"Port, forteresses et ensemble monumental de Carthagène",fr,Q6091925,exact,aucun,1984,false,https://whc.unesco.org/fr/list/285
-COL,711,naturel,parc national naturel Los Katíos,fr,Q305169,exact,aucun,1994,false,https://whc.unesco.org/fr/list/711
-COL,742,culturel,Centre historique de Santa Cruz de Mompox,fr,Q8343767,exact,titre_unesco,1995,false,https://whc.unesco.org/fr/list/742
-COL,743,culturel,parc archéologique national de Tierradentro,fr,Q179506,exact,aucun,1995,false,https://whc.unesco.org/fr/list/743
-COL,744,culturel,parc archéologique de San Agustín,fr,Q2887224,exact,aucun,1995,false,https://whc.unesco.org/fr/list/744
-COL,1121,culturel,Paysage culturel du café de la Colombie,fr,Q18417667,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1121
-COL,1174,mixte,parc national naturel de la Serranía de Chiribiquete,fr,Q2603196,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1174
-COL,1216,naturel,Sanctuaire de faune et de flore de Malpelo,fr,Q108379504,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1216
-COL,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459
-PER,273,culturel,centre historique de Cusco,fr,Q28502997,exact,aucun,1983,false,https://whc.unesco.org/fr/list/273
-PER,274,mixte,sanctuaire historique de Machu Picchu,fr,Q3331815,exact,aucun,1983,false,https://whc.unesco.org/fr/list/274
-PER,330,culturel,Chavín de Huántar,fr,Q732554,exact,aucun,1985,false,https://whc.unesco.org/fr/list/330
-PER,333,naturel,parc national de Huascarán,fr,Q917369,exact,aucun,1985,false,https://whc.unesco.org/fr/list/333
-PER,366,culturel,Chan Chan,fr,Q277540,exact,aucun,1986,false,https://whc.unesco.org/fr/list/366
-PER,402,naturel,parc national de Manu,fr,Q390264,exact,aucun,1987,false,https://whc.unesco.org/fr/list/402
-PER,500,culturel,Centre historique de Lima,fr,Q3320442,exact,aucun,1988,false,https://whc.unesco.org/fr/list/500
-PER,548,mixte,parc national Río Abiseo,fr,Q941412,exact,aucun,1990,false,https://whc.unesco.org/fr/list/548
-PER,700,culturel,géoglyphes de Nazca,fr,Q2620036,exact,aucun,1994,false,https://whc.unesco.org/fr/list/700
-PER,1016,culturel,Centre historique de la ville d’Arequipa,fr,Q8343756,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1016
-PER,1269,culturel,Caral,mul,Q219279,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1269
-PER,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459
-PER,1624,culturel,ensemble archéoastronomique de Chanquillo,fr,Q108016068,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1624
-BRA,124,culturel,ville historique d'Ouro Preto,fr,Q3845692,exact,aucun,1980,false,https://whc.unesco.org/fr/list/124
-BRA,189,culturel,Centre historique de la ville d'Olinda,fr,Q8343764,exact,aucun,1982,false,https://whc.unesco.org/fr/list/189
-BRA,275,culturel,Missions jésuites des Guaranis,fr,Q465960,exact,aucun,1983,true,https://whc.unesco.org/fr/list/275
-BRA,309,culturel,Centre historique de Salvador da Bahia,fr,Q5572706,exact,aucun,1985,false,https://whc.unesco.org/fr/list/309
-BRA,334,culturel,sanctuaire du Bom Jesus de Matosinhos,fr,Q1595417,exact,aucun,1985,false,https://whc.unesco.org/fr/list/334
-BRA,355,naturel,parc national de l'Iguaçu,fr,Q742315,exact,aucun,1986,false,https://whc.unesco.org/fr/list/355
-BRA,445,culturel,Brasilia,fr,Q2844,exact,titre_unesco,1987,false,https://whc.unesco.org/fr/list/445
-BRA,606,culturel,parc national de la Serra da Capivara,fr,Q267394,exact,aucun,1991,false,https://whc.unesco.org/fr/list/606
-BRA,821,culturel,Centre historique de São Luís,fr,Q8343768,exact,aucun,1997,false,https://whc.unesco.org/fr/list/821
-BRA,890,culturel,Centre historique de la ville de Diamantina,unesco_fr,Q8343760,exact,aucun,1999,false,https://whc.unesco.org/fr/list/890
-BRA,892,naturel,Côte de la découverte – Réserves de la forêt atlantique,fr,Q2487302,revision,aucun,1999,false,https://whc.unesco.org/fr/list/892
-BRA,893,naturel,forêt atlantique – Réserves du sud-est,fr,Q2521895,exact,aucun,1999,false,https://whc.unesco.org/fr/list/893
-BRA,993,culturel,Centre historique de la ville de Goiás,unesco_fr,Q8343761,exact,aucun,2001,false,https://whc.unesco.org/fr/list/993
-BRA,998,naturel,complexe de conservation de l'Amazonie centrale,fr,Q2990490,exact,aucun,2000,false,https://whc.unesco.org/fr/list/998
-BRA,999,naturel,Aire de conservation du Pantanal,unesco_fr,Q99237891,exact,titre_unesco,2000,true,https://whc.unesco.org/fr/list/999
-BRA,1000,naturel,Îles atlantiques brésiliennes : les Réserves de Fernando de Noronha et de l'atol das Rocas,fr,Q15224654,revision,partie_de,2001,false,https://whc.unesco.org/fr/list/1000
-BRA,1035,naturel,parc national des cavernes de Peruaçu,fr,Q1051873,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1035
-BRA,1100,culturel,forêt de Tijuca,fr,Q14942956,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1100
-BRA,1272,culturel,place São Francisco dans la ville de São Cristóvão,fr,Q7214285,revision,aucun,2010,false,https://whc.unesco.org/fr/list/1272
-BRA,1308,mixte,Paraty et Ilha Grande – culture et biodiversité,fr,Q66057630,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1308
-BRA,1493,culturel,Ensemble moderne de Pampulha,fr,Q9850285,exact,partie_de,1997,false,https://whc.unesco.org/fr/list/1493
-BRA,1548,culturel,quai de Valongo,fr,Q20048515,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1548
-BRA,1611,naturel,parc national des Lençóis Maranhenses,fr,Q647777,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1611
-BRA,1620,culturel,site Roberto Burle Marx,fr,Q56695607,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1620
-BRA,1747,naturel,Canyon de la rivière Peruaçu,unesco_fr,Q141673269,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1747
-BRA,1774,culturel,Théâtres d'Amazonie,fr,Q65561204,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1774
-ARG,145,naturel,parc national Los Glaciares,fr,Q215992,exact,aucun,1981,false,https://whc.unesco.org/fr/list/145
-ARG,275,culturel,Missions jésuites des Guaranis,fr,Q465960,exact,aucun,1983,true,https://whc.unesco.org/fr/list/275
-ARG,303,naturel,Site du patrimoine mondial du Parc national de l'Iguazu,fr,Q57072712,exact,aucun,1984,false,https://whc.unesco.org/fr/list/303
-ARG,936,culturel,Cueva de las Manos,fr,Q223385,exact,aucun,1999,false,https://whc.unesco.org/fr/list/936
-ARG,937,naturel,péninsule Valdés,fr,Q213237,exact,aucun,1999,false,https://whc.unesco.org/fr/list/937
-ARG,966,naturel,Parcs naturels d’Ischigualasto / Talampaya,fr,Q17132555,exact,aucun,2000,false,https://whc.unesco.org/fr/list/966
-ARG,995,culturel,Ensemble et les estancias jésuites de Córdoba,unesco_fr,Q837642,exact,partie_de,2000,false,https://whc.unesco.org/fr/list/995
-ARG,1116,culturel,Quebrada de Humahuaca,fr,Q28061,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1116
-ARG,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321
-ARG,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459
-ARG,1526,naturel,parc national Los Alerces,fr,Q828291,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1526
-ARG,1681,culturel,"Musée et lieu de Mémoire de l’ESMA - Ancien centre clandestin de détention, de torture et d’extermination",fr,Q28663704,exact,correction,2023,false,https://whc.unesco.org/fr/list/1681
-CHL,715,culturel,parc national de Rapa Nui,fr,Q1763364,exact,aucun,1995,false,https://whc.unesco.org/fr/list/715
-CHL,959,culturel,Quartier historique de la ville portuaire de Valparaiso,fr,Q16333721,revision,aucun,2003,false,https://whc.unesco.org/fr/list/959
-CHL,971,culturel,églises de Chiloé,fr,Q27964,exact,aucun,2000,false,https://whc.unesco.org/fr/list/971
-CHL,1178,culturel,usines de salpêtre de Humberstone et de Santa Laura,fr,Q572895,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1178
-CHL,1214,culturel,Sewell,fr,Q588417,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1214
-CHL,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459
-CHL,1634,culturel,Peuplement et momification artificielle de la culture chinchorro dans la région d'Arica et de Parinacota,fr,Q108096731,exact,titre_unesco,2021,false,https://whc.unesco.org/fr/list/1634
-AUS,147,mixte,Parc national de Kakadu,fr,Q65096742,exact,aucun,1981,false,https://whc.unesco.org/fr/list/147
-AUS,154,naturel,grande barrière de corail,fr,Q7343,exact,aucun,1981,false,https://whc.unesco.org/fr/list/154
-AUS,166,culturel,opéra de Sydney,fr,Q45178,revision,aucun,2007,false,https://whc.unesco.org/fr/list/166
-AUS,167,mixte,Région des lacs Willandra,fr,Q747875,exact,aucun,1981,false,https://whc.unesco.org/fr/list/167
-AUS,181,mixte,zone de nature sauvage de Tasmanie,fr,Q138170,exact,aucun,1982,false,https://whc.unesco.org/fr/list/181
-AUS,186,naturel,Îles Lord Howe,unesco_fr,Q1869866,exact,aucun,1982,false,https://whc.unesco.org/fr/list/186
-AUS,368,naturel,forêts humides Gondwana de l'Australie,fr,Q643063,exact,aucun,1986,false,https://whc.unesco.org/fr/list/368
-AUS,447,mixte,parc national d'Uluṟu-Kata Tjuṯa,fr,Q251999,exact,aucun,1987,false,https://whc.unesco.org/fr/list/447
-AUS,486,naturel,Tropiques humides du Queensland,fr,Q1135808,exact,aucun,1988,false,https://whc.unesco.org/fr/list/486
-AUS,577,naturel,îles Heard-et-MacDonald,fr,Q131198,revision,aucun,1997,false,https://whc.unesco.org/fr/list/577
-AUS,578,naturel,"Baie Shark, Australie occidentale",unesco_fr,Q38167074,exact,aucun,1991,false,https://whc.unesco.org/fr/list/578
-AUS,629,naturel,île Macquarie,fr,Q46650,revision,aucun,1997,false,https://whc.unesco.org/fr/list/629
-AUS,630,naturel,K’gari,fr,Q134905,exact,aucun,1992,false,https://whc.unesco.org/fr/list/630
-AUS,698,naturel,sites fossilifères de mammifères d'Australie (Riversleigh / Naracoorte),fr,Q15933552,exact,aucun,1994,false,https://whc.unesco.org/fr/list/698
-AUS,917,naturel,Région des montagnes Bleues,fr,Q934627,exact,aucun,2000,false,https://whc.unesco.org/fr/list/917
-AUS,1094,naturel,parc national de Purnululu,fr,Q679568,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1094
-AUS,1131,culturel,palais royal des expositions et jardins Carlton,fr,Q15278460,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1131
-AUS,1306,culturel,sites de bagnes australiens,fr,Q391496,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1306
-AUS,1369,naturel,récif de Ningaloo,fr,Q1541665,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1369
-AUS,1577,culturel,Paysage culturel Budj Bim,unesco_fr,Q260465,exact,douteux,2019,false,https://whc.unesco.org/fr/list/1577
-AUS,1709,culturel,Paysage culturel de Murujuga,unesco_fr,Q25386203,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1709
-NZL,421,mixte,parc national de Tongariro,fr,Q202845,exact,aucun,1990,false,https://whc.unesco.org/fr/list/421
-NZL,551,naturel,Te Wāhipounamu,fr,Q575398,exact,aucun,1990,false,https://whc.unesco.org/fr/list/551
-NZL,877,naturel,îles sub-antarctiques de Nouvelle-Zélande,fr,Q46275,exact,aucun,1998,false,https://whc.unesco.org/fr/list/877
+iso3,id_unesco,categorie,nom_fr,langue_nom,wikidata_qid,regle_choix,departage,annee_inscription,transfrontalier,lien_unesco,source_nom,source_annee
+FRA,80,culturel,Mont-Saint-Michel et sa baie,fr,Q17117964,exact,aucun,1979,false,https://whc.unesco.org/fr/list/80,,
+FRA,81,culturel,cathédrale Notre-Dame de Chartres,fr,Q180274,exact,aucun,1979,false,https://whc.unesco.org/fr/list/81,,
+FRA,83,culturel,palais et parc de Versailles,fr,Q3034552,exact,partie_de,1979,false,https://whc.unesco.org/fr/list/83,,
+FRA,84,culturel,basilique et colline de Vézelay,fr,Q64401449,exact,titre_unesco,1979,false,https://whc.unesco.org/fr/list/84,,https://fr.wikipedia.org/w/index.php?title=Basilique_Sainte-Marie-Madeleine_de_V%C3%A9zelay&oldid=241385660
+FRA,85,culturel,sites préhistoriques et grottes ornées de la vallée de la Vézère,fr,Q463159,exact,aucun,1979,false,https://whc.unesco.org/fr/list/85,,
+FRA,160,culturel,château de Fontainebleau,fr,Q201428,exact,aucun,1981,false,https://whc.unesco.org/fr/list/160,,
+FRA,162,culturel,cathédrale Notre-Dame d'Amiens,fr,Q106934,exact,aucun,1981,false,https://whc.unesco.org/fr/list/162,,https://fr.wikipedia.org/w/index.php?title=Cath%C3%A9drale_Notre-Dame_d%27Amiens&oldid=241027816
+FRA,163,culturel,théâtre antique et ses abords et « Arc de Triomphe » d'Orange,fr,Q15726321,exact,aucun,1981,false,https://whc.unesco.org/fr/list/163,,
+FRA,164,culturel,Monuments romains et romans d'Arles,fr,Q1279597,exact,aucun,1981,false,https://whc.unesco.org/fr/list/164,,
+FRA,165,culturel,abbaye de Fontenay,fr,Q464918,exact,aucun,1981,false,https://whc.unesco.org/fr/list/165,,
+FRA,203,culturel,"De la grande saline de Salins-les-Bains à la saline royale d’Arc-et-Senans, la production du sel ignigène",fr,Q15726441,exact,aucun,1982,false,https://whc.unesco.org/fr/list/203,,
+FRA,228,culturel,Centre historique d’Avignon,fr,Q15241016,revision,aucun,1995,false,https://whc.unesco.org/fr/list/228,,
+FRA,229,culturel,"Places Stanislas, de la Carrière et d'Alliance",fr,Q15728409,exact,aucun,1983,false,https://whc.unesco.org/fr/list/229,,
+FRA,230,culturel,Saint-Savin,fr,Q738657,exact,aucun,1983,false,https://whc.unesco.org/fr/list/230,,
+FRA,258,naturel,"Golfe de Porto : calanche de Piana, golfe de Girolata, réserve de Scandola",fr,Q15728421,exact,aucun,1983,false,https://whc.unesco.org/fr/list/258,,
+FRA,344,culturel,pont du Gard,fr,Q189764,exact,aucun,1985,false,https://whc.unesco.org/fr/list/344,,
+FRA,345,culturel,cité de Carcassonne,fr,Q389269,exact,aucun,1997,false,https://whc.unesco.org/fr/list/345,,
+FRA,495,culturel,"Strasbourg, Grande-Île et Neustadt",fr,Q55523908,exact,aucun,1988,false,https://whc.unesco.org/fr/list/495,,
+FRA,600,culturel,rives de la Seine à Paris,fr,Q2233532,exact,aucun,1991,false,https://whc.unesco.org/fr/list/600,,
+FRA,601,culturel,"cathédrale Notre-Dame, ancienne abbaye Saint-Rémi et palais du Tau, Reims",fr,Q16912637,exact,titre_unesco,1991,false,https://whc.unesco.org/fr/list/601,,
+FRA,635,culturel,cathédrale Saint-Étienne de Bourges,fr,Q207985,exact,aucun,1992,false,https://whc.unesco.org/fr/list/635,,
+FRA,770,culturel,canal du Midi,fr,Q202494,exact,aucun,1996,false,https://whc.unesco.org/fr/list/770,,
+FRA,773,mixte,Pyrénées-Mont Perdu,fr,Q3411434,exact,aucun,1997,true,https://whc.unesco.org/fr/list/773,,
+FRA,868,culturel,chemins de Saint-Jacques-de-Compostelle en France,fr,Q2962473,exact,aucun,1992,false,https://whc.unesco.org/fr/list/868,,
+FRA,872,culturel,site historique de Lyon,fr,Q131531231,exact,titre_unesco,1998,false,https://whc.unesco.org/fr/list/872,,
+FRA,873,culturel,"Provins, ville de foire médiévale",fr,Q28827968,exact,aucun,2001,false,https://whc.unesco.org/fr/list/873,,
+FRA,932,culturel,juridiction de Saint-Émilion,fr,Q2987951,exact,aucun,1999,false,https://whc.unesco.org/fr/list/932,,
+FRA,933,culturel,Val de Loire entre Sully-sur-Loire et Chalonnes,fr,Q2789507,exact,aucun,2000,false,https://whc.unesco.org/fr/list/933,,
+FRA,943,culturel,beffrois de Belgique et de France,fr,Q750675,exact,aucun,1999,true,https://whc.unesco.org/fr/list/943,,
+FRA,1115,naturel,Lagons de Nouvelle-Calédonie,fr,Q1330981,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1115,,
+FRA,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133,,
+FRA,1153,culturel,"Les Causses et les Cévennes, paysage culturel de l’agro-pastoralisme méditerranéen",fr,Q10444176,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1153,,
+FRA,1181,culturel,centre-ville reconstruit du Havre,fr,Q2944797,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1181,,
+FRA,1256,culturel,port de la Lune,fr,Q2249113,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1256,,
+FRA,1283,culturel,Fortifications de Vauban,fr,Q833781,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1283,,
+FRA,1317,naturel,"Pitons, cirques et remparts de l'île de La Réunion",fr,Q2710055,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1317,,https://fr.wikipedia.org/w/index.php?title=Pitons%2C_cirques_et_remparts_de_l%27%C3%AEle_de_La_R%C3%A9union&oldid=234835369
+FRA,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321,,
+FRA,1337,culturel,cité épiscopale d'Albi,fr,Q1778266,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1337,,
+FRA,1360,culturel,bassin minier du Nord-Pas-de-Calais,fr,Q392215,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1360,,
+FRA,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363,,
+FRA,1425,culturel,les climats du vignoble de Bourgogne,fr,Q20650612,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1425,,
+FRA,1426,culturel,grotte Chauvet,fr,Q374096,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1426,,
+FRA,1434,naturel,Haut lieu tectonique Chaîne des Puys - faille de Limagne,fr,Q64832437,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1434,,
+FRA,1465,culturel,"Coteaux, maisons et caves de Champagne",fr,Q20650698,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1465,,
+FRA,1529,culturel,Marae de Taputapuātea,fr,Q3287362,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1529,,
+FRA,1567,culturel,Les sites funéraires et mémoriels de la Première Guerre mondiale (Front Ouest),fr,Q64685453,revision,aucun,2023,true,https://whc.unesco.org/fr/list/1567,,
+FRA,1569,culturel,maison carrée,fr,Q677659,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1569,,
+FRA,1581,culturel,"Les Plages du Débarquement, Normandie, 1944",fr,Q3390891,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1581,,
+FRA,1603,naturel,Terres et mers australes françaises,fr,Q140814404,exact,titre_unesco,2019,false,https://whc.unesco.org/fr/list/1603,,
+FRA,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613,,
+FRA,1625,culturel,phare de Cordouan,fr,Q199234,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1625,,
+FRA,1635,culturel,"Nice, la ville de la villégiature d’hiver de riviera",fr,Q108094935,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1635,,
+FRA,1657,naturel,Aires volcaniques et forestières de la Martinique,fr,Q64842970,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1657,,
+FRA,1707,mixte,îles Marquises,fr,Q172697,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1707,,
+FRA,1725,culturel,mégalithes de Carnac et des rives du Morbihan,fr,Q135287050,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1725,,
+FRA,1755,culturel,forteresses royales capétiennes du Languedoc,fr,Q140698900,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1755,,
+ESP,310,culturel,grotte d’Altamira et art rupestre paléolithique du nord de l’Espagne,fr,Q899302,exact,aucun,1985,false,https://whc.unesco.org/fr/list/310,,
+ESP,311,culturel,Vieille ville de Ségovie et son aqueduc,fr,Q15728389,revision,aucun,1985,false,https://whc.unesco.org/fr/list/311,,
+ESP,312,culturel,Monuments d’Oviedo et du royaume des Asturies,fr,Q10588848,exact,aucun,1985,false,https://whc.unesco.org/fr/list/312,,
+ESP,313,culturel,centre historique de Cordoue,fr,Q10749904,exact,aucun,1984,false,https://whc.unesco.org/fr/list/313,,
+ESP,314,culturel,Alhambra,fr,Q47476,exact,aucun,1984,false,https://whc.unesco.org/fr/list/314,,
+ESP,316,culturel,cathédrale Sainte-Marie de Burgos,fr,Q744420,exact,aucun,1984,false,https://whc.unesco.org/fr/list/316,,
+ESP,318,culturel,monastère et site de l'Escurial,fr,Q5821857,exact,aucun,1984,false,https://whc.unesco.org/fr/list/318,,
+ESP,320,culturel,œuvres d'Antoni Gaudí,fr,Q921745,extension,aucun,1984,false,https://whc.unesco.org/fr/list/320,,
+ESP,347,culturel,vieille ville de Saint-Jacques-de-Compostelle,fr,Q12386144,exact,aucun,1985,false,https://whc.unesco.org/fr/list/347,,
+ESP,348,culturel,Vieille ville d'Ávila avec ses églises extra-muros,fr,Q15839120,exact,aucun,1985,false,https://whc.unesco.org/fr/list/348,,
+ESP,378,culturel,Architecture mudéjare d'Aragon,fr,Q64861487,exact,aucun,1986,false,https://whc.unesco.org/fr/list/378,,
+ESP,379,culturel,Ville historique de Tolède,fr,Q17255635,exact,aucun,1986,false,https://whc.unesco.org/fr/list/379,,
+ESP,380,naturel,parc national de Garajonay,fr,Q464942,exact,aucun,1986,false,https://whc.unesco.org/fr/list/380,,
+ESP,381,culturel,Vieille ville de Salamanque,fr,Q12156631,exact,aucun,1988,false,https://whc.unesco.org/fr/list/381,,
+ESP,383,culturel,"La Cathédrale, l'Alcázar et l'Archivo de Indias de Séville",fr,Q9709444,exact,aucun,1987,false,https://whc.unesco.org/fr/list/383,,
+ESP,384,culturel,vieille ville de Cáceres,fr,Q9757828,exact,aucun,1986,false,https://whc.unesco.org/fr/list/384,,
+ESP,417,mixte,Ibiza,fr,Q52631,exact,aucun,1999,false,https://whc.unesco.org/fr/list/417,,
+ESP,518,culturel,monastère de Poblet,fr,Q645157,exact,aucun,1991,false,https://whc.unesco.org/fr/list/518,,
+ESP,522,culturel,Ensembles monumentaux Renaissance de Úbeda et Baeza,fr,Q15831671,exact,aucun,2003,false,https://whc.unesco.org/fr/list/522,,
+ESP,664,culturel,ensemble archéologique de Mérida,fr,Q15233334,exact,aucun,1993,false,https://whc.unesco.org/fr/list/664,,
+ESP,665,culturel,monastère royal de Sainte Marie de Guadalupe,fr,Q750248,exact,aucun,1993,false,https://whc.unesco.org/fr/list/665,,
+ESP,669,culturel,chemins de Saint-Jacques-de-Compostelle : Camino francés et chemins du nord de l’Espagne,fr,Q39081159,exact,aucun,1993,false,https://whc.unesco.org/fr/list/669,,
+ESP,685,naturel,parc national de Doñana,fr,Q463141,exact,aucun,1994,false,https://whc.unesco.org/fr/list/685,,
+ESP,773,mixte,Pyrénées-Mont Perdu,fr,Q3411434,exact,aucun,1997,true,https://whc.unesco.org/fr/list/773,,
+ESP,781,culturel,Ville historique fortifiée de Cuenca,fr,Q15965460,exact,aucun,1996,false,https://whc.unesco.org/fr/list/781,,
+ESP,782,culturel,Lonja de la seda,fr,Q588009,exact,aucun,1996,false,https://whc.unesco.org/fr/list/782,,
+ESP,803,culturel,Las Médulas,mul,Q696803,exact,aucun,1997,false,https://whc.unesco.org/fr/list/803,,
+ESP,804,culturel,"Palais de la musique catalane et hôpital de Sant Pau, Barcelone",fr,Q64955212,exact,aucun,1997,false,https://whc.unesco.org/fr/list/804,,
+ESP,805,culturel,monastère de San Millán de la Cogolla,fr,Q2284354,exact,aucun,1997,false,https://whc.unesco.org/fr/list/805,,
+ESP,866,culturel,sites d’art rupestre préhistorique de la vallée de Côa et de Siega Verde,fr,Q39258498,extension,aucun,2010,true,https://whc.unesco.org/fr/list/866,,
+ESP,874,culturel,art rupestre du bassin méditerranéen de la péninsule Ibérique,fr,Q1975533,exact,partie_de,1998,false,https://whc.unesco.org/fr/list/874,,
+ESP,875,culturel,Ensemble archéologique de Tarragone,fr,Q3119914,exact,partie_de,2000,false,https://whc.unesco.org/fr/list/875,,
+ESP,876,culturel,Alcalá de Henares,wikifr,Q47531644,exact,aucun,1998,false,https://whc.unesco.org/fr/list/876,https://fr.wikipedia.org/w/index.php?title=Alcal%C3%A1_de_Henares&oldid=238219529,
+ESP,929,culturel,San Cristóbal de La Laguna,fr,Q54898,exact,aucun,1999,false,https://whc.unesco.org/fr/list/929,,
+ESP,930,culturel,Palmeraie d'Elche,fr,Q930784,exact,aucun,2000,false,https://whc.unesco.org/fr/list/930,,
+ESP,987,culturel,muraille de Lugo,fr,Q2733427,exact,aucun,2000,false,https://whc.unesco.org/fr/list/987,,
+ESP,988,culturel,églises romanes de la Vall de Boí,fr,Q1091515,exact,aucun,2000,false,https://whc.unesco.org/fr/list/988,,
+ESP,989,culturel,Atapuerca,fr,Q923894,exact,aucun,2000,false,https://whc.unesco.org/fr/list/989,,
+ESP,1044,culturel,Paysage culturel d’Aranjuez,fr,Q6057341,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1044,,
+ESP,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133,,
+ESP,1217,culturel,pont de Biscaye,fr,Q331996,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1217,,
+ESP,1258,naturel,parc national du Teide,fr,Q715124,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1258,,
+ESP,1312,culturel,Tour d'Hercule,fr,Q245151,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1312,,
+ESP,1313,culturel,patrimoine du mercure,fr,Q3370031,exact,aucun,2012,true,https://whc.unesco.org/fr/list/1313,,
+ESP,1371,culturel,Paysage culturel de la Serra de Tramuntana,fr,Q64860434,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1371,,
+ESP,1501,culturel,site de dolmens d'Antequera,fr,Q97633694,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1501,,
+ESP,1528,culturel,Culture talayotique de Minorque,fr,Q64990632,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1528,,
+ESP,1560,culturel,Madinat Azahra,fr,Q211252,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1560,,
+ESP,1578,culturel,paysage culturel de Risco Caído et des montagnes sacrées de Gran Canaria,fr,Q55495511,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1578,,
+ESP,1618,culturel,"Paseo del Prado et Buen Retiro, un paysage des arts et des sciences",fr,Q107675480,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1618,,https://fr.wikipedia.org/w/index.php?title=Paseo_de_la_Castellana&oldid=238198481
+ITA,91,culturel,"Centre historique de Rome, les biens du Saint-Siège situés dans cette ville bénéficiant des droits d'extra-territorialité et Saint-Paul-hors-les-Murs",fr,Q18448486,exact,aucun,1980,true,https://whc.unesco.org/fr/list/91,,
+ITA,93,culturel,église Santa Maria delle Grazie de Milan,fr,Q244952,exact,aucun,1980,false,https://whc.unesco.org/fr/list/93,,
+ITA,94,culturel,art rupestre du Valcamonica,fr,Q945514,exact,aucun,1979,false,https://whc.unesco.org/fr/list/94,,
+ITA,174,culturel,Centre historique de Florence,fr,Q2707802,exact,aucun,1982,false,https://whc.unesco.org/fr/list/174,,
+ITA,175,culturel,villa médicéenne,fr,Q574879,exact,aucun,2013,false,https://whc.unesco.org/fr/list/175,,
+ITA,394,culturel,Venise et sa lagune,fr,Q11352141,exact,partie_de,1987,false,https://whc.unesco.org/fr/list/394,,
+ITA,395,culturel,piazza dei Miracoli,fr,Q750245,exact,aucun,1987,false,https://whc.unesco.org/fr/list/395,,
+ITA,398,culturel,Castel del Monte,fr,Q215897,exact,aucun,1996,false,https://whc.unesco.org/fr/list/398,,
+ITA,549,culturel,Palais de Caserte,wikifr,Q16962666,revision,aucun,1997,false,https://whc.unesco.org/fr/list/549,https://fr.wikipedia.org/w/index.php?title=Palais_de_Caserte&oldid=241394566,
+ITA,550,culturel,centre historique de San Gimignano,fr,Q9724840,exact,aucun,1990,false,https://whc.unesco.org/fr/list/550,,
+ITA,670,culturel,Sassi et parc des églises rupestres de Matera,fr,Q55739617,exact,aucun,1993,false,https://whc.unesco.org/fr/list/670,,
+ITA,712,culturel,Vicenza et Villas de Palladio en Vénétie,fr,Q370956,exact,aucun,1994,false,https://whc.unesco.org/fr/list/712,,
+ITA,717,culturel,centre historique de Sienne,fr,Q17163322,exact,aucun,1995,false,https://whc.unesco.org/fr/list/717,,
+ITA,726,culturel,Centre historique de Naples,fr,Q832957,exact,aucun,1995,false,https://whc.unesco.org/fr/list/726,,
+ITA,730,culturel,Crespi d'Adda,fr,Q726842,exact,aucun,1995,false,https://whc.unesco.org/fr/list/730,,
+ITA,733,culturel,Ferrare et son delta du Pô,fr,Q16735627,exact,aucun,1995,false,https://whc.unesco.org/fr/list/733,,
+ITA,787,culturel,Les trulli d'Alberobello,fr,Q16913064,exact,aucun,1996,false,https://whc.unesco.org/fr/list/787,,
+ITA,788,culturel,Monuments paléochrétiens de Ravenne,fr,Q16886821,exact,aucun,1996,false,https://whc.unesco.org/fr/list/788,,
+ITA,789,culturel,Centre historique de Pienza,fr,Q2945646,exact,aucun,1996,false,https://whc.unesco.org/fr/list/789,,
+ITA,797,culturel,Vérone,fr,Q2028,exact,titre_unesco,2000,false,https://whc.unesco.org/fr/list/797,,
+ITA,823,culturel,Résidences de la famille royale de Savoie,fr,Q461272,exact,aucun,1997,false,https://whc.unesco.org/fr/list/823,,
+ITA,824,culturel,jardin botanique de Padoue,fr,Q598892,exact,aucun,1997,false,https://whc.unesco.org/fr/list/824,,
+ITA,825,culturel,Zone archéologique et la basilique patriarcale d’Aquilée,fr,Q3575761,extension,aucun,1998,false,https://whc.unesco.org/fr/list/825,,
+ITA,826,culturel,"Portovenere, Cinque Terre et les îles",fr,Q10351991,exact,aucun,1997,false,https://whc.unesco.org/fr/list/826,,
+ITA,827,culturel,"Cathédrale, Torre Civica et Piazza Grande, Modène",fr,Q15221022,exact,aucun,1997,false,https://whc.unesco.org/fr/list/827,,
+ITA,828,culturel,Centre historique d'Urbino,fr,Q17163308,exact,aucun,1998,false,https://whc.unesco.org/fr/list/828,,
+ITA,829,culturel,"zones archéologiques de Pompéi, Herculanum et Torre Annunziata",fr,Q16920958,exact,aucun,1997,false,https://whc.unesco.org/fr/list/829,,
+ITA,830,culturel,côte amalfitaine,fr,Q212214,exact,aucun,1997,false,https://whc.unesco.org/fr/list/830,,
+ITA,831,culturel,Vallée des Temples,fr,Q636774,exact,aucun,1997,false,https://whc.unesco.org/fr/list/831,,
+ITA,832,culturel,villa romaine du Casale,fr,Q505617,exact,aucun,1997,false,https://whc.unesco.org/fr/list/832,,
+ITA,833,culturel,Su Nuraxi,fr,Q253241,exact,aucun,1997,false,https://whc.unesco.org/fr/list/833,,
+ITA,842,culturel,"Parc national du Cilento et du Vallo Diano, avec les sites archéologiques de Paestum et Velia et la Chartreuse de Padula",fr,Q65016468,exact,titre_unesco,1998,false,https://whc.unesco.org/fr/list/842,,
+ITA,907,culturel,villa d'Hadrien,fr,Q272777,exact,aucun,1999,false,https://whc.unesco.org/fr/list/907,,
+ITA,908,naturel,îles Éoliennes,fr,Q179883,exact,aucun,2000,false,https://whc.unesco.org/fr/list/908,,
+ITA,990,culturel,"Assise, la Basilique de San Francesco et autres sites franciscains",fr,Q16913154,exact,aucun,2000,false,https://whc.unesco.org/fr/list/990,,
+ITA,1024,culturel,Villes du baroque tardif de la vallée de Noto,fr,Q18649472,revision,aucun,2002,false,https://whc.unesco.org/fr/list/1024,,
+ITA,1025,culturel,villa d'Este,fr,Q746063,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1025,,
+ITA,1026,culturel,Val d'Orcia,fr,Q217449,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1026,,
+ITA,1068,culturel,Sacri Monti du Piémont et de Lombardie,fr,Q753162,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1068,,
+ITA,1090,naturel,site fossilifère du Monte San Giorgio,fr,Q3485435,exact,aucun,2003,true,https://whc.unesco.org/fr/list/1090,,
+ITA,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133,,
+ITA,1158,culturel,nécropoles étrusques de Cerveteri et de Tarquinia,fr,Q15602246,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1158,,
+ITA,1200,culturel,Syracuse et la nécropole rocheuse de Pantalica,fr,Q15604441,exact,partie_de,2005,false,https://whc.unesco.org/fr/list/1200,,
+ITA,1211,culturel,"Gênes, les Strade Nuove et le système des palais des Rolli",fr,Q10293286,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1211,,
+ITA,1237,naturel,Les Dolomites,fr,Q65028346,revision,aucun,1998,false,https://whc.unesco.org/fr/list/1237,,
+ITA,1276,culturel,chemin de fer rhétique dans les paysages de l'Albula et de la Bernina,fr,Q2962401,exact,aucun,2008,true,https://whc.unesco.org/fr/list/1276,,
+ITA,1287,culturel,Mantoue et Sabbioneta,fr,Q15623665,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1287,,
+ITA,1318,culturel,Les Lombards en Italie. Lieux de pouvoir,fr,Q1214318,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1318,,
+ITA,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363,,
+ITA,1390,culturel,Paysage viticole du Piémont : Langhe-Roero et Monferrato,fr,Q17296768,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1390,,
+ITA,1427,naturel,parc de l'Etna,fr,Q499242,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1427,,
+ITA,1487,culturel,Palerme arabo-normande et les cathédrales de Cefalú et Monreale,fr,Q20963672,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1487,,
+ITA,1533,culturel,ouvrages de défense vénitiens du XVIe au XVIIe siècle : Stato da Terra - Stato da Mar occidental,fr,Q32797097,exact,aucun,2017,true,https://whc.unesco.org/fr/list/1533,,
+ITA,1538,culturel,"Ivrée, cité industrielle du XXe siècle",fr,Q109123298,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1538,,
+ITA,1571,culturel,Les Collines du Prosecco de Conegliano et Valdobbiadene,fr,Q65029145,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1571,,
+ITA,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613,,
+ITA,1623,culturel,cycles de fresques du XIVe siècle à Padoue,fr,Q107674350,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1623,,
+ITA,1650,culturel,arcades de Bologne,fr,Q3909051,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1650,,
+ITA,1692,naturel,Karst et grottes évaporitiques de l'Apennin du Nord,fr,Q122730699,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1692,,
+ITA,1708,culturel,Voie Appienne,wikifr,Q129503044,exact,partie_de,2024,false,https://whc.unesco.org/fr/list/1708,https://fr.wikipedia.org/w/index.php?title=Voie_Appienne&oldid=241275084,
+ITA,1730,culturel,domus de janas,fr,Q1238775,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1730,,
+ITA,1762,culturel,Le système des théâtres à l’italienne en condominio des XVIIIe et XIXe siècles en Italie centrale,fr,Q127466372,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1762,,
+PRT,206,culturel,centre historique d'Angra do Heroísmo,fr,Q2945656,exact,aucun,1983,false,https://whc.unesco.org/fr/list/206,,
+PRT,263,culturel,Monastère des Hiéronymites et tour de Belém à Lisbonne,fr,Q15229898,extension,aucun,1983,false,https://whc.unesco.org/fr/list/263,,
+PRT,264,culturel,monastère de Saint Marie de la Victoire à Batalha,fr,Q174779,exact,aucun,1983,false,https://whc.unesco.org/fr/list/264,,
+PRT,265,culturel,couvent de l'ordre du Christ,fr,Q736692,exact,aucun,1983,false,https://whc.unesco.org/fr/list/265,,
+PRT,361,culturel,Centre historique d'Évora,fr,Q8343770,exact,aucun,1986,false,https://whc.unesco.org/fr/list/361,,
+PRT,505,culturel,monastère d'Alcobaça,fr,Q593147,exact,aucun,1989,false,https://whc.unesco.org/fr/list/505,,
+PRT,723,culturel,Paysage culturel de Sintra,fr,Q3848197,exact,aucun,1995,false,https://whc.unesco.org/fr/list/723,,
+PRT,755,culturel,Centre historique de Porto,fr,Q3848157,exact,aucun,1996,false,https://whc.unesco.org/fr/list/755,,
+PRT,866,culturel,sites d’art rupestre préhistorique de la vallée de Côa et de Siega Verde,fr,Q39258498,extension,aucun,1998,true,https://whc.unesco.org/fr/list/866,,
+PRT,934,naturel,forêt laurifère de Madère,fr,Q11257230,exact,aucun,1999,false,https://whc.unesco.org/fr/list/934,,
+PRT,1031,culturel,Centre historique de Guimarães et zone du Couros,fr,Q2945649,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1031,,
+PRT,1046,culturel,Région viticole du Haut-Douro,fr,Q649738,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1046,,
+PRT,1117,culturel,Paysage viticole de l'île du Pico,fr,Q2448665,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1117,,
+PRT,1367,culturel,Ville de garnison frontalière d’Elvas et ses fortifications,fr,Q5524023,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1367,,
+PRT,1387,culturel,Université de Coimbra – Alta et Sofia,fr,Q15229957,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1387,,
+PRT,1573,culturel,édifice royal de Mafra,fr,Q54948065,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1573,,
+PRT,1590,culturel,sanctuaire du Bon-Jésus-du-Mont de Braga,fr,Q2707216,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1590,,
+GRC,392,culturel,temple d'Apollon à Bassae,fr,Q38278862,exact,aucun,1986,false,https://whc.unesco.org/fr/list/392,,
+GRC,393,culturel,site archéologique de Delphes,fr,Q17652439,exact,aucun,1987,false,https://whc.unesco.org/fr/list/393,,
+GRC,404,culturel,Acropole d'Athènes,fr,Q131013,exact,partie_de,1987,false,https://whc.unesco.org/fr/list/404,,
+GRC,454,mixte,Mont Athos,fr,Q136100444,exact,aucun,1988,false,https://whc.unesco.org/fr/list/454,,
+GRC,455,mixte,monastères des Météores,fr,Q3125051,exact,aucun,1988,false,https://whc.unesco.org/fr/list/455,,
+GRC,456,culturel,Monuments paléochrétiens et byzantins de Thessalonique,fr,Q732708,exact,aucun,1988,false,https://whc.unesco.org/fr/list/456,,
+GRC,491,culturel,sanctuaire d'Asclépios à Épidaure,fr,Q7698713,exact,aucun,1988,false,https://whc.unesco.org/fr/list/491,,
+GRC,493,culturel,Rhodes,wikifr,Q876685,exact,aucun,1988,false,https://whc.unesco.org/fr/list/493,https://fr.wikipedia.org/w/index.php?title=Rhodes_%28ville%29&oldid=239449173,
+GRC,511,culturel,Mistra,fr,Q19053,exact,aucun,1989,false,https://whc.unesco.org/fr/list/511,,
+GRC,517,culturel,Olympie,fr,Q38888,exact,aucun,1989,false,https://whc.unesco.org/fr/list/517,,
+GRC,530,culturel,Délos,fr,Q173148,exact,aucun,1990,false,https://whc.unesco.org/fr/list/530,,
+GRC,537,culturel,"monastères de Daphni, de Hosios Loukas et Nea Moni de Chios",fr,Q11317256,exact,aucun,1990,false,https://whc.unesco.org/fr/list/537,,
+GRC,595,culturel,Pythagoreion et Heraion de Samos,fr,Q16363506,exact,aucun,1992,false,https://whc.unesco.org/fr/list/595,,
+GRC,780,culturel,Aigai,fr,Q16963755,exact,aucun,1996,false,https://whc.unesco.org/fr/list/780,,
+GRC,941,culturel,Mycènes,wikifr,Q16945635,exact,aucun,1999,false,https://whc.unesco.org/fr/list/941,https://fr.wikipedia.org/w/index.php?title=Myc%C3%A8nes&oldid=238910262,
+GRC,942,culturel,Centre historique (Chorá) avec le monastère de Saint Jean « le théologien » et la grotte de l'Apocalypse sur l'île de Patmos,fr,Q17132271,exact,partie_de,1999,false,https://whc.unesco.org/fr/list/942,,
+GRC,978,culturel,vieille ville de Corfou,fr,Q38283757,exact,titre_unesco,2007,false,https://whc.unesco.org/fr/list/978,,
+GRC,1517,culturel,Philippes,fr,Q379652,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1517,,
+GRC,1695,culturel,Zagóri,fr,Q2712111,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1695,,
+GRC,1719,mixte,Le mont Olympe et son environnement,fr,Q64737832,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1719,,
+GRC,1733,culturel,Centres palatiaux minoens,fr,Q64737740,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1733,,
+GBR,369,naturel,Chaussée des Géants,fr,Q106187,exact,aucun,1986,false,https://whc.unesco.org/fr/list/369,,
+GBR,370,culturel,cathédrale et château de Durham,fr,Q15732525,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/370,,
+GBR,371,culturel,vallée d'Ironbridge,fr,Q647958,exact,aucun,1986,false,https://whc.unesco.org/fr/list/371,,
+GBR,372,culturel,parc de Studley Royal avec les ruines de l'abbaye de Fountains,fr,Q16363480,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/372,,
+GBR,373,culturel,"Stonehenge, Avebury et sites associés",fr,Q587584,exact,partie_de,1986,false,https://whc.unesco.org/fr/list/373,,
+GBR,374,culturel,châteaux forts et enceintes du roi Édouard Ier dans l'ancienne principauté de Gwynedd,fr,Q837627,exact,aucun,1986,false,https://whc.unesco.org/fr/list/374,,
+GBR,387,mixte,Saint-Kilda,fr,Q166479,exact,aucun,1986,false,https://whc.unesco.org/fr/list/387,,
+GBR,422,culturel,Lake District,fr,Q211778,revision,aucun,2017,false,https://whc.unesco.org/fr/list/422,,
+GBR,425,culturel,palais de Blenheim,fr,Q208181,exact,aucun,1987,false,https://whc.unesco.org/fr/list/425,,
+GBR,426,culturel,palais de Westminster et l'abbaye de Westminster incluant l'église Sainte-Marguerite,fr,Q10344038,exact,aucun,1987,false,https://whc.unesco.org/fr/list/426,,
+GBR,428,culturel,Bath,wikifr,Q22889,exact,douteux,1987,false,https://whc.unesco.org/fr/list/428,https://fr.wikipedia.org/w/index.php?title=Bath&oldid=241026710,
+GBR,429,culturel,New Lanark,fr,Q743108,exact,aucun,2001,false,https://whc.unesco.org/fr/list/429,,
+GBR,430,culturel,frontières de l’Empire romain,fr,Q4147903,exact,aucun,1987,true,https://whc.unesco.org/fr/list/430,,
+GBR,487,naturel,Henderson,fr,Q379759,exact,aucun,1988,false,https://whc.unesco.org/fr/list/487,,
+GBR,488,culturel,tour de Londres,fr,Q62378,exact,aucun,1988,false,https://whc.unesco.org/fr/list/488,,
+GBR,496,culturel,"Cathédrale, abbaye Saint-Augustin et église Saint-Martin à Cantorbéry",fr,Q15924897,exact,aucun,1988,false,https://whc.unesco.org/fr/list/496,,
+GBR,514,culturel,Cœur néolithique des Orcades,fr,Q1334966,exact,aucun,1999,false,https://whc.unesco.org/fr/list/514,,
+GBR,728,culturel,Vieille ville et Nouvelle ville d'Edimbourg,fr,Q15260680,exact,aucun,1995,false,https://whc.unesco.org/fr/list/728,,
+GBR,740,naturel,Îles de Gough et Inaccessible,fr,Q16891784,exact,aucun,1995,false,https://whc.unesco.org/fr/list/740,,
+GBR,795,culturel,Maritime Greenwich,fr,Q16921416,exact,aucun,1997,false,https://whc.unesco.org/fr/list/795,,
+GBR,983,culturel,Saint George's,wikifr,Q7865260,exact,aucun,2000,false,https://whc.unesco.org/fr/list/983,https://fr.wikipedia.org/w/index.php?title=Saint_George%27s_%28Bermudes%29&oldid=238935936,
+GBR,984,culturel,Paysage industriel de Blaenavon,fr,Q23818211,exact,aucun,2000,false,https://whc.unesco.org/fr/list/984,,
+GBR,1028,culturel,Saltaire,fr,Q838920,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1028,,
+GBR,1029,naturel,littoral du Dorset et de l'est du Devon,fr,Q575976,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1029,,
+GBR,1030,culturel,Usines de la vallée de la Derwent,fr,Q646076,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1030,,
+GBR,1084,culturel,Jardins botaniques royaux de Kew,wikifr,Q18748726,exact,partie_de,2003,false,https://whc.unesco.org/fr/list/1084,https://fr.wikipedia.org/w/index.php?title=Jardins_botaniques_royaux_de_Kew&oldid=241445916,
+GBR,1215,culturel,Paysage minier des Cornouailles et de l'ouest du Devon,fr,Q464566,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1215,,
+GBR,1303,culturel,Pont-canal et canal de Pontcysyllte,fr,Q24677919,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1303,,
+GBR,1468,culturel,Colonies de l’Église morave,fr,Q128009257,extension,aucun,2015,true,https://whc.unesco.org/fr/list/1468,,
+GBR,1485,culturel,pont du Forth,fr,Q275,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1485,,
+GBR,1500,culturel,Grotte de Gorham,wikifr,Q60346199,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1500,https://fr.wikipedia.org/w/index.php?title=Grotte_de_Gorham&oldid=236149997,
+GBR,1594,culturel,observatoire Jodrell Bank,fr,Q1569783,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1594,,
+GBR,1613,culturel,grandes villes d'eaux d'Europe,fr,Q16064866,exact,aucun,2021,true,https://whc.unesco.org/fr/list/1613,,
+GBR,1633,culturel,Le paysage d'ardoise du nord-ouest du pays de Galles,fr,Q107719670,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1633,,
+GBR,1722,naturel,Flow Country,fr,Q1847928,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1722,,
+ISL,1152,culturel,Þingvellir,fr,Q107370,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1152,,
+ISL,1267,naturel,Surtsey,fr,Q178124,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1267,,
+ISL,1604,naturel,parc national du Vatnajökull,fr,Q1353292,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1604,,
+HRV,95,culturel,Vieille ville de Dubrovnik,fr,Q910661,exact,aucun,1979,false,https://whc.unesco.org/fr/list/95,,
+HRV,97,culturel,Noyau historique de Split avec le palais de Dioclétien,fr,Q17132416,exact,aucun,1979,false,https://whc.unesco.org/fr/list/97,,
+HRV,98,naturel,parc national des lacs de Plitvice,fr,Q189849,exact,aucun,1979,false,https://whc.unesco.org/fr/list/98,,
+HRV,809,culturel,basilique euphrasienne de Poreč,fr,Q645105,exact,aucun,1997,false,https://whc.unesco.org/fr/list/809,,
+HRV,810,culturel,Ville historique de Trogir,fr,Q17132483,exact,aucun,1997,false,https://whc.unesco.org/fr/list/810,,
+HRV,963,culturel,cathédrale Saint-Jacques de Šibenik,fr,Q391973,exact,aucun,2000,false,https://whc.unesco.org/fr/list/963,,
+HRV,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133,,
+HRV,1240,culturel,Plaine de Stari Grad,fr,Q614212,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1240,,
+HRV,1504,culturel,cimetières de tombes médiévales stećci,fr,Q29000652,exact,aucun,2016,true,https://whc.unesco.org/fr/list/1504,,
+HRV,1533,culturel,ouvrages de défense vénitiens du XVIe au XVIIe siècle : Stato da Terra - Stato da Mar occidental,fr,Q32797097,exact,aucun,2017,true,https://whc.unesco.org/fr/list/1533,,
+CHE,267,culturel,vieille ville de Berne,fr,Q687973,exact,aucun,1983,false,https://whc.unesco.org/fr/list/267,,
+CHE,268,culturel,abbaye de Saint-Gall,fr,Q155699,exact,aucun,1983,false,https://whc.unesco.org/fr/list/268,,
+CHE,269,culturel,couvent bénédictin de Saint-Jean-des-Sœurs,fr,Q757067,exact,aucun,1983,false,https://whc.unesco.org/fr/list/269,,
+CHE,884,culturel,châteaux de Bellinzone,fr,Q510279,exact,aucun,2000,false,https://whc.unesco.org/fr/list/884,,
+CHE,1037,naturel,Alpes suisses Jungfrau-Aletsch,fr,Q616912,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1037,,
+CHE,1090,naturel,site fossilifère du Monte San Giorgio,fr,Q3485435,exact,aucun,2003,true,https://whc.unesco.org/fr/list/1090,,
+CHE,1133,naturel,forêts primaires de hêtres des Carpates et forêts anciennes de hêtres d’Allemagne,fr,Q156011,exact,aucun,2007,true,https://whc.unesco.org/fr/list/1133,,
+CHE,1179,naturel,haut lieu tectonique suisse Sardona,fr,Q312118,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1179,,
+CHE,1243,culturel,Lavaux,fr,Q688060,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1243,,
+CHE,1276,culturel,chemin de fer rhétique dans les paysages de l'Albula et de la Bernina,fr,Q2962401,exact,aucun,2008,true,https://whc.unesco.org/fr/list/1276,,
+CHE,1302,culturel,"La Chaux-de-Fonds / Le Locle, urbanisme horloger",fr,Q3207298,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1302,,
+CHE,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321,,
+CHE,1363,culturel,sites palafittiques préhistoriques autour des Alpes,fr,Q4580,exact,aucun,2011,true,https://whc.unesco.org/fr/list/1363,,
+HUN,400,culturel,"Budapest, avec les rives du Danube, le quartier du château de Buda et l’avenue Andrássy",fr,Q851122,exact,titre_unesco,1987,false,https://whc.unesco.org/fr/list/400,,
+HUN,401,culturel,Hollókő,fr,Q622865,exact,aucun,1987,false,https://whc.unesco.org/fr/list/401,,
+HUN,474,culturel,parc national Hortobágy,fr,Q61757,exact,aucun,1999,false,https://whc.unesco.org/fr/list/474,,
+HUN,725,naturel,grottes du karst d'Aggtelek et du karst de Slovaquie,fr,Q608090,exact,partie_de,1995,true,https://whc.unesco.org/fr/list/725,,
+HUN,758,culturel,abbaye de Pannonhalma,fr,Q936285,exact,aucun,1996,false,https://whc.unesco.org/fr/list/758,,
+HUN,772,culturel,paysage culturel de Fertö / Neusiedlersee,fr,Q2925869,revision,aucun,2001,true,https://whc.unesco.org/fr/list/772,,
+HUN,853,culturel,nécropole paléochrétienne de Pécs,fr,Q927535,exact,aucun,2000,false,https://whc.unesco.org/fr/list/853,,
+HUN,1063,culturel,paysage culturel historique de la région viticole de Tokaj,fr,Q64559620,exact,aucun,2002,false,https://whc.unesco.org/fr/list/1063,,
+JPN,660,culturel,monuments bouddhiques de la région du temple de Horyu,fr,Q1333799,exact,titre_unesco,1993,false,https://whc.unesco.org/fr/list/660,,
+JPN,661,culturel,château de Himeji,fr,Q188754,exact,aucun,1993,false,https://whc.unesco.org/fr/list/661,,
+JPN,662,naturel,Yakushima,fr,Q242176,exact,aucun,1993,false,https://whc.unesco.org/fr/list/662,,
+JPN,663,naturel,Shirakami-Sanchi,fr,Q501638,exact,aucun,1993,false,https://whc.unesco.org/fr/list/663,,
+JPN,688,culturel,monuments historiques de l'ancienne Kyoto,fr,Q874027,exact,aucun,1994,false,https://whc.unesco.org/fr/list/688,,
+JPN,734,culturel,villages historiques de Shirakawa-gō et Gokayama,fr,Q877626,exact,aucun,1995,false,https://whc.unesco.org/fr/list/734,,
+JPN,775,culturel,dôme de Genbaku,fr,Q231140,exact,aucun,1996,false,https://whc.unesco.org/fr/list/775,,
+JPN,776,culturel,sanctuaire d'Itsukushima,fr,Q191763,exact,aucun,1996,false,https://whc.unesco.org/fr/list/776,,
+JPN,870,culturel,monuments historiques de l'ancienne Nara,fr,Q1055749,exact,aucun,1998,false,https://whc.unesco.org/fr/list/870,,
+JPN,913,culturel,sanctuaires et temples de Nikkō,fr,Q1063133,exact,aucun,1999,false,https://whc.unesco.org/fr/list/913,,
+JPN,972,culturel,Sites Gusuku et biens culturels associés du royaume de Ryūkyū,fr,Q1333330,exact,aucun,2000,false,https://whc.unesco.org/fr/list/972,,
+JPN,1142,culturel,sites sacrés et chemins de pèlerinage dans les monts Kii,fr,Q611345,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1142,,
+JPN,1193,naturel,Péninsule de Shiretoko,wikifr,Q17208861,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1193,https://fr.wikipedia.org/w/index.php?title=P%C3%A9ninsule_de_Shiretoko&oldid=223569643,
+JPN,1246,culturel,Iwami Ginzan,fr,Q174139,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1246,,
+JPN,1277,culturel,"Hiraizumi – Temples, jardins et sites archéologiques représentant la Terre Pure bouddhiste",fr,Q2896261,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1277,,
+JPN,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321,,
+JPN,1362,naturel,archipel d'Ogasawara,fr,Q13383295,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1362,,
+JPN,1418,culturel,"Fujisan, lieu sacré et source d'inspiration artistique",fr,Q16482294,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1418,,
+JPN,1449,culturel,filature de soie de Tomioka et patrimoine industriel associé,fr,Q7769551,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1449,,
+JPN,1484,culturel,"Sites de la révolution industrielle Meiji au Japon : sidérurgie, construction navale et extraction houillère",fr,Q7751872,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1484,,
+JPN,1495,culturel,sites chrétiens cachés de la région de Nagasaki,fr,Q93643,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1495,,
+JPN,1535,culturel,Île sacrée d'Okinoshima et sites associés dans la région de Munakata,fr,Q324638,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1535,,
+JPN,1574,naturel,"île Amami-Ōshima, île Tokunoshima, partie nord de l'île d'Okinawa et île d'Iriomote",fr,Q11444847,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1574,,
+JPN,1593,culturel,Ensemble de kofun de Mozu-Furuichi : tertres funéraires de l’ancien Japon,fr,Q55524104,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1593,,
+JPN,1632,culturel,Sites préhistoriques Jōmon dans le nord du Japon,fr,Q11402500,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1632,,
+JPN,1698,culturel,Mines d'or de Sado,wikifr,Q127378385,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1698,https://fr.wikipedia.org/w/index.php?title=Mines_d%27or_de_Sado&oldid=235506266,
+JPN,1757,culturel,Anciennes capitales d’Asuka et de Fujiwara,fr,Q4811849,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1757,,
+KOR,736,culturel,grotte de Seokguram et temple Bulguksa,fr,Q16912957,exact,aucun,1995,false,https://whc.unesco.org/fr/list/736,,
+KOR,737,culturel,Haeinsa Janggyeong Panjeon,fr,Q490798,exact,aucun,1995,false,https://whc.unesco.org/fr/list/737,,
+KOR,738,culturel,sanctuaire de Jongmyo,fr,Q490497,exact,aucun,1995,false,https://whc.unesco.org/fr/list/738,,
+KOR,816,culturel,Changdeokgung,fr,Q477157,exact,aucun,1997,false,https://whc.unesco.org/fr/list/816,,
+KOR,817,culturel,forteresse de Hwaseong,fr,Q482423,exact,aucun,1997,false,https://whc.unesco.org/fr/list/817,,
+KOR,976,culturel,Gyeongju,wikifr,Q495241,exact,aucun,2000,false,https://whc.unesco.org/fr/list/976,https://fr.wikipedia.org/w/index.php?title=Gyeongju&oldid=238935730,
+KOR,977,culturel,"sites de dolmens de Gochang, Hwasun et Ganghwa",fr,Q495286,exact,aucun,2000,false,https://whc.unesco.org/fr/list/977,,
+KOR,1264,naturel,île volcanique et tunnels de lave de Jeju,fr,Q495733,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1264,,
+KOR,1319,culturel,tombes royales de la dynastie Joseon,fr,Q495276,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1319,,
+KOR,1324,culturel,Villages historiques de Corée : Hahoe et Yangdong,fr,Q3113345,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1324,,
+KOR,1439,culturel,Namhansanseong,fr,Q562529,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1439,,
+KOR,1477,culturel,Aires historiques de Baekje,fr,Q20650483,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1477,,
+KOR,1498,culturel,"Seowon, académies néo-confucéennes coréennes",fr,Q65099260,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1498,,
+KOR,1562,culturel,"Sansa, monastères bouddhistes de montagne en Corée",fr,Q55306582,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1562,,
+KOR,1591,naturel,"Getbol, étendues cotidales coréennes",fr,Q107715736,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1591,,
+KOR,1666,culturel,Tumuli de Gaya,fr,Q66201394,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1666,,
+KOR,1740,culturel,Pétroglyphes d'Ulsan,fr,Q135335250,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1740,,
+CHN,437,mixte,mont Tai,fr,Q216059,exact,aucun,1987,false,https://whc.unesco.org/fr/list/437,,
+CHN,438,culturel,La Grande Muraille,fr,Q65961372,exact,aucun,1987,false,https://whc.unesco.org/fr/list/438,,https://fr.wikipedia.org/w/index.php?title=Grande_Muraille&oldid=241156230
+CHN,439,culturel,palais impériaux des dynasties Ming et Qing à Beijing et à Shenyang,fr,Q4920250,exact,aucun,1987,false,https://whc.unesco.org/fr/list/439,,
+CHN,440,culturel,grottes de Mogao,fr,Q43286,exact,aucun,1987,false,https://whc.unesco.org/fr/list/440,,
+CHN,441,culturel,mausolée de l'empereur Qin,fr,Q910180,exact,aucun,1987,false,https://whc.unesco.org/fr/list/441,,
+CHN,449,culturel,Zhoukoudian,fr,Q499552,exact,aucun,1987,false,https://whc.unesco.org/fr/list/449,,
+CHN,547,mixte,monts Huang,fr,Q36034,exact,aucun,1990,false,https://whc.unesco.org/fr/list/547,,
+CHN,637,naturel,vallée de Jiuzhaigou,fr,Q4111,exact,aucun,1990,false,https://whc.unesco.org/fr/list/637,,
+CHN,638,naturel,Huanglong,fr,Q4107,exact,aucun,1992,false,https://whc.unesco.org/fr/list/638,,
+CHN,640,naturel,Wulingyuan,fr,Q4187,exact,aucun,1992,false,https://whc.unesco.org/fr/list/640,,
+CHN,703,culturel,résidence de montagne de Chengde,fr,Q1046818,exact,aucun,1994,false,https://whc.unesco.org/fr/list/703,,
+CHN,704,culturel,Temple et cimetière de Confucius et résidence de la famille Kong à Qufu,fr,Q1038473,exact,aucun,1994,false,https://whc.unesco.org/fr/list/704,,
+CHN,705,culturel,Ensemble de bâtiments anciens des montagnes de Wudang,fr,Q11124244,exact,aucun,1994,false,https://whc.unesco.org/fr/list/705,,
+CHN,707,culturel,palais du Potala,fr,Q71229,exact,aucun,1994,false,https://whc.unesco.org/fr/list/707,,
+CHN,778,culturel,parc national de Lushan,fr,Q4047,exact,aucun,1996,false,https://whc.unesco.org/fr/list/778,,https://fr.wikipedia.org/w/index.php?title=Mont_Lu&oldid=241271430
+CHN,779,mixte,"Paysage panoramique du mont Emei, incluant le paysage panoramique du grand Bouddha de Leshan",fr,Q16914686,exact,aucun,1996,false,https://whc.unesco.org/fr/list/779,,
+CHN,811,culturel,Vieille ville de Lijiang,fr,Q65964838,exact,aucun,1997,false,https://whc.unesco.org/fr/list/811,,https://fr.wikipedia.org/w/index.php?title=Vieille_ville_de_Lijiang&oldid=241268313
+CHN,812,culturel,Vieille ville de Ping Yao,fr,Q65965285,exact,aucun,1997,false,https://whc.unesco.org/fr/list/812,,
+CHN,813,culturel,jardins classiques de Suzhou,fr,Q1144337,exact,aucun,1997,false,https://whc.unesco.org/fr/list/813,,
+CHN,880,culturel,palais d'Été,fr,Q4132,exact,aucun,1998,false,https://whc.unesco.org/fr/list/880,,
+CHN,881,culturel,temple du ciel,fr,Q125445,exact,aucun,1998,false,https://whc.unesco.org/fr/list/881,,
+CHN,911,mixte,Monts Wuyi,fr,Q207692,exact,aucun,1999,false,https://whc.unesco.org/fr/list/911,,
+CHN,912,culturel,Sculptures rupestres de Dazu,fr,Q651278,exact,aucun,1999,false,https://whc.unesco.org/fr/list/912,,
+CHN,1001,culturel,Mont Qingcheng et système d’irrigation de Dujiangyan,fr,Q14230458,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1001,,
+CHN,1002,culturel,anciens villages du sud du Anhui - Xidi et Hongcun,fr,Q15224718,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1002,,
+CHN,1003,culturel,grottes de Longmen,fr,Q273834,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1003,,
+CHN,1004,culturel,tombes impériales des dynasties Ming et Qing,fr,Q817164,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1004,,
+CHN,1039,culturel,grottes de Yungang,fr,Q308805,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1039,,
+CHN,1083,naturel,Trois fleuves parallèles au Yunnan,fr,Q575035,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1083,,
+CHN,1110,culturel,Centre historique de Macao,fr,Q2601433,exact,titre_unesco,2005,false,https://whc.unesco.org/fr/list/1110,,
+CHN,1111,culturel,rizières en terrasses des Hani de Honghe,fr,Q11605230,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1111,,
+CHN,1112,culturel,Diaolou de Kaiping,fr,Q16303641,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1112,,
+CHN,1113,culturel,Tulou du Fujian,fr,Q718001,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1113,,
+CHN,1114,culturel,Yin Xu,fr,Q464904,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1114,,
+CHN,1135,culturel,capitales et tombes de l'ancien royaume de Koguryo,fr,Q134873,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1135,,
+CHN,1213,naturel,sanctuaires des pandas géants du Sichuan,fr,Q629902,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1213,,
+CHN,1248,naturel,Karst de Chine du Sud,fr,Q853364,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1248,,
+CHN,1279,culturel,mont Wutai,fr,Q120314,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1279,,
+CHN,1292,naturel,mont Sanqing,fr,Q873358,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1292,,
+CHN,1305,culturel,Monuments historiques de Dengfeng au « centre du ciel et de la terre »,fr,Q5934942,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1305,,
+CHN,1334,culturel,Paysage culturel du lac de l’Ouest de Hangzhou,fr,Q15660376,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1334,,
+CHN,1335,naturel,Danxia de Chine,fr,Q1286650,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1335,,
+CHN,1388,naturel,site fossilifère de Chengjiang,fr,Q3485434,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1388,,
+CHN,1389,culturel,Shangdu,fr,Q471765,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1389,,
+CHN,1414,naturel,Tianshan au Xinjiang,fr,Q17993813,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1414,,
+CHN,1442,culturel,Routes de la soie: le réseau de routes du corridor de Chang’an-Tian-shan,fr,Q17277933,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1442,,
+CHN,1443,culturel,Grand Canal,fr,Q31347,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1443,,
+CHN,1474,culturel,Sites du tusi,fr,Q19852428,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1474,,
+CHN,1508,culturel,peintures rupestres du mont Hua,fr,Q1632877,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1508,,
+CHN,1509,naturel,réserve naturelle de Shennongjia,fr,Q3457361,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1509,,
+CHN,1540,naturel,Hoh Xil,fr,Q1790760,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1540,,
+CHN,1541,culturel,Gulangyu,fr,Q1025339,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1541,,
+CHN,1559,naturel,Réserve naturelle de Fanjingshan,wikifr,Q24434043,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1559,https://fr.wikipedia.org/w/index.php?title=R%C3%A9serve_naturelle_de_Fanjingshan&oldid=238848353,
+CHN,1561,culturel,Quanzhou : emporium mondial de la Chine des Song et des Yuan,fr,Q47001746,revision,aucun,2021,false,https://whc.unesco.org/fr/list/1561,,
+CHN,1592,culturel,Culture de Liangzhu,wikifr,Q15904183,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1592,https://fr.wikipedia.org/w/index.php?title=Culture_de_Liangzhu&oldid=240500374,
+CHN,1606,naturel,Sanctuaire d’oiseaux migrateurs le long du littoral de la mer Jaune et du golfe de Bohai de Chine (phase I),fr,Q66057620,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1606,,
+CHN,1638,naturel,désert de Badain Jaran,fr,Q939033,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1638,,
+CHN,1665,culturel,Paysage culturel des forêts anciennes de théiers de la montagne Jingmai à Pu’er,fr,Q48928978,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1665,,
+CHN,1714,culturel,Axe central de Pékin,fr,Q6112171,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1714,,
+CHN,1736,culturel,nécropole des Xia occidentanux,fr,Q1069411,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1736,,
+CHN,1765,culturel,Sites de l’industrie de la porcelaine artisanale de Jingdezhen,fr,Q140693109,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1765,,
+THA,574,culturel,Sukhothaï,wikifr,Q865097,exact,aucun,1991,false,https://whc.unesco.org/fr/list/574,https://fr.wikipedia.org/w/index.php?title=Sukhotha%C3%AF&oldid=239335409,
+THA,575,culturel,Ban Chiang,fr,Q584125,exact,aucun,1992,false,https://whc.unesco.org/fr/list/575,,
+THA,576,culturel,Parc historique d'Ayutthaya,fr,Q1025100,exact,aucun,1991,false,https://whc.unesco.org/fr/list/576,,
+THA,590,naturel,complexe forestier de Dong Phayayen-Khao Yai,fr,Q16963852,exact,aucun,2005,false,https://whc.unesco.org/fr/list/590,,
+THA,591,naturel,sanctuaires de faune de Thung Yai-Huai Kha Khaeng,fr,Q15725130,exact,partie_de,1991,false,https://whc.unesco.org/fr/list/591,,
+THA,1461,naturel,parc national de Kaeng Krachan,fr,Q1819232,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1461,,
+THA,1507,culturel,"Phu Phrabat, un témoignage de la tradition des pierres Sema de la période de Dvaravati",fr,Q127935365,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1507,,
+THA,1662,culturel,parc historique de Sri Thep,fr,Q1517758,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1662,,
+THA,1761,culturel,"Wat Phra Mahathat Woramahawihan, Nakhon Si Thammarat",fr,Q2552354,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1761,,
+VNM,672,naturel,baie d'Along,fr,Q190128,exact,aucun,1994,false,https://whc.unesco.org/fr/list/672,,
+VNM,678,culturel,Ensemble de monuments de Huế,fr,Q10810560,exact,partie_de,1993,false,https://whc.unesco.org/fr/list/678,,
+VNM,948,culturel,Hội An,wikifr,Q5965459,exact,titre_unesco,1999,false,https://whc.unesco.org/fr/list/948,https://fr.wikipedia.org/w/index.php?title=H%E1%BB%99i_An&oldid=240225268,
+VNM,949,culturel,sanctuaire de Mỹ Sơn,fr,Q391406,exact,aucun,1999,false,https://whc.unesco.org/fr/list/949,,
+VNM,951,naturel,Parc national de Phong Nha-Kẻ Bàng,wikifr,Q23513,exact,aucun,2003,true,https://whc.unesco.org/fr/list/951,https://fr.wikipedia.org/w/index.php?title=Parc_national_de_Phong_Nha-K%E1%BA%BB_B%C3%A0ng&oldid=241057565,
+VNM,1328,culturel,cité impériale de Thang Long,fr,Q206219,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1328,,
+VNM,1358,culturel,citadelle de la dynastie Hô,fr,Q190060,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1358,,
+VNM,1438,mixte,complexe paysager de Trang An,fr,Q10810559,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1438,,
+VNM,1732,culturel,The Complex of Yen Tu Monuments and Landscape,en,Q16481408,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1732,,
+IDN,592,culturel,Terrains du temple Borobudur,fr,Q29070,exact,aucun,1991,false,https://whc.unesco.org/fr/list/592,,
+IDN,593,culturel,site des premiers hommes de Sangiran,fr,Q842328,exact,aucun,1996,false,https://whc.unesco.org/fr/list/593,,
+IDN,608,naturel,parc national d'Ujung Kulon,fr,Q4522,exact,aucun,1991,false,https://whc.unesco.org/fr/list/608,,
+IDN,609,naturel,parc national de Komodo,fr,Q4520,exact,aucun,1991,false,https://whc.unesco.org/fr/list/609,,
+IDN,642,culturel,Temple de Prambanan,wikifr,Q84403674,exact,titre_unesco,1991,false,https://whc.unesco.org/fr/list/642,https://fr.wikipedia.org/w/index.php?title=Temple_de_Prambanan&oldid=238542008,
+IDN,955,naturel,parc national de Lorentz,fr,Q4516,exact,aucun,1999,false,https://whc.unesco.org/fr/list/955,,
+IDN,1167,naturel,patrimoine des forêts tropicales ombrophiles de Sumatra,fr,Q4521,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1167,,
+IDN,1194,culturel,Subak,wikifr,,exact,correction,2012,false,https://whc.unesco.org/fr/list/1194,https://fr.wikipedia.org/w/index.php?title=Subak&oldid=240721367,
+IDN,1610,culturel,Mine d'Ombilin,fr,Q16965955,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1610,,
+IDN,1671,culturel,Yogyakarta,wikifr,Q96012243,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1671,https://fr.wikipedia.org/w/index.php?title=Yogyakarta&oldid=232245677,
+IND,231,culturel,fort Rouge,fr,Q45957,revision,aucun,2007,false,https://whc.unesco.org/fr/list/231,,
+IND,232,culturel,tombe de Humayun,fr,Q189648,exact,aucun,1993,false,https://whc.unesco.org/fr/list/232,,
+IND,233,culturel,Qûtb Minâr,wikifr,Q1074330,exact,aucun,1993,false,https://whc.unesco.org/fr/list/233,https://fr.wikipedia.org/w/index.php?title=Q%C3%BBtb_Min%C3%A2r&oldid=238594399,
+IND,234,culturel,églises et couvents de Goa,fr,Q15726428,exact,aucun,1986,false,https://whc.unesco.org/fr/list/234,,
+IND,239,culturel,Pattadakal,fr,Q817250,revision,aucun,1987,false,https://whc.unesco.org/fr/list/239,,
+IND,240,culturel,ensemble monumental de Khajuraho,fr,Q167298,exact,aucun,1986,false,https://whc.unesco.org/fr/list/240,,
+IND,241,culturel,ensemble monumental de Hampi,fr,Q26732,exact,aucun,1986,false,https://whc.unesco.org/fr/list/241,,
+IND,242,culturel,Ajantâ,fr,Q184427,exact,aucun,1983,false,https://whc.unesco.org/fr/list/242,,
+IND,243,culturel,Ellorâ,fr,Q189616,exact,aucun,1983,false,https://whc.unesco.org/fr/list/243,,
+IND,244,culturel,grottes d'Elephanta,fr,Q649384,revision,aucun,1987,false,https://whc.unesco.org/fr/list/244,,
+IND,246,culturel,temple de Sûrya,fr,Q752091,exact,aucun,1984,false,https://whc.unesco.org/fr/list/246,,
+IND,247,culturel,forts de colline du Rajasthan,fr,Q10428494,revision,aucun,2013,false,https://whc.unesco.org/fr/list/247,,
+IND,249,culturel,Mahabalipuram,wikifr,Q3522747,exact,aucun,1984,false,https://whc.unesco.org/fr/list/249,https://fr.wikipedia.org/w/index.php?title=Mahabalipuram&oldid=238194914,
+IND,250,culturel,Grands temples vivants Chola,fr,Q695229,exact,aucun,1987,false,https://whc.unesco.org/fr/list/250,,
+IND,251,culturel,fort d'Agra,fr,Q171857,exact,aucun,1983,false,https://whc.unesco.org/fr/list/251,,
+IND,252,culturel,Taj Mahal,fr,Q9141,exact,aucun,1983,false,https://whc.unesco.org/fr/list/252,,https://fr.wikipedia.org/w/index.php?title=Liste_du_patrimoine_mondial_en_Inde&oldid=241429238
+IND,255,culturel,Fatehpur-Sikrī,fr,Q179046,exact,aucun,1986,false,https://whc.unesco.org/fr/list/255,,
+IND,335,naturel,Parcs nationaux de Nanda Devi et de la Vallée des fleurs,fr,Q15839097,exact,aucun,1988,false,https://whc.unesco.org/fr/list/335,,
+IND,337,naturel,parc national de Kaziranga,fr,Q192764,exact,aucun,1985,false,https://whc.unesco.org/fr/list/337,,
+IND,338,naturel,parc national de Manas,fr,Q506511,exact,aucun,1985,false,https://whc.unesco.org/fr/list/338,,
+IND,340,naturel,parc national de Keoladeo,fr,Q235878,exact,aucun,1985,false,https://whc.unesco.org/fr/list/340,,
+IND,452,naturel,parc national des Sundarbans,fr,Q532440,exact,aucun,1987,false,https://whc.unesco.org/fr/list/452,,
+IND,524,culturel,Sânchî,fr,Q181123,exact,aucun,1989,false,https://whc.unesco.org/fr/list/524,,
+IND,922,culturel,Rani-ki-Vav,fr,Q7293002,exact,aucun,2014,false,https://whc.unesco.org/fr/list/922,,
+IND,925,culturel,Bhimbetka,fr,Q331603,exact,aucun,2003,false,https://whc.unesco.org/fr/list/925,,
+IND,927,culturel,Sārnāth,fr,Q324394,exact,aucun,2026,false,https://whc.unesco.org/fr/list/927,,
+IND,944,culturel,chemins de fer de montagne en Inde,fr,Q4528,exact,aucun,1999,false,https://whc.unesco.org/fr/list/944,,
+IND,945,culturel,Bombay - Chhatrapati Shivaji Maharaj,fr,Q235884,exact,aucun,2004,false,https://whc.unesco.org/fr/list/945,,
+IND,1056,culturel,temple de la Mahabodhi,fr,Q4513,exact,aucun,2002,false,https://whc.unesco.org/fr/list/1056,,
+IND,1101,culturel,parc archéologique de Champaner-Pavagadh,fr,Q844427,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1101,,
+IND,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321,,
+IND,1338,culturel,Jantar Mantar,fr,Q2045115,exact,titre_unesco,2010,false,https://whc.unesco.org/fr/list/1338,,
+IND,1342,naturel,Ghâts occidentaux,fr,Q4527,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1342,,
+IND,1375,culturel,Santiniketan,fr,Q1026431,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1375,,
+IND,1406,naturel,parc national du Grand Himalaya,fr,Q1544213,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1406,,
+IND,1480,culturel,Ensembles néo-gothique victorien et Art déco de Mumbai,fr,Q16942531,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1480,,
+IND,1502,culturel,Nâlandâ,fr,Q216243,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1502,,
+IND,1513,mixte,parc national de Khangchendzonga,fr,Q2605019,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1513,,https://fr.wikipedia.org/w/index.php?title=Parc_national_de_Khangchendzonga&oldid=239298733
+IND,1551,culturel,Ville historique d’Ahmedabad,fr,Q5472448,exact,titre_unesco,2017,false,https://whc.unesco.org/fr/list/1551,,
+IND,1570,culturel,temple de Ramappa,fr,Q3380656,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1570,,
+IND,1605,culturel,Jaipur,fr,Q66485,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1605,,
+IND,1645,culturel,Dholavira,fr,Q9468,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1645,,
+IND,1670,culturel,Ensembles sacrés des Hoysala,fr,Q66023123,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1670,,
+IND,1711,culturel,Moidams – système de tertres funéraires de la dynastie Ahom,fr,Q6735332,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1711,,
+IND,1739,culturel,Paysages militaires marathes de l'Inde,fr,Q134720951,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1739,,
+NPL,120,naturel,parc national de Sagarmatha,fr,Q2211959,exact,aucun,1979,false,https://whc.unesco.org/fr/list/120,,
+NPL,121,culturel,vallée de Katmandou,fr,Q970717,exact,titre_unesco,1979,false,https://whc.unesco.org/fr/list/121,,
+NPL,284,naturel,parc national de Chitawan,fr,Q1075023,exact,aucun,1984,false,https://whc.unesco.org/fr/list/284,,
+NPL,666,culturel,Lumbinî,fr,Q9213,exact,aucun,1997,false,https://whc.unesco.org/fr/list/666,,
+LKA,200,culturel,Anurâdhapura,fr,Q5724,exact,titre_unesco,1982,false,https://whc.unesco.org/fr/list/200,,
+LKA,201,culturel,Polonnâruvâ,fr,Q394443,exact,aucun,1982,false,https://whc.unesco.org/fr/list/201,,
+LKA,202,culturel,Sigirîya,fr,Q272153,exact,aucun,1982,false,https://whc.unesco.org/fr/list/202,,
+LKA,405,naturel,réserve forestière de Sinharâja,fr,Q375634,exact,aucun,1988,false,https://whc.unesco.org/fr/list/405,,
+LKA,450,culturel,Kandy,fr,Q203197,exact,aucun,1988,false,https://whc.unesco.org/fr/list/450,,
+LKA,451,culturel,Vieille ville de Galle et ses fortifications,fr,Q15830652,exact,aucun,1988,false,https://whc.unesco.org/fr/list/451,,
+LKA,561,culturel,temple d'Or de Dambulla,fr,Q45690,exact,aucun,1991,false,https://whc.unesco.org/fr/list/561,,
+LKA,1203,naturel,Hauts plateaux du centre de Sri Lanka,fr,Q422941,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1203,,
+LAO,479,culturel,Luang Prabang,fr,Q190165,exact,aucun,1995,false,https://whc.unesco.org/fr/list/479,,
+LAO,481,culturel,Vat Phou,wikifr,Q3888860,exact,aucun,2001,false,https://whc.unesco.org/fr/list/481,https://fr.wikipedia.org/w/index.php?title=Vat_Phou&oldid=236127744,
+LAO,951,naturel,Hin Nam No National Protected Area,en,Q5765542,exact,aucun,2025,true,https://whc.unesco.org/fr/list/951,,
+LAO,1587,culturel,Plaine des Jarres,fr,Q870258,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1587,,
+TUR,356,culturel,Zones historiques d'Istanbul,fr,Q5773394,exact,partie_de,1985,false,https://whc.unesco.org/fr/list/356,,
+TUR,357,mixte,Parc national de Göreme et sites rupestres de Cappadoce,fr,Q64705367,exact,aucun,1985,false,https://whc.unesco.org/fr/list/357,,
+TUR,358,culturel,Grande mosquée et hopital de Divriği,fr,Q581641,exact,aucun,1985,false,https://whc.unesco.org/fr/list/358,,
+TUR,377,culturel,Hattousa : la capitale hittite,fr,Q64699502,exact,aucun,1986,false,https://whc.unesco.org/fr/list/377,,
+TUR,448,culturel,Nemrut Dağı,fr,Q207917,exact,aucun,1987,false,https://whc.unesco.org/fr/list/448,,
+TUR,484,culturel,Xanthos-Letoon,fr,Q16912661,exact,aucun,1988,false,https://whc.unesco.org/fr/list/484,,
+TUR,485,mixte,Hierapolis-Pamukkale,fr,Q15924669,exact,aucun,1988,false,https://whc.unesco.org/fr/list/485,,
+TUR,614,culturel,Ville de Safranbolu,fr,Q64705254,exact,aucun,1994,false,https://whc.unesco.org/fr/list/614,,
+TUR,849,culturel,Troie,fr,Q22647,exact,aucun,1998,false,https://whc.unesco.org/fr/list/849,,
+TUR,1018,culturel,Éphèse,fr,Q64699469,revision,aucun,2015,false,https://whc.unesco.org/fr/list/1018,,
+TUR,1366,culturel,mosquée Selimiye,fr,Q184534,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1366,,
+TUR,1405,culturel,Çatal Höyük,fr,Q192522,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1405,,
+TUR,1452,culturel,Bursa et Cumalıkızık : la naissance de l’Empire ottoman,fr,Q60846866,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1452,,
+TUR,1457,culturel,Pergame et son paysage culturel à multiples strates,fr,Q64705007,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1457,,
+TUR,1488,culturel,paysage culturel de la forteresse de Diyarbakır et des jardins de l’Hevsel,fr,Q20963673,exact,partie_de,2015,false,https://whc.unesco.org/fr/list/1488,,
+TUR,1518,culturel,Ani,fr,Q546010,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1518,,
+TUR,1519,culturel,Aphrodisias,fr,Q64699201,exact,partie_de,2017,false,https://whc.unesco.org/fr/list/1519,,
+TUR,1572,culturel,Göbekli Tepe,fr,Q214944,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1572,,
+TUR,1622,culturel,Arslantepe,fr,Q705132,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1622,,
+TUR,1669,culturel,Gordion,fr,Q542854,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1669,,
+TUR,1694,culturel,mosquées hypostyles en bois de l'Anatolie médiévale,fr,Q64735123,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1694,,
+TUR,1731,culturel,Sardes et les tumuli lydiens de Bin Tepe,fr,Q64735723,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1731,,
+ARE,1343,culturel,Al-Aïn,wikifr,Q3962347,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1343,https://fr.wikipedia.org/w/index.php?title=Al-A%C3%AFn&oldid=237355601,
+ARE,1724,naturel,Wadi Wurayah,fr,Q2538723,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1724,,
+ARE,1735,culturel,Djebel Faya,fr,Q6172505,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1735,,
+JOR,326,culturel,Pétra,fr,Q5788,exact,aucun,1985,false,https://whc.unesco.org/fr/list/326,,
+JOR,327,culturel,Qusair Amra,fr,Q499517,exact,aucun,1985,false,https://whc.unesco.org/fr/list/327,,
+JOR,689,culturel,Salt,fr,Q867586,exact,aucun,2021,false,https://whc.unesco.org/fr/list/689,,
+JOR,1093,culturel,Um er-Rasas,fr,Q822842,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1093,,
+JOR,1377,mixte,Wadi Rum,fr,Q40729,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1377,,
+JOR,1446,culturel,Al-Maghtas,fr,Q12193567,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1446,,
+JOR,1721,culturel,Um el-Jimal,fr,Q3107493,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1721,,
+JOR,1742,naturel,Réserve marine d’Aqaba,fr,Q31866622,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1742,,
+MAR,170,culturel,médina de Fès,fr,Q2072102,exact,aucun,1981,false,https://whc.unesco.org/fr/list/170,,
+MAR,331,culturel,médina de Marrakech,fr,Q966780,exact,aucun,1985,false,https://whc.unesco.org/fr/list/331,,
+MAR,444,culturel,Ksar Aït-ben-Haddou,fr,Q309436,exact,aucun,1987,false,https://whc.unesco.org/fr/list/444,,
+MAR,753,culturel,médina d'Essaouira,fr,Q11858823,revision,aucun,2001,false,https://whc.unesco.org/fr/list/753,,
+MAR,793,culturel,Médina de Meknès,fr,Q12352436,exact,aucun,1996,false,https://whc.unesco.org/fr/list/793,,
+MAR,836,culturel,Oualili,fr,Q391215,exact,aucun,1997,false,https://whc.unesco.org/fr/list/836,,
+MAR,837,culturel,Médina,fr,Q3847588,exact,aucun,1997,false,https://whc.unesco.org/fr/list/837,,
+MAR,1058,culturel,Mazagan,fr,Q555360,revision,aucun,2004,false,https://whc.unesco.org/fr/list/1058,,
+MAR,1401,culturel,"Rabat, capitale moderne et ville historique",fr,Q65926560,exact,titre_unesco,2012,false,https://whc.unesco.org/fr/list/1401,,
+EGY,86,culturel,Memphis et sa nécropole – les zones des pyramides de Guizeh à Dahchour,fr,Q1175856,exact,aucun,1979,false,https://whc.unesco.org/fr/list/86,,
+EGY,87,culturel,Thèbes antique et sa nécropole,fr,Q141298543,exact,aucun,1979,false,https://whc.unesco.org/fr/list/87,,https://fr.wikipedia.org/w/index.php?title=Th%C3%A8bes_%28%C3%89gypte%29&oldid=233781706
+EGY,88,culturel,Monuments de Nubie d'Abou Simbel à Philae,fr,Q4923872,exact,aucun,1979,false,https://whc.unesco.org/fr/list/88,,
+EGY,89,culturel,Caire islamique,fr,Q1100964,exact,aucun,1979,false,https://whc.unesco.org/fr/list/89,,
+EGY,90,culturel,Abou Mena,fr,Q9278,exact,aucun,1979,false,https://whc.unesco.org/fr/list/90,,
+EGY,954,culturel,Monastère Sainte-Catherine du Sinaï,wikifr,Q2468771,exact,aucun,2002,false,https://whc.unesco.org/fr/list/954,https://fr.wikipedia.org/w/index.php?title=Monast%C3%A8re_Sainte-Catherine_du_Sina%C3%AF&oldid=241198087,
+EGY,1186,naturel,Ouadi Al-Hitan,fr,Q501833,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1186,,
+ZAF,914,naturel,parc de la zone humide d'iSimangaliso,fr,Q310719,exact,aucun,1999,true,https://whc.unesco.org/fr/list/914,,
+ZAF,915,culturel,sites des hominidés fossiles d'Afrique du Sud,fr,Q1130112,exact,aucun,1999,false,https://whc.unesco.org/fr/list/915,,
+ZAF,916,culturel,Robben Island,fr,Q192493,exact,aucun,1999,false,https://whc.unesco.org/fr/list/916,,
+ZAF,985,mixte,Parc Maloti-Drakensberg,fr,Q6744547,exact,aucun,2000,true,https://whc.unesco.org/fr/list/985,,
+ZAF,1007,naturel,Royaume floral du Cap,fr,Q1974274,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1007,,
+ZAF,1099,culturel,Paysage culturel de Mapungubwe,fr,Q1136251,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1099,,
+ZAF,1162,naturel,dôme de Vredefort,fr,Q330095,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1162,,
+ZAF,1265,culturel,Richtersveld,fr,Q1353565,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1265,,
+ZAF,1545,culturel,paysage culturel des ǂKhomani,fr,Q33800328,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1545,,
+ZAF,1575,naturel,Barberton Makhonjwa,fr,Q19605615,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1575,,
+ZAF,1676,culturel,"Droits de l’homme, libération et réconciliation : les sites de mémoire de Nelson Mandela",fr,Q65936861,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1676,,
+ZAF,1723,culturel,L’émergence du comportement humain moderne : les sites d’occupation du Pléistocène en Afrique du Sud,fr,Q65936860,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1723,,
+KEN,800,naturel,parc national du mont Kenya,fr,Q1639468,exact,aucun,1997,false,https://whc.unesco.org/fr/list/800,,
+KEN,801,naturel,parcs nationaux du lac Turkana,fr,Q1647948,exact,aucun,1997,false,https://whc.unesco.org/fr/list/801,,
+KEN,1055,culturel,Ancienne ville de Lamu,fr,Q51100199,exact,correction,2001,false,https://whc.unesco.org/fr/list/1055,,https://fr.wikipedia.org/w/index.php?title=Liste_du_patrimoine_mondial_au_Kenya&oldid=238886383
+KEN,1060,naturel,réseau des lacs du Kenya dans la vallée du grand rift,fr,Q2384313,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1060,,
+KEN,1231,culturel,forêts sacrées de kayas des Mijikenda,fr,Q1362222,revision,aucun,2008,false,https://whc.unesco.org/fr/list/1231,,
+KEN,1295,culturel,fort Jesus,fr,Q379080,revision,aucun,2011,false,https://whc.unesco.org/fr/list/1295,,
+KEN,1450,culturel,Thimlich Ohinga,fr,Q3524629,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1450,,
+KEN,1720,culturel,Ruines de Gedi,fr,Q502518,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1720,,
+TZA,39,mixte,aire de conservation du Ngorongoro,fr,Q1217726,exact,aucun,1979,false,https://whc.unesco.org/fr/list/39,,
+TZA,144,culturel,Ruines de Kilwa Kisiwani et de Songo Mnara,fr,Q15726282,exact,aucun,1981,false,https://whc.unesco.org/fr/list/144,,
+TZA,156,naturel,parc national du Serengeti,fr,Q11812902,exact,aucun,1981,false,https://whc.unesco.org/fr/list/156,,https://fr.wikipedia.org/w/index.php?title=Parc_national_du_Serengeti&oldid=240177100
+TZA,173,culturel,Stone Town,fr,Q844417,revision,aucun,2000,false,https://whc.unesco.org/fr/list/173,,
+TZA,199,naturel,réserve de gibier de Sélous,fr,Q2268839,exact,aucun,1982,false,https://whc.unesco.org/fr/list/199,,
+TZA,403,naturel,parc national du Kilimandjaro,fr,Q756790,exact,aucun,1987,false,https://whc.unesco.org/fr/list/403,,
+TZA,1183,culturel,Sites d'art rupestre de Kondoa,fr,Q1404282,revision,aucun,2006,false,https://whc.unesco.org/fr/list/1183,,
+SEN,25,naturel,parc national des oiseaux du Djoudj,fr,Q733676,exact,aucun,1981,false,https://whc.unesco.org/fr/list/25,,
+SEN,26,culturel,île de Gorée,fr,Q244347,exact,aucun,1978,false,https://whc.unesco.org/fr/list/26,,
+SEN,153,naturel,parc national du Niokolo-Koba,fr,Q679891,exact,aucun,1981,false,https://whc.unesco.org/fr/list/153,,
+SEN,956,culturel,île de Saint-Louis,fr,Q1114640,exact,aucun,2000,false,https://whc.unesco.org/fr/list/956,,
+SEN,1226,culturel,Cercles mégalithiques de Sénégambie,wikifr,Q98769058,exact,aucun,2006,true,https://whc.unesco.org/fr/list/1226,https://fr.wikipedia.org/w/index.php?title=Cercles_m%C3%A9galithiques_de_S%C3%A9n%C3%A9gambie&oldid=237778160,
+SEN,1359,culturel,delta du Saloum,fr,Q559363,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1359,,
+SEN,1407,culturel,Pays bassari,fr,Q2916296,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1407,,
+GHA,34,culturel,Forts de la côte ghanéenne,fr,Q778743,exact,aucun,1979,false,https://whc.unesco.org/fr/list/34,,
+GHA,35,culturel,bâtiments traditionnels Ashantis,fr,Q1141003,exact,aucun,1980,false,https://whc.unesco.org/fr/list/35,,
+USA,27,culturel,parc national de Mesa Verde,fr,Q237128,exact,aucun,1978,false,https://whc.unesco.org/fr/list/27,,
+USA,28,naturel,parc national de Yellowstone,fr,Q351,exact,aucun,1978,false,https://whc.unesco.org/fr/list/28,,
+USA,72,naturel,Kluane / Wrangell - Saint-Élie / Glacier Bay / Tatshenshini-Alsek,fr,Q604604,exact,aucun,1979,true,https://whc.unesco.org/fr/list/72,,
+USA,75,naturel,parc national du Grand Canyon,fr,Q220289,exact,aucun,1979,false,https://whc.unesco.org/fr/list/75,,
+USA,76,naturel,parc national des Everglades,fr,Q274131,exact,aucun,1979,false,https://whc.unesco.org/fr/list/76,,
+USA,78,culturel,Independence Hall,fr,Q390028,exact,aucun,1979,false,https://whc.unesco.org/fr/list/78,,
+USA,134,naturel,parc national et parcs d'état de Redwood,fr,Q63863168,exact,aucun,1980,false,https://whc.unesco.org/fr/list/134,,
+USA,150,naturel,parc national de Mammoth Cave,fr,Q242681,exact,aucun,1981,false,https://whc.unesco.org/fr/list/150,,
+USA,151,naturel,parc national Olympique,fr,Q372093,exact,aucun,1981,false,https://whc.unesco.org/fr/list/151,,
+USA,198,culturel,Cahokia,fr,Q333661,extension,aucun,1982,false,https://whc.unesco.org/fr/list/198,,
+USA,259,naturel,parc national des Great Smoky Mountains,fr,Q464004,exact,aucun,1983,false,https://whc.unesco.org/fr/list/259,,
+USA,266,culturel,La Fortaleza et le site historique national de San Juan à Porto Rico,fr,Q15813904,exact,aucun,1983,false,https://whc.unesco.org/fr/list/266,,
+USA,307,culturel,Liberty Island,fr,Q319821,exact,aucun,1984,false,https://whc.unesco.org/fr/list/307,,
+USA,308,naturel,parc national de Yosemite,fr,Q180402,exact,aucun,1984,false,https://whc.unesco.org/fr/list/308,,
+USA,353,culturel,culture Chaco,fr,Q65648486,revision,aucun,1987,false,https://whc.unesco.org/fr/list/353,,
+USA,354,naturel,parc international de la paix Waterton-Glacier,fr,Q828212,revision,aucun,1995,true,https://whc.unesco.org/fr/list/354,,
+USA,409,naturel,parc national des volcans d'Hawaï,fr,Q205952,exact,aucun,1987,false,https://whc.unesco.org/fr/list/409,,
+USA,442,culturel,Monticello et Université de Virginie à Charlottesville,fr,Q15830656,exact,aucun,1987,false,https://whc.unesco.org/fr/list/442,,
+USA,492,culturel,Pueblo de Taos,fr,Q252814,revision,aucun,1992,false,https://whc.unesco.org/fr/list/492,,
+USA,721,naturel,parc national des grottes de Carlsbad,fr,Q273195,exact,aucun,1995,false,https://whc.unesco.org/fr/list/721,,
+USA,1326,mixte,monument national marin de Papahānaumokuākea,fr,Q787425,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1326,,
+USA,1351,culturel,Camino Real de Tierra Adentro,fr,Q911953,exact,aucun,2010,true,https://whc.unesco.org/fr/list/1351,,
+USA,1435,culturel,Poverty Point,fr,Q964745,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1435,,
+USA,1466,culturel,missions de San Antonio,fr,Q10498483,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1466,,
+USA,1468,culturel,Colonies de l’Église morave,fr,Q128009257,extension,aucun,2015,true,https://whc.unesco.org/fr/list/1468,,
+USA,1496,culturel,œuvres architecturales du XXe siècle de Frank Lloyd Wright,fr,Q10498496,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1496,,
+USA,1689,culturel,Les ouvrages en terre cérémoniels Hopewell,fr,Q10525989,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1689,,
+USA,1751,naturel,Refuge national de faune et de flore sauvages d’Okefenokee,fr,Q7081911,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1751,,
+CAN,4,culturel,L'Anse aux Meadows,fr,Q189113,exact,aucun,1978,false,https://whc.unesco.org/fr/list/4,,
+CAN,24,naturel,réserve de parc national de Nahanni,fr,Q391391,exact,aucun,1978,false,https://whc.unesco.org/fr/list/24,,
+CAN,71,naturel,parc provincial Dinosaur,fr,Q289466,exact,aucun,1979,false,https://whc.unesco.org/fr/list/71,,
+CAN,72,naturel,Kluane / Wrangell - Saint-Élie / Glacier Bay / Tatshenshini-Alsek,fr,Q604604,exact,aucun,1979,true,https://whc.unesco.org/fr/list/72,,
+CAN,157,culturel,SGang Gwaay,fr,Q240832,exact,aucun,1981,false,https://whc.unesco.org/fr/list/157,,
+CAN,158,culturel,précipice à bisons Head-Smashed-In,fr,Q683110,exact,aucun,1981,false,https://whc.unesco.org/fr/list/158,,
+CAN,256,naturel,parc national Wood Buffalo,fr,Q391338,exact,aucun,1983,false,https://whc.unesco.org/fr/list/256,,
+CAN,300,culturel,Vieux-Québec,fr,Q2114279,exact,aucun,1985,false,https://whc.unesco.org/fr/list/300,,
+CAN,304,naturel,parcs des montagnes Rocheuses canadiennes,fr,Q72895,exact,aucun,1984,false,https://whc.unesco.org/fr/list/304,,
+CAN,354,naturel,parc international de la paix Waterton-Glacier,fr,Q828212,revision,aucun,1995,true,https://whc.unesco.org/fr/list/354,,
+CAN,419,naturel,parc national du Gros-Morne,fr,Q257598,exact,aucun,1987,false,https://whc.unesco.org/fr/list/419,,
+CAN,686,naturel,parc national de Miguasha,fr,Q631128,revision,aucun,1999,false,https://whc.unesco.org/fr/list/686,,
+CAN,741,culturel,Le Vieux Lunenburg,fr,Q28833066,exact,aucun,1995,false,https://whc.unesco.org/fr/list/741,,
+CAN,1221,culturel,canal Rideau,fr,Q18087815,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1221,,
+CAN,1285,naturel,falaises fossilifères de Joggins,fr,Q1439433,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1285,,
+CAN,1404,culturel,Grand-Pré,fr,Q1100749,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1404,,
+CAN,1412,culturel,lieu historique national de Red Bay,fr,Q3238270,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1412,,
+CAN,1415,mixte,Pimachiowin Aki,fr,Q7194595,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1415,,
+CAN,1497,naturel,réserve écologique de Mistaken Point,fr,Q3301928,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1497,,
+CAN,1564,culturel,Tr’ondëk-Klondike,fr,Q65118617,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1564,,
+CAN,1597,culturel,parc provincial Writing-on-Stone,fr,Q8038519,exact,aucun,2019,false,https://whc.unesco.org/fr/list/1597,,
+CAN,1686,naturel,Anticosti,fr,Q122707293,exact,aucun,2023,false,https://whc.unesco.org/fr/list/1686,,
+MEX,410,naturel,Sian Ka'an,fr,Q559789,exact,aucun,1987,false,https://whc.unesco.org/fr/list/410,,
+MEX,411,culturel,Palenque,fr,Q181427,exact,aucun,1987,false,https://whc.unesco.org/fr/list/411,,
+MEX,412,culturel,Centre historique de Mexico et Xochimilco,fr,Q15924695,exact,aucun,1987,false,https://whc.unesco.org/fr/list/412,,
+MEX,414,culturel,Teotihuacan,fr,Q172613,exact,aucun,1987,false,https://whc.unesco.org/fr/list/414,,
+MEX,415,culturel,Centre historique de Oaxaca et zone archéologique de Monte Alban,fr,Q16743243,exact,aucun,1987,false,https://whc.unesco.org/fr/list/415,,
+MEX,416,culturel,Centre historique de Puebla,fr,Q3848455,exact,aucun,1987,false,https://whc.unesco.org/fr/list/416,,
+MEX,482,culturel,Guanajuato,fr,Q61306,exact,aucun,1988,false,https://whc.unesco.org/fr/list/482,,https://fr.wikipedia.org/w/index.php?title=Liste_du_patrimoine_mondial_au_Mexique&oldid=239832049
+MEX,483,culturel,Chichén Itzá,fr,Q5859,exact,aucun,1989,false,https://whc.unesco.org/fr/list/483,,
+MEX,554,naturel,Sanctuaire de baleines d'El Vizcaino,fr,Q12201148,exact,aucun,1993,false,https://whc.unesco.org/fr/list/554,,
+MEX,560,culturel,Paquimé,fr,Q853265,revision,aucun,1998,false,https://whc.unesco.org/fr/list/560,,
+MEX,585,culturel,Centre historique de Morelia,fr,Q3848089,exact,aucun,1991,false,https://whc.unesco.org/fr/list/585,,
+MEX,631,culturel,El Tajín,fr,Q753895,exact,aucun,1992,false,https://whc.unesco.org/fr/list/631,,
+MEX,676,culturel,Centre historique de Zacatecas,fr,Q3848116,exact,aucun,1993,false,https://whc.unesco.org/fr/list/676,,
+MEX,702,culturel,Premiers monastères du XVIe siècle sur les versants du Popocatépetl,fr,Q1141009,exact,aucun,1994,false,https://whc.unesco.org/fr/list/702,,
+MEX,714,culturel,peintures rupestres de la Sierra de San Francisco,fr,Q552005,exact,aucun,1993,false,https://whc.unesco.org/fr/list/714,,
+MEX,791,culturel,Ville précolombienne d'Uxmal,fr,Q65455940,exact,aucun,1996,false,https://whc.unesco.org/fr/list/791,,https://fr.wikipedia.org/w/index.php?title=Uxmal&oldid=241192804
+MEX,792,culturel,centre historique de Santiago de Querétaro,fr,Q3848141,exact,aucun,1996,false,https://whc.unesco.org/fr/list/792,,
+MEX,815,culturel,hospice Cabañas,fr,Q28416,exact,aucun,1997,false,https://whc.unesco.org/fr/list/815,,
+MEX,862,culturel,Tlacotalpan,fr,Q903792,exact,aucun,1998,false,https://whc.unesco.org/fr/list/862,,
+MEX,895,culturel,Campeche,wikifr,Q5762131,exact,aucun,1999,false,https://whc.unesco.org/fr/list/895,https://fr.wikipedia.org/w/index.php?title=Campeche_%28ville%29&oldid=237460102,
+MEX,939,culturel,Xochicalco,fr,Q797120,exact,aucun,1999,false,https://whc.unesco.org/fr/list/939,,
+MEX,1061,mixte,Calakmul,fr,Q272771,extension,aucun,2002,false,https://whc.unesco.org/fr/list/1061,,
+MEX,1079,culturel,Missions franciscaines de la Sierra Gorda,fr,Q751146,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1079,,
+MEX,1136,culturel,maison-atelier de Luis Barragán,fr,Q1046414,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1136,,
+MEX,1182,naturel,Îles et aires protégées du Golfe de Californie,fr,Q2383410,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1182,,
+MEX,1209,culturel,Paysage d'agaves et anciennes installations industrielles de Tequila,fr,Q2104675,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1209,,
+MEX,1250,culturel,Ciudad Universitaria,fr,Q130025,exact,aucun,2007,false,https://whc.unesco.org/fr/list/1250,,
+MEX,1274,culturel,San Miguel de Allende,wikifr,Q15613314,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1274,https://fr.wikipedia.org/w/index.php?title=San_Miguel_de_Allende&oldid=233495248,
+MEX,1290,naturel,réserve de biosphère du papillon monarque,fr,Q852546,exact,aucun,2008,false,https://whc.unesco.org/fr/list/1290,,
+MEX,1351,culturel,Camino Real de Tierra Adentro,fr,Q911953,exact,aucun,1993,true,https://whc.unesco.org/fr/list/1351,,
+MEX,1352,culturel,grottes préhistoriques de Yagul et Mitla,fr,Q15661566,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1352,,
+MEX,1410,naturel,réserve de biosphère El Pinacate et le Grand désert d'Altar,fr,Q3821829,exact,aucun,2013,false,https://whc.unesco.org/fr/list/1410,,
+MEX,1463,culturel,aqueduc de Padre Tembleque,fr,Q2840764,exact,aucun,2015,false,https://whc.unesco.org/fr/list/1463,,
+MEX,1510,naturel,îles Revillagigedo,fr,Q849318,exact,aucun,2016,false,https://whc.unesco.org/fr/list/1510,,
+MEX,1534,mixte,Réserve de biosphère Tehuacán-Cuicatlán,fr,Q5853681,revision,aucun,2018,false,https://whc.unesco.org/fr/list/1534,,
+MEX,1704,culturel,route huichol vers Wiricuta,fr,Q5934961,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1704,,
+CRI,205,naturel,Réserves de la cordillère de Talamanca-La Amistad / Parc national La Amistad,fr,Q6106226,exact,aucun,1983,true,https://whc.unesco.org/fr/list/205,,
+CRI,820,naturel,parc national de l'île Cocos,fr,Q6062995,exact,aucun,1997,false,https://whc.unesco.org/fr/list/820,,
+CRI,928,naturel,zone de conservation de Guanacaste,fr,Q775154,exact,aucun,1999,false,https://whc.unesco.org/fr/list/928,,
+CRI,1453,culturel,Établissements de chefferies précolombiennes avec des sphères mégalithiques du Diquís,fr,Q65114170,exact,aucun,2014,false,https://whc.unesco.org/fr/list/1453,,https://fr.wikipedia.org/w/index.php?title=Sph%C3%A8res_m%C3%A9galithiques_du_Costa_Rica&oldid=238164563
+COL,285,culturel,"Port, forteresses et ensemble monumental de Carthagène",fr,Q6091925,exact,aucun,1984,false,https://whc.unesco.org/fr/list/285,,
+COL,711,naturel,parc national naturel Los Katíos,fr,Q305169,exact,aucun,1994,false,https://whc.unesco.org/fr/list/711,,
+COL,742,culturel,Centre historique de Santa Cruz de Mompox,fr,Q8343767,exact,titre_unesco,1995,false,https://whc.unesco.org/fr/list/742,,
+COL,743,culturel,parc archéologique national de Tierradentro,fr,Q179506,exact,aucun,1995,false,https://whc.unesco.org/fr/list/743,,
+COL,744,culturel,parc archéologique de San Agustín,fr,Q2887224,exact,aucun,1995,false,https://whc.unesco.org/fr/list/744,,
+COL,1121,culturel,Paysage culturel du café de la Colombie,fr,Q18417667,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1121,,
+COL,1174,mixte,parc national naturel de la Serranía de Chiribiquete,fr,Q2603196,exact,aucun,2018,false,https://whc.unesco.org/fr/list/1174,,
+COL,1216,naturel,Sanctuaire de faune et de flore de Malpelo,fr,Q108379504,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1216,,
+COL,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459,,
+PER,273,culturel,centre historique de Cusco,fr,Q28502997,exact,aucun,1983,false,https://whc.unesco.org/fr/list/273,,
+PER,274,mixte,sanctuaire historique de Machu Picchu,fr,Q3331815,exact,aucun,1983,false,https://whc.unesco.org/fr/list/274,,
+PER,330,culturel,Chavín de Huántar,fr,Q732554,exact,aucun,1985,false,https://whc.unesco.org/fr/list/330,,
+PER,333,naturel,parc national de Huascarán,fr,Q917369,exact,aucun,1985,false,https://whc.unesco.org/fr/list/333,,
+PER,366,culturel,Chan Chan,fr,Q277540,exact,aucun,1986,false,https://whc.unesco.org/fr/list/366,,
+PER,402,naturel,parc national de Manu,fr,Q390264,exact,aucun,1987,false,https://whc.unesco.org/fr/list/402,,
+PER,500,culturel,Centre historique de Lima,fr,Q3320442,exact,aucun,1988,false,https://whc.unesco.org/fr/list/500,,
+PER,548,mixte,parc national Río Abiseo,fr,Q941412,exact,aucun,1990,false,https://whc.unesco.org/fr/list/548,,
+PER,700,culturel,géoglyphes de Nazca,fr,Q2620036,exact,aucun,1994,false,https://whc.unesco.org/fr/list/700,,
+PER,1016,culturel,Centre historique de la ville d’Arequipa,fr,Q8343756,exact,aucun,2000,false,https://whc.unesco.org/fr/list/1016,,
+PER,1269,culturel,Caral,mul,Q219279,exact,aucun,2009,false,https://whc.unesco.org/fr/list/1269,,
+PER,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459,,
+PER,1624,culturel,ensemble archéoastronomique de Chanquillo,fr,Q108016068,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1624,,
+BRA,124,culturel,ville historique d'Ouro Preto,fr,Q3845692,exact,aucun,1980,false,https://whc.unesco.org/fr/list/124,,
+BRA,189,culturel,Centre historique de la ville d'Olinda,fr,Q8343764,exact,aucun,1982,false,https://whc.unesco.org/fr/list/189,,
+BRA,275,culturel,Missions jésuites des Guaranis,fr,Q465960,exact,aucun,1983,true,https://whc.unesco.org/fr/list/275,,
+BRA,309,culturel,Centre historique de Salvador da Bahia,fr,Q5572706,exact,aucun,1985,false,https://whc.unesco.org/fr/list/309,,
+BRA,334,culturel,sanctuaire du Bom Jesus de Matosinhos,fr,Q1595417,exact,aucun,1985,false,https://whc.unesco.org/fr/list/334,,
+BRA,355,naturel,parc national de l'Iguaçu,fr,Q742315,exact,aucun,1986,false,https://whc.unesco.org/fr/list/355,,
+BRA,445,culturel,Brasilia,fr,Q2844,exact,titre_unesco,1987,false,https://whc.unesco.org/fr/list/445,,
+BRA,606,culturel,parc national de la Serra da Capivara,fr,Q267394,exact,aucun,1991,false,https://whc.unesco.org/fr/list/606,,
+BRA,821,culturel,Centre historique de São Luís,fr,Q8343768,exact,aucun,1997,false,https://whc.unesco.org/fr/list/821,,
+BRA,890,culturel,Diamantina,wikifr,Q8343760,exact,aucun,1999,false,https://whc.unesco.org/fr/list/890,https://fr.wikipedia.org/w/index.php?title=Diamantina&oldid=239292513,
+BRA,892,naturel,Côte de la découverte – Réserves de la forêt atlantique,fr,Q2487302,revision,aucun,1999,false,https://whc.unesco.org/fr/list/892,,
+BRA,893,naturel,forêt atlantique – Réserves du sud-est,fr,Q2521895,exact,aucun,1999,false,https://whc.unesco.org/fr/list/893,,
+BRA,993,culturel,Goiás,wikifr,Q8343761,exact,aucun,2001,false,https://whc.unesco.org/fr/list/993,https://fr.wikipedia.org/w/index.php?title=Goi%C3%A1s_%28ville%29&oldid=225646615,
+BRA,998,naturel,complexe de conservation de l'Amazonie centrale,fr,Q2990490,exact,aucun,2000,false,https://whc.unesco.org/fr/list/998,,
+BRA,999,naturel,Pantanal,wikifr,Q99237891,exact,titre_unesco,2000,true,https://whc.unesco.org/fr/list/999,https://fr.wikipedia.org/w/index.php?title=Pantanal&oldid=238935647,
+BRA,1000,naturel,Îles atlantiques brésiliennes : les Réserves de Fernando de Noronha et de l'atol das Rocas,fr,Q15224654,revision,partie_de,2001,false,https://whc.unesco.org/fr/list/1000,,
+BRA,1035,naturel,parc national des cavernes de Peruaçu,fr,Q1051873,exact,aucun,2001,false,https://whc.unesco.org/fr/list/1035,,
+BRA,1100,culturel,forêt de Tijuca,fr,Q14942956,exact,aucun,2012,false,https://whc.unesco.org/fr/list/1100,,
+BRA,1272,culturel,place São Francisco dans la ville de São Cristóvão,fr,Q7214285,revision,aucun,2010,false,https://whc.unesco.org/fr/list/1272,,
+BRA,1308,mixte,Paraty et Ilha Grande – culture et biodiversité,fr,Q66057630,revision,aucun,2019,false,https://whc.unesco.org/fr/list/1308,,
+BRA,1493,culturel,Ensemble moderne de Pampulha,fr,Q9850285,exact,partie_de,1997,false,https://whc.unesco.org/fr/list/1493,,
+BRA,1548,culturel,quai de Valongo,fr,Q20048515,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1548,,
+BRA,1611,naturel,parc national des Lençóis Maranhenses,fr,Q647777,exact,aucun,2024,false,https://whc.unesco.org/fr/list/1611,,
+BRA,1620,culturel,site Roberto Burle Marx,fr,Q56695607,exact,aucun,2021,false,https://whc.unesco.org/fr/list/1620,,
+BRA,1747,naturel,Parc national des Cavernas do Peruaçu,wikifr,Q141673269,exact,titre_unesco,2025,false,https://whc.unesco.org/fr/list/1747,https://fr.wikipedia.org/w/index.php?title=Parc_national_des_Cavernas_do_Perua%C3%A7u&oldid=228331630,
+BRA,1774,culturel,Théâtres d'Amazonie,fr,Q65561204,exact,aucun,2026,false,https://whc.unesco.org/fr/list/1774,,
+ARG,145,naturel,parc national Los Glaciares,fr,Q215992,exact,aucun,1981,false,https://whc.unesco.org/fr/list/145,,
+ARG,275,culturel,Missions jésuites des Guaranis,fr,Q465960,exact,aucun,1983,true,https://whc.unesco.org/fr/list/275,,
+ARG,303,naturel,Site du patrimoine mondial du Parc national de l'Iguazu,fr,Q57072712,exact,aucun,1984,false,https://whc.unesco.org/fr/list/303,,
+ARG,936,culturel,Cueva de las Manos,fr,Q223385,exact,aucun,1999,false,https://whc.unesco.org/fr/list/936,,
+ARG,937,naturel,péninsule Valdés,fr,Q213237,exact,aucun,1999,false,https://whc.unesco.org/fr/list/937,,
+ARG,966,naturel,Parcs naturels d’Ischigualasto / Talampaya,fr,Q17132555,exact,aucun,2000,false,https://whc.unesco.org/fr/list/966,,
+ARG,995,culturel,Córdoba,wikifr,Q837642,exact,partie_de,2000,false,https://whc.unesco.org/fr/list/995,https://fr.wikipedia.org/w/index.php?title=C%C3%B3rdoba_%28Argentine%29&oldid=238982858,
+ARG,1116,culturel,Quebrada de Humahuaca,fr,Q28061,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1116,,
+ARG,1321,culturel,œuvre architecturale de Le Corbusier,fr,Q55619850,revision,aucun,2016,true,https://whc.unesco.org/fr/list/1321,,
+ARG,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459,,
+ARG,1526,naturel,parc national Los Alerces,fr,Q828291,exact,aucun,2017,false,https://whc.unesco.org/fr/list/1526,,
+ARG,1681,culturel,"Musée et lieu de Mémoire de l’ESMA - Ancien centre clandestin de détention, de torture et d’extermination",fr,Q28663704,exact,correction,2023,false,https://whc.unesco.org/fr/list/1681,,
+CHL,715,culturel,parc national de Rapa Nui,fr,Q1763364,exact,aucun,1995,false,https://whc.unesco.org/fr/list/715,,
+CHL,959,culturel,Quartier historique de la ville portuaire de Valparaiso,fr,Q16333721,revision,aucun,2003,false,https://whc.unesco.org/fr/list/959,,
+CHL,971,culturel,églises de Chiloé,fr,Q27964,exact,aucun,2000,false,https://whc.unesco.org/fr/list/971,,
+CHL,1178,culturel,usines de salpêtre de Humberstone et de Santa Laura,fr,Q572895,exact,aucun,2005,false,https://whc.unesco.org/fr/list/1178,,
+CHL,1214,culturel,Sewell,fr,Q588417,exact,aucun,2006,false,https://whc.unesco.org/fr/list/1214,,
+CHL,1459,culturel,Chemins incas,fr,Q948975,exact,aucun,2014,true,https://whc.unesco.org/fr/list/1459,,
+CHL,1634,culturel,Peuplement et momification artificielle de la culture chinchorro dans la région d'Arica et de Parinacota,fr,Q108096731,exact,titre_unesco,2021,false,https://whc.unesco.org/fr/list/1634,,
+AUS,147,mixte,Parc national de Kakadu,fr,Q65096742,exact,aucun,1981,false,https://whc.unesco.org/fr/list/147,,
+AUS,154,naturel,grande barrière de corail,fr,Q7343,exact,aucun,1981,false,https://whc.unesco.org/fr/list/154,,
+AUS,166,culturel,opéra de Sydney,fr,Q45178,revision,aucun,2007,false,https://whc.unesco.org/fr/list/166,,
+AUS,167,mixte,Région des lacs Willandra,fr,Q747875,exact,aucun,1981,false,https://whc.unesco.org/fr/list/167,,
+AUS,181,mixte,zone de nature sauvage de Tasmanie,fr,Q138170,exact,aucun,1982,false,https://whc.unesco.org/fr/list/181,,
+AUS,186,naturel,Île Lord Howe,wikifr,Q1869866,exact,aucun,1982,false,https://whc.unesco.org/fr/list/186,https://fr.wikipedia.org/w/index.php?title=%C3%8Ele_Lord_Howe&oldid=240209960,
+AUS,368,naturel,forêts humides Gondwana de l'Australie,fr,Q643063,exact,aucun,1986,false,https://whc.unesco.org/fr/list/368,,
+AUS,447,mixte,parc national d'Uluṟu-Kata Tjuṯa,fr,Q251999,exact,aucun,1987,false,https://whc.unesco.org/fr/list/447,,
+AUS,486,naturel,Tropiques humides du Queensland,fr,Q1135808,exact,aucun,1988,false,https://whc.unesco.org/fr/list/486,,
+AUS,577,naturel,îles Heard-et-MacDonald,fr,Q131198,revision,aucun,1997,false,https://whc.unesco.org/fr/list/577,,
+AUS,578,naturel,Baie Shark,wikifr,Q38167074,exact,aucun,1991,false,https://whc.unesco.org/fr/list/578,https://fr.wikipedia.org/w/index.php?title=Baie_Shark&oldid=231165465,
+AUS,629,naturel,île Macquarie,fr,Q46650,revision,aucun,1997,false,https://whc.unesco.org/fr/list/629,,
+AUS,630,naturel,K’gari,fr,Q134905,exact,aucun,1992,false,https://whc.unesco.org/fr/list/630,,
+AUS,698,naturel,sites fossilifères de mammifères d'Australie (Riversleigh / Naracoorte),fr,Q15933552,exact,aucun,1994,false,https://whc.unesco.org/fr/list/698,,
+AUS,917,naturel,Région des montagnes Bleues,fr,Q934627,exact,aucun,2000,false,https://whc.unesco.org/fr/list/917,,
+AUS,1094,naturel,parc national de Purnululu,fr,Q679568,exact,aucun,2003,false,https://whc.unesco.org/fr/list/1094,,
+AUS,1131,culturel,palais royal des expositions et jardins Carlton,fr,Q15278460,exact,aucun,2004,false,https://whc.unesco.org/fr/list/1131,,
+AUS,1306,culturel,sites de bagnes australiens,fr,Q391496,exact,aucun,2010,false,https://whc.unesco.org/fr/list/1306,,
+AUS,1369,naturel,récif de Ningaloo,fr,Q1541665,exact,aucun,2011,false,https://whc.unesco.org/fr/list/1369,,
+AUS,1577,culturel,Budj Bim,wikifr,Q260465,exact,douteux,2019,false,https://whc.unesco.org/fr/list/1577,https://fr.wikipedia.org/w/index.php?title=Budj_Bim&oldid=225469445,
+AUS,1709,culturel,Murujuga,wikifr,Q25386203,exact,aucun,2025,false,https://whc.unesco.org/fr/list/1709,https://fr.wikipedia.org/w/index.php?title=Murujuga&oldid=240471680,
+NZL,421,mixte,parc national de Tongariro,fr,Q202845,exact,aucun,1990,false,https://whc.unesco.org/fr/list/421,,
+NZL,551,naturel,Te Wāhipounamu,fr,Q575398,exact,aucun,1990,false,https://whc.unesco.org/fr/list/551,,
+NZL,877,naturel,îles sub-antarctiques de Nouvelle-Zélande,fr,Q46275,exact,aucun,1998,false,https://whc.unesco.org/fr/list/877,,
