@@ -13,7 +13,8 @@ const REST = {                     // où il se pose (y plus petit = plus bas, d
   get size() { return innerWidth < innerHeight ? 0.34 : 0.44; },   // plus petit en portrait, pour qu'il tienne en largeur
 };
 const MAX_SIZE  = 0.95;                              // écran étroit : sa hauteur ne dépasse pas 95 % de la largeur
-const MAX_DPR   = matchMedia('(pointer: coarse)').matches ? 1.5 : 2;
+const TOUCH     = matchMedia('(pointer: coarse)').matches;
+const MAX_DPR   = TOUCH ? 1.5 : 2;
 
 // ===== Réglages : le déroulé =====
 const ENTER_MS    = 700;               // 1) il entre par le haut
@@ -681,7 +682,7 @@ async function makeTitle() {
 export async function init({ onProgress = () => {} } = {}) {
   const canvas = document.getElementById('scene');
   const still  = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: !TOUCH });
   renderer.setPixelRatio(Math.min(devicePixelRatio || 1, MAX_DPR));
   const mask = makeMask(renderer);
 
