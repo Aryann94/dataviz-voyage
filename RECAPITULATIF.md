@@ -11,6 +11,8 @@
 
 **Fait le 18/11 :** le téléchargement est prêt, avec `data/telechargement/periple_donnees.zip` (2,6 Mo, 16 fichiers) : les 12 CSV, le classeur Excel, le dictionnaire de 138 colonnes, `LICENCES.txt` et `LISEZMOI.txt`. La photo de l'Indonésie est remplacée (volcan Bromo).
 
+**Quiz final fait le 18/11 :** `destinations.html`, avec 12 questions adaptatives, radar, classement, « Pourquoi ce pays ? », « Et si… » et « Le saviez-vous ? ».
+
 **Méthode de travail depuis le 18/11 :** Claude décide seul selon `CLAUDE.md` et le récap, et ne pose une question que dans les cas prévus par `CLAUDE.md`.
 
 **Fait le 17/11 :**
@@ -20,8 +22,8 @@
 - les noms et années des 735 sites UNESCO (`unesco_sites.csv`).
 
 **Prochaines tâches, dans l'ordre :**
-1. Le quiz final (section 8, tâche 6).
-2. Puis le site, une visualisation à la fois (section 8, tâche 7).
+1. Le globe des passeports (section 8, tâche 7).
+2. Puis le budget, et les liens entre les trois visualisations.
 3. **À la fin du projet : une séance où Claude explique simplement à Aryann chaque partie (données, scripts, visualisations)**, pour qu'Aryann puisse répondre au prof à l'oral.
 
 ## 1. Le projet en bref
@@ -67,7 +69,9 @@ dataviz-voyage/
 │   └── raw/                     réponses brutes des API et fichiers téléchargés (traçabilité)
 ├── scripts/                     Python, bibliothèque standard (+ certifi)
 │
-├── index.html                   la page (pour l'instant : préchargeur + hero)
+├── index.html                   la page d'accueil : préchargeur + hero
+├── destinations.html            le quiz ; quiz.js (page), quiz-moteur.js (calculs), quiz.css
+│                                données du quiz : data/quiz_questions.json, quiz_photos.csv, quiz_simulation.json
 ├── style.css                    couleurs (encre #0D0D33, crème #FFF7E6, ciel), polices, hero, boutons
 ├── main.js                      chef d'orchestre : chargement → 100 % → choix du son → dispersion → chute → défilement
 ├── clouds.js, disperse.js       nuages du préchargeur et leur dispersion
@@ -105,6 +109,8 @@ dataviz-voyage/
     - Garde-fou : `test_comptage_unesco.py` vérifie que le comptage recalculé depuis les données brutes retombe exactement sur `pays.csv`.
 12. `build_dictionnaire.py` : décrit les 138 colonnes des 12 CSV du téléchargement. Il s'arrête si une colonne manque, n'a pas de source, d'année, d'unité (nombres) ou d'explication de ses cases vides.
 13. `build_excel.py` : classeur avec une feuille par CSV et une pour le dictionnaire, relu cellule par cellule. `visas_historique_annuel.csv` reste hors du classeur.
+15. `build_quiz_photos.py` : crédits des 13 photos d'ambiance des duels, lus sur Commons → `quiz_photos.csv`. Il s'arrête si une photo vient d'un des 41 pays, n'a pas d'auteur ou de licence libre, ou porte un avertissement de droits.
+16. `test_quiz.py` (avec `test_quiz.mjs` et **Node.js**) : contrôle les questions, simule tous les parcours, compare le moteur JavaScript au calcul Python, vérifie les « Le saviez-vous ? » → `quiz_simulation.json`.
 14. `build_zip.py` : relance les étapes 12 et 13, puis écrit `data/telechargement/periple_donnees.zip`. Il s'arrête si un fichier écarté y entre, si la citation de Budget Your Trip ou une notice MIT manque, si une photo n'a pas de crédit, ou si l'archive relue diffère de ses sources. Même contenu, même archive.
 
 **Vérifier le fond de carte** : `py -m http.server 8000` depuis la racine, puis ouvrir http://localhost:8000/prototype/carte-test.html.
@@ -268,6 +274,13 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 - **avec 6 axes et 9 questions** (110 592 combinaisons, 16/10/2026) : le Japon gagne 19,9 % des parties, le Brésil 12,4 %, l'Indonésie et la Grèce 7,5 % ; 35 pays peuvent gagner, 37/41 apparaissent dans un top 3 (jamais : Suisse, Jordanie, Kenya, Ghana). Le Japon gagne surtout quand on combine les grandes villes avec autre chose (gratte-ciel + musées : 44 %), rarement en nature pure (lac + randonnée : 7,5 %). **À surveiller** : c'est le nouveau pays « bon partout » (villes 100, nature 95, mer 88). Variantes testées et rejetées : densité + forêt en moyenne (l'Islande tombe à 53 en nature), longueur des côtes seule (la Grèce passe derrière le Maroc et l'Égypte) ;
 - **prototype** : https://claude.ai/artifact/U5FEve1vN8HjjCZf1zpjH1 (9 questions en cartes, dont une sur la mer, résultat avec radar à 6 axes). Le fichier est aussi dans `prototype/quiz-prototype.html` : il sert de référence pour la logique, pas pour le design.
 
+### Quiz final (18/11/2026)
+
+- **Banque de 15 questions, 12 posées.** Chaque question suivante est celle qui départage le mieux les 8 pays en tête, sur des critères encore peu couverts. Un mode rapide de 8 questions a été écarté : il dépassait 12 % et n'atteignait que 33 pays dans un top 3.
+- **Une réponse ne promet que ce qu'on mesure.** Chaque effet sur un critère est annoncé dans le texte de la réponse (champ `dit`), et le test refuse les mots hors données : langue, plage, montagne, cuisine, faune, climat, vol, hôtel…
+- **Photos d'ambiance** : 13 photos Commons, toutes prises hors des 41 pays, pour qu'on choisisse un goût et non une destination.
+- **Simulation des 8 789 parcours, chaque réponse ayant la même probabilité** : Chine 10,0 % au maximum, 36 pays peuvent gagner, 39 sur 41 entrent dans un top 3. Le moteur du site et le calcul Python donnent exactement les mêmes résultats.
+
 ## 6 bis. Projets similaires (vérifiés le 22/10/2026, à citer dans la présentation)
 
 | Site | Fonctionnement | Différence avec notre quiz |
@@ -306,6 +319,8 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **La sélection de 41 pays a des trous connus** (décision en section 5) : aucun pays des Caraïbes (le Mexique, la Colombie et le Costa Rica ont seulement une côte sur cette mer), une Afrique du Nord limitée au Maroc et à l'Égypte, et pas d'Allemagne (ni de Belgique, ni de Pays-Bas). Le quiz ne peut donc pas proposer ces pays. La carte des visas, elle, les couvre.
 - **Les notes sont relatives** à la sélection de 41 pays.
+- **Le Ghana et le Kenya n'atteignent jamais le top 3 du quiz**, d'après la simulation de tous les parcours. Ils restent dans le classement complet. L'Afrique du Sud, d'abord dans ce cas, y arrive avec les questions finales, mais elle ne gagne jamais. La page lit cette liste dans `quiz_simulation.json`.
+- **Le quiz ne mesure pas** les langues, la cuisine, la faune, la montagne, le climat mois par mois ni la qualité des plages. La distance part toujours de Paris.
 
 ## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 17/11/2026)
 
@@ -319,7 +334,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 <p class="visor-line visor-text">Selon le passeport que tu as en poche, le même voyage ne demande ni les mêmes papiers ni le même effort. Trouve ton pays, regarde ce qu'il faut pour y entrer, puis ce qu'il te coûte vraiment.</p>
 <div class="visor-line visor-cta"><a class="visor-btn btn btn--primary" href="destinations.html" data-magnetic="0.15">Trouver mon pays</a></div>
 ```
-`destinations.html` est un nom provisoire : la page ouvre le quiz. **En attendant, le bouton pointe vers `prototype/quiz-prototype.html`.**
+Le bouton ouvre le quiz, sur `destinations.html`.
 
 **Types de visualisation (5)** : radar, classement en barres, globe 3D, courbe dans le temps, grille de carrés + barres empilées.
 
@@ -454,9 +469,10 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] **ZIP** (18/11) : `data/telechargement/periple_donnees.zip`, 2,6 Mo, avec les 12 CSV dans `donnees/`, le classeur, le dictionnaire, `LICENCES.txt` et `LISEZMOI.txt`. Extrait et recontrôlé : CSV identiques, classeur ouvert dans LibreOffice en 2,0 s.
 
 **6. Quiz final**
-- [ ] Réécrire les questions pour qu'elles soient plus amusantes : 10 à 12 questions (duels, situations, images), avec des choix qui coûtent, et la même logique de calcul.
-- [ ] Les photos des duels, prises sur Wikimedia Commons, avec l'auteur et la licence.
-- [ ] La simulation de toutes les combinaisons : aucun pays au-dessus de 12 % des parties, et au moins 38 pays sur 41 dans un top 3.
+- [x] 12 questions tirées d'une banque de 15 (duels et situations), avec des choix qui coûtent (section 6).
+- [x] 13 photos d'ambiance de Wikimedia Commons, avec auteur, licence et lien, hors des 41 pays.
+- [x] Simulation de tous les parcours : 10,0 % au maximum et 39 pays sur 41 dans un top 3.
+- [x] Page `destinations.html` : déroulé, révélation, radar, classement, « Pourquoi ce pays ? », « Et si… », « Le saviez-vous ? », lien de partage et limites. Testée dans Edge sans interface, sur ordinateur et au format téléphone.
 
 **7. Le site**
 - [ ] La structure de `<main>` : quiz, globe des passeports, budget, section technique, téléchargement.
@@ -485,6 +501,6 @@ Un critère approximatif qui produit des résultats absurdes coûte plus de cré
 
 **Le Japon trop souvent gagnant (19,9 %) se corrige dans les questions, pas dans les données** : les réponses actuelles disent surtout ce qu'on veut, rarement ce qu'on ne veut pas, donc un pays fort partout gagne. Les nouvelles questions devront contenir des choix qui coûtent (« animé ou calme », « cher mais confortable ou simple et bon marché »). **Objectif à vérifier par la simulation : aucun pays ne gagne plus de 12 % des parties**, et au moins 38 pays sur 41 peuvent apparaître dans un top 3.
 
-Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (mode rapide environ 8 questions, mode précis environ 15), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
+Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (12 questions, seul format qui tient les objectifs de la simulation), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
 
 Question ouverte : garder la France dans les résultats du quiz (décision actuelle : oui) ?

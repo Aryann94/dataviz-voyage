@@ -2,7 +2,7 @@
 // Lancé par scripts/test_quiz.py, qui compare le résultat au calcul Python.
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { CRITERES, etat, leSaviezVous, coderParcours, lireParcours } from '../quiz-moteur.js';
+import { CRITERES, construireFaits, etat, leSaviezVous, coderParcours, lireParcours } from '../quiz-moteur.js';
 
 const racine = new URL('../', import.meta.url);
 const lire = f => readFileSync(new URL(f, racine), 'utf8');
@@ -45,15 +45,7 @@ function suivre(reponses) {
 suivre([]);
 
 const brut = csv(lire('data/pays.csv'));
-const distance = Object.fromEntries(scores.map(s => [s.iso3, +s.distance_paris_km]));
-const premiere = {};
-for (const l of csv(lire('data/unesco_sites.csv'))) premiere[l.iso3] = Math.min(premiere[l.iso3] ?? Infinity, +l.annee_inscription);
-const faits = brut.map(p => ({
-  iso3: p.iso3, nom: p.nom_fr, niveau_prix: +p.niveau_prix, unesco_total: +p.unesco_total, foret_pct: +p.foret_pct,
-  densite_hab_km2: +p.densite_hab_km2, cotes_km: +p.cotes_km, pop_villes_1m_pct: +p.pop_villes_1m_pct,
-  zones_protegees_pct: +p.zones_protegees_pct, distance_paris_km: distance[p.iso3],
-  sans_littoral: p.sans_littoral === 'true', premiere_inscription: premiere[p.iso3],
-}));
+const faits = construireFaits(brut, scores, csv(lire('data/unesco_sites.csv')));
 
 console.log(JSON.stringify({
   parcours, empreinte: empreinte.digest('hex'),

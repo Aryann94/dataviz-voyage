@@ -73,6 +73,10 @@ def controler_questions(banque):
             m = re.search(MOTS_INTERDITS, t, re.I)
             if m:
                 erreurs.append(f"{q['id']} : « {m.group()} » promet une chose non mesurée")
+    photos = {(l["question"], int(l["option"])) for l in lire_csv("quiz_photos.csv")}
+    duels = {(q["id"], i) for q in questions if q["type"] == "duel" for i in range(len(q["options"]))}
+    if photos != duels:
+        erreurs.append(f"photos et duels ne correspondent pas : {sorted(photos ^ duels)}")
     return erreurs
 
 

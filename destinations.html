@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Périple : un quiz de douze choix pour trouver, parmi 41 pays, celui qui te ressemble le plus.">
+<link rel="icon" href="img/favicon-32.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<title>Quel pays pour toi ? - Périple</title>
+<script type="importmap">
+{
+  "imports": {
+    "d3": "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm"
+  }
+}
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="quiz.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+<body class="page-quiz">
+  <header class="quiz-entete">
+    <a class="quiz-marque" href="index.html"><img src="img/logo.svg" alt="" width="24" height="24">Périple</a>
+  </header>
+  <main id="quiz" class="quiz" tabindex="-1">
+    <p class="quiz-attente">Chargement du quiz…</p>
+    <noscript><p class="quiz-attente">Ce quiz a besoin de JavaScript. Les données restent disponibles dans <a href="data/telechargement/periple_donnees.zip">le fichier à télécharger</a>.</p></noscript>
+  </main>
+  <script type="module" src="quiz.js"></script>
+</body>
+</html>

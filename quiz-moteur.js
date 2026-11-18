@@ -114,12 +114,26 @@ const MESURES = [
   { cle: 'unesco_total', haut: 'le plus riche en sites du patrimoine mondial', bas: null, hautN: 'les plus riches en sites du patrimoine mondial' },
   { cle: 'foret_pct', haut: 'le plus couvert de forêt', bas: 'le moins couvert de forêt', hautN: 'les plus couverts de forêt', basN: 'les moins couverts de forêt' },
   { cle: 'densite_hab_km2', haut: 'le plus densément peuplé', bas: 'le moins densément peuplé', hautN: 'les plus densément peuplés', basN: 'les moins densément peuplés' },
-  { cle: 'cotes_km', haut: 'le plus long en côtes', bas: null, hautN: 'les plus longs en côtes' },
-  { cle: 'pop_villes_1m_pct', haut: 'le plus concentré dans les très grandes villes', bas: null, hautN: 'les plus concentrés dans les très grandes villes' },
-  { cle: 'zones_protegees_pct', haut: 'le plus protégé', bas: 'le moins protégé', hautN: 'les plus protégés', basN: 'les moins protégés' },
+  { cle: 'cotes_km', haut: 'avec le plus de kilomètres de côtes', bas: null, hautN: 'avec le plus de kilomètres de côtes' },
+  { cle: 'pop_villes_1m_pct', haut: 'avec la plus forte part d\'habitants dans les très grandes villes', bas: null, hautN: 'avec la plus forte part d\'habitants dans les très grandes villes' },
+  { cle: 'zones_protegees_pct', haut: 'avec la plus grande part de terres protégées', bas: 'avec la plus petite part de terres protégées', hautN: 'avec la plus grande part de terres protégées', basN: 'avec la plus petite part de terres protégées' },
   { cle: 'distance_paris_km', haut: 'le plus éloigné de Paris', bas: null, hautN: 'les plus éloignés de Paris' },
 ];
 export const RANG_MAX_FAIT = 3;
+
+// Faits bruts des pays, à partir des lignes (texte) de pays.csv, scores.csv et unesco_sites.csv
+export function construireFaits(paysBruts, scores, sites) {
+  const distance = Object.fromEntries(scores.map(s => [s.iso3, +s.distance_paris_km]));
+  const premiere = {};
+  for (const s of sites) premiere[s.iso3] = Math.min(premiere[s.iso3] ?? Infinity, +s.annee_inscription);
+  return paysBruts.map(p => ({
+    iso3: p.iso3, nom: p.nom_fr, niveau_prix: +p.niveau_prix, unesco_total: +p.unesco_total,
+    foret_pct: +p.foret_pct, densite_hab_km2: +p.densite_hab_km2, cotes_km: +p.cotes_km,
+    pop_villes_1m_pct: +p.pop_villes_1m_pct, zones_protegees_pct: +p.zones_protegees_pct,
+    distance_paris_km: distance[p.iso3], sans_littoral: p.sans_littoral === 'true',
+    premiere_inscription: premiere[p.iso3],
+  }));
+}
 
 function rangDe(faits, cle, iso3, sens) {
   const valeurs = faits.map(f => ({ iso3: f.iso3, v: f[cle] })).filter(x => Number.isFinite(x.v));
@@ -143,25 +157,25 @@ export function leSaviezVous(faits, iso3, maximum = 3) {
       let texte;
       if (r.egaux > 1) {
         const pluriel = sens === 1 ? m.hautN : m.basN;
-        texte = `${moi.nom} fait partie des ${r.rang + r.egaux - 1} pays ${pluriel} de notre sélection, à égalité avec ${r.egaux - 1} autre${r.egaux > 2 ? 's' : ''}.`;
+        texte = `${moi.nom} : parmi les ${r.rang + r.egaux - 1} pays ${pluriel} de notre sélection, à égalité avec ${r.egaux - 1} autre${r.egaux > 2 ? 's' : ''}.`;
       } else if (r.rang === 1) {
-        texte = `${moi.nom} est le pays ${adjectif} de notre sélection de ${r.total}.`;
+        texte = `${moi.nom} : le pays ${adjectif} de notre sélection de ${r.total}.`;
       } else {
-        texte = `${moi.nom} est le ${r.rang}ᵉ pays ${adjectif} de notre sélection de ${r.total}.`;
+        texte = `${moi.nom} : ${r.rang}ᵉ pays ${adjectif} de notre sélection de ${r.total}.`;
       }
       candidats.push({ cle: m.cle, sens, rang: r.rang, egaux: r.egaux, texte });
     }
   }
   if (moi.sans_littoral) {
     const n = faits.filter(f => f.sans_littoral).length;
-    candidats.push({ cle: 'sans_littoral', sens: 0, rang: n, egaux: n, texte: `${moi.nom} fait partie des ${n} pays de notre sélection sans accès à la mer.` });
+    candidats.push({ cle: 'sans_littoral', sens: 0, rang: n, egaux: n, texte: `${moi.nom} : l'un des ${n} pays de notre sélection sans accès à la mer.` });
   }
   if (Number.isFinite(moi.premiere_inscription)) {
     const r = rangDe(faits, 'premiere_inscription', iso3, -1);
     if (r.rang <= RANG_MAX_FAIT) {
       const texte = r.egaux > 1
-        ? `${moi.nom} a un site inscrit au patrimoine mondial dès ${moi.premiere_inscription}, comme ${r.egaux - 1} autre${r.egaux > 2 ? 's' : ''} pays de notre sélection.`
-        : `${moi.nom} est le pays de notre sélection dont le premier site a été inscrit le plus tôt, en ${moi.premiere_inscription}.`;
+        ? `${moi.nom} : un site inscrit au patrimoine mondial dès ${moi.premiere_inscription}, comme ${r.egaux - 1} autre${r.egaux > 2 ? 's' : ''} pays de notre sélection.`
+        : `${moi.nom} : le pays de notre sélection dont le premier site a été inscrit le plus tôt, en ${moi.premiere_inscription}.`;
       candidats.push({ cle: 'premiere_inscription', sens: -1, rang: r.rang, egaux: r.egaux, texte });
     }
   }
