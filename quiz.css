@@ -45,7 +45,6 @@
 .bouton-choix img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: #E8D9B5; }
 .bouton-texte { display: grid; align-content: start; gap: 4px; padding: 16px 16px 20px; }
 .bouton-texte strong { font-size: 1.16rem; line-height: 1.2; }
-.bouton-texte span { color: var(--doux); line-height: 1.3; }
 .credit { font-size: .74rem; line-height: 1.3; color: var(--doux); overflow-wrap: anywhere; }
 .question-bas { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
@@ -141,6 +140,11 @@
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 16px; }
 .limites summary { font-weight: 800; font-size: 1.1rem; cursor: pointer; }
 .limites ul { margin: 10px 0 0; padding-left: 1.1em; line-height: 1.5; max-width: 62rem; }
+.effets-reponses .discret { margin-top: 8px; }
+.table-defile { margin-top: 10px; overflow-x: auto; }
+.table-defile table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: .92rem; line-height: 1.35; }
+.table-defile td p + p { margin-top: 4px; }
+.table-defile th, .table-defile td { padding: 7px 8px; border-bottom: 1px solid var(--trait); text-align: left; vertical-align: top; }
 
 @media (max-width: 860px) {
   .res-tete, .colonnes { grid-template-columns: minmax(0, 1fr); }

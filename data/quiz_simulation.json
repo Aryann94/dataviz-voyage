@@ -1,13 +1,14 @@
 {
  "date": "2026-11-18",
- "parcours": 8789,
+ "parcours": 24674,
  "hypothese": "chaque réponse a la même probabilité",
  "part_max_pct": 10.0,
- "pays_le_plus_frequent": "Chine",
- "pays_gagnants": 36,
- "pays_top3": 39,
+ "pays_le_plus_frequent": "Grèce",
+ "pays_gagnants": 35,
+ "pays_top3": 38,
  "jamais_top3": [
   "Ghana",
-  "Kenya"
+  "Kenya",
+  "Maroc"
  ]
 }

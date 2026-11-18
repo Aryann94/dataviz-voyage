@@ -5,10 +5,15 @@ Contrôle le quiz (data/quiz_questions.json) et écrit data/quiz_simulation.json
 pour afficher ses limites. Le fichier n'est pas écrit si un contrôle échoue.
 
 Contrôles bloquants :
-  - chaque question ne promet que ce que les six critères mesurent : aucun mot interdit, et
-    chaque effet d'une réponse est annoncé dans le texte de cette réponse (champ « dit ») ;
+  - une réponse peut évoquer une situation (un plat de rue, le bruit des vagues), mais ne promet
+    aucun résultat que les données ne mesurent pas (langue, faune, sable, gastronomie…) ;
+  - 15 angles différents, sans phrase sous les choix, et aucun texte répété ;
+  - chaque effet d'une réponse a sa raison, écrite en une phrase et affichée sur le résultat ;
+  - les textes du quiz respectent le style de CLAUDE.md (mots et tournures interdits) ;
+  - au plus 3 questions par critère principal, et au plus 2 duels villes contre nature ;
   - tous les parcours possibles, chaque réponse ayant la même probabilité : aucun pays ne gagne
-    plus de 12 % des parties, et au moins 38 pays sur 41 peuvent entrer dans un top 3 ;
+    plus de 12 % des parties, au moins 38 pays sur 41 peuvent entrer dans un top 3, et deux
+    questions de suite n'ont jamais le même critère principal ;
   - le moteur JavaScript du site (quiz-moteur.js, lancé avec Node) donne exactement les mêmes
     résultats que ce calcul Python, sur tous les parcours ;
   - les phrases « Le saviez-vous ? » annoncent le bon rang et les bonnes égalités.
@@ -39,8 +44,21 @@ PAYS_DE_TETE = 8
 PART_MAX = 0.12
 TOP3_MIN = 38
 QUESTIONS_BANQUE = 15
-# Ce que les données ne mesurent pas : le texte des questions ne doit pas le promettre.
-MOTS_INTERDITS = r"\b(langues?|traducteur|plages?|sable|montagnes?|sommets?|cuisine|restaurants?|table|plats?|faune|animal|animaux|safari|réseau|climat|pull|vol|vols|avion|heures?|hôtels?|auberges?|festival|fêtes?|ambiance)\b"
+MAX_PAR_PRINCIPAL = 3
+MAX_DUELS_VILLES_NATURE = 2
+# Résultats que les données ne mesurent pas : une réponse ne doit pas les promettre.
+# Les images d'une situation (un plat de rue, un vol court) restent autorisées.
+PROMESSES_INTERDITES = r"\b(langues?|traducteurs?|interprètes?|faune|animal|animaux|safari|sable|gastronomi\w*|sp[ée]cialit[ée]s?|meilleure? (cuisine|table|plage))\b"
+# Style de CLAUDE.md, contrôlé sur les fichiers qui portent les textes du quiz.
+FICHIERS_STYLE = ["data/quiz_questions.json", "quiz.js", "quiz-moteur.js", "destinations.html"]
+STYLE_INTERDIT = (
+    r"—|\b(plong\w+|tirer parti|optimis\w+|révolution\w*|libérer le potentiel|transcend\w+|réinvent\w+|"
+    r"navigu\w+|rationalis\w+|sublim\w+|crucial\w*|incontournable\w*|fluide\w*|transformateur\w*|"
+    r"à la pointe|nuancé\w*|aux multiples facettes|robuste\w*|vertigineu\w+|il est important de noter|"
+    r"en conclusion|joue un rôle central|ouvrir la voie à|au final|en résumé|cela m'a permis de|"
+    r"il convient de souligner|ce n'est pas .{1,60}, c'est|non seulement)\b"
+    r"|(?:^|[.!?«\"'`]\s*)(par ailleurs|de plus|ainsi|néanmoins|en outre)\b"
+)
 
 
 def lire_csv(nom):
@@ -55,24 +73,54 @@ def controler_questions(banque):
         erreurs.append(f"{len(questions)} questions au lieu de {QUESTIONS_BANQUE}")
     if len({q["id"] for q in questions}) != len(questions):
         erreurs.append("identifiants de questions en double")
+    if len({q["angle"] for q in questions}) != len(questions):
+        erreurs.append("deux questions ont le même angle")
+    tous_textes = [q["question"] for q in questions] + [o["titre"] for q in questions for o in q["options"]]
+    if len({t.lower() for t in tous_textes}) != len(tous_textes):
+        erreurs.append("un texte de question ou de réponse est répété")
+    par_principal, duels_villes_nature = defaultdict(list), []
     for q in questions:
         textes = [q["theme"], q["question"]]
+        par_principal[q["principal"]].append(q["id"])
+        if q["principal"] not in CRITERES:
+            erreurs.append(f"{q['id']} : critère principal inconnu")
         if not 2 <= len(q["options"]) <= 3:
             erreurs.append(f"{q['id']} : 2 ou 3 réponses attendues")
+        poids_question, tetes = defaultdict(float), set()
         for o in q["options"]:
-            texte = f"{o['titre']} {o['detail']}".lower()
-            textes.append(texte)
+            textes.append(o["titre"])
+            if "detail" in o:
+                erreurs.append(f"{q['id']} : pas de phrase sous les choix")
             if not o["effets"]:
                 erreurs.append(f"{q['id']} : réponse sans effet")
+                continue
             for e in o["effets"]:
                 if e["critere"] not in CRITERES or not 0 <= e["valeur"] <= 100 or e["poids"] <= 0:
                     erreurs.append(f"{q['id']} : effet invalide {e}")
-                if e["dit"].lower() not in texte:
-                    erreurs.append(f"{q['id']} : l'effet sur {e['critere']} n'est pas annoncé (« {e['dit']} »)")
+                raison = e.get("raison", "").strip()
+                if not raison.endswith(".") or raison.count(".") != 1:
+                    erreurs.append(f"{q['id']} : l'effet sur {e['critere']} doit s'expliquer en une phrase")
+                textes.append(raison)
+                poids_question[e["critere"]] += e["poids"]
+            tetes.add(max(o["effets"], key=lambda e: e["poids"])["critere"])
+        if poids_question and poids_question[q["principal"]] < max(poids_question.values()) - 1e-9:
+            erreurs.append(f"{q['id']} : {q['principal']} n'est pas le critère le plus pesant")
+        if tetes == {"villes", "nature"}:
+            duels_villes_nature.append(q["id"])
         for t in textes:
-            m = re.search(MOTS_INTERDITS, t, re.I)
+            m = re.search(PROMESSES_INTERDITES, t, re.I)
             if m:
-                erreurs.append(f"{q['id']} : « {m.group()} » promet une chose non mesurée")
+                erreurs.append(f"{q['id']} : « {m.group()} » promet un résultat non mesuré")
+    for critere, ids in par_principal.items():
+        if len(ids) > MAX_PAR_PRINCIPAL:
+            erreurs.append(f"{critere} : {len(ids)} questions principales (maximum {MAX_PAR_PRINCIPAL})")
+    if len(duels_villes_nature) > MAX_DUELS_VILLES_NATURE:
+        erreurs.append(f"trop de duels villes contre nature : {duels_villes_nature}")
+    for nom in FICHIERS_STYLE:
+        for n, ligne in enumerate((RACINE / nom).read_text(encoding="utf-8").splitlines(), 1):
+            m = re.search(STYLE_INTERDIT, ligne, re.I)
+            if m:
+                erreurs.append(f"{nom}, ligne {n} : style interdit (« {m.group().strip()} »)")
     photos = {(l["question"], int(l["option"])) for l in lire_csv("quiz_photos.csv")}
     duels = {(q["id"], i) for q in questions if q["type"] == "duel" for i in range(len(q["options"]))}
     if photos != duels:
@@ -100,7 +148,7 @@ def classer(pays, somme, poids):
     return lignes
 
 
-def prochaine(questions, restantes, classement, poids):
+def prochaine(questions, principaux, restantes, classement, poids, precedent):
     tete = classement[:PAYS_DE_TETE]
     ecarts = []
     for a in range(len(CRITERES)):
@@ -114,6 +162,8 @@ def prochaine(questions, restantes, classement, poids):
         ecarts.append(math.sqrt(somme / len(tete)))
     meilleure, record = -1, -math.inf
     for q in sorted(restantes):
+        if principaux[q] == precedent:
+            continue
         note = 0
         for o in questions[q]:
             for a, _, w in o:
@@ -127,12 +177,13 @@ def prochaine(questions, restantes, classement, poids):
 def simuler(banque, pays):
     questions = [[[(CRITERES.index(e["critere"]), e["valeur"], e["poids"]) for e in o["effets"]]
                   for o in q["options"]] for q in banque["questions"]]
+    principaux = [q["principal"] for q in banque["questions"]]
     nombre = banque["nombre_questions"]
     gagne, top3, dernier = defaultdict(float), defaultdict(float), defaultdict(float)
     empreinte = hashlib.sha256()
     compte = [0]
 
-    def suivre(restantes, somme, poids, proba, chemin):
+    def suivre(restantes, somme, poids, proba, chemin, precedent):
         classement = classer(pays, somme, poids)
         if len(chemin) == nombre:
             compte[0] += 1
@@ -143,15 +194,17 @@ def simuler(banque, pays):
             ligne = f"{'-'.join(chemin)}:{','.join(l[1] for l in classement[:3])}:{classement[-1][1]}\n"
             empreinte.update(ligne.encode())
             return
-        q = prochaine(questions, restantes, classement, poids)
+        q = prochaine(questions, principaux, restantes, classement, poids, precedent)
+        if q < 0 or principaux[q] == precedent:
+            sys.exit(f"Parcours sans question possible : {'-'.join(chemin)}")
         for i, option in enumerate(questions[q]):
             s2, p2 = somme[:], poids[:]
             for a, v, w in option:
                 s2[a] += v * w
                 p2[a] += w
-            suivre(restantes - {q}, s2, p2, proba / len(questions[q]), chemin + [f"{q}.{i}"])
+            suivre(restantes - {q}, s2, p2, proba / len(questions[q]), chemin + [f"{q}.{i}"], principaux[q])
 
-    suivre(frozenset(range(len(questions))), [0] * 6, [0] * 6, 1.0, [])
+    suivre(frozenset(range(len(questions))), [0] * 6, [0] * 6, 1.0, [], None)
     return gagne, top3, dernier, compte[0], empreinte.hexdigest()
 
 

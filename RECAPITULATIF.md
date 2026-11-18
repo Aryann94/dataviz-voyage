@@ -277,9 +277,10 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 ### Quiz final (18/11/2026)
 
 - **Banque de 15 questions, 12 posées.** Chaque question suivante est celle qui départage le mieux les 8 pays en tête, sur des critères encore peu couverts. Un mode rapide de 8 questions a été écarté : il dépassait 12 % et n'atteignait que 33 pays dans un top 3.
-- **Une réponse ne promet que ce qu'on mesure.** Chaque effet sur un critère est annoncé dans le texte de la réponse (champ `dit`), et le test refuse les mots hors données : langue, plage, montagne, cuisine, faune, climat, vol, hôtel…
+- **Des situations concrètes, sans fausse promesse.** Une réponse peut évoquer un plat de rue ou le bruit des vagues si l'image se rattache au critère. Elle ne promet aucun résultat non mesuré (langue, faune, sable, gastronomie). Chaque effet a sa raison en une phrase, affichée sur le résultat, et aucun effet n'est ajouté pour équilibrer la simulation.
+- **Équilibre** : 15 angles différents, au plus 3 questions par critère principal, au plus 2 duels villes contre nature, et jamais deux questions de suite sur le même critère principal.
 - **Photos d'ambiance** : 13 photos Commons, toutes prises hors des 41 pays, pour qu'on choisisse un goût et non une destination.
-- **Simulation des 8 789 parcours, chaque réponse ayant la même probabilité** : Chine 10,0 % au maximum, 36 pays peuvent gagner, 39 sur 41 entrent dans un top 3. Le moteur du site et le calcul Python donnent exactement les mêmes résultats.
+- **Simulation des 24 674 parcours, chaque réponse ayant la même probabilité** : Grèce 10,0 % au maximum, 35 pays peuvent gagner, 38 sur 41 entrent dans un top 3. Le moteur du site et le calcul Python donnent exactement les mêmes résultats.
 
 ## 6 bis. Projets similaires (vérifiés le 22/10/2026, à citer dans la présentation)
 
@@ -319,7 +320,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
 - **La sélection de 41 pays a des trous connus** (décision en section 5) : aucun pays des Caraïbes (le Mexique, la Colombie et le Costa Rica ont seulement une côte sur cette mer), une Afrique du Nord limitée au Maroc et à l'Égypte, et pas d'Allemagne (ni de Belgique, ni de Pays-Bas). Le quiz ne peut donc pas proposer ces pays. La carte des visas, elle, les couvre.
 - **Les notes sont relatives** à la sélection de 41 pays.
-- **Le Ghana et le Kenya n'atteignent jamais le top 3 du quiz**, d'après la simulation de tous les parcours. Ils restent dans le classement complet. L'Afrique du Sud, d'abord dans ce cas, y arrive avec les questions finales, mais elle ne gagne jamais. La page lit cette liste dans `quiz_simulation.json`.
+- **Le Ghana, le Kenya et le Maroc n'atteignent jamais le top 3 du quiz**, d'après la simulation de tous les parcours. Ils restent dans le classement complet. La page lit cette liste dans `quiz_simulation.json`.
 - **Le quiz ne mesure pas** les langues, la cuisine, la faune, la montagne, le climat mois par mois ni la qualité des plages. La distance part toujours de Paris.
 
 ## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 17/11/2026)
@@ -471,7 +472,7 @@ Le bouton ouvre le quiz, sur `destinations.html`.
 **6. Quiz final**
 - [x] 12 questions tirées d'une banque de 15 (duels et situations), avec des choix qui coûtent (section 6).
 - [x] 13 photos d'ambiance de Wikimedia Commons, avec auteur, licence et lien, hors des 41 pays.
-- [x] Simulation de tous les parcours : 10,0 % au maximum et 39 pays sur 41 dans un top 3.
+- [x] Simulation de tous les parcours : 10,0 % au maximum et 38 pays sur 41 dans un top 3.
 - [x] Page `destinations.html` : déroulé, révélation, radar, classement, « Pourquoi ce pays ? », « Et si… », « Le saviez-vous ? », lien de partage et limites. Testée dans Edge sans interface, sur ordinateur et au format téléphone.
 
 **7. Le site**

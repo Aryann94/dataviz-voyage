@@ -50,8 +50,9 @@ export function classer(pays, prof, facteurs = null) {
 }
 
 // Question la plus utile : elle porte sur les critères qui séparent le plus les pays de tête
-// et sur lesquels le joueur s'est encore peu exprimé.
-export function prochaineQuestion(questions, restantes, classement, poids) {
+// et sur lesquels le joueur s'est encore peu exprimé. Deux questions de suite n'ont jamais le
+// même critère principal.
+export function prochaineQuestion(questions, restantes, classement, poids, principalPrecedent = null) {
   const tete = classement.slice(0, PAYS_DE_TETE);
   const ecarts = CRITERES.map((_, a) => {
     let moyenne = 0;
@@ -63,6 +64,7 @@ export function prochaineQuestion(questions, restantes, classement, poids) {
   });
   let meilleure = -1, record = -Infinity;
   for (const q of [...restantes].sort((a, b) => a - b)) {
+    if (questions[q].principal === principalPrecedent) continue;
     let note = 0;
     for (const o of questions[q].options) {
       for (const e of o.effets) {
@@ -85,7 +87,9 @@ export function etat(questions, pays, reponses, nombre) {
   if (reponses.length < nombre) {
     const posees = new Set(reponses.map(r => r.q));
     const restantes = questions.map((_, i) => i).filter(i => !posees.has(i));
-    suivante = prochaineQuestion(questions, restantes, classement, cumul.poids);
+    const precedente = reponses.at(-1);
+    suivante = prochaineQuestion(questions, restantes, classement, cumul.poids,
+      precedente ? questions[precedente.q].principal : null);
   }
   return { cumul, profil: prof, classement, suivante };
 }

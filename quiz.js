@@ -84,7 +84,7 @@ function poser(reponses) {
         },
       },
       photo && h('img', { src: photo.image_url, alt: '', width: 640, height: 400, decoding: 'async' }),
-      h('span', { class: 'bouton-texte' }, h('strong', { text: o.titre }), h('span', { text: o.detail }))),
+      h('span', { class: 'bouton-texte' }, h('strong', { text: o.titre }))),
       photo && credit(photo.auteur, photo.licence, photo.page));
   });
   ecran(h('section', { class: 'question', 'aria-labelledby': 'titre-question' },
@@ -112,7 +112,7 @@ function revelation(reponses) {
     h('b', { text: i + 1 }), h('span', { text: l.pays.nom })));
   ecran(h('section', { class: 'revelation', 'aria-label': 'Classement en cours' },
     h('div', { class: 'revelation-haut' },
-      h('h1', { text: 'Les pays se rangent…' }),
+      h('h1', { text: 'Ton classement' }),
       h('button', { class: 'lien-bouton', type: 'button', text: 'Passer', onclick: () => resultat(reponses) })),
     h('ol', { 'aria-hidden': 'true' }, lignes)));
   let t = 150;
@@ -231,7 +231,7 @@ function listeSites(iso3, categories) {
     h('ul', { class: 'liste-sites' }, sites.map(s => h('li', {},
       `${s.nom_fr} (${s.annee_inscription}) · `,
       h('a', { href: s.lien_unesco, target: '_blank', rel: 'noopener', text: 'fiche' })))),
-    h('p', { class: 'discret', text: 'Noms issus de Wikidata et de Wikipédia : ce ne sont pas les intitulés officiels.' }));
+    h('p', { class: 'discret', text: 'Les noms viennent de Wikidata et de Wikipédia. Les intitulés officiels peuvent être différents.' }));
 }
 
 function detailsCritere(a, ligne) {
@@ -263,8 +263,29 @@ function detailsCritere(a, ligne) {
       return [puces(p.sans_littoral === 'true'
         ? ['Pas d\'accès à la mer.']
         : [`${entier.format(n('cotes_km'))} km de côtes.`, `Latitude du centre du pays : ${decimal.format(Math.abs(n('lat_centre')))}° ${n('lat_centre') >= 0 ? 'nord' : 'sud'}.`]),
-      h('p', { class: 'discret', text: 'Cette note mesure un potentiel de mer chaude, pas la qualité des plages.' })];
+      h('p', { class: 'discret', text: 'Cette note combine la longueur des côtes et la chaleur selon la latitude. Elle ne dit rien des plages.' })];
   }
+}
+
+// ----- Ce que chaque réponse a changé dans le profil -----
+function sensEffet(e) {
+  const nom = LIBELLES[e.critere];
+  if (e.valeur >= 60) return `${nom} : plus`;
+  if (e.valeur <= 40) return `${nom} : moins`;
+  return `${nom} : moyen`;
+}
+
+function detailReponses(reponses) {
+  return h('details', { class: 'limites panneau effets-reponses' },
+    h('summary', { text: 'Ce que chacune de tes réponses a changé' }),
+    h('p', { class: 'discret', text: '« Prix bas : moins » veut dire que tu acceptes un pays plus cher.' }),
+    h('div', { class: 'table-defile' }, h('table', {},
+      h('thead', {}, h('tr', {}, h('th', { scope: 'col', text: 'Question' }), h('th', { scope: 'col', text: 'Ton choix' }), h('th', { scope: 'col', text: 'Effet' }))),
+      h('tbody', {}, reponses.map(r => {
+        const q = D.questions[r.q], o = q.options[r.o];
+        return h('tr', {}, h('td', { text: q.question }), h('td', { text: o.titre }),
+          h('td', {}, o.effets.map(e => h('p', {}, h('strong', { text: `${sensEffet(e)}. ` }), e.raison))));
+      })))));
 }
 
 // ----- Écran de résultat -----
@@ -428,14 +449,16 @@ function resultat(reponses) {
       h('button', { class: 'btn btn--primary', type: 'button', text: 'Copier le lien du résultat', onclick: partager }),
       h('button', { class: 'btn btn--secondary', type: 'button', text: 'Recommencer', onclick: accueil }),
       statutPartage),
+    detailReponses(reponses),
     h('details', { class: 'limites panneau' },
       h('summary', { text: 'Ce que ce quiz mesure, et ses limites' }),
       h('ul', {},
         h('li', { text: 'Il compare six critères : sites culturels du patrimoine mondial, espaces naturels, population des très grandes villes, niveau des prix, distance depuis Paris et potentiel de mer chaude.' }),
         h('li', { text: 'Il ne mesure ni les langues, ni la cuisine, ni la faune, ni la montagne, ni le climat mois par mois, ni la qualité des plages.' }),
+        h('li', { text: '« Un plat de rue » compte pour le prix. Le quiz ne dit rien de la cuisine du pays, et les autres situations marchent de la même façon.' }),
         h('li', { text: 'Les notes sont relatives aux 41 pays choisis. Cette sélection n\'a aucun pays des Caraïbes, limite l\'Afrique du Nord au Maroc et à l\'Égypte, et ne compte pas l\'Allemagne, la Belgique ni les Pays-Bas.' }),
-        h('li', { text: `Sur les ${entier.format(sim.parcours)} parcours possibles, si chaque réponse a la même probabilité, aucun pays ne gagne plus de ${decimal.format(sim.part_max_pct)} % des parties. ${sim.jamais_top3.join(' et ')} n'atteignent jamais le top 3, mais restent dans le classement.` }),
-        h('li', { text: 'Les photos des questions montrent une ambiance. Elles sont prises hors des 41 pays, pour que tu choisisses un goût plutôt qu\'une destination.' }),
+        h('li', { text: `Sur les ${entier.format(sim.parcours)} parcours possibles, si chaque réponse a la même probabilité, aucun pays ne gagne plus de ${decimal.format(sim.part_max_pct)} % des parties. ${new Intl.ListFormat('fr-FR').format(sim.jamais_top3)} n'atteignent jamais le top 3, mais restent dans le classement.` }),
+        h('li', { text: 'Les photos des questions ont été prises hors des 41 pays, pour que personne ne reconnaisse une destination.' }),
         h('li', {}, 'Sources, licences et données : ', h('a', { href: 'data/telechargement/periple_donnees.zip', text: 'télécharger le fichier complet' }), '.')))));
   majEtSi(false);
   titre.focus({ preventScroll: true });
