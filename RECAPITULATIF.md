@@ -1,10 +1,12 @@
 # Périple (dataviz voyage) : récapitulatif du projet
 
-*Mis à jour le 17 novembre 2026. Données terminées, page d'accueil terminée, les trois visualisations restent à faire. Document de passation pour les conversations suivantes et base de la section technique.*
+*Mis à jour le 18 novembre 2026. Données terminées, page d'accueil terminée, les trois visualisations restent à faire. Document de passation pour les conversations suivantes et base de la section technique.*
 
-## Où on en est (17 novembre 2026)
+## Où on en est (18 novembre 2026)
 
-**Fait aujourd'hui :**
+**Décidé le 18/11 :** on n'ajoute aucun pays, la sélection reste à 41 pays (raison en section 5, trous connus en section 7).
+
+**Fait le 17/11 :**
 - `pays_monde.csv` : les 199 pays (nom, ISO2, drapeau, revenu par habitant) ;
 - le fond de carte (`data/carte/`) ;
 - l'historique des visas 2019-2026 (57 versions) ;
@@ -12,8 +14,8 @@
 
 **Prochaines tâches, dans l'ordre :**
 1. Aryann relit les 54 lignes de `data/corrections_unesco_noms.csv`. À regarder en priorité : le n° 995 (titre bancal mais exact) et l'année du Laos pour le n° 951 (2003 = première inscription ; le Laos n'a rejoint le site qu'en 2025).
-2. Décider pour l'Allemagne, la Belgique et les Pays-Bas (section 8, tâche 4).
-3. Puis la suite de la section 8 : téléchargement (dictionnaire, licences, ZIP), quiz final, puis le site, une visualisation à la fois.
+2. Téléchargement des données (section 8, tâche 5) : dictionnaire, licences, conditions de Budget Your Trip, ZIP.
+3. Puis la suite de la section 8 : quiz final, puis le site, une visualisation à la fois.
 
 ## 1. Le projet en bref
 
@@ -195,7 +197,7 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 
 ## 5. Décisions et justifications (à reprendre dans la section technique)
 
-- **41 pays** : quotas par continent (10 Europe, 10 Asie, 3 Moyen-Orient, 7 Afrique, 9 Amériques, 2 Océanie) et diversité de prix. Biais assumé : moins de pays africains. Manquent des voisins très visités (Allemagne, Belgique, Pays-Bas), à ajouter en décembre si on est en avance, environ 10 min par pays. La carte des visas couvre, elle, 199 pays.
+- **41 pays, sélection figée (décision du 18/11) : on n'ajoute aucun pays.** Les 41 pays ont été choisis pour couvrir tous les continents et tous les types de voyage, pas pour suivre un classement de popularité. Ils sont répartis par quotas par continent (10 Europe, 10 Asie, 3 Moyen-Orient, 7 Afrique, 9 Amériques, 2 Océanie), avec une diversité de prix. Biais assumé : moins de pays africains. Les trous connus sont listés en section 7. La carte des visas couvre, elle, 199 pays.
 - **UNESCO** : comptage par numéro de site (les extensions `80bis`, `80ter` et les composantes `868-001`… ne comptent qu'une fois) et 5 corrections documentées. **Contrôle : 8 pays sur 8 identiques aux chiffres officiels** (France, Espagne, Italie, Japon, Chine, Afrique du Sud, Brésil, Australie). Seuls les **comptages** sont redistribués : les conditions de l'UNESCO interdisent de republier sa liste.
 - **Arrivées touristiques retirées** : la série s'arrête en 2020 (Covid), les années ne sont pas comparables, et les définitions varient (la France compte les visiteurs à la journée).
 - **Salaires ILOSTAT écartés** : 7 pays manquants (dont le Japon, la Chine et l'Australie), des sources mélangées (enquête ménages / registres), des années de 2017 à 2025, des incohérences (l'Espagne au-dessus de la France, l'Afrique du Sud à 1,38 $/h). Remplacés par le **revenu national brut par habitant** (Banque mondiale), complet et homogène. Sur la page, on parlera de « jours de revenu moyen », pas d'« heures de travail ».
@@ -279,6 +281,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
   - Ce qu'on ne peut pas séparer : les deux sources n'ont aucune date en commun, donc un petit effet de méthode reste possible.
 - **Les noms des sites UNESCO** sont les libellés de Wikidata, souvent le titre de l'article Wikipédia (« Mont-Saint-Michel »), pas toujours le nom officiel de l'UNESCO. Quand Wikidata n'a pas de nom français utilisable (34 noms en anglais, Kew, et 3 départages douteux, dont Bali), on prend **le titre exact de la fiche française de l'UNESCO**, avec son lien, et aucune traduction libre. 2 noms viennent du libellé multilingue (Las Médulas, Caral). **Les années d'inscription** : 15 manquaient dans Wikidata. Elles ont été reprises des fiches UNESCO, avec le lien. Une date antérieure à 1978 (la première liste) est écartée comme erreur : le Serengeti « 1960 » est en réalité inscrit en 1981. L'année est celle de **la première inscription du site**, pas celle de l'extension à un pays. Par exemple, Hin Nam No (Laos) a rejoint en 2025 le site vietnamien de Phong Nha-Ke Bang inscrit en 2003.
 - **Le fond de carte** suit le point de vue de la France : le Sahara occidental est rattaché au Maroc, ce qui suit la position française et non celle de l'ONU. Les départements d'outre-mer ont la couleur de la France, alors que leurs règles d'entrée diffèrent un peu. Les îlots de moins de 100 km² peuvent manquer, à cause de la simplification. Les 50 territoires sans passeport (Groenland, Porto Rico, Nouvelle-Calédonie…) sont en gris : Passport Index ne les couvre pas.
+- **La sélection de 41 pays a des trous connus** (décision en section 5) : aucun pays des Caraïbes (le Mexique, la Colombie et le Costa Rica ont seulement une côte sur cette mer), une Afrique du Nord limitée au Maroc et à l'Égypte, et pas d'Allemagne (ni de Belgique, ni de Pays-Bas). Le quiz ne peut donc pas proposer ces pays. La carte des visas, elle, les couvre.
 - **Les notes sont relatives** à la sélection de 41 pays.
 
 ## 7 bis. Le site : fil conducteur et visualisations (décidé le 03/11/2026, complété le 17/11/2026)
@@ -346,7 +349,7 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 
 **Reste à faire sur l'accueil** : `<main class="site">` est vide (les sections viendront ici) ; le tag affiche « Periple » sans accent (à vérifier : police ou choix voulu ?) ; `sounds/musique test.mp3` n'est pas utilisée mais elle est déployée (à supprimer ou à exclure).
 
-## 8. Prochaines étapes (liste unique, mise à jour le 17/11/2026)
+## 8. Prochaines étapes (liste unique, mise à jour le 18/11/2026)
 
 **Fait**
 - [x] **Accueil du site** (voir 7 ter).
@@ -414,8 +417,8 @@ Avis de ChatGPT reçu le 22/10 (« Akinator des pays », 100-150 pays × 30-50 c
 - [x] Résultat : 735 sites, **tous avec une année** (de 1978 à 2026). Les noms : 694 libellés français de Wikidata, 39 titres UNESCO, 2 libellés multilingues.
 - [ ] Les noms ne vont pas dans le ZIP. La page dira que les noms viennent de Wikidata et, pour 39 d'entre eux, de la fiche UNESCO.
 
-**4. Allemagne, Belgique, Pays-Bas : trancher maintenant**
-- [ ] Les ajouter demande plus que relancer les scripts : relevé Budget Your Trip à la main, descriptions, photos, vérification des visas (simple pour l'UE) et une nouvelle simulation du quiz.
+**4. Allemagne, Belgique, Pays-Bas** (tranché le 18/11 : on ne les ajoute pas)
+- [x] La sélection reste à 41 pays (raison en section 5, trous connus en section 7).
 
 **5. Téléchargement des données (3 points)**
 - [ ] Un **dictionnaire des données** : chaque colonne, avec son unité, sa source et son année.
@@ -457,4 +460,4 @@ Un critère approximatif qui produit des résultats absurdes coûte plus de cré
 
 Choix validés pour le quiz final : questions fun (duels de photos, mises en situation), quiz qui s'adapte (mode rapide environ 8 questions, mode précis environ 15), révélation animée du classement à la fin (pas pendant : ça gâcherait le suspense), résultat partageable avec « le pays qui te ressemble le moins ». Pas de test avec la classe.
 
-Questions ouvertes : Ajouter l'Allemagne, la Belgique et les Pays-Bas ? Garder la France dans les résultats du quiz (décision actuelle : oui) ?
+Question ouverte : garder la France dans les résultats du quiz (décision actuelle : oui) ?
