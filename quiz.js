@@ -83,7 +83,7 @@ function poser(reponses) {
           if (suite.length === D.nombre) revelation(suite); else poser(suite);
         },
       },
-      photo && h('img', { src: photo.image_url, alt: '', width: 640, height: 400, decoding: 'async' }),
+      photo && h('img', { src: photo.image_url, alt: photo.description, width: 640, height: 400, decoding: 'async' }),
       h('span', { class: 'bouton-texte' }, h('strong', { text: o.titre }))),
       photo && credit(photo.auteur, photo.licence, photo.page));
   });
@@ -458,7 +458,7 @@ function resultat(reponses) {
         h('li', { text: '« Un plat de rue » compte pour le prix. Le quiz ne dit rien de la cuisine du pays, et les autres situations marchent de la même façon.' }),
         h('li', { text: 'Les notes sont relatives aux 41 pays choisis. Cette sélection n\'a aucun pays des Caraïbes, limite l\'Afrique du Nord au Maroc et à l\'Égypte, et ne compte pas l\'Allemagne, la Belgique ni les Pays-Bas.' }),
         h('li', { text: `Sur les ${entier.format(sim.parcours)} parcours possibles, si chaque réponse a la même probabilité, aucun pays ne gagne plus de ${decimal.format(sim.part_max_pct)} % des parties. ${new Intl.ListFormat('fr-FR').format(sim.jamais_top3)} n'atteignent jamais le top 3, mais restent dans le classement.` }),
-        h('li', { text: 'Les photos des questions ont été prises hors des 41 pays, pour que personne ne reconnaisse une destination.' }),
+        h('li', { text: 'Les photos des questions illustrent le choix et ne montrent aucun lieu célèbre, pour que personne ne reconnaisse une destination.' }),
         h('li', {}, 'Sources, licences et données : ', h('a', { href: 'data/telechargement/periple_donnees.zip', text: 'télécharger le fichier complet' }), '.')))));
   majEtSi(false);
   titre.focus({ preventScroll: true });

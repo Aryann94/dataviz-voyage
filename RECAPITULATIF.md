@@ -109,7 +109,7 @@ dataviz-voyage/
     - Garde-fou : `test_comptage_unesco.py` vérifie que le comptage recalculé depuis les données brutes retombe exactement sur `pays.csv`.
 12. `build_dictionnaire.py` : décrit les 138 colonnes des 12 CSV du téléchargement. Il s'arrête si une colonne manque, n'a pas de source, d'année, d'unité (nombres) ou d'explication de ses cases vides.
 13. `build_excel.py` : classeur avec une feuille par CSV et une pour le dictionnaire, relu cellule par cellule. `visas_historique_annuel.csv` reste hors du classeur.
-15. `build_quiz_photos.py` : crédits des 13 photos d'ambiance des duels, lus sur Commons → `quiz_photos.csv`. Il s'arrête si une photo vient d'un des 41 pays, n'a pas d'auteur ou de licence libre, ou porte un avertissement de droits.
+15. `build_quiz_photos.py` : description et crédits des 11 photos des duels, lus sur Commons → `quiz_photos.csv`. Il s'arrête si une photo sert deux fois, n'a pas de description, d'auteur ou de licence libre, ou porte un avertissement de droits.
 16. `test_quiz.py` (avec `test_quiz.mjs` et **Node.js**) : contrôle les questions, simule tous les parcours, compare le moteur JavaScript au calcul Python, vérifie les « Le saviez-vous ? » → `quiz_simulation.json`.
 14. `build_zip.py` : relance les étapes 12 et 13, puis écrit `data/telechargement/periple_donnees.zip`. Il s'arrête si un fichier écarté y entre, si la citation de Budget Your Trip ou une notice MIT manque, si une photo n'a pas de crédit, ou si l'archive relue diffère de ses sources. Même contenu, même archive.
 
@@ -279,8 +279,9 @@ Après mapshaper, il relit la TopoJSON pour les contrôles et regroupe le repèr
 - **Banque de 15 questions, 12 posées.** Chaque question suivante est celle qui départage le mieux les 8 pays en tête, sur des critères encore peu couverts. Un mode rapide de 8 questions a été écarté : il dépassait 12 % et n'atteignait que 33 pays dans un top 3.
 - **Des situations concrètes, sans fausse promesse.** Une réponse peut évoquer un plat de rue ou le bruit des vagues si l'image se rattache au critère. Elle ne promet aucun résultat non mesuré (langue, faune, sable, gastronomie). Chaque effet a sa raison en une phrase, affichée sur le résultat, et aucun effet n'est ajouté pour équilibrer la simulation.
 - **Équilibre** : 15 angles différents, au plus 3 questions par critère principal, au plus 2 duels villes contre nature, et jamais deux questions de suite sur le même critère principal.
-- **Photos d'ambiance** : 13 photos Commons, toutes prises hors des 41 pays, pour qu'on choisisse un goût et non une destination.
-- **Simulation des 24 674 parcours, chaque réponse ayant la même probabilité** : Grèce 10,0 % au maximum, 35 pays peuvent gagner, 38 sur 41 entrent dans un top 3. Le moteur du site et le calcul Python donnent exactement les mêmes résultats.
+- **Choix clairs** : chaque choix doit se comprendre en 2 secondes, sans devinette.
+- **Photos** : 11 photos Commons pour 5 duels, chacune ouverte et regardée. Elle montre ce que dit le choix, ne sert qu'une fois et ne montre aucun lieu célèbre reconnaissable. Sa description sert de texte alternatif. Quand aucune photo ne colle, on change le texte du choix ou la question passe sans photo.
+- **Simulation des 24 736 parcours, chaque réponse ayant la même probabilité** : Grèce 9,9 % au maximum, 35 pays peuvent gagner, 38 sur 41 entrent dans un top 3. Le moteur du site et le calcul Python donnent exactement les mêmes résultats.
 
 ## 6 bis. Projets similaires (vérifiés le 22/10/2026, à citer dans la présentation)
 
@@ -471,8 +472,8 @@ Le bouton ouvre le quiz, sur `destinations.html`.
 
 **6. Quiz final**
 - [x] 12 questions tirées d'une banque de 15 (duels et situations), avec des choix qui coûtent (section 6).
-- [x] 13 photos d'ambiance de Wikimedia Commons, avec auteur, licence et lien, hors des 41 pays.
-- [x] Simulation de tous les parcours : 10,0 % au maximum et 38 pays sur 41 dans un top 3.
+- [x] 11 photos de Wikimedia Commons, regardées une par une, avec description, auteur, licence et lien.
+- [x] Simulation de tous les parcours : 9,9 % au maximum et 38 pays sur 41 dans un top 3.
 - [x] Page `destinations.html` : déroulé, révélation, radar, classement, « Pourquoi ce pays ? », « Et si… », « Le saviez-vous ? », lien de partage et limites. Testée dans Edge sans interface, sur ordinateur et au format téléphone.
 
 **7. Le site**

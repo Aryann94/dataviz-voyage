@@ -6,32 +6,32 @@
       "options": [
         {"titre": "Le bruit des vagues", "effets": [
           {"critere": "mer", "valeur": 85, "poids": 1, "raison": "Tu dors assez près de la mer pour l'entendre."},
-          {"critere": "culture", "valeur": 35, "poids": 0.3, "raison": "Tu préfères ce réveil à celui d'une vieille ville."}]},
-        {"titre": "Les cloches d'une vieille ville", "effets": [
-          {"critere": "culture", "valeur": 95, "poids": 0.9, "raison": "Une vieille ville renvoie aux sites historiques."},
+          {"critere": "culture", "valeur": 35, "poids": 0.3, "raison": "Tu préfères ce réveil à celui d'une vieille église."}]},
+        {"titre": "La cloche d'une vieille église", "effets": [
+          {"critere": "culture", "valeur": 95, "poids": 0.9, "raison": "Une vieille église fait partie des sites historiques."},
           {"critere": "mer", "valeur": 15, "poids": 0.6, "raison": "Tu préfères ce réveil à celui de la mer."}]}
       ]
     },
     {
-      "id": "soir", "angle": "soirée", "principal": "villes", "theme": "Le soir", "question": "Comment finit ta soirée ?", "type": "duel",
+      "id": "soir", "angle": "soirée", "principal": "villes", "theme": "Le soir", "question": "Où finit ta soirée ?", "type": "duel",
       "options": [
-        {"titre": "Sur un rooftop, sous les néons", "effets": [
-          {"critere": "villes", "valeur": 100, "poids": 1, "raison": "Les rooftops et les néons appartiennent aux grandes villes."},
+        {"titre": "Face aux tours illuminées d'une grande ville", "effets": [
+          {"critere": "villes", "valeur": 100, "poids": 1, "raison": "Tu passes la soirée dans une très grande ville."},
           {"critere": "nature", "valeur": 30, "poids": 0.4, "raison": "Ta soirée se passe loin de la nature."}]},
-        {"titre": "Autour d'un feu de camp, sous les étoiles", "effets": [
-          {"critere": "nature", "valeur": 90, "poids": 0.8, "raison": "Un feu de camp se fait dans la nature."},
-          {"critere": "villes", "valeur": 5, "poids": 0.8, "raison": "Pour voir les étoiles, il faut quitter les grandes villes."}]}
+        {"titre": "Autour d'un feu de camp, en forêt", "effets": [
+          {"critere": "nature", "valeur": 90, "poids": 0.8, "raison": "Tu passes la soirée en pleine forêt."},
+          {"critere": "villes", "valeur": 5, "poids": 0.8, "raison": "Pour camper en forêt, il faut quitter les grandes villes."}]}
       ]
     },
     {
-      "id": "logement", "angle": "logement", "principal": "prix", "theme": "La nuit", "question": "Où poses-tu ton sac ce soir ?", "type": "choix",
+      "id": "logement", "angle": "logement", "principal": "prix", "theme": "La nuit", "question": "Où dors-tu ce soir ?", "type": "choix",
       "options": [
         {"titre": "Dans une auberge pas chère", "effets": [
           {"critere": "prix", "valeur": 95, "poids": 0.9, "raison": "Tu cherches à payer peu."}]},
-        {"titre": "Dans un hôtel avec vue", "effets": [
-          {"critere": "prix", "valeur": 10, "poids": 0.8, "raison": "Tu acceptes de payer pour la vue."}]},
-        {"titre": "Dans une petite pension correcte", "effets": [
-          {"critere": "prix", "valeur": 50, "poids": 0.6, "raison": "Tu vises un prix moyen."}]}
+        {"titre": "Dans une chambre à prix moyen", "effets": [
+          {"critere": "prix", "valeur": 50, "poids": 0.6, "raison": "Tu vises un prix moyen."}]},
+        {"titre": "Dans un bel hôtel avec vue", "effets": [
+          {"critere": "prix", "valeur": 10, "poids": 0.8, "raison": "Tu acceptes de payer pour le confort et la vue."}]}
       ]
     },
     {
@@ -44,21 +44,21 @@
       ]
     },
     {
-      "id": "trajet", "angle": "trajet aller", "principal": "distance", "theme": "Le trajet", "question": "Comment se passe le voyage aller ?", "type": "choix",
+      "id": "trajet", "angle": "durée du vol", "principal": "distance", "theme": "Le vol", "question": "Combien d'heures de vol pour arriver ?", "type": "choix",
       "options": [
-        {"titre": "Un vol court, et on y est", "effets": [
-          {"critere": "distance", "valeur": 5, "poids": 1, "raison": "Un vol court te laisse près de Paris."}]},
-        {"titre": "Une escale pour se dégourdir", "effets": [
-          {"critere": "distance", "valeur": 45, "poids": 0.6, "raison": "Une escale suppose déjà une bonne distance."}]},
-        {"titre": "Deux vols et la tête à l'envers", "effets": [
-          {"critere": "distance", "valeur": 100, "poids": 1, "raison": "Deux vols t'emmènent loin de Paris."}]}
+        {"titre": "Moins de trois heures", "effets": [
+          {"critere": "distance", "valeur": 5, "poids": 1, "raison": "Tu restes près de Paris."}]},
+        {"titre": "Entre quatre et huit heures", "effets": [
+          {"critere": "distance", "valeur": 45, "poids": 0.6, "raison": "Tu pars à une distance moyenne."}]},
+        {"titre": "Plus de douze heures", "effets": [
+          {"critere": "distance", "valeur": 100, "poids": 1, "raison": "Tu pars à l'autre bout du monde."}]}
       ]
     },
     {
-      "id": "connexion", "angle": "connexion", "principal": "nature", "theme": "La connexion", "question": "Et ton téléphone, pendant ce temps ?", "type": "duel",
+      "id": "connexion", "angle": "connexion", "principal": "nature", "theme": "La connexion", "question": "Et ton téléphone, pendant ce temps ?", "type": "choix",
       "options": [
-        {"titre": "Du réseau à chaque coin de rue", "effets": [
-          {"critere": "villes", "valeur": 80, "poids": 0.5, "raison": "Les coins de rue, on les trouve en ville."},
+        {"titre": "Du réseau partout, en pleine ville", "effets": [
+          {"critere": "villes", "valeur": 80, "poids": 0.5, "raison": "Tu es en ville."},
           {"critere": "nature", "valeur": 30, "poids": 0.3, "raison": "Tu restes loin des grands espaces."}]},
         {"titre": "Trois jours sans réseau", "effets": [
           {"critere": "nature", "valeur": 95, "poids": 0.9, "raison": "Tu pars dans un endroit isolé."},
@@ -68,7 +68,7 @@
     {
       "id": "souvenir", "angle": "souvenir", "principal": "culture", "theme": "Le souvenir", "question": "Qu'est-ce que tu glisses dans ta valise ?", "type": "choix",
       "options": [
-        {"titre": "La gravure d'un vieux monument", "effets": [
+        {"titre": "Une carte postale d'un vieux monument", "effets": [
           {"critere": "culture", "valeur": 90, "poids": 0.8, "raison": "Tu gardes la trace d'un site historique."}]},
         {"titre": "Un galet ramassé au bord de la mer", "effets": [
           {"critere": "mer", "valeur": 80, "poids": 0.6, "raison": "Tu as passé du temps sur la côte."}]},
@@ -81,7 +81,7 @@
       "options": [
         {"titre": "Des ruines au coucher du soleil", "effets": [
           {"critere": "culture", "valeur": 100, "poids": 0.8, "raison": "Tu retiens un site historique."}]},
-        {"titre": "Une ville vue d'en haut, la nuit", "effets": [
+        {"titre": "Une ville vue du ciel, la nuit", "effets": [
           {"critere": "villes", "valeur": 100, "poids": 0.8, "raison": "Tu retiens une grande ville."}]},
         {"titre": "Un paysage sans personne", "effets": [
           {"critere": "nature", "valeur": 100, "poids": 0.8, "raison": "Tu retiens un grand espace naturel."},
@@ -93,8 +93,8 @@
       "options": [
         {"titre": "Sur un sentier de crête", "effets": [
           {"critere": "nature", "valeur": 90, "poids": 0.9, "raison": "Le sentier passe en pleine nature."},
-          {"critere": "culture", "valeur": 25, "poids": 0.3, "raison": "Tu laisses les vieilles pierres de côté."}]},
-        {"titre": "Parmi de vieilles pierres", "effets": [
+          {"critere": "culture", "valeur": 25, "poids": 0.3, "raison": "Tu laisses le château de côté."}]},
+        {"titre": "Dans les ruines d'un vieux château", "effets": [
           {"critere": "culture", "valeur": 90, "poids": 0.8, "raison": "Tu visites un site ancien."},
           {"critere": "nature", "valeur": 30, "poids": 0.4, "raison": "Tu laisses le sentier de côté."}]}
       ]
@@ -102,30 +102,30 @@
     {
       "id": "chaleur", "angle": "chaleur", "principal": "mer", "theme": "La chaleur", "question": "Il fait 35 degrés à l'ombre.", "type": "duel",
       "options": [
-        {"titre": "Tu pars piquer une tête", "effets": [
+        {"titre": "Tu sautes dans la mer", "effets": [
           {"critere": "mer", "valeur": 90, "poids": 0.9, "raison": "Tu veux une mer chaude à portée."}]},
-        {"titre": "Tu te réfugies dans un vieux temple", "effets": [
+        {"titre": "Tu te mets au frais dans une vieille église", "effets": [
           {"critere": "culture", "valeur": 80, "poids": 0.4, "raison": "Tu passes ce moment dans un site ancien."},
           {"critere": "mer", "valeur": 5, "poids": 0.8, "raison": "Tu ne cherches pas la mer."}]}
       ]
     },
     {
-      "id": "billet", "angle": "argent", "principal": "prix", "theme": "Le portefeuille", "question": "Il te reste un dernier billet.", "type": "choix",
+      "id": "taxi", "angle": "taxi", "principal": "prix", "theme": "Le taxi", "question": "Sur place, une course en taxi coûte…", "type": "choix",
       "options": [
-        {"titre": "Il paie encore trois repas", "effets": [
+        {"titre": "Presque rien", "effets": [
           {"critere": "prix", "valeur": 100, "poids": 1, "raison": "Sur place, tout coûte peu."}]},
-        {"titre": "Il paie à peine un café", "effets": [
+        {"titre": "Très cher", "effets": [
           {"critere": "prix", "valeur": 10, "poids": 1, "raison": "Sur place, tout coûte cher."}]}
       ]
     },
     {
-      "id": "rejoindre", "angle": "retrouvailles", "principal": "distance", "theme": "Les retrouvailles", "question": "Quelqu'un veut te rejoindre depuis Paris.", "type": "choix",
+      "id": "retour", "angle": "retour", "principal": "distance", "theme": "Le retour", "question": "Tu dois rentrer à Paris en urgence.", "type": "choix",
       "options": [
-        {"titre": "Un week-end lui suffit pour venir", "effets": [
-          {"critere": "distance", "valeur": 8, "poids": 0.8, "raison": "Tu n'es pas très loin de Paris."}]},
-        {"titre": "Une demi-journée de voyage, pas plus", "effets": [
-          {"critere": "distance", "valeur": 28, "poids": 0.7, "raison": "Tu restes à une distance raisonnable de Paris."}]},
-        {"titre": "Il faut traverser la moitié du globe", "effets": [
+        {"titre": "Tu y es le soir même", "effets": [
+          {"critere": "distance", "valeur": 8, "poids": 0.8, "raison": "Tu n'es pas loin de Paris."}]},
+        {"titre": "Tu y es le lendemain", "effets": [
+          {"critere": "distance", "valeur": 30, "poids": 0.7, "raison": "Tu restes assez près de Paris."}]},
+        {"titre": "Il te faut plus d'une journée", "effets": [
           {"critere": "distance", "valeur": 95, "poids": 0.8, "raison": "Tu es très loin de Paris."}]}
       ]
     },
@@ -135,9 +135,9 @@
         {"titre": "Un métro bondé à l'heure de pointe", "effets": [
           {"critere": "villes", "valeur": 90, "poids": 0.7, "raison": "Un métro bondé suppose une très grande ville."},
           {"critere": "nature", "valeur": 20, "poids": 0.2, "raison": "Tu passes tes journées loin de la nature."}]},
-        {"titre": "Un bus de quartier, sans se presser", "effets": [
-          {"critere": "villes", "valeur": 35, "poids": 0.6, "raison": "Tu imagines une ville de taille moyenne."}]},
-        {"titre": "Un vélo sur une route déserte", "effets": [
+        {"titre": "À pied, dans une petite ville", "effets": [
+          {"critere": "villes", "valeur": 30, "poids": 0.6, "raison": "Tu restes dans une petite ville."}]},
+        {"titre": "À vélo, sur une route déserte", "effets": [
           {"critere": "villes", "valeur": 5, "poids": 0.7, "raison": "Une route déserte est loin des grandes villes."},
           {"critere": "nature", "valeur": 65, "poids": 0.3, "raison": "Tu roules au milieu des paysages."}]}
       ]
@@ -145,10 +145,10 @@
     {
       "id": "pluie", "angle": "pluie", "principal": "culture", "theme": "La pluie", "question": "Il pleut toute la journée.", "type": "choix",
       "options": [
-        {"titre": "Un vieux palais à explorer", "effets": [
+        {"titre": "Tu explores un vieux palais", "effets": [
           {"critere": "culture", "valeur": 95, "poids": 0.9, "raison": "Tu passes la journée dans un site historique."},
           {"critere": "nature", "valeur": 35, "poids": 0.2, "raison": "Tu restes à l'intérieur."}]},
-        {"titre": "Un imperméable, et dehors quand même", "effets": [
+        {"titre": "Tu pars marcher dans la nature quand même", "effets": [
           {"critere": "nature", "valeur": 80, "poids": 0.5, "raison": "Même sous la pluie, tu veux être dehors."},
           {"critere": "culture", "valeur": 30, "poids": 0.4, "raison": "Tu laisses le palais de côté."}]}
       ]
